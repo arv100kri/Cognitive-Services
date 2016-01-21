@@ -1,10 +1,10 @@
 
 Explore a basic Windows application that uses Emotion API to recognize the emotions expressed by the faces in an image. The below example lets you submit an image URL or a locally stored file. You can use this open source example as a template for building your own app for Windows using the Emotion API and WPF (Windows Presentation Foundation), a part of .NET Framework.
 ## Table of Contents
-[Prerequisites](#Prerequisites)
-[Step 1: Open the example](#Step1)
-[Step 2: Build the example](#Step2)
-[Step 3: Run the example](#Step3)
+[Prerequisites](#Prerequisites)  
+[Step 1: Open the example](#Step1)  
+[Step 2: Build the example](#Step2)  
+[Step 3: Run the example](#Step3)  
 [Review and Learn](#Review)  
 [Related Topics](#Related)
 ## <a name="Requisites">Prerequisites </a>
@@ -24,9 +24,8 @@ You may download the Emotion API client library and example through [https://www
 ## <a name="Step2">Step 2: Build the example</a>
 1.	In **Solution Explorer**, right click **References** and select **Manage NuGet Packages**.
 ![Open Nuget Package Manager](./Images/EmotionNuget.png)
-2.	The **NuGet Package Manager** window opens. First select **Browse** in the upper left corner, then in the search box type “Newtonsoft.Json”, select the **Newtonsoft.Json** package and click **Install**.
-
-![Browse to NuGet Package](./Images/EmotionNugetBrowse.png)
+2.	The **NuGet Package Manager** window opens. First select **Browse** in the upper left corner, then in the search box type “Newtonsoft.Json”, select the **Newtonsoft.Json** package and click **Install**.  
+![Browse to NuGet Package](./Images/EmotionNugetBrowse.png)  
 3.	Press Ctrl+Shift+B, or click **Build** on the ribbon menu, then select **Build Solution**.
 
 ## <a name="Step3">Step 3: Run the example</a>
@@ -49,7 +48,7 @@ Reviewing how the Emotion Client Library gets used in our example app, let's loo
 The Emotion API is able to work with either an image URL or binary image data (in form of an octet stream) as input. The two options are reviewed below. In both cases, you first find a using directive, which lets you use the Emotion Client Library. 
 
 
-```csharp
+```csharp  
 
             // ----------------------------------------------------------------------- 
             // KEY SAMPLE CODE STARTS HERE 
