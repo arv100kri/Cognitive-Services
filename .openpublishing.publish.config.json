@@ -13,6 +13,6 @@
             }
         }
     ],
-    "notification_subscribers": ["cigaet@microsoft.com"],
+    "notification_subscribers": ["davl@microsoft.com","ydou@microsoft.com"],
     "branches_to_filter": ["live"]
 }
