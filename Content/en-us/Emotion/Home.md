@@ -1,3 +1,7 @@
+﻿
+
+
+# Emotion API
 
 Welcome to the Microsoft Project Oxford Emotion API, which allows you to build more personalized apps with Microsoft’s cutting edge cloud-based emotion recognition algorithm.
 
