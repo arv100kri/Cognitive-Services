@@ -1,4 +1,6 @@
-﻿
+<!--
+Path: Emotion API
+-->
 
 
 # Emotion API
