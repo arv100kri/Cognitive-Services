@@ -1,6 +1,6 @@
 <!--
-Path: Emotion API
-Link Label: Get Started with Emotion API in C#
+NavPath: Emotion API
+LinkLabel: Get Started with Emotion API in C#
 -->
 
 # Get Started with Emotion API in C&#35;
