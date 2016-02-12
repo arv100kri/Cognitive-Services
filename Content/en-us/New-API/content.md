@@ -1,4 +1,4 @@
-This is where you enter your contents....
-#Feature 1
+# Product name 
+##Feature 1
 descriptions....
-#Feature 2
+##Feature 2
