@@ -15,12 +15,12 @@ Explore a basic Windows application that uses Emotion API to recognize the emoti
 [Review and Learn](#Review)  
 [Related Topics](#Related)
 ## <a name="Requisites">Prerequisites </a>
-#### * 	Platform requirements
+#### * Platform requirements
 
 The below example has been developed for the .NET Framework using [Visual Studio 2015, Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs).  
-#### * 	Subscribe to Emotion API and get a subscription key 
+#### * Subscribe to Emotion API and get a subscription key 
 Before creating the example, you must subscribe to Emotion API which is part of the Microsoft Project Oxford services. For subscription and key management details, see [Subscription Management](https://www.projectoxford.ai/doc/general/subscription-key-mgmt). Both the primary and secondary key can be used in this tutorial. Make sure to follow best practices for keeping your API key secret and secure. 
-#### * 	Get the client library and example
+#### * Get the client library and example
 You may download the Emotion API client library and example through [https://www.projectoxford.ai/sdk](https://www.projectoxford.ai/sdk) or access them via [GitHub](https://github.com/Microsoft/ProjectOxford-ClientSDK/tree/master/Emotion/Windows). The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder.
 
 ## <a name="Step1">Step 1: Open the example</a>
