@@ -29,16 +29,16 @@ You may download the Emotion API client library and example through [https://www
 3.	Double-click to open the Visual Studio 2015 Solution (.sln) file named **EmotionAPI-WPF-Samples.sln**. This will open the solution in Visual Studio.
 
 ## <a name="Step2">Step 2: Build the example</a>
-1. In **Solution Explorer**, right click **References** and select **Manage NuGet Packages**.
-##![Open Nuget Package Manager](./Images/EmotionNuget.png)
-2.	The **NuGet Package Manager** window opens. First select **Browse** in the upper left corner, then in the search box type “Newtonsoft.Json”, select the **Newtonsoft.Json** package and click **Install**.  
-##![Browse to NuGet Package](./Images/EmotionNugetBrowse.png)  
+1. In **Solution Explorer**, right click **References** and select **Manage NuGet Packages**.   
+![Open Nuget Package Manager](./Images/EmotionNuget.png)
+2.	The **NuGet Package Manager** window opens. First select **Browse** in the upper left corner, then in the search box type “Newtonsoft.Json”, select the **Newtonsoft.Json** package and click **Install**.    
+![Browse to NuGet Package](./Images/EmotionNugetBrowse.png)  
 3.	Press Ctrl+Shift+B, or click **Build** on the ribbon menu, then select **Build Solution**.
 
 ## <a name="Step3">Step 3: Run the example</a>
 1.	After the build is complete, press **F5** or click **Start** on the ribbon menu to run the example.
-2.	Locate the Emotion API window with the **text box** reading "**Paste your subscription key here to start**". Paste your subscription key into the text box as shown in below screenshot. You can choose to persist your subscription key on your PC or laptop by clicking the "Save Key" button. When you want to delete the subscription key from the system, click "Delete Key" to remove it from your PC or laptop.
-##![Emotion Functionality Interface](./Images/EmotionKey.png)
+2.	Locate the Emotion API window with the **text box** reading "**Paste your subscription key here to start**". Paste your subscription key into the text box as shown in below screenshot. You can choose to persist your subscription key on your PC or laptop by clicking the "Save Key" button. When you want to delete the subscription key from the system, click "Delete Key" to remove it from your PC or laptop.  
+![Emotion Functionality Interface](./Images/EmotionKey.png)
 3.	Under "**Select Scenario**" click to use either of the two scenarios, “**Detect emotion using a stream**” or “**Detect emotion using a URL**”, then follow the instructions on the screen. Microsoft receives the images you upload and may use them to improve Emotion API and related services. By submitting an image, you confirm that you have followed our [Developer Code of Conduct](http://research.microsoft.com/en-us/UM/legal/ProjectOxford_CodeOfConduct.htm).
 4.	There are example images to be used with this example application. You can find these images on [Github](https://github.com/Microsoft/ProjectOxford-ClientSDK/tree/master/Face/Windows/Data) under **Face**, **Windows**, then search the **Data** folder. Please note the use of these images is licensed under Fair Use agreement meaning they are OK to use for testing this example, but not for republishing.
 ## <a name="Review">Review and Learn</a>
