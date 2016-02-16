@@ -8,8 +8,8 @@ LinkLabel: Link to the page.
  
 Description
 ## Table of Contents
-[Subtopic1](#Subtopic1)
-[Subtopic2](#Subtopic2)
+[Subtopic1](#Subtopic1)  
+[Subtopic2](#Subtopic2)  
 ## <a name="Subtopic1">SubTopic1</a>
 #### * Bullet point 1
 #### * Bullet point 2
