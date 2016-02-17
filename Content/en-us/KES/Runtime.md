@@ -1,5 +1,5 @@
 # Command Line Interface
-The IRIS command line interface provides the ability to build index and grammar files from structured data and deploy them as web services.  It uses the general syntax: `iris.exe <command> <required_args> [<optional_args>]`.  You can run `iris.exe` without arguments to display a list of commands or `iris.exe <command>` to display a list of arguments available for the specified command.  Below is a list of available commands:
+The KES command line interface provides the ability to build index and grammar files from structured data and deploy them as web services.  It uses the general syntax: `kes.exe <command> <required_args> [<optional_args>]`.  You can run `kes.exe` without arguments to display a list of commands or `kes.exe <command>` to display a list of arguments available for the specified command.  Below is a list of available commands:
 * build_index
 * build_grammar
 * host_service
@@ -10,7 +10,7 @@ The IRIS command line interface provides the ability to build index and grammar 
 ## build_index Command
 The **build_index** command builds a binary index file from a schema definition file and data file of objects to index.  The resulting index file can be used to evaluate structured query expressions, or generate interpretations of natural language queries in conjunction with a compiled grammar file.
 
-`iris.exe build_index <schemaFile> <dataFile> <indexFile> [options]`
+`kes.exe build_index <schemaFile> <dataFile> <indexFile> [options]`
 
 | Parameter      | Description               |
 |----------------|---------------------------|
@@ -20,7 +20,7 @@ The **build_index** command builds a binary index file from a schema definition 
 | `--description <description>` | Description string |
 | `--remote <vmSize>`           | Size of VM for remote build |
 
-Schema/data/index files may be local file paths or URL paths to Azure blobs.  The schema file describes the structure of the objects being indexed as well as the operations to support (see [Schema Format]()).  The data file enumerates the objects and attribute values to index (see [Data Format]()).  When the build succeeds, the output index file contains a compressed representation of the input data that support the desired operations.  
+Schema/data/index files may be local file paths or URL paths to Azure blobs.  The schema file describes the structure of the objects being indexed as well as the operations to support (see [Schema Format](Schema.md)).  The data file enumerates the objects and attribute values to index (see [Data Format](Data.md)).  When the build succeeds, the output index file contains a compressed representation of the input data that support the desired operations.  
 
 A description string may be optionally specified to subsequently identify a binary index using the **describe_index** command.  
 
@@ -36,19 +36,20 @@ To Do:
 ## build_grammar Command
 The **build_grammar** command compiles a grammar specification in XML format to a binary grammar file.  The resulting grammar file can be used in conjunction with an index file to generate interpretations of natural language queries.
 
-`iris.exe build_grammar <xmlFile> <grammarFile>`
+`kes.exe build_grammar <xmlFile> <grammarFile>`
 
 | Parameter       | Description               |
 |-----------------|---------------------------|
 | `<xmlFile>`     | Input XML grammar specification path |
 | `<grammarFile>` | Output compiled grammar path         |
 
-XML/grammar files may be local file paths or URL paths to Azure blobs.  The grammar specification describes the set of weighted natural language expressions and their semantic interpretation (see [Grammar Format]()).  When the build succeeds, the output grammar file contains a binary representation of the grammar specification to enable fast decoding.
+XML/grammar files may be local file paths or URL paths to Azure blobs.  The grammar specification describes the set of weighted natural language expressions and their semantic interpretation (see [Grammar Format](Grammar.md)).  When the build succeeds, the output grammar file contains a binary representation of the grammar specification to enable fast decoding.
 
+<a name="host_service"/>
 ## host_service Command
-The **host_service** command hosts an instance of the IRIS service on the local machine.
+The **host_service** command hosts an instance of the KES service on the local machine.
 
-`iris.exe host_service <grammarFile> <indexFile> [options]`
+`kes.exe host_service <grammarFile> <indexFile> [options]`
 
 | Parameter       | Description                |
 |-----------------|----------------------------|
@@ -56,14 +57,15 @@ The **host_service** command hosts an instance of the IRIS service on the local 
 | `<indexFile>`   | Input index path           |
 | `--port <port>` | Local port.  Default: 8000 |
 
-Index/grammar files may be local file paths or URL paths to Azure blobs.  A web service will be hosted at http://localhost:&lt;port&gt;/.  See [Service APIs]() for a list of supported operations.
+Index/grammar files may be local file paths or URL paths to Azure blobs.  A web service will be hosted at http://localhost:&lt;port&gt;/.  See [Web APIs](WebAPI.md) for a list of supported operations.
 
 Outside of the Azure environment, locally hosted services are limited to index files up to 1 MB in size, 1 request per second, and 1000 total calls.  To overcome this limitation, run **host_service** inside an Azure VM or deploy to an Azure cloud service using **deploy_service**.
 
+<a name="deploy_service"/>
 ## deploy_service Command
-The **deploy_service** command deploys an instance of the IRIS service to an Azure cloud service.
+The **deploy_service** command deploys an instance of the KES service to an Azure cloud service.
 
-`iris.exe deploy_service <grammarFile> <indexFile> <serviceName> <vmSize>[options]`
+`kes.exe deploy_service <grammarFile> <indexFile> <serviceName> <vmSize>[options]`
 
 | Parameter       | Description                  |
 |-----------------|------------------------------|
@@ -73,14 +75,14 @@ The **deploy_service** command deploys an instance of the IRIS service to an Azu
 | `<vmSize>`      | Size of cloud service VM     |
 | `--slot <slot>` | Cloud service slot: "staging" (default), "production" |
 
-Index/grammar files must be URL paths to Azure blobs.  Service name specifies  a preconfigured Azure cloud service (see [How to Create and Deploy a Cloud Service](https://azure.microsoft.com/en-us/documentation/articles/cloud-services-how-to-create-deploy/)).  The command will automatically deploy the IRIS service to the specified Azure cloud service, using VMs of the specified size.  To avoid paging which significantly decreases performance, we recommend using a VM with 1 GB more RAM than the input index file size.  For a list of available VM sizes, see [Sizes for Cloud Services](https://azure.microsoft.com/en-us/documentation/articles/cloud-services-sizes-specs/).
+Index/grammar files must be URL paths to Azure blobs.  Service name specifies  a preconfigured Azure cloud service (see [How to Create and Deploy a Cloud Service](https://azure.microsoft.com/en-us/documentation/articles/cloud-services-how-to-create-deploy/)).  The command will automatically deploy the KES service to the specified Azure cloud service, using VMs of the specified size.  To avoid paging which significantly decreases performance, we recommend using a VM with 1 GB more RAM than the input index file size.  For a list of available VM sizes, see [Sizes for Cloud Services](https://azure.microsoft.com/en-us/documentation/articles/cloud-services-sizes-specs/).
 
-By default, the service is deployed to the staging environment, optionally overridden via the --slot parameter.  See [Service APIs]() for a list of supported operations.
+By default, the service is deployed to the staging environment, optionally overridden via the --slot parameter.  See [Web APIs](WebAPI.md) for a list of supported operations.
 
 ## describe_index command
 The **describe_index** command outputs information about an index file, including the build timestamp, schema, and description.
 
-`iris.exe describe_index <indexFile>`
+`kes.exe describe_index <indexFile>`
 
 | Parameter     | Description      |
 |---------------|------------------|
@@ -91,7 +93,7 @@ Index file may be local file path or a URL path to an Azure blob.  The output de
 ## describe_grammar command
 The **describe_grammar** command outputs the original grammar specification used to build the binary grammar.
 
-`iris.exe describe_grammar <grammarFile>`
+`kes.exe describe_grammar <grammarFile>`
 
 | Parameter       | Description      |
 |-----------------|------------------|
@@ -117,7 +119,3 @@ Grammar file may be local file path or a URL path to an Azure blob.
 * If we download files from blob, do we remove them afterwards?
 * Verify that if schema between grammar and index mismatches, we throw or work if compatible.
 * Reverse grammar/index positional parameters.  Need to update code to reflect.
-
-
-
-* Use the style and examples from [Azure command line tool](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-command-line-tools/#commands-to-manage-your-azure-virtual-machines) to design our command line interface.

@@ -1,7 +1,7 @@
 # evaluate Method
 The *evaluate* method evaluates and returns the output of a structured query expression based on the index data.
 
-Typically, an expression will be obtained from a response to the interpret method.  But you can also compose query expressions yourself (see [Query Expression Syntax](Query%20Expression%20Syntax.md)).  
+Typically, an expression will be obtained from a response to the interpret method.  But you can also compose query expressions yourself (see [Strucuted Query Expression](Expressions.md)).  
 
 ## Request 
 `http://<host>/evaluate?expr=<expr>&attributes=<attrs>[&<options>]`   

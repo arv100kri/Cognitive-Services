@@ -6,7 +6,7 @@ See [Getting Started](Start.md) for a walkthrough of using KES to create an inte
 ![AcademicAutoComplete](AutoComplete.png)
 
 ## Reference
-* [Command Line Interface](/doc/Feb16/Runtime.md)
+* [Command Line Interface](Runtime.md)
 * [Schema](Schema.md)
 * [Data](Data.md)
 * [Grammar](Grammar.md)

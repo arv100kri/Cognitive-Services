@@ -1,7 +1,7 @@
 # Grammar
 The grammar is an XML file that specifies the weighted set of natural language queries that the service can interpret, as well as how these natural language queries are translated into semantic query expressions.  The grammar syntax is based on [SRGS](http://www.w3.org/TR/speech-grammar/), a W3C standard for speech recognition grammar, with extensions to support data index integration and semantic functions.
 
-The following describes each of the syntactic elements that can be used in a grammar.  See [example]() for a complete grammar that demonstrate the use of these elements in context.
+The following describes each of the syntactic elements that can be used in a grammar.  See [example](#Example) for a complete grammar that demonstrate the use of these elements in context.
 
 ### grammar Element 
 The `grammar` element is the top-level element in the grammar specification XML.  The required `root` attribute specifies the name of the root rule that defines the starting point of the grammar.
@@ -73,7 +73,7 @@ The `ruleref` element specifies valid expansions via references to another `rule
 ### attrref Element
 The `attrref` element references an index attribute, allowing matching against attribute values observed in the index.  The required `uri` attribute specifies the index schema name and attribute name using the syntax "*schemaName*#*attrName*".  There must be a preceding `import` element that imports the schema named *schemaName*.  The attribute name is the name of an attribute defined in the corresponding schema.
 
-In addition to matching user input, the `attrref` element also returns a structured query object as output that selects the subset of objects in the index matching the input value.  Use the optional `name` attribute to specify the name of the variable where the query object output should be stored.  The query object can be composed with other query objects to form more complex expressions.  See [Semantic Interpretation](SemanticInterpretation.md) for details.  
+In addition to matching user input, the `attrref` element also returns a structured query object as output that selects the subset of objects in the index matching the input value.  Use the optional `name` attribute to specify the name of the variable where the query object output should be stored.  The query object can be composed with other query objects to form more complex expressions.  See [Semantic Interpretation](Semantics.md) for details.  
 
 ```xml
 <attrref uri="academic#Keyword" name="keyword"/>
@@ -124,13 +124,14 @@ Each `rule` in the grammar has a predefined variable named "out", representing t
 
 Some statements may alter the probability of an interpretation path by introducing an additive log probability offset.  Some statements may reject the interpretation all together if specified conditions are not satisfied.
 
-For a list of supported semantic functions, see [Semantic Functions](SemanticFunctions.md).
+For a list of supported semantic functions, see [Semantic Functions](Semantics.md#Functions).
 
 ## Interpretation Probability
 The probability of an interpretation path through the grammar is the cumulative log probability of all the `<item>` elements and semantic functions encountered along the way.  It describes the relative likelihood of matching a particular input sequence.
 
 Given a probability *p* between 0 and 1, the corresponding log probability  can be computed as log(*p*), where log() is the the natural log function.  Using log probabilities allows the system to cumulate the joint probability of an interpretation path through simple addition.  It also avoids floating point underflow common to such joint probability calculations.  Note that by design, the log probability is always a negative floating point value or 0, where larger values indicate higher likelihood.
 
+<a name="Example"/>
 ## Example
 The following is an example XML from the academic publications domain that demonstrates the various elements of a grammar:
 

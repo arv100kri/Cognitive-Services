@@ -22,6 +22,7 @@ Below is a list of currently supported data types:
 |Guid|Globally unique identifier|"602DD052-CC47-4B23-A16A-26B52D30C05B"|
 |Query|Query expression that specifies a subset of data objects in the index|All()<br/>And(*q1*, *q2*)|
 
+<a name="Functions"/>
 ## Semantic Functions
 There is a built-in set of semantic functions.  They allow the construction of sophisticated queries and provide context sensitive control over grammar interpretations.
 
@@ -84,6 +85,7 @@ written in the 90s
 </tag>
 ```
 
+<a name="Composite"/>
 ### Composite Function
 `query = Composite(innerQuery);`
 
