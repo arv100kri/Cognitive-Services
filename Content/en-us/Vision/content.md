@@ -1,4 +1,8 @@
-
+<!--
+NavPath: Computer Vision API
+LinkLabel: Home
+Url: Computer-Vision-API/documentation
+-->
 
 #sample: Computer Vision API
 
