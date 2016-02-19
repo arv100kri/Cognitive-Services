@@ -8,12 +8,10 @@ Url: Sample-API/documentation
  
  
 Description
-## Table of Contents
-[Subtopic1](#Getting Started Guide)  
-[Subtopic2](#Sample Code)  
+
 ## <a name="Subtopic1">Getting Started</a>
-#### * Bullet point 1
-#### * Bullet point 2
+#### * Amazing Feature 1
+#### * Fabulous Feature 2
 Some text, see [Link](https://oxfordweb-staging.azurewebsites.net).
 #### * Get the client library and example
 
