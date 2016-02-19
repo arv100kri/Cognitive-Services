@@ -11,13 +11,13 @@ Description
 ## Table of Contents
 [Subtopic1](#Getting Started Guide)  
 [Subtopic2](#Sample Code)  
-## <a name="Subtopic1">SubTopic1</a>
+## <a name="Subtopic1">Getting Started</a>
 #### * Bullet point 1
 #### * Bullet point 2
 Some text, see [Link](https://oxfordweb-staging.azurewebsites.net).
 #### * Get the client library and example
 
-## <a name="Subtopic2">Subtopic2</a>
+## <a name="Subtopic2">Sample Code</a>
 1.	Regular text. 
 2.	**Bold text**.
 3.	Image:(End this with two spaces to ensure new line)  
