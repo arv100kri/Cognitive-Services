@@ -4,13 +4,13 @@ LinkLabel: Link to the page.
 Url: Sample-API/documentation
 -->
 
-# Page Topic
+# Welcome to Foo API Documentation
  
  
 Description
 ## Table of Contents
-[Subtopic1](#Subtopic1)  
-[Subtopic2](#Subtopic2)  
+[Subtopic1](#Getting Started Guide)  
+[Subtopic2](#Sample Code)  
 ## <a name="Subtopic1">SubTopic1</a>
 #### * Bullet point 1
 #### * Bullet point 2
