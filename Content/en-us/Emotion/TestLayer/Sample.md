@@ -1,6 +1,6 @@
 <!--
 NavPath: Emotion API/Samples
-LinkLabel: Good Sample
+LinkLabel: Bad Sample
 Url: Emotion-API/Samples/Good-Sample
 -->
 
