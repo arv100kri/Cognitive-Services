@@ -1,3 +1,9 @@
+<!--
+NavPath: KES
+LinkLabel: Structured Query Expression
+Url: KES/documentation/structured-query-expression
+-->
+
 # Structured Query Expression
 A structured query expression specifies a set of operations to evaluate against the data index.  It consists of attribute query expressions and higher-level functions.  Use the [*evaluate*](evaluate.md) method to compute the objects matching the expression.  The following is an example from the academic publications domain that returns publications authored by Jaime Teevan since the year 2013.
 
