@@ -14,7 +14,7 @@ See [Getting Started](Start.md) for a walkthrough of using KES to create an inte
 
 
 * [Web API Interface](WebAPI.md)
-* [interpret Request](interpret.md)
+* [interpret Request](interpret-method.md)
 * [evaluate Request](evaluate.md)
 * [calchistogram Request](calchistogram.md)
 * [Structured Query Expression](Expressions.md)
