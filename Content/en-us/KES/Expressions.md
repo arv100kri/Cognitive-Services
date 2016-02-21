@@ -9,7 +9,7 @@ A structured query expression specifies a set of operations to evaluate against 
 
 `And(Composite(Author.Name=='jaime teevan'),Y>=2013)`
 
-Structured query expressions may be obtained from [*interpret*](interpret.md) requests, where the semantic output of each interpretation is a structured query expression that returns the index objects matching the input natural language query.  Alternatively, they may be manually authored using the syntax described in this section.
+Structured query expressions may be obtained from [*interpret*](interpret-method.md) requests, where the semantic output of each interpretation is a structured query expression that returns the index objects matching the input natural language query.  Alternatively, they may be manually authored using the syntax described in this section.
 
 ## Attribute Query Expression
 An attribute query expression identifies a set of objects based on matching against a specific attribute.  Different matching operations are supported depending on the attribute type and indexed operation specified in the [schema](Schema.md):
