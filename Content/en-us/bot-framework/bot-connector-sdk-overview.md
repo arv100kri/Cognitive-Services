@@ -1,6 +1,6 @@
 <!-- 
 NavPath: Bot Framework/Bot Connector SDK
 LinkLabel: Bot Connector SDK Overview
-Url: bot-framework/documentation/bot-connector-overview
+Url: bot-framework/documentation/bot-connector-sdk-overview
 -->
 #Bot Connector SDK Overview
