@@ -2,6 +2,7 @@
 NavPath: Bot Framework/Bot Connector SDK
 LinkLabel: REST API Reference
 Url: bot-framework/documentation/bot-connector-rest-api-reference
+Weight: 80
 -->
 #Bot Connector SDK REST API Reference
 

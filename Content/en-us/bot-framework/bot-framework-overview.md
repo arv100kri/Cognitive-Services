@@ -2,6 +2,7 @@
 NavPath: Bot Framework
 LinkLabel: Bot Framework Overview
 Url: bot-framework/documentation/bot-framework-overview
+Weight: 100
 -->
 
 #Bot Framework Overview

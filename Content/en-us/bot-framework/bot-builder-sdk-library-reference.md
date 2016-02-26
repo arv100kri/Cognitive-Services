@@ -2,6 +2,7 @@
 NavPath: Bot Framework/Bot Builder SDK
 LinkLabel: Client Library Reference
 Url: bot-framework/documentation/bot-builder-sdk-library-reference
+Weight: 50
 -->
 #Bot Builder SDK Client Library Reference
 
