@@ -10,6 +10,7 @@ Weight: 40
 ##C# Samples
 * <a href="https://github.com/Microsoft/ProjectOxford-ClientSDK" target="_blank">Echobot</a>
 * <a href="https://github.com/Microsoft/ProjectOxford-ClientSDK" target="_blank">Cortanabot</a>
+* <a href="https://github.com/Microsoft/ProjectOxford-ClientSDK" target="_blank">PizzaBot</a>
 
 ##Node.js Samples
 * <a href="https://github.com/Microsoft/ProjectOxford-ClientSDK" target="_blank">Echobot</a>
