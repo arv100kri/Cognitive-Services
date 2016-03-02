@@ -120,12 +120,14 @@ Follow the instructions below to configure the client library:
 
 1. Locate the top-level build.gradle file of your project from the Project panel shown in the exapmle. Note that there are several other build.gradle files in your project tree, and you need to open the top-level build.gradle file at first. 		 
 2. Add mavenCentral() to your projects' repositories. You can also use jcenter(), which is the default repository of Android Studio, since jcenter() is a superset of mavenCentral().  
+
 		allprojects {
 		    repositories {
 		        ...
 		        mavenCentral()
 		    }
 		}
+
 3. Open build.gradle file in your 'app' project.
 4. Add a dependency for our client library stored in maven central repository
 
