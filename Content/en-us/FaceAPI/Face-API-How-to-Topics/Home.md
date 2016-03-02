@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Face API/Get Started with Face API
+LinkLabel: Overview
+Url: face-api/documentation/face-api-how-to-topics/overview
+Weight: 100
+-->
+
 This section of the documentation shows how to complete a particular programming task with Project Oxford Face API.
 
 ## In This Section
