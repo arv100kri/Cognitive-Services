@@ -199,10 +199,10 @@ For more details, please refer to the following guides:
 
 Person group is a collection of [Persons](#Person) and is the unit of [Identification](#Identification). A person group comes with a [Person Group ID](#Person-Group-ID), as well as other attributes such as [Name](#Name-Person-Group) and [User Data](#UserData-User-Data).
 
-For more details, please refer to the following guides:
-[Person Group - Create a Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244)
-[Person Group - Get a Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395246)
-[Person - List Persons in a PersonGroup](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395241)
+For more details, please refer to the following guides:  
+[Person Group - Create a Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244)  
+[Person Group - Get a Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395246)  
+[Person - List Persons in a PersonGroup](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395241)  
 
 ####<a name="Person-Group-ID">Person Group ID
 
