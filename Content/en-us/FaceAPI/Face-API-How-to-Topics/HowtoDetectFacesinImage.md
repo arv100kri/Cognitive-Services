@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Face API/How-to Topics
+LinkLabel: How to Detect Faces in Image
+Url: face-api/documentation/face-api-how-to-topics/how-to-detect-faces-in-image
+Weight: 50
+-->
+
 This guide will demonstrate how to detect faces from an image, with face attributes like gender, age, or pose extracted. The samples are written in C# using the Face API client library. 
 
 ## Table of Contents
