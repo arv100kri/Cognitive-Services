@@ -1,5 +1,5 @@
 <!-- 
-NavPath: Face API/Get Started with Face API
+NavPath: Face API/How-to Topics
 LinkLabel: Overview
 Url: face-api/documentation/face-api-how-to-topics/overview
 Weight: 100
