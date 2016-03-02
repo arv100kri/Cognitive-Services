@@ -34,7 +34,6 @@ In this step you will create a Windows application project to implement the basi
 ![GettingStartCSharpNewProject](../Images/getstarted-image002.png)
 5. Locate the Solution Explorer, right click your project (MyFirstApp in this case) and then click **Manage NuGet Packages**.
 6. In NuGet Package Manager window, select nuget.org as your Package Source, search for Newtonsoft.Json and install. 
-
 ![GettingStartCSharpPackageManager](../Images/json.png)
 7. Open MainWindow.xaml, and replace the existing code with the following code to create the window UI: 
 
@@ -87,20 +86,15 @@ Follow the instructions below to configure the client library:
 
 1. Locate the Solution Explorer, right click your project (MyFirstApp in this case) and then click Manage NuGet Packages. 
 2. In NuGet Package Manager window, select nuget.org as your Package Source, search for Microsoft.ProjectOxford.Face and install.
-
 ![GettingStartCSharpPackageManagerSDK](../Images/face.png)
 3. Check your project reference, Microsoft.ProjectOxford.Face will be automatically added after the installation succeed.
 ![GetStartedCSharp-CheckInstrallation.png](../Images/GetStartedCSharp-CheckInstallation.png)
 4. Open MainWindow.xaml.cs in your MyFirstApp project, add this using directive to the beginning of the file: 
-
         using Microsoft.ProjectOxford.Face; 
         using Microsoft.ProjectOxford.Face.Contract;   
-
 5. Insert the following code in the MainWindow class: 
-
         private readonly IFaceServiceClient faceServiceClient = new FaceServiceClient("_Your subscription key_"); 
-
-Please set the subscription key obtained from step 1.
+   Please set the subscription key obtained from step 1.
 6. Now you are ready to call the Face API from your application. 
 
 ## <a name="step4"></a>Step 4: Upload images to detect faces
