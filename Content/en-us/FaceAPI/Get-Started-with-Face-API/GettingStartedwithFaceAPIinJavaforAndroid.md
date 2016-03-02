@@ -37,7 +37,7 @@ In this step you will create an Android application project to implement the bas
 5. Select "Blank Activity" and then click Next.
 6. Name the activity as follows, and then click Finish. 
 ![GettingStartAndroidNewProject4](../Images/AndroidNewProject4.png)
-7. Open activity_main.xml, you should see the Layout Editor of this activity.		 
+7. Open activity_main.xml, you should see the Layout Editor of this activity.
 8. View Text source file and then edit the activity layout as follows:			 
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -62,17 +62,17 @@ In this step you will create an Android application project to implement the bas
     </RelativeLayout>  
 
 9. Open MainActivity.java, insert the following import directives at the beginning of the file:			 
-
-       import java.io.*; 
-       import android.app.*; 
-       import android.content.*; 
-       import android.net.*; 
-       import android.os.*; 
-       import android.view.*; 
-       import android.graphics.*; 
-       import android.widget.*; 
-       import android.provider.*;
-			
+```Java
+   import java.io.*; 
+   import android.app.*; 
+   import android.content.*; 
+   import android.net.*; 
+   import android.os.*; 
+   import android.view.*; 
+   import android.graphics.*; 
+   import android.widget.*; 
+   import android.provider.*;
+```  	
 Secondly, Modify the onCreate method of the MainActivity class for the 'Browse' button logic:
 
     private final int PICK_IMAGE = 1;
@@ -119,37 +119,36 @@ Face API is a cloud API which is invoked by HTTPS requests. For a more convenien
 Follow the instructions below to configure the client library: 
 
 1. Locate the top-level build.gradle file of your project from the Project panel shown in the exapmle. Note that there are several other build.gradle files in your project tree, and you need to open the top-level build.gradle file at first. 		 
-2. Add mavenCentral() to your projects' repositories. You can also use jcenter(), which is the default repository of Android Studio, since jcenter() is a superset of mavenCentral().
-
-    allprojects {
-        repositories {
-            ...
-            mavenCentral()
-        }
-    } 
-
-3. Open build.gradle file in your 'app' project. 	 
+2. Add mavenCentral() to your projects' repositories. You can also use jcenter(), which is the default repository of Android Studio, since jcenter() is a superset of mavenCentral().  
+	allprojects {  
+    		repositories {  
+        	...  
+        	mavenCentral()  
+    		}  
+	}  
+3. Open build.gradle file in your 'app' project.
 4. Add a dependency for our client library stored in maven central repository
 
-    dependencies {
-        ...
-        compile 'com.microsoft.projectoxford:face:1.0.0'
-    }
+	dependencies {
+	    ...
+	    compile 'com.microsoft.projectoxford:face:1.0.0'
+	}
 
 5. Open MainActivity.java in your 'app' project, insert the following import directives: 
-
-    import com.microsoft.projectoxford.face.*;
-    import com.microsoft.projectoxford.face.contract.*;
-
+	```java
+	import com.microsoft.projectoxford.face.*;
+	import com.microsoft.projectoxford.face.contract.*;
+	```
 And then insert the following code in the MainActivity class:
 
-    private FaceServiceClient faceServiceClient =
-                new FaceServiceRestClient("your subscription key");
+    private FaceServiceClient faceServiceClient =  
+                new FaceServiceRestClient("your subscription key");  
 
-Please set the subscription key obtained from step 1.
-6. Open AndroidManifest.xml of you 'app' project (in the directory of app/src/main). Insert the following element into the manifest element:			 
-
-    <uses-permission android:name="android.permission.INTERNET" />
+Please set the subscription key obtained from step 1.  
+6. Open AndroidManifest.xml of you 'app' project (in the directory of app/src/main). Insert the following element into the manifest element:  
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+```  
 
 7. Now you are ready to call the Face API from your application. 
 
