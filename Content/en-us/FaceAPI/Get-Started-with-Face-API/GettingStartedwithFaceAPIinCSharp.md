@@ -50,7 +50,6 @@ In this step you will create a Windows application project to implement the basi
     </Grid>    
 </Window>
 ```
-
 8. Open MainWindow.xaml.cs, and insert the following code inside the MainWindow class for the 'Browse' button: 
 ```csharp
 private void BrowseButton_Click(object sender, RoutedEventArgs e)
