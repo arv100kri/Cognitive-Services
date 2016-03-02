@@ -85,7 +85,7 @@ Face API is a cloud API which is invoked by HTTPS requests. For a more convenien
 Follow the instructions below to configure the client library: 
 
 1. Locate the Solution Explorer, right click your project (MyFirstApp in this case) and then click Manage NuGet Packages. 
-2. In NuGet Package Manager window, select nuget.org as your Package Source, search for Microsoft.ProjectOxford.Face and install.   ![GettingStartCSharpPackageManagerSDK](../Images/face.png)
+2. In NuGet Package Manager window, select nuget.org as your Package Source, search for Microsoft.ProjectOxford.Face and install.   ![GettingStartCSharpPackageManagerSDK](../Images/face.png)  
 3. Check your project reference, Microsoft.ProjectOxford.Face will be automatically added after the installation succeed.
 ![GetStartedCSharp-CheckInstrallation.png](../Images/GetStartedCSharp-CheckInstallation.png)
 4. Open MainWindow.xaml.cs in your MyFirstApp project, add this using directive to the beginning of the file: 
