@@ -1,13 +1,13 @@
 ## A
 
-#### Attributes
+####<a name="Attributes"></a>Attributes
 
 Attributes are optional in the [detection](#Detection-Face-Detection) results, such as [age](#Age-Attribute), [gender](#Gender-Attribute), [head pose](#Head-Pose-Attribute), [facial hair](#Facial-Hair-Attribute), [smiling](#Smile-Attribute).
 They can be obtained from the [detection](#Detection-Face-Detection) API by specifying the query parameters: returnFaceAttributes. Attributes give extra information regarding selected [faces](#Face); in addition to the [face ID](#Face-ID) and the [rectangle](#Face-Rectangle).
 
 For more details, please refer to the guide [Face - Detect](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236).
 
-#### Age (Attribute)
+####<a name="Age-Attribute"></a>Age (Attribute)
 
 Age is one of the [attributes](#Attributes) that describes the age of a particular face. The age attribute is optional in the [detection](#Detection-Face-Detection) results, and can be controlled with a [detection](#Detection-Face-Detection) request by specifying the returnFaceAttributes parameter.
 
@@ -31,7 +31,7 @@ For more details, please refer to the following guides: [Face - Find Similar](ht
 
 ## D
 
-####<a name="Detection-Face-Detection"></a> Detection/Face Detection
+####<a name="Detection-Face-Detection"></a>Detection/Face Detection
 
 Face detection is the action of locating faces in images. Users can upload an image or specify an image URL in the request. The detected faces are returned with [face IDs](#Face-ID)	indicating a unique identity in Face API. The rectangles indicate the face locations in the image in pixels, as well as the optional [attributes](#Attributes) for each face such as [age](#Age-Attribute), [gender](#Gender-Attribute), [head pose](#Head-Pose-Attribute), [facial hair](#Facial-Hair-Attribute) and [smiling](#Smile-Attribute).
 
@@ -41,7 +41,7 @@ For more details, please refer to the guide [Face - Detect](https://dev.projecto
 
 ## F
 
-#### Face
+####<a name="Fa'ce"></a>Face
 
 Face is a unified term for the results derived from Face API related with detected faces. Ultimately, face is represented by a unified identity ([Face ID](#Face-ID)), a specified region in images ([Face Rectangle](#Face-Rectangle)), and extra face related [attributes](#Face-Attributes-Facial-Attributes), such as [age](#Age-Attribute), [gender](#Gender-Attribute), [landmarks](#Face-Landmarks-Facial-Landmarks) and [head pose](#Head-Pose-Attribute). Additionally, faces can be returned from [detection](#Detection-Face-Detection).
 
@@ -57,7 +57,7 @@ For more details, please refer to the following guides: [Face API Overview](Face
 
 Please see [Attributes](#Attributes).
 
-#### Face ID
+####<a name="Face-ID"></a>Face ID
 
 Face ID is derived from the [detection](#Detection-Face-Detection) results, in which a string represents a [face](#Face) in [Face API](#Face-API).
 
@@ -71,13 +71,13 @@ For more details, please refer to the guide [Face - Detect](https://dev.projecto
 
 ![HowToDetectFace](./Images/landmarks.1.jpg)
 
-#### Face Rectangle
+####<a name="Face-Rectangle"></a>Face Rectangle
 
 Face rectangle is derived from the [detection](#Detection-Face-Detection) results, which is an upright rectangle (left, top, width, height) in images in pixels. The top-left corner of a [face](#Face) (left, top), besides the width and height, indicates face sizes in x and y axes respectively.
 
 For more details, please refer to the guide [Face - Detect](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236).
 
-#### Facial Hair (Attribute)
+####<a name="Facial-Hair-Attribute"></a>Facial Hair (Attribute)
 
 Facial hair is one of the [attributes](#Attributes) used to describe the facial hair length of the available faces. The facial hair attribute is optional in the [detection](#Detection-Face-Detection) results, and can be controlled with a [detection](#Detection-Face-Detection) request by returnFaceAttributes. If returnfaceAttributes contains 'facialHair', the returned faces will have facial hair attributes.
 
@@ -91,7 +91,7 @@ For more details, please refer to the guide [Face - Find Similar Faces](https://
 
 ## G
 
-#### Gender (Attribute)
+####<a name="Gender-Attribute"></a>Gender (Attribute)
 
 Gender is one of the [attributes](#Attributes) used to describe the genders of the available faces. The gender attribute is optional in the [detection](#Detection-Face-Detection) results, and can be controlled with a [detection](#Detection-Face-Detection) request by returnFaceAttributes. If returnfaceAttributes contains 'gender', the returned faces will have gender attributes.
 
@@ -111,7 +111,7 @@ For more details, please refer to the guide [Face - Group](https://dev.projectox
 
 ## H
 
-#### Head Pose (Attribute)
+####<a name="Head-Pose-Attribute"></a>Head Pose (Attribute)
 
 Head pose is one of the [attributes](#Attributes) that represents face orientation in 3D space according to roll, pitch and yaw angles, as shown in following figure. The value ranges of roll and yaw are [-180, 180] and [-90, 90] in degrees. In the current version, the pitch value returned from detection is always 0. The head pose attribute is optional in the [detection](#Detection-Face-Detection) results, and can be controlled with a [detection](#Detection-Face-Detection) request by the returnFaceAttributes parameter. If returnFaceAttributes parameter contains 'headPose', the returned faces will have head pose attributes.
 
@@ -236,7 +236,7 @@ Please see [face rectangle](#Face-Rectangle).
 
 ## S
 
-#### Smile (Attribute)
+####<a name="Smile-Attribute"></a>Smile (Attribute)
 
 Smile is one of the [attributes](#Attributes) used to describe the smile expression of the available faces. The smile attribute is optional in the [detection](#Detection-Face-Detection) results, and can be controlled with a [detection](#Detection-Face-Detection) request by returnFaceAttributes. If returnfaceAttributes contains 'smile', the returned faces will have smile attributes.
 
