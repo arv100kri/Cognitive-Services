@@ -127,11 +127,11 @@ Identification is to identify one or more faces from a person group. A [person g
 
 **Please Note:** the person group should be trained successfully before identification. If the person group is not trained, or the training [status](#Status-Train) is not shown as 'succeeded' (i.e. 'running', 'failed', or 'timeout'), the request response is 400.
 
-For more details, please refer to the following guides:
-[Face - Identify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)
-[Person - Create a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523c)
-[Person Group - Create a Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244)
-[Person Group - Train Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395249)
+For more details, please refer to the following guides:  
+[Face - Identify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)  
+[Person - Create a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523c)  
+[Person Group - Create a Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244)  
+[Person Group - Train Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395249)  
 
 ####<a name="Is-Identical"></a>IsIdentical
 
@@ -163,16 +163,16 @@ For more details, please refer to the guide [Face - Group](https://dev.projectox
 
 Name is a user friendly descriptive string for [Person](#Person). Unlike the [Person ID](#Person-ID), the name of people can be duplicated within a group.
 
-For more details, please refer to the following guides:
-[Person - Create a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523c)
+For more details, please refer to the following guides:  
+[Person - Create a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523c)  
 [Person - Get a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523f)
 
-#### Name (Person Group)
+####<a name="Name-Person-Group"></a>Name (Person Group)
 
 Name is also a user friendly descriptive string for [Person Group](#Person-Group). Unlike the [Person Group ID](#Person-Group-ID), the name of person groups can be duplicated within a subscription.
 
-For more details, please refer to the following guides:
-[Person Group - Create a Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244)
+For more details, please refer to the following guides:  
+[Person Group - Create a Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244)  
 [Person Group - Get a Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395246)
 
 ## O
@@ -183,16 +183,16 @@ For more details, please refer to the following guides:
 
 Person is a data structure managed in Face API. Person comes with a [Person ID](#Person-ID), as well as other attributes such as [Name](#Name-Person-Group), a collection of [Face IDs](#Face-ID), and [User Data](#UserData-User-Data).
 
-For more details, please refer to the following guides:
-[Person - Create a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523c)
+For more details, please refer to the following guides:  
+[Person - Create a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523c)  
 [Person - Get a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523f)
 
 ####<a name="Person-ID"></a>Person ID
 
 Person ID is generated when a [person](#Person) is created successfully. A string is created to represent this person in [Face API](#Face-API).
 
-For more details, please refer to the following guides:
-[Person - Create a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523c)
+For more details, please refer to the following guides:  
+[Person - Create a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523c)  
 [Person - Get a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523f)
 
 ####<a name="Person-Group"></a>Person Group
@@ -208,8 +208,8 @@ For more details, please refer to the following guides:
 
 Person group ID is a user provided string used as an identifier of a [person group](#Person-Group). The group ID must be unique within the subscription.
 
-For more details, please refer to the following guides:
-[PersonGroup - Create a PersonGroup](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244)
+For more details, please refer to the following guides:  
+[PersonGroup - Create a PersonGroup](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244)  
 [PersonGroup - Get a PersonGroup](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395246)
 
 #### Pose (Attribute)
@@ -224,10 +224,10 @@ Please see [Head Pose](#Head-Pose-Attribute).
 
 Recognition is a popular application area for face technologies, such as [Find Similar Faces](#Find-Similar-Faces), [Grouping](#Grouping), [Identify](#Identification),[verifying two faces same or not](#Verification).
 
-For more details, please refer to the following guides:
-[Face - Find Similar Faces](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237)
-[Face - Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395238)
-[Face - Identify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)
+For more details, please refer to the following guides:  
+[Face - Find Similar Faces](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237)  
+[Face - Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395238)  
+[Face - Identify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)  
 [Face - Verify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523a)
 
 #### Rectangle (Face)
@@ -270,10 +270,10 @@ For more details, please refer to the following guides: [Person Group - Train Pe
 
 User data is extra information associated with [person](#Person) and [person group](#Person-Group). User data is set by users to make data easier to use, understand and remember.
 
-For more details, please refer to the following guides:
-[Person - Create a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523c)
-[Person Group - Create a Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244)
-[Person - Update a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395242)
+For more details, please refer to the following guides:  
+[Person - Create a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523c)  
+[Person Group - Create a Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244)  
+[Person - Update a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395242)  
 [Person Group - Update a Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524a)
 
 ## V
