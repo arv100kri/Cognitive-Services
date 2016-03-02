@@ -120,24 +120,24 @@ Follow the instructions below to configure the client library:
 
 1. Locate the top-level build.gradle file of your project from the Project panel shown in the exapmle. Note that there are several other build.gradle files in your project tree, and you need to open the top-level build.gradle file at first. 		 
 2. Add mavenCentral() to your projects' repositories. You can also use jcenter(), which is the default repository of Android Studio, since jcenter() is a superset of mavenCentral().  
-	allprojects {  
-    			repositories {  
-        		...  
-        		mavenCentral()  
-    			}  
-	}  
+		allprojects {
+		    repositories {
+		        ...
+		        mavenCentral()
+		    }
+		}
 3. Open build.gradle file in your 'app' project.
 4. Add a dependency for our client library stored in maven central repository
 
-	dependencies {  
-	    ...  
-	    compile 'com.microsoft.projectoxford:face:1.0.0'  
-	}  
+		dependencies {  
+		    ...  
+		    compile 'com.microsoft.projectoxford:face:1.0.0'  
+		}  
 
 5. Open MainActivity.java in your 'app' project, insert the following import directives: 
 	
-	import com.microsoft.projectoxford.face.*;  
-	import com.microsoft.projectoxford.face.contract.*;  
+		import com.microsoft.projectoxford.face.\*;  
+		import com.microsoft.projectoxford.face.contract.\*;  
 	
    And then insert the following code in the MainActivity class:
 
@@ -146,7 +146,9 @@ Follow the instructions below to configure the client library:
 
    Please set the subscription key obtained from step 1.  
 6. Open AndroidManifest.xml of you 'app' project (in the directory of app/src/main). Insert the following element into the manifest element:  
-<uses-permission android:name="android.permission.INTERNET" />  
+
+		<uses-permission android:name="android.permission.INTERNET" />  
+
 7. Now you are ready to call the Face API from your application. 
 
 ## <a name="step4"></a>Step 4: Upload images to detect faces
