@@ -17,13 +17,13 @@ For more details, please refer to the guide [Face - Detect](https://dev.projecto
 
 ## C
 
-#### Candidate
+####<a name="Candidate"></a>Candidate
 
 Candidates are essentially [identification](#Identification) results (e.g. identified persons and level of confidence in detections). A candidate is represented by the [personID](#Person-ID) and[confidence](#Confidence), indicating that the person is identified with a high level of confidence.
 
 For more details, please refer to the guide [Face - Identify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239).
 
-#### Confidence
+####<a name="Confidence"></a>Confidence
 
 Confidence is a measurement revealing the similarity between [faces](#Face) or [people](#Person) in numerical values –which is used in [identification](#Identification), and [verification](#Verification) to indicate the similarities of searched, identified and verified results.
 
@@ -47,13 +47,13 @@ Face is a unified term for the results derived from Face API related with detect
 
 For more details, please refer to the guide [Face - Detect](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236).
 
-#### Face API
+####<a name="Face-API">Face API
 
 Face API is a cloud-based API that provides the most advanced algorithms for face detection and recognition. The main functionality of Face API can be divided into two categories: face [detection](#Detection-Face-Detection) with [attributes](#Face-Attributes-Facial-Attributes), and face [recognition](#Recognition).
 
 For more details, please refer to the following guides: [Face API Overview](Face%20API.md), [Face - Detect](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), [Face - Find Similar Faces](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237), [Face - Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395238), [Face - Identify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239), [Face - Verify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523a)
 
-#### Face Attributes/Facial Attributes
+####<a name="Face-Attributes-Facial-Attributes"></a>Face Attributes/Facial Attributes
 
 Please see [Attributes](#Attributes).
 
@@ -63,7 +63,7 @@ Face ID is derived from the [detection](#Detection-Face-Detection) results, in w
 
 For more details, please refer to the guide [Face - Detect](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236).
 
-#### Face Landmarks/Facial Landmarks
+####<a name="Face-Landmarks-Facial-Landmarks"></a>Face Landmarks/Facial Landmarks
 
 Landmarks are optional in the [detection](#Detection) results; which are semantic facial points, such as the eyes, nose and mouth (illustrated in following figure). Landmarks can be controlled with a [detection](#Detection-Face-Detection) request by the Boolean number returnFaceLandmarks. If returnFaceLandmarks is set as true, the returned faces will have landmark attributes.
 
@@ -83,7 +83,7 @@ Facial hair is one of the [attributes](#Attributes) used to describe the facial 
 
 For more details, please refer to the guide [Face - Detect](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236).
 
-#### Find Similar Faces
+####<a name="Find-Similar-Faces"></a>Find Similar Faces
 
 This API is used to search/query similar faces based on a collection of faces. Query faces and face collections are represented as [face IDs](#Face-ID) in the request. Returned results are searched similar faces, represented by [face IDs](#Face-ID).
 
@@ -97,13 +97,13 @@ Gender is one of the [attributes](#Attributes) used to describe the genders of t
 
 For more details, please refer to the guide [Face - Detect](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236).
 
-#### Grouping
+####<a name="Grouping"></a>Grouping
 
 Face grouping is the grouping of a collection of faces according to facial similarities. Face collections are indicated by the face ID collections in the request. As a result of grouping, similar faces are grouped together as [groups](#Groups), and faces that are not similar to any other face are merged together as a messy group. There is at the most, one [messy group](#Messy-Group) in the grouping result.
 
 For more details, please refer to the guide [Face - Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395238).
 
-#### Groups
+####<a name="Groups"></a>Groups
 
 Groups are derived from the [grouping](#Grouping) results. Each group contains a collection of similar faces, where faces are indicated by [face IDs](#Face-ID).
 
@@ -121,7 +121,7 @@ For more details, please refer to the guide [Face - Detect](https://dev.projecto
 
 ## I
 
-#### Identification
+####<a name="Identification"></a>Identification
 
 Identification is to identify one or more faces from a person group. A [person group](#Person-Group) is a collection of [persons](#Person). Faces and the person group are represented by [face IDs](#Face-ID) and [person group IDs](#Person-Group-ID) respectively in the request. Identified results are [candidates](#Candidate), represented by [persons](#Person) with confidence. Multiple faces in the input are considered separately, and each face will have its own identified result.
 
@@ -133,7 +133,7 @@ For more details, please refer to the following guides:
 [Person Group - Create a Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395244)
 [Person Group - Train Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395249)
 
-#### IsIdentical
+####<a name="Is-Identical"></a>IsIdentical
 
 IsIdentical is a Boolean field of [verification](#Verification) results indicating whether two faces belong to the same person.
 
@@ -151,7 +151,7 @@ Please see [face landmarks](#Face-Landmarks-Facial-Landmarks).
 
 ## M
 
-#### Messy group
+####<a name="Messy-group"></a>Messy group
 
 Messy group is derived from the [grouping](#Grouping) results; which contains faces not similar to any other face. Each face in a messy group is indicated by the [face ID](#Face-ID).
 
@@ -179,7 +179,7 @@ For more details, please refer to the following guides:
 
 ## P
 
-#### Person
+####<a name="Person"></a>Person
 
 Person is a data structure managed in Face API. Person comes with a [Person ID](#Person-ID), as well as other attributes such as [Name](#Name-Person-Group), a collection of [Face IDs](#Face-ID), and [User Data](#UserData-User-Data).
 
@@ -187,7 +187,7 @@ For more details, please refer to the following guides:
 [Person - Create a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523c)
 [Person - Get a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523f)
 
-#### Person ID
+####<a name="Person-ID"></a>Person ID
 
 Person ID is generated when a [person](#Person) is created successfully. A string is created to represent this person in [Face API](#Face-API).
 
@@ -195,7 +195,7 @@ For more details, please refer to the following guides:
 [Person - Create a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523c)
 [Person - Get a Person](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523f)
 
-#### Person Group
+####<a name="Person-Group"></a>Person Group
 
 Person group is a collection of [Persons](#Person) and is the unit of [Identification](#Identification). A person group comes with a [Person Group ID](#Person-Group-ID), as well as other attributes such as [Name](#Name-Person-Group) and [User Data](#UserData-User-Data).
 
@@ -204,7 +204,7 @@ For more details, please refer to the following guides:
 [Person Group - Get a Person Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395246)
 [Person - List Persons in a PersonGroup](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395241)
 
-#### Person Group ID
+####<a name="Person-Group-ID">Person Group ID
 
 Person group ID is a user provided string used as an identifier of a [person group](#Person-Group). The group ID must be unique within the subscription.
 
@@ -220,7 +220,7 @@ Please see [Head Pose](#Head-Pose-Attribute).
 
 ## R
 
-#### Recognition
+####<a name="Recognition"></a>Recognition
 
 Recognition is a popular application area for face technologies, such as [Find Similar Faces](#Find-Similar-Faces), [Grouping](#Grouping), [Identify](#Identification),[verifying two faces same or not](#Verification).
 
@@ -246,7 +246,7 @@ For more details, please refer to the guide [Face - Detect](https://dev.projecto
 
 Please see [Find Similar Faces](#Find-Similar-Faces).
 
-#### Status (Train)
+####<a name="Status-Train"></a>Status (Train)
 
 Status is a string used to describe the procedure for [Training Person Groups](#Train-Person-Group), including 'notstarted', 'running', 'succeeded', 'failed'.
 
@@ -258,7 +258,7 @@ Subscription key is a string that you need to specify as a query string paramete
 
 ## T
 
-#### Train (Person Group)
+####<a name="Train-Person-Group"></a>Train (Person Group)
 
 This API is used to train a particular model for a specified [person group](#Person-Group) to facilitate identification. If the training is not operated, or the [Training Status](#Status-Train) is not shown as succeeded, the identification for this person group will result in failure.
 
@@ -266,7 +266,7 @@ For more details, please refer to the following guides: [Person Group - Train Pe
 
 ## U
 
-#### UserData/User Data
+####<a name="UserData-User-Data"></a>UserData/User Data
 
 User data is extra information associated with [person](#Person) and [person group](#Person-Group). User data is set by users to make data easier to use, understand and remember.
 
@@ -278,7 +278,7 @@ For more details, please refer to the following guides:
 
 ## V
 
-#### Verification
+####<a name="Verification"></a>Verification
 
 This API is used to verify whether two faces are the same or not. Both faces are represented as face IDs in the request. Verified results contain a Boolean field ([isIdentical](#Is-Identical)) indicating same if true and a number field ([confidence](#Confidence)) indicating the level of confidence.
 
