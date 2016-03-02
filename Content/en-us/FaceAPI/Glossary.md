@@ -19,7 +19,7 @@ For more details, please refer to the guide [Face - Detect](https://dev.projecto
 
 ####<a name="Candidate"></a>Candidate
 
-Candidates are essentially [identification](#Identification) results (e.g. identified persons and level of confidence in detections). A candidate is represented by the [personID](#Person-ID) and[confidence](#Confidence), indicating that the person is identified with a high level of confidence.
+Candidates are essentially [identification](#Identification) results (e.g. identified persons and level of confidence in detections). A candidate is represented by the [personID](#Person-ID) and [confidence](#Confidence), indicating that the person is identified with a high level of confidence.
 
 For more details, please refer to the guide [Face - Identify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239).
 
@@ -47,11 +47,11 @@ Face is a unified term for the results derived from Face API related with detect
 
 For more details, please refer to the guide [Face - Detect](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236).
 
-####<a name="Face-API">Face API
+####<a name="Face-API"></a>Face API
 
 Face API is a cloud-based API that provides the most advanced algorithms for face detection and recognition. The main functionality of Face API can be divided into two categories: face [detection](#Detection-Face-Detection) with [attributes](#Face-Attributes-Facial-Attributes), and face [recognition](#Recognition).
 
-For more details, please refer to the following guides: [Face API Overview](Face%20API.md), [Face - Detect](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), [Face - Find Similar Faces](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237), [Face - Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395238), [Face - Identify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239), [Face - Verify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523a)
+For more details, please refer to the following guides: [Face API Overview](home.md), [Face - Detect](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), [Face - Find Similar Faces](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237), [Face - Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395238), [Face - Identify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239), [Face - Verify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523a)
 
 ####<a name="Face-Attributes-Facial-Attributes"></a>Face Attributes/Facial Attributes
 
