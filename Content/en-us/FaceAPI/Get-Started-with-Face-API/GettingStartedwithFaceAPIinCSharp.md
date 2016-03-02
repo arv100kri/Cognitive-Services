@@ -34,6 +34,7 @@ In this step you will create a Windows application project to implement the basi
 ![GettingStartCSharpNewProject](../Images/getstarted-image002.png)
 5. Locate the Solution Explorer, right click your project (MyFirstApp in this case) and then click **Manage NuGet Packages**.
 6. In NuGet Package Manager window, select nuget.org as your Package Source, search for Newtonsoft.Json and install. 
+
 ![GettingStartCSharpPackageManager](../Images/json.png)
 7. Open MainWindow.xaml, and replace the existing code with the following code to create the window UI: 
 
@@ -86,6 +87,7 @@ Follow the instructions below to configure the client library:
 
 1. Locate the Solution Explorer, right click your project (MyFirstApp in this case) and then click Manage NuGet Packages. 
 2. In NuGet Package Manager window, select nuget.org as your Package Source, search for Microsoft.ProjectOxford.Face and install.
+
 ![GettingStartCSharpPackageManagerSDK](../Images/face.png)
 3. Check your project reference, Microsoft.ProjectOxford.Face will be automatically added after the installation succeed.
 ![GetStartedCSharp-CheckInstrallation.png](../Images/GetStartedCSharp-CheckInstallation.png)
