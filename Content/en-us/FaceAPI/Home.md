@@ -81,12 +81,12 @@ Existing Person Group and Person data which has been setup with Project Oxford F
 
 To quickly go through the Face API basic functionalities and subscriptions processes, please refer to our get started tutorials.
 
-- [Getting Started with Face API in CSharp](GettingStartedwithFaceAPIinCSharp.md)
-- [Getting Started with Face API in Java for Android](GettingStartedwithFaceAPIinJavaforAndroid.md)
+- [Getting Started with Face API in CSharp](Get-Started-with-Face-API/GettingStartedwithFaceAPIinCSharp.md)
+- [Getting Started with Face API in Java for Android](Get-Started-with-Face-API/GettingStartedwithFaceAPIinJavaforAndroid.md)
 
 ## Related Topics
 
 ### 
 
-- [How to Detect Faces in Image](HowtoDetectFacesinImage.md)
-- [How to Identify Faces in Image](HowtoIdentifyFacesinImage.md)
+- [How to Detect Faces in Image](Face-API-How-to-Topics/HowtoDetectFacesinImage.md)
+- [How to Identify Faces in Image](Face-API-How-to-Topics/HowtoIdentifyFacesinImage.md)
