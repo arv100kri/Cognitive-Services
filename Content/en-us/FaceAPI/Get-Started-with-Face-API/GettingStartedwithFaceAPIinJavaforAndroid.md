@@ -145,11 +145,9 @@ Follow the instructions below to configure the client library:
 	                new FaceServiceRestClient("your subscription key");  
 
    Please set the subscription key obtained from step 1.  
-5. Open AndroidManifest.xml of you 'app' project (in the directory of app/src/main). Insert the following element into the manifest element:  
-
-	<uses-permission android:name="android.permission.INTERNET" />  
-	
-5. Now you are ready to call the Face API from your application. 
+6. Open AndroidManifest.xml of you 'app' project (in the directory of app/src/main). Insert the following element into the manifest element:  
+<uses-permission android:name="android.permission.INTERNET" />  
+7. Now you are ready to call the Face API from your application. 
 
 ## <a name="step4"></a>Step 4: Upload images to detect faces
 
