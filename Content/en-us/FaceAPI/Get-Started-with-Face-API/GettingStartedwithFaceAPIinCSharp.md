@@ -34,7 +34,9 @@ In this step you will create a Windows application project to implement the basi
 ![GettingStartCSharpNewProject](../Images/getstarted-image002.png)
 5. Locate the Solution Explorer, right click your project (MyFirstApp in this case) and then click **Manage NuGet Packages**.
 6. In NuGet Package Manager window, select nuget.org as your Package Source, search for Newtonsoft.Json and install. 
+
 ![GettingStartCSharpPackageManager](../Images/json.png)
+
 7. Open MainWindow.xaml, and replace the existing code with the following code to create the window UI: 
 
         <Window x:Class="MyFirstApp.MainWindow"
@@ -50,32 +52,32 @@ In this step you will create a Windows application project to implement the basi
         </Window>
 
 8. Open MainWindow.xaml.cs, and insert the following code inside the MainWindow class for the 'Browse' button: 
-```csharp
-private void BrowseButton_Click(object sender, RoutedEventArgs e)
-{
-    var openDlg = new Microsoft.Win32.OpenFileDialog();
+        
+        private void BrowseButton_Click(object sender, RoutedEventArgs e)
+        {
+            var openDlg = new Microsoft.Win32.OpenFileDialog();
+        
+            openDlg.Filter = "JPEG Image(*.jpg)|*.jpg";
+            bool? result = openDlg.ShowDialog(this);
+        
+            if (!(bool)result)
+            {
+                return;
+            }
+        
+            string filePath = openDlg.FileName;
+        
+            Uri fileUri = new Uri(filePath);
+            BitmapImage bitmapSource = new BitmapImage();
+        
+            bitmapSource.BeginInit();
+            bitmapSource.CacheOption = BitmapCacheOption.None;
+            bitmapSource.UriSource = fileUri;
+            bitmapSource.EndInit();
+        
+            FacePhoto.Source = bitmapSource;
+        }
 
-    openDlg.Filter = "JPEG Image(*.jpg)|*.jpg";
-    bool? result = openDlg.ShowDialog(this);
-
-    if (!(bool)result)
-    {
-        return;
-    }
-
-    string filePath = openDlg.FileName;
-
-    Uri fileUri = new Uri(filePath);
-    BitmapImage bitmapSource = new BitmapImage();
-
-    bitmapSource.BeginInit();
-    bitmapSource.CacheOption = BitmapCacheOption.None;
-    bitmapSource.UriSource = fileUri;
-    bitmapSource.EndInit();
-
-    FacePhoto.Source = bitmapSource;
-}
-```
 Now your app can browse for a photo and display it in the window similar to the image below: 
 ![GettingStartCSharpUI](../Images/GetStartedCSharp-UI.PNG)
 
@@ -86,23 +88,18 @@ Follow the instructions below to configure the client library:
 
 1. Locate the Solution Explorer, right click your project (MyFirstApp in this case) and then click Manage NuGet Packages. 
 2. In NuGet Package Manager window, select nuget.org as your Package Source, search for Microsoft.ProjectOxford.Face and install.
-
 ![GettingStartCSharpPackageManagerSDK](../Images/face.png)
-
 3. Check your project reference, Microsoft.ProjectOxford.Face will be automatically added after the installation succeed.
-
 ![GetStartedCSharp-CheckInstrallation.png](../Images/GetStartedCSharp-CheckInstallation.png)
-
 4. Open MainWindow.xaml.cs in your MyFirstApp project, add this using directive to the beginning of the file: 
 
-```csharp
-using Microsoft.ProjectOxford.Face; 
-using Microsoft.ProjectOxford.Face.Contract;   
-```
+        using Microsoft.ProjectOxford.Face; 
+        using Microsoft.ProjectOxford.Face.Contract;   
+
 5. Insert the following code in the MainWindow class: 
-```csharp
-private readonly IFaceServiceClient faceServiceClient = new FaceServiceClient("_Your subscription key_"); 
-``` 
+
+        private readonly IFaceServiceClient faceServiceClient = new FaceServiceClient("_Your subscription key_"); 
+
 Please set the subscription key obtained from step 1.
 6. Now you are ready to call the Face API from your application. 
 
