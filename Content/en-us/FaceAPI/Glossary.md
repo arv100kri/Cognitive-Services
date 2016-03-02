@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Face API
+LinkLabel: Glossary
+Url: face-api/documentation/glossary
+Weight: 10
+-->
+
 ## A
 
 ####<a name="Attributes"></a>Attributes
