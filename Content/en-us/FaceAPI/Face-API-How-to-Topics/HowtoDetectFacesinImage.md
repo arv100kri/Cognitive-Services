@@ -13,7 +13,7 @@ This guide will demonstrate how to detect faces from an image, with face attribu
 
 ## <a name="concepts"></a> Concepts
 
-If you are not familiar with any of the following concepts in this guide, please refer to the definitions in our [Glossary](Glossary.md) at any time: 
+If you are not familiar with any of the following concepts in this guide, please refer to the definitions in our [Glossary](../Glossary.md) at any time: 
 
 - Face detection
 - Face landmarks
