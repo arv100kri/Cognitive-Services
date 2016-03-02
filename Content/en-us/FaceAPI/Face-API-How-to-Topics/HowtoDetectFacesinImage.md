@@ -86,7 +86,7 @@ Face landmarks are a series of specifically detailed points on a face; typically
 
 By default, there are 27 predefined landmark points. The following figure shows how all 27 points are defined:
 
-![HowToDetectFace](./Images/landmarks.1.jpg)
+![HowToDetectFace](../Images/landmarks.1.jpg)
 
 The points returned are in units of pixels, just like the face rectangular frame. Therefore making it easier to mark specific points of interest in the image. The following code demonstrates retrieving the locations of the nose and pupils:
 ```CSharp
