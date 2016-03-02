@@ -11,7 +11,6 @@ Welcome to the Microsoft Project Oxford Face API. Face API is a cloud-based API 
 
 ## Face Detection
 
-### 
 
 The Face API provides high precision face location detection that can detect up to 64 human faces in an image. Face detection can be done by uploading an entire JPEG file or by specifying a URL of an existing JPEG image on the web.
 
