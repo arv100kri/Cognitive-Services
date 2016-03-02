@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Face API
+LinkLabel: API Reference
+Url: face-api/documentation/api-reference
+Weight: 15
+-->
+
 The Project Oxford Face API is a cloud-based API that provides the most advanced algorithms for face detection and recognition. The reference document can be found in [Project Oxford Dev Portal](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236).
 
 Face APIs cover the following categories:
