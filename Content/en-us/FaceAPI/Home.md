@@ -22,8 +22,6 @@ For more details about face detection with attributes extraction, please refer t
 
 ## Face Recognition
 
-###
-
 In general, face recognition provides the functionalities of automatically identifying or verifying a person from a selection of detected faces. The Face API provides four recognition functionalities: face verification, similar face searching, automatic face grouping and person identification. Face recognition is widely used in security systems, celebrity recognition and photo tagging applications.
 
 ### Face Verification
