@@ -41,7 +41,7 @@ For more details, please refer to the guide [Face - Detect](https://dev.projecto
 
 ## F
 
-####<a name="Fa'ce"></a>Face
+####<a name="Face"></a>Face
 
 Face is a unified term for the results derived from Face API related with detected faces. Ultimately, face is represented by a unified identity ([Face ID](#Face-ID)), a specified region in images ([Face Rectangle](#Face-Rectangle)), and extra face related [attributes](#Face-Attributes-Facial-Attributes), such as [age](#Age-Attribute), [gender](#Gender-Attribute), [landmarks](#Face-Landmarks-Facial-Landmarks) and [head pose](#Head-Pose-Attribute). Additionally, faces can be returned from [detection](#Detection-Face-Detection).
 
