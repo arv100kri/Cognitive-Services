@@ -8,7 +8,7 @@ Welcome to the Microsoft Project Oxford Face API. Face API is a cloud-based API 
 
 The Face API provides high precision face location detection that can detect up to 64 human faces in an image. Face detection can be done by uploading an entire JPEG file or by specifying a URL of an existing JPEG image on the web.
 
-![Overview - Face Detection](/Image/Face/Overview%20-Face%20Detection.jpg)
+![Overview - Face Detection](./Images/Face.detection.jpg)
 
 The detected faces are returned with rectangles (left, top, width and height) indicating the location of faces in the image in pixels. Optionally, face detection can also extract a series of face related attributes from each face such as pose, gender and age.
 
@@ -46,7 +46,7 @@ Face API identification can identify people from a detected face. The people dat
 
 The following figure is an example of a person group named "MyFriends". Each group may have up to 1000 people defined. Meanwhile, each person can register one or more faces.
 
-![Overview - Person Group](/Image/Face/Overview%20-%20Person%20Group.jpg)
+![Overview - Person Group](./Images/person.group.clare.jpg)
 
 After a person group has been created and trained, identification can then be performed against the group and a new test face. If the face is identified as a person defined in the group, the person will be returned.
 
@@ -81,12 +81,12 @@ Existing Person Group and Person data which has been setup with Project Oxford F
 
 To quickly go through the Face API basic functionalities and subscriptions processes, please refer to our get started tutorials.
 
-- [Getting Started with Face API in CSharp](Getting%20Started%20with%20Face%20API%20in%20CSharp.md)
-- [Getting Started with Face API in Java for Android](Getting%20Started%20with%20Face%20API%20in%20Java%20for%20Android.md)
+- [Getting Started with Face API in CSharp](GettingStartedwithFaceAPIinCSharp.md)
+- [Getting Started with Face API in Java for Android](GettingStartedwithFaceAPIinJavaforAndroid.md)
 
 ## Related Topics
 
 ### 
 
-- [How to Detect Faces in Image](How%20to%20Detect%20Faces%20in%20Image.md)
-- [How to Identify Faces in Image](How%20to%20Identify%20Faces%20in%20Image.md)
+- [How to Detect Faces in Image](HowtoDetectFacesinImage.md)
+- [How to Identify Faces in Image](HowtoIdentifyFacesinImage.md)
