@@ -65,7 +65,7 @@ For more details, please refer to the guide [Face - Detect](https://dev.projecto
 
 ####<a name="Face-Landmarks-Facial-Landmarks"></a>Face Landmarks/Facial Landmarks
 
-Landmarks are optional in the [detection](#Detection) results; which are semantic facial points, such as the eyes, nose and mouth (illustrated in following figure). Landmarks can be controlled with a [detection](#Detection-Face-Detection) request by the Boolean number returnFaceLandmarks. If returnFaceLandmarks is set as true, the returned faces will have landmark attributes.
+Landmarks are optional in the [detection](#Detection-Face-Detection) results; which are semantic facial points, such as the eyes, nose and mouth (illustrated in following figure). Landmarks can be controlled with a [detection](#Detection-Face-Detection) request by the Boolean number returnFaceLandmarks. If returnFaceLandmarks is set as true, the returned faces will have landmark attributes.
 
 For more details, please refer to the guide [Face - Detect](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236).
 
@@ -125,7 +125,7 @@ For more details, please refer to the guide [Face - Detect](https://dev.projecto
 
 Identification is to identify one or more faces from a person group. A [person group](#Person-Group) is a collection of [persons](#Person). Faces and the person group are represented by [face IDs](#Face-ID) and [person group IDs](#Person-Group-ID) respectively in the request. Identified results are [candidates](#Candidate), represented by [persons](#Person) with confidence. Multiple faces in the input are considered separately, and each face will have its own identified result.
 
-**Please Note:** the person group should be trained successfully before identification. If the person group is not trained, or the training [status](#Status) is not shown as 'succeeded' (i.e. 'running', 'failed', or 'timeout'), the request response is 400.
+**Please Note:** the person group should be trained successfully before identification. If the person group is not trained, or the training [status](#Status-Train) is not shown as 'succeeded' (i.e. 'running', 'failed', or 'timeout'), the request response is 400.
 
 For more details, please refer to the following guides:
 [Face - Identify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239)
@@ -151,7 +151,7 @@ Please see [face landmarks](#Face-Landmarks-Facial-Landmarks).
 
 ## M
 
-####<a name="Messy-group"></a>Messy group
+####<a name="Messy-Group"></a>Messy group
 
 Messy group is derived from the [grouping](#Grouping) results; which contains faces not similar to any other face. Each face in a messy group is indicated by the [face ID](#Face-ID).
 
