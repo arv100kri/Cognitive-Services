@@ -144,7 +144,7 @@ Besides face landmarks, Face – Detect API can also analyze several other attri
 - Facila hair of the face
 - A 3D head pose
 
-These attributes are predicted by using statistical algorithms and may not always be 100% precise. However, they are still helpful when you want to classify faces by these attributes. For more information about each of the attributes, please refer to the [Glossary](Glossary.md).
+These attributes are predicted by using statistical algorithms and may not always be 100% precise. However, they are still helpful when you want to classify faces by these attributes. For more information about each of the attributes, please refer to the [Glossary](../Glossary.md).
 
 Below is a simple example of extracting face attributes during face detection:
 ```CSharp
