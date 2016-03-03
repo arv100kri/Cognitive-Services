@@ -11,10 +11,10 @@ Weight: 1
 
 Explore a basic Windows application that uses Emotion API to recognize the emotions expressed by the faces in an image. The below example lets you submit an image URL or a locally stored file. You can use this open source example as a template for building your own app for Windows using the Emotion API and WPF (Windows Presentation Foundation), a part of .NET Framework.
 ## Table of Contents
-[Prerequisites](#Prerequisites)
-[Step 1: Open the example](#Step1)
-[Step 2: Build the example](#Step2)
-[Step 3: Run the example](#Step3)
+[Prerequisites](#Prerequisites)  
+[Step 1: Open the example](#Step1)  
+[Step 2: Build the example](#Step2)  
+[Step 3: Run the example](#Step3)  
 [Review and Learn](#Review)  
 [Related Topics](#Related)
 ## <a name="Prerequisites">Prerequisites </a>
