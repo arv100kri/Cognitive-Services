@@ -24,7 +24,7 @@ This document does not provide you with any legal rights to intellectual propert
   * [Recognition failure](#RecFailure)
   * [Error responses](#ErrorResponse) 
 
-[4. Supported Locales and Voice Fonts](#SupLocales)
+[4. Supported Locales and Voice Fonts](#SupLocales)  
 [5. Troubleshooting and Support](#TrouNSupport)
  
 ## <a name="Introduction">1. Introduction</a>
