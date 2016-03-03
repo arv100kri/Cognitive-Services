@@ -15,6 +15,6 @@ Optical Character Recognition(OCR) Service reads text from images in machine-usa
     3. Artistic font styles; Small text size.
     4. Complex backgrounds; Shadows or glare over text; Perspective distortion; Oversized or dropped capital letters at the beginnings of words; Subscript, superscript, or strikethrough text.
 * On Photos where text is dominant, false positives come from partially recognized words.
-* On random photos (especially photos without any text) precision can vary a lot depending on type of images
+* On random photos (especially photos without any text) precision can vary a lot depending on type of images.
 
-![ocr-demo](./Image/ocr-demo.png)
+![ocr-demo](./Images/ocr-demo.png)
