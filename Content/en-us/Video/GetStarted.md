@@ -45,10 +45,10 @@ Explore a basic Windows application that uses Project Oxford Video API to stabil
 
 ## <a name="Review">Review summary</a>
 
-![Video code snippet](./Images/VideoCodesnippet.PNG)
+![Video code snippet](./Images/VideoCodesnippet.PNG)  
 Code snippets with suggestions on how to extend and and customize your video app, coming in the near future. Check back soon!   
 ## <a name="Related">Related topics</a>
-* [Emotion API](https://msdn.microsoft.com/library/mt622110.aspx)
-* [Face API](https://msdn.microsoft.com/library/mt481457.aspx)
-* [Computer Vision API](https://msdn.microsoft.com/library/mt634738.aspx)
+* [Emotion API](../Emotion)
+* [Face API](../FaceAPI)
+* [Computer Vision API](../ComputerVision)
 
