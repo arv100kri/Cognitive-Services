@@ -22,7 +22,7 @@ An array of events (within the JSON result). The outer array represents one inte
 
 ### Face Detection/Tracking
 
-This is derived from the video face detection and tracking results (this is different from the [Face API’s Face ID](./FaceAPI/Glossary.md#Face)). This is the index of a face. A given individual should have the same ID throughout the overall video. Due to limitations in the detection algorithm (e.g. occlusion) this cannot be guaranteed.
+This is derived from the video face detection and tracking results (this is different from the [Face API’s Face ID](../FaceAPI/Glossary.md#Face)). This is the index of a face. A given individual should have the same ID throughout the overall video. Due to limitations in the detection algorithm (e.g. occlusion) this cannot be guaranteed.
 
 ### Fragments
 
