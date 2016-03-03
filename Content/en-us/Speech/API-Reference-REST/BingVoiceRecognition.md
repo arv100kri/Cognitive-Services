@@ -116,10 +116,11 @@ The API response is returned in JSON format. The value of the “name” tag has
 #### <a name="Schema1">Schema 1</a>
 
 Schema Legend: 
-* < \.\.\. > means optional7
-* \[ \] represents a json array
-* \{ \} represents a json object
-* "\*" indicates that the object can be defined multiple times
+
+* < ... >  means optional7
+* "[ ]" represents a json array
+* { } represents a json object  
+* "*" indicates that the object can be defined multiple times
 
   
 ```
