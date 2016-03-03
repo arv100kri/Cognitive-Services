@@ -118,7 +118,7 @@ The API response is returned in JSON format. The value of the “name” tag has
 Schema Legend: 
 
 * < ... >  means optional7
-* "[ ]" represents a json array
+* \[ \] represents a json array
 * { } represents a json object  
 * "*" indicates that the object can be defined multiple times
 
