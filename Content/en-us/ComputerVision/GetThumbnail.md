@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Computer Vision API
+LinkLabel: Get Thumbnail
+Url: ComputerVision/documentation/GetThumbnail
+Weight: 90
+-->
+
 # Get Thumbnail
 
 Thumbnail is a small representation of the original image. Varied devices (Phone, tablets, PC) create a need for different UX layouts and thumbnail size needs. This service helps in solving this problem.
