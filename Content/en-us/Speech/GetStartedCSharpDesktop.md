@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Speech API
+LinkLabel: Get started with Speech Recognition and/or intent in C Sharp for .Net on Windows Desktop
+Url: Speech/documentation/GetStartedCSharpDesktop
+Weight: 100
+-->
+
 # Get started with Speech Recognition and/or intent in C Sharp for .Net on Windows Desktop
 
 In this tutorial, you will learn to create and develop a simple Windows application that invokes the Speech Recognition API to convert spoken audio to text by sending audio to Microsoft’s servers in the cloud. You have a choice of using a REST API or a client library. Using the REST API means getting only one reco result back with no partial results. Documentation for the REST API can be found [here](https://www.projectoxford.ai/doc/speech/REST/Recognition) and code samples [here](https://oxfordportal.blob.core.windows.net/speech/doc/recognition/Program.cs). Using the client library allows for real-time streaming, so as the audio is being sent or spoken to the server, partial recognition results are returned. The rest of this page describes use of the client library. 
