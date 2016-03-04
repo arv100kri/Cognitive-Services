@@ -1,9 +1,10 @@
 <!-- 
-NavPath: Emotion
+NavPath: Emotion API
 LinkLabel: API Reference
-Url: emotion/documentation/api-reference
-Weight: 20
+Url: Emotion/documentation/APIReference
+Weight: 15
 -->
+
 
 # API Reference
 
