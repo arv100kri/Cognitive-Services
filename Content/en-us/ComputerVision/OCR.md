@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Computer Vision API
+LinkLabel: OCR
+Url: ComputerVision/documentation/OCR
+Weight: 80
+-->
+
 # OCR
 
 
