@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Emotion API
+LinkLabel: How to Call Emotion API for Video
+Url: Emotion/documentation/HowtoCallEmotionForVideo
+Weight: 90
+-->
+
 # How to Call Emotion API for Video
 
 This guide demonstrates how to call Emotion API for Video. The samples are written in C# using the Emotion API for Video client library.
