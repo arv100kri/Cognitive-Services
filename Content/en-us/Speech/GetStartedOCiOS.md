@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Speech API
+LinkLabel: Get started with Speech Recognition and/or intent in Objective C on iOS
+Url: Speech/documentation/GetStartedOCiOS
+Weight: 60
+-->
+
 # Get started with Speech Recognition and/or intent in Objective C on iOS
 
 
