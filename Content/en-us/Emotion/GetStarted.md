@@ -2,7 +2,7 @@
 NavPath: Emotion API
 LinkLabel: Get Started with Emotion API in C#
 Url: Emotion-API/documentation/GetStarted
-Weight: 1
+Weight: 100
 -->
 
 # Get Started with Emotion API in C&#35;
