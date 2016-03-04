@@ -10,7 +10,7 @@ The current release provides three types of analysis:
 
 ## Getting Started
 
-1. Subscribe to the service [here](https://www.projectoxford.ai/Account/Login). TODO: update this link
+1. Subscribe to the service.
 2. Download the [SDK](https://www.projectoxford.ai/sdk).
 3. Run the SDK sample code. 
 4. Consult the [API Reference](https://dev.projectoxford.ai/docs/services) for further details, including code snippets in a variety of languages.
