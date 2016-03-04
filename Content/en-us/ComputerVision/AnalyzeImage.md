@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Computer Vision API
+LinkLabel: Analyze Image
+Url: ComputerVision/documentation/AnalyzeImage
+Weight: 100
+-->
+
 # Analyze an image
 
 For a hands on experience with any of the visual features, thumbnail generation, and OCR, please go to the  [interactive demo](https://www.projectoxford.ai/demo/vision). 
