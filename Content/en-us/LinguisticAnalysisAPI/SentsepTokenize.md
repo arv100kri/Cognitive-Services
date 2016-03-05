@@ -2,18 +2,18 @@
 
 ## Background and motivation
 
-Given a body of text, one of the first steps in analysis is to break it into sentences and tokens.
+Given a body of text, the first step of linguistic analysis is to break it into sentences and tokens.
 
 ### Sentence Separation
 
-On first glance, it seems that breaking text into sentences is simple: just find the end-of-sentence markers and split.
+On first glance, it seems that breaking text into sentences is simple: just find the end-of-sentence markers and break sentences there.
 However, these marks are often complicated and ambiguous.
 
 Consider the following example text:
 
 > What did you say?!? I didn't hear about the director's "new proposal." It's important to Mr. and Mrs. Smith.
 
-This naturally breaks into three sentences:
+This text contains three sentences:
 
 - What did you say?!?
 - I didn't hear about the director's "new proposal."
