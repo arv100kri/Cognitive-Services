@@ -1,5 +1,5 @@
 <!-- 
-NavPath: Speech API
+NavPath: Speech API/API Reference - REST
 LinkLabel: API Reference - REST
 Url: Speech/documentation/API-Reference-REST/Overview
 Weight: 20
