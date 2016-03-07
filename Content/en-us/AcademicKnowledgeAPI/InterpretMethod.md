@@ -1,3 +1,11 @@
+
+<!-- 
+NavPath: Academic Knowledge API
+LinkLabel: Interpret Method
+Url: AcademicKnowledge/documentation/InterpretMethod
+Weight: 95
+-->
+
 # Interpret Method
 
 The **interpret** REST API takes an end user query string (i.e., a query entered by a user of your application) and returns formatted interpretations of user intent based on the Academic Graph data and the Academic Grammar.
