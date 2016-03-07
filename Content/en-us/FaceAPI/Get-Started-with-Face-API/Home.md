@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Face API/Getting Started
 LinkLabel: Overview
-Url: face-api/documentation/face-api-getting-started/overview
+Url: face-api/documentation/Get-Started-with-Face-API/overview
 Weight: 100
 -->
 # Get Started with Face API
