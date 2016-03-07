@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Face API/Getting Started
 LinkLabel: Getting Started With Face API in CSharp
-Url: face-api/documentation/face-api-getting-started/getting-started-with-face-api-in-csharp
+Url: face-api/documentation/Get-Started-with-Face-API/getting-started-with-face-api-in-csharp
 Weight: 90
 -->
 # Getting Started with Face API in CSharp
