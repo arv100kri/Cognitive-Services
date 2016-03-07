@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Video API/How To
+LinkLabel: HowtoCallVideoAPIs
+Url: Video/documentation/How-To/HowtoCallVideoAPIs
+Weight: 40
+-->
+
 # How to Call Video APIs
 
 
