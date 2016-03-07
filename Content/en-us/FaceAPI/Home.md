@@ -2,10 +2,9 @@
 NavPath: Face API
 LinkLabel: Overview
 Url: face-api/documentation
-Weight: 20
+Weight: 100
 -->
-
-###
+# Face API
 
 Welcome to the Microsoft Project Oxford Face API. Face API is a cloud-based API that provides the most advanced algorithms for face detection and recognition. The main functionality of Face API can be divided into two categories: face detection with attributes extraction and face recognition.
 
@@ -26,25 +25,17 @@ In general, face recognition provides the functionalities of automatically ident
 
 ### Face Verification
 
-### 
-
 Face API verification can perform an authentication against two detected faces. For more details about face verification, please refer to the API [Face - Verify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523a).
 
 ### Similar Face Searching
-
-### 
 
 Face API can search for faces based on similarity. By providing one target detected face, and a set of unknown faces to search with, our service can return a small set of faces that look most similar to the target face. For more details about similar face searching, please refer to the API [Face - Find Similar](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237).
 
 ### Face Grouping
 
-### 
-
 Face API can automatically group detected faces based on similarity. This API takes one set of unknown faces, and then divides them into several groups. Each group is a disjointed proper subset of the original unknown face set, it will contain similar faces that can be considered as one person. For more details about face grouping, please refer to the API [Face - Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395238).
 
 ### Face Identification
-
-### 
 
 Face API identification can identify people from a detected face. The people database (defined as a person group) need to be defined in advance for accurate identification.
 
@@ -63,8 +54,6 @@ For more details about person identification, please refer to the API guides lis
 
 ## Changes
 
-###
-
 This document is targeting **Project Oxford Face V1.0** service. For user who has experiences on using Project Oxford Face V0, there are some major changes we would like you to know before switching from Project Oxford Face V0 to Project Oxford Face V1.0 service.
 
 * **API Signature**
@@ -81,16 +70,12 @@ Existing Person Group and Person data which has been setup with Project Oxford F
 
 ## Getting Started
 
-### 
-
 To quickly go through the Face API basic functionalities and subscriptions processes, please refer to our get started tutorials.
 
 - [Getting Started with Face API in CSharp](Get-Started-with-Face-API/GettingStartedwithFaceAPIinCSharp.md)
 - [Getting Started with Face API in Java for Android](Get-Started-with-Face-API/GettingStartedwithFaceAPIinJavaforAndroid.md)
 
 ## Related Topics
-
-### 
 
 - [How to Detect Faces in Image](Face-API-How-to-Topics/HowtoDetectFacesinImage.md)
 - [How to Identify Faces in Image](Face-API-How-to-Topics/HowtoIdentifyFacesinImage.md)

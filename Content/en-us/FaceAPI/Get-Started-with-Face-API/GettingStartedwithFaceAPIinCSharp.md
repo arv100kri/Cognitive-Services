@@ -1,12 +1,13 @@
 <!-- 
 NavPath: Face API/Getting Started
 LinkLabel: Getting Started With Face API in CSharp
-Url: face-api/documentation/face-api-getting-started/getting-started-with-face-api-in-csharp
+Url: face-api/documentation/get-started-with-face-api/GettingStartedwithFaceAPIinCSharp
 Weight: 90
 -->
+# Getting Started with Face API in CSharp
 
 In this tutorial, you will learn to create and develop a simple Windows application that invokes the Face API to detect faces in an image; essentially by framing the faces.
-###
+
 ![GettingStartCSharpScreenshot](../Images/GetStartedCSharp-Detected.PNG)
 
 ## Table of Contents

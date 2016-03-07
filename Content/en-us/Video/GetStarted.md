@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Video API
+LinkLabel: GetStarted
+Url: Video/documentation/GetStarted
+Weight: 95
+-->
+
 # Get Started with Video API in CSharp
 
 

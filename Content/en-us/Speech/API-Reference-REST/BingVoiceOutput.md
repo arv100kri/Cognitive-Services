@@ -1,5 +1,5 @@
 <!-- 
-NavPath: Speech API
+NavPath: Speech API/API Reference - REST
 LinkLabel: Microsoft Bing Voice Output API
 Url: Speech/documentation/API-Reference-REST/BingVoiceOutput
 Weight: 25

@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Academic Knowledge API
+LinkLabel: CalcHistogram Method
+Url: AcademicKnowledge/documentation/CalcHistogramMethod
+Weight: 80
+-->
+
 # CalcHistogram Method
 
 The **calchistogram** REST API is used to calculate the distribution of attribute values for a set of paper entities.          

@@ -1,3 +1,11 @@
+
+<!-- 
+NavPath: Academic Knowledge API
+LinkLabel: EntityAttributes
+Url: AcademicKnowledge/documentation/EntityAttributes
+Weight: 60
+-->
+
 # Entity Attributes
 
 Name	|Description	            |Type       | Operations
