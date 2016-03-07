@@ -5,6 +5,8 @@ Url: face-api/documentation/face-api-how-to-topics/overview
 Weight: 100
 -->
 
+# Face API How-to Topics
+
 This section of the documentation shows how to complete a particular programming task with Project Oxford Face API.
 
 ## In This Section
