@@ -13,9 +13,9 @@ The **interpret** REST API takes an end user query string (i.e., a query entered
 To provide an interactive experience, you can call this method repeatedly after each character entered by the user. In that case, you should set the **complete** parameter to 1 to enable auto-complete suggestions. If your application does not want auto-completion, you should set the **complete** parameter to 0.
 
 **REST endpoint:**
-```
-https://api.projectoxford.ai/academic/v1.0/interpret?
-```
+
+    https://api.projectoxford.ai/academic/v1.0/interpret?
+
 <br>
 
 ## Request Parameters
