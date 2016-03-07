@@ -4,6 +4,7 @@ LinkLabel: Glossary
 Url: face-api/documentation/glossary
 Weight: 10
 -->
+# Glossary
 
 ## A
 
