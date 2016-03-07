@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Academic Knowledge API
+LinkLabel: Evaluate Method
+Url: AcademicKnowledge/documentation/EvaluateMethod
+Weight: 90
+-->
+
 # Evaluate Method
 
 The **evaluate** REST API is used to return a set of academic entities based on a query expression.
