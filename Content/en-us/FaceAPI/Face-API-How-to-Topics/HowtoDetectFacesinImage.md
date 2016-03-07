@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Face API/How-to Topics
 LinkLabel: How to Detect Faces in Image
-Url: face-api/documentation/Face-API-How-to-Topics/howToDetectFacesInImage
+Url: face-api/documentation/face-api-how-to-topics/HowtoDetectFacesinImage
 Weight: 50
 -->
 # How to Detect Faces in Image
