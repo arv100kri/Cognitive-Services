@@ -4,6 +4,7 @@ LinkLabel: How to Identify Faces in Image
 Url: face-api/documentation/face-api-how-to-topics/how-to-identify-faces-in-image
 Weight: 40
 -->
+# How to Identify Faces in Image
 
 This guide will demonstrate how to identify unknown faces using person groups, which are created from known people in advance. The samples are written in C# using the Face API client library.
 
