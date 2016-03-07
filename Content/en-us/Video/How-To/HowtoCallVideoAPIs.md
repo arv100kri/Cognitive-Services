@@ -21,7 +21,7 @@ The samples are written in C# using the Video API client library.
 * [Summary](#summary)
   
 ## <a name="concepts">Concepts </a>
-If you are not familiar with any of the following concepts in this guide, please refer to the definitions in our [glossary](Glossary.md) at any time.
+If you are not familiar with any of the following concepts in this guide, please refer to the definitions in our [glossary](../Glossary.md) at any time.
 
 * Stabilization
 * Face Detection and Tracking
@@ -220,7 +220,7 @@ var motionDetection = JsonConvert.DeserializeObject<MotionDetectionResult>(motio
 ## <a name="summary">Summary</a>
 You have now learned about the functionalities of the Video API: how you can upload a video, check its status, retrieve a stabilized video, and retrieve face detection/tracking and motion detection metadata.
 
-For more information about API details, see the API reference guide “[Video API Reference](APIReference.md)”.
+For more information about API details, see the API reference guide “[Video API Reference](../APIReference.md)”.
  
 ---
 
