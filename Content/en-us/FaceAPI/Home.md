@@ -6,8 +6,6 @@ Weight: 20
 -->
 # Face API
 
-###
-
 Welcome to the Microsoft Project Oxford Face API. Face API is a cloud-based API that provides the most advanced algorithms for face detection and recognition. The main functionality of Face API can be divided into two categories: face detection with attributes extraction and face recognition.
 
 ## Face Detection
