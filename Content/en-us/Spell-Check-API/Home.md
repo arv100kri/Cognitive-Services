@@ -4,7 +4,7 @@ LinkLabel: Overview
 Url: AcademicKnowledge/documentation
 Weight: 100
 -->
-
+# Spell Check API
 
 Welcome to Spell Check API which performs contextual spell checking for any text and provides inline suggestions for misspelled words. 
 
