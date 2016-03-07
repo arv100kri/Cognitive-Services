@@ -4,6 +4,7 @@ LinkLabel: Overview
 Url: face-api/documentation/face-api-getting-started/overview
 Weight: 100
 -->
+# Get Started with Face API
 
 This section of the documentation helps you get started with Project Oxford Face API.
 
