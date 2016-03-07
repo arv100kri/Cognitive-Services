@@ -44,45 +44,30 @@ There are several such phrases: *I*, *a new hybrid automobile*, *Bluetooth*, and
 
 | Label | Description | Example |
 |-------|-------------|---------|
-|S	| Sentence or clause.|
-|SBAR	| Clause introduced by a (possibly|
-|empty)	| subordinating|
-|conjunction.|
-|SBARQ	| Direct question introduced|
-|by	| a wh-word or wh-phrase.|
-|SINV	| Inverted declarative sentence.|
-|SQ	| Inverted yes/no question,|
-|or	| main clause of a whquestion.|
-|ADJP	| Adjective Phrase.|
-|ADVP	| Adverb Phrase.|
-|CONJP	| Conjunction Phrase.|
-|FRAG	| Fragment.|
-|INTJ	| Interjection.|
-|LST	| List marker. Includes surrounding|
-|punctuation.|
-|NAC	| Not A Constituent; used|
-|within	| an NP.|
+|S	| Sentence or clause. |
+|SBAR	| Clause introduced by a (possibly empty) subordinating conjunction. |
+|SBARQ	| Direct question introduce by a wh-word or wh-phrase. |
+|SINV	| Inverted declarative sentence. |
+|SQ	| Inverted yes/no question, or main clause of a whquestion. |
+|ADJP	| Adjective Phrase. |
+|ADVP	| Adverb Phrase. |
+|CONJP	| Conjunction Phrase. |
+|FRAG	| Fragment. |
+|INTJ	| Interjection. |
+|LST	| List marker. Includes surrounding punctuation.|
+|NAC	| Not A Constituent; use within an NP.|
 |NP	| Noun Phrase.|
-|NX	| Used within certain complex|
-|NPs	| to mark the head.|
+|NX	| Used within certain complex NPs to mark the head.|
 |PP	| Prepositional Phrase.|
 |PRN	| Parenthetical.|
 |PRT	| Particle.|
-|QP	| Quantity Phrase (i.e.,|
-|complex	| measure/amount)|
-|within	| NP.|
+|QP	| Quantity Phrase (i.e., complex measure/amount) within NP.|
 |RRC	| Reduced Relative Clause.|
 |UCP	| Unlike Coordinated Phrase.|
 |VP	| Verb Phrase.|
-|WHADJP	| Wh-adjective Phrase, as in|
-|how	| hot.|
+|WHADJP	| Wh-adjective Phrase, as in how hot.|
 |WHADVP	| Wh-adverb Phrase.|
-|WHNP	| Wh-noun Phrase, e.g. who,|
-|which	| book, whose daughter ,|
-|none	| of which, or how many|
-|leopards.|
-|WHPP	| Wh-prepositional Phrase,|
-|e.g.,	| of which or by whose|
-|authority.|
-|X	| Unknown, uncertain, or unbracketable.|
+|WHNP	| Wh-noun Phrase, e.g. who, which book, whose daughter , none of which, or how many leopards.|
+|WHPP	| Wh-prepositional Phrase, e.g., of which or by whose authority.|
+|X	| Unknown, uncertain, or unbracketable.|
 
