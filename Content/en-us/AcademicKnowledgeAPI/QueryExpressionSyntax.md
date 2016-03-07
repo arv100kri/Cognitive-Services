@@ -1,3 +1,11 @@
+
+<!-- 
+NavPath: Academic Knowledge API
+LinkLabel: Query Expression Syntax
+Url: AcademicKnowledge/documentation/QueryExpressionSyntax
+Weight: 70
+-->
+
 # Query Expression Syntax
 
 We have seen that the response to an **interpret** request includes a query expression. The grammar that interpreted the user’s query created a query expression for each interpretation. A query expression can then be used to issue an **evaluate** request to retrieve entity search results.
