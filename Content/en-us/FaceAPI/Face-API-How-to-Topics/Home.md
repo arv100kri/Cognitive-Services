@@ -14,5 +14,5 @@ This section of the documentation shows how to complete a particular programming
 [How to Identify Faces in Image](HowtoIdentifyFacesinImage.md)
 
 ## Related Sections
-[Getting Started with Face API in CSharp](GettingStartedwithFaceAPIinCSharp.md)  
-[Getting Started with Face API in Java for Android](GettingStartedwithFaceAPIinJavaforAndroid.md)
+[Getting Started with Face API in CSharp](../Get-Started-with-Face-API/GettingStartedwithFaceAPIinCSharp.md)  
+[Getting Started with Face API in Java for Android](../Get-Started-with-Face-API/GettingStartedwithFaceAPIinJavaforAndroid.md)
