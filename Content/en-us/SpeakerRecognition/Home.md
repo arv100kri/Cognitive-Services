@@ -1,18 +1,25 @@
-###
+<!-- 
+NavPath: Speaker Recognition API
+LinkLabel: Overview
+Url: AcademicKnowledge/documentation
+Weight: 90
+-->
+
+
+# Speaker Recognition API
 
 Welcome to the Microsoft Project Oxford Speaker Recognition APIs. Speaker Recognition APIs are cloud-based APIs that provide the most advanced algorithms for speaker verification and speaker identification. Speaker Recognition can be divided into two categories: speaker verification and speaker identification.
 
 
 ## Speaker Verification
 
-### 
 
 Voice has unique characteristics that can be used to identify a person, just like a fingerprint.  Using voice as a signal for access control and authentication scenarios has emerged as a new innovative tool –essentially offering a level up in security that simplifies the authentication experience for customers.
 
 Speaker Verification APIs can automatically verify and authenticate users using their voice or speech.
 
 ### Enrollment
-###
+
 Enrollment for speaker verification is text-dependent, which means speakers need to choose a specific pass phrase to use during both enrollment and verification phases. 
 
 In enrollment, the speaker's voice is recorded saying a specific phrase, then a number of features are extracted and the chosen phrase is recognized. Together, both extracted features and the chosen phrase form a unique voice signature.
@@ -25,20 +32,18 @@ For more details about speaker verification, please refer to the API [Speaker -
 
 ## Speaker Identification
 
-### 
-
 Speaker Identification APIs can automatically identify the person speaking in an audio file, given a group of prospective speakers. The input audio is paired against the provided group of speakers, and in the case that there is a match found, the speaker’s identity is returned.
 
 All speakers should go through an enrollment process first to get their voice registered to the system, and have a voice print created.
 
 
 ### Enrollment
-###
+
 Enrollment for speaker identification is text-independent, which means that there are no restrictions on what the speaker says in the audio. The speaker's voice is recorded, and a number of features are extracted to form a unique voice signature. 
 
 
 ### Recognition
-###
+
 The audio of the unknown speaker, together with the prospective group of speakers, is provided during recognition. The input voice is compared against all speakers in order to determine whose voice it is, and if there is a match found, the identity of the speaker is returned.
 
 
