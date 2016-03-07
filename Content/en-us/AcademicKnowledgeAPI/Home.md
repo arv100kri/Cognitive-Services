@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Academic Knowledge API
+LinkLabel: Overview
+Url: AcademicKnowledge/documentation/Overview
+Weight: 100
+-->
+
 # Academic Knowledge API
 
 Welcome to the Academic Knowledge API. With this service, you will be able to interpret user queries for academic intent and retrieve rich information from the Microsoft Academic Graph (MAG). The MAG knowledge base is a web-scale heterogeneous entity graph comprised of entities that model scholarly activities: field of study, author, institution, paper, venue, and event. 
