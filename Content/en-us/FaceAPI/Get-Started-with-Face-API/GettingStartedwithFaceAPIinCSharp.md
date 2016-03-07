@@ -7,7 +7,7 @@ Weight: 90
 # Getting Started with Face API in CSharp
 
 In this tutorial, you will learn to create and develop a simple Windows application that invokes the Face API to detect faces in an image; essentially by framing the faces.
-###
+
 ![GettingStartCSharpScreenshot](../Images/GetStartedCSharp-Detected.PNG)
 
 ## Table of Contents
