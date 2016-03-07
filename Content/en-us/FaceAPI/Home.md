@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Face API
 LinkLabel: Overview
-Url: face-api/documentation
+Url: face-api/documentation/Overview
 Weight: 20
 -->
 # Face API
