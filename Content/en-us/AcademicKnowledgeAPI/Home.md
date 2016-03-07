@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Academic Knowledge API
 LinkLabel: Overview
-Url: AcademicKnowledge/documentation/Overview
+Url: AcademicKnowledge/documentation
 Weight: 100
 -->
 
