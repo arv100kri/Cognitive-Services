@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Video API
+LinkLabel: Glossary
+Url: Video/documentation/Glossary
+Weight: 85
+-->
+
 # Glossary
 
 ## A
