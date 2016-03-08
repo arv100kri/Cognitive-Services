@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Spell Check API
 LinkLabel: Overview
-Url: AcademicKnowledge/documentation
+Url: SpellCheckAPI/documentation
 Weight: 100
 -->
 # Spell Check API
