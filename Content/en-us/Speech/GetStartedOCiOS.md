@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Speech API
 LinkLabel: Get started with Speech Recognition and/or intent in Objective C on iOS
-Url: Speech/documentation/GetStartedOCiOS
+Url: Speech-api/documentation/Get-Started-OC-iOS
 Weight: 60
 -->
 
