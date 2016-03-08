@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Emotion API
 LinkLabel: API Reference
-Url: Emotion/documentation/APIReference
+Url: Emotion-api/documentation/APIReference
 Weight: 15
 -->
 
