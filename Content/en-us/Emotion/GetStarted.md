@@ -1,7 +1,7 @@
 <!--
 NavPath: Emotion API
 LinkLabel: Get Started with Emotion API in C#
-Url: Emotion/documentation/GetStarted
+Url: Emotion-api/documentation/GetStarted
 Weight: 99
 -->
 
@@ -149,9 +149,10 @@ Shown below is how to submit your subscription key and a locally stored image to
             // KEY SAMPLE CODE ENDS HERE
             // -----------------------------------------------------------------------
 ```
+<!--
 ## <a name="Related">Related Topics</a>
 [Emotion API Overview](.)
-
+-->
 
 
 
