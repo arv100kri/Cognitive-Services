@@ -1,9 +1,4 @@
-<!-- 
-NavPath: Face API/Getting Started
-LinkLabel: Overview
-Url: face-api/documentation/Get-Started-with-Face-API/overview
-Weight: 100
--->
+
 # Get Started with Face API
 
 This section of the documentation helps you get started with Project Oxford Face API.
