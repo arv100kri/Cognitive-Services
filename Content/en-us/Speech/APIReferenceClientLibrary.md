@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Speech API
 LinkLabel: API Reference - Client Library
-Url: Speech/documentation/APIReferenceClientLibrary
+Url: Speech-api/documentation/API-Reference-Client-Library
 Weight: 20
 -->
 
