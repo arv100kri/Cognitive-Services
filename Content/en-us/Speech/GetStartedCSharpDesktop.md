@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Speech API
 LinkLabel: Get started with Speech Recognition and/or intent in C Sharp for .Net on Windows Desktop
-Url: Speech/documentation/GetStartedCSharpDesktop
+Url: Speech-api/documentation/Get-Started-CSharp-Desktop
 Weight: 100
 -->
 
