@@ -150,7 +150,7 @@ Shown below is how to submit your subscription key and a locally stored image to
             // -----------------------------------------------------------------------
 ```
 ## <a name="Related">Related Topics</a>
-[Emotion API Overview](./)
+[Emotion API Overview](.)
 
 
 
