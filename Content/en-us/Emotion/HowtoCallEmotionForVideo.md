@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Emotion API
 LinkLabel: How to Call Emotion API for Video
-Url: Emotion/documentation/HowtoCallEmotionForVideo
+Url: Emotion-api/documentation/HowtoCallEmotionForVideo
 Weight: 90
 -->
 
