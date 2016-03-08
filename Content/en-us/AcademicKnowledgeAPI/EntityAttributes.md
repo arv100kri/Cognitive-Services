@@ -1,7 +1,7 @@
 
 <!-- 
 NavPath: Academic Knowledge API
-LinkLabel: EntityAttributes
+LinkLabel: Entity Attributes
 Url: AcademicKnowledge/documentation/EntityAttributes
 Weight: 60
 -->
