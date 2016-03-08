@@ -16,7 +16,7 @@ Explore a basic Windows application that uses Emotion API to recognize the emoti
 [Step 2: Build the example](#Step2)  
 [Step 3: Run the example](#Step3)  
 [Review and Learn](#Review)  
-[Related Topics](#Related)
+
 ## <a name="Prerequisites">Prerequisites</a>
 #### Platform requirements  
 
