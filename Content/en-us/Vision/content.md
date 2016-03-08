@@ -1,9 +1,3 @@
-<!--
-NavPath: Computer Vision API
-LinkLabel: Home
-Url: Computer-Vision-API/documentation
--->
-
 #sample: Computer Vision API
 
 Welcome to the Microsoft Project Oxford Computer Vision API. Computer Vision API is a cloud-based API that provides the most advanced algorithms to process images and return information. This API can enable developers to have images with racy or adult sexual content (nudity) filtered out from their application. Additionally, visual features such as dominant and accent color, and categorized images can be returned, and images can be cropped to a specified container.
