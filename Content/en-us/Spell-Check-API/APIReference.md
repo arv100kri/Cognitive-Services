@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Spell Check API
 LinkLabel: APIReference
-Url: Spell Check API/documentation/APIReference
+Url: SpellCheckAPI/documentation/APIReference
 Weight: 50
 -->
 
