@@ -2,7 +2,7 @@
 NavPath: Face API/Getting Started
 LinkLabel: Getting Started With Face API in Java for Android
 Url: face-api/documentation/get-started-with-face-api/GettingStartedwithFaceAPIinJavaforAndroid
-Weight: 80
+Weight: 30
 -->
 # Getting Started with Face API in Java for Android
 
