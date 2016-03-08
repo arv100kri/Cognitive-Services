@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Computer Vision API
 LinkLabel: API Reference
-Url: ComputerVision/documentation/APIReference
+Url: Computer-Vision-API/documentation/APIReference
 Weight: 15
 -->
 
