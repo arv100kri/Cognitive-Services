@@ -1,7 +1,7 @@
 <!--
 NavPath: Emotion API
 LinkLabel: Get Started with Emotion API in C#
-Url: Emotion-API/documentation/GetStarted
+Url: Emotion/documentation/GetStarted
 Weight: 99
 -->
 
