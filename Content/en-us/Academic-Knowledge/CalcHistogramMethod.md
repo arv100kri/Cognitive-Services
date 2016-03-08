@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Academic Knowledge API
 LinkLabel: CalcHistogram Method
-Url: AcademicKnowledge/documentation/CalcHistogramMethod
+Url: Academic-Knowledge-API/documentation/CalcHistogramMethod
 Weight: 80
 -->
 
