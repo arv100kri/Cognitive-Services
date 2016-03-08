@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Speaker Recognition API
 LinkLabel: APIReference
-Url: SpeakerRecognition/documentation/APIReference
+Url: Speaker-Recognition-api/documentation/API-Reference
 Weight: 50
 -->
 
