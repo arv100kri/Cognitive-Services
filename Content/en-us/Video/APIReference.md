@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Video API
 LinkLabel: APIReference
-Url: Video/documentation/APIReference
+Url: Video-api/documentation/API-Reference
 Weight: 80
 -->
 
