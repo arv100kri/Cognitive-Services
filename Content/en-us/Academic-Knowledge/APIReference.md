@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Academic Knowledge API
 LinkLabel: API Reference
-Url: Academic-Knowledge-API/documentation/APIReference
+Url: Academic-Knowledge-API/documentation/API-Reference
 Weight: 50
 -->
 
