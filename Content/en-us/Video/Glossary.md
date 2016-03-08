@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Video API
 LinkLabel: Glossary
-Url: Video/documentation/Glossary
+Url: Video-api/documentation/Glossary
 Weight: 85
 -->
 
