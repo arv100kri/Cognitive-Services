@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Speaker Recognition API
 LinkLabel: Overview
-Url: speakerrecognition/documentation
+Url: speaker-recognition-api/documentation
 Weight: 90
 -->
 
