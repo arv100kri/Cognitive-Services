@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Emotion API
 LinkLabel: Overview
-Url: Emotion/documentation
+Url: Emotion-api/documentation
 Weight: 100
 -->
 
