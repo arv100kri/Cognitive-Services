@@ -2,7 +2,7 @@
 NavPath: Emotion API
 LinkLabel: Get Started with Emotion API in C#
 Url: Emotion-API/documentation/GetStarted
-Weight: 100
+Weight: 99
 -->
 
 # Get Started with Emotion API in C&#35;
@@ -17,7 +17,7 @@ Explore a basic Windows application that uses Emotion API to recognize the emoti
 [Step 3: Run the example](#Step3)  
 [Review and Learn](#Review)  
 [Related Topics](#Related)
-## <a name="Prerequisites">Prerequisites </a>
+## <a name="Prerequisites">Prerequisites</a>
 #### Platform requirements  
 
   The below example has been developed for the .NET Framework using [Visual Studio 2015, Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs).  
@@ -150,7 +150,7 @@ Shown below is how to submit your subscription key and a locally stored image to
             // -----------------------------------------------------------------------
 ```
 ## <a name="Related">Related Topics</a>
-[Emotion API Overview](./Home.md)
+[Emotion API Overview](./Overview)
 
 
 
