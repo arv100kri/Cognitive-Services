@@ -1,9 +1,4 @@
-<!-- 
-NavPath: Speech API/API Reference - REST
-LinkLabel: API Reference - REST Overview
-Url: Speech-api/documentation/API-Reference-REST
-Weight: 20
--->
+
 
 # API Reference - REST
 
