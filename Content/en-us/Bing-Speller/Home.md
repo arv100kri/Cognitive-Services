@@ -5,7 +5,7 @@ Url: Bing-Speller-API/documentation
 Weight: 100
 -->
 
-# Spell Check API
+# Bing Speller API
 
 Welcome to Spell Check API which performs contextual spell checking for any text and provides inline suggestions for misspelled words. 
 
