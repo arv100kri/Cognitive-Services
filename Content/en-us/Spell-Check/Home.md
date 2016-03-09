@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Spell Check API
 LinkLabel: Overview
-Url: Spell-Check-API/documentation
+Url: Bing-Speller-API/documentation
 Weight: 100
 -->
 
