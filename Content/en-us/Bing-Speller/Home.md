@@ -1,5 +1,5 @@
 <!-- 
-NavPath: Spell Check API
+NavPath: Bing Speller API
 LinkLabel: Overview
 Url: Bing-Speller-API/documentation
 Weight: 100
@@ -7,7 +7,7 @@ Weight: 100
 
 # Bing Speller API
 
-Welcome to Spell Check API which performs contextual spell checking for any text and provides inline suggestions for misspelled words. 
+Welcome to Bing Speller API which performs contextual spell checking for any text and provides inline suggestions for misspelled words. 
 
 ## What is special about our 3rd generation spell-checker?
 
