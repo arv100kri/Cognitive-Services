@@ -145,7 +145,7 @@ using (Stream s = File.OpenRead(testImageFile))
     var faces = await faceServiceClient.DetectAsync(s);
     var faceIds = faces.Select(face => face.FaceId).ToArray();
  
-    var results = await faceServiceClient.IdentityAsync(personGroupId, faceIds);
+    var results = await faceServiceClient.IdentifyAsync(personGroupId, faceIds);
     foreach (var identifyResult in results)
     {
         Console.WriteLine("Result of face: {0}", identifyResult.FaceId);
