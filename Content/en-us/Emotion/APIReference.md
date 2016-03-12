@@ -2,7 +2,7 @@
 NavPath: Emotion API
 LinkLabel: API Reference
 Weight: 15
-Ext: https://dev.projectoxford.ai/docs/services/5639d931ca73072154c1ce89
+ExternalLink: https://dev.projectoxford.ai/docs/services/5639d931ca73072154c1ce89
 -->
 
 
