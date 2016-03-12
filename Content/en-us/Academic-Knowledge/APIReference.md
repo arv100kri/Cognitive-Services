@@ -1,8 +1,8 @@
 <!-- 
 NavPath: Academic Knowledge API
 LinkLabel: API Reference
-Url: Academic-Knowledge-API/documentation/API-Reference
 Weight: 50
+ExternalLink: https://dev.projectoxford.ai/docs/services/56332331778daf02acc0a50b
 -->
 
 # API Reference 
