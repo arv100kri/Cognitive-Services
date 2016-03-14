@@ -1,7 +1,7 @@
 <!--
-NavPath: Knowledge Exploration Service
-LinkLabel: Web API Interface
-Url: KES/documentation/Web-API-Interface/WebAPI
+NavPath: Knowledge Exploration Service/Web API Interface
+LinkLabel: Web API Interface Overview
+Url: KES/documentation/WebAPI
 Weight: 65
 -->
 
