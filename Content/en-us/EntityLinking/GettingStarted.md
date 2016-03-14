@@ -107,5 +107,5 @@ Congratulations on completing this tutorial. In this tutorial, you’ve learned 
 
 ## Related Topics
 
- For more details about entity linking, please refer to the [API Reference](https://dev.projectoxford.ai/docs/services/5639d931ca73072154c1ce89).
+ For more details about entity linking, please refer to the [API Reference](https://dev.platform.projectoxford.ai/docs/services/568b3b85876c38074c424dc7).
 
