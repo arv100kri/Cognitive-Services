@@ -1,3 +1,10 @@
+<!--
+NavPath: Knowledge Exploration Service
+LinkLabel: evaluate Method
+Url: KES/documentation/Web-API-Interface/evaluate-Method
+Weight: 25
+-->
+
 # evaluate Method
 The *evaluate* method evaluates and returns the output of a structured query expression based on the index data.
 
