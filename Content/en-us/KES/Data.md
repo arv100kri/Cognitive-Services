@@ -2,7 +2,7 @@
 NavPath: Knowledge Exploration Service
 LinkLabel: Data
 Url: KES/documentation/data
-Weight: 100
+Weight: 49
 -->
 
 # Data
