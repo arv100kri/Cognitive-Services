@@ -50,7 +50,7 @@ TODO:
 ### Composite Attributes
 Composite attributes are used to represent a grouping of attribute values.  The name of each sub-attributes starts with the name of the composite attribute followed by ".".  Values for composite attributes are specified as a JSON object containing the nested attribute values.  Composite attributes may have multiple object values.  However, composite attribute may not have sub-attributes that are themselves composite attributes.
 
-In the academic publication example above, this enables the service to query for papers by "harry shum" while he is at "microsoft".  Without composite attributes, the service can only query for papers where one of the authors is "harry shum" and one of the authors is at "microsoft".  For more information, see [Composite Queries](Semantics.md#Composite).
+In the academic publication example above, this enables the service to query for papers by "harry shum" while he is at "microsoft".  Without composite attributes, the service can only query for papers where one of the authors is "harry shum" and one of the authors is at "microsoft".  For more information, see [Composite Queries](Semantics#Composite).
 
 ## Attribute Operations
 By default, each attribute is indexed to support all operations available to the attribute data type.  If a particular operation is not required, the set of indexed operations can be explicitly specified to reduce the size of the index.  In the following snippet from the example schema above, the Author.Id attribute is indexed to support only the equals operation, but not the additional starts_with and is_between operations for Int32 attributes.
