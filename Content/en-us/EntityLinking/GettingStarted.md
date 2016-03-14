@@ -15,12 +15,12 @@ In this tutorial, you will explore entity linking by adding Entity Linking libra
 
 - [Prerequisites](#prerequisites)
 - [Step 1: Subscribe Entity Linking Intelligence Service and get your own key](#step-1-subscribe-entity-linking-intelligence-service-and-get-your-own-key)
-- [Step 2: Create a new project in Visual Studio](#step2)
-- [Step 3: Add the Entity Linking NuGet Package to your project](#step3)
-- [Step 4: Add an input and output text block to your app’s XAML](#step4)
-- [Step 5: Proceed to add Entity Linking Intelligence Service](#step5)
+- [Step 2: Create a new project in Visual Studio](#step-2-create-a-new-project-in-visual-studio)
+- [Step 3: Add the Entity Linking NuGet Package to your project](#step-3-add-the-entity-linking-nuget-package-to-your-project)
+- [Step 4: Add an input and output text block to your app’s XAML](#step-4-add-an-input-and-output-text-block-to-your-apps-xaml)
+- [Step 5: Proceed to add Entity Linking Intelligence Service](#step-5-proceed-to-add-entity-linking-intelligence-service)
 - [Summary](#summary)
-- [Related Topics](#related)
+- [Related Topics](#related-topics)
 
 
 ## Prerequisites
@@ -37,14 +37,14 @@ You may download the Entity Linking Intelligence Service API client library thro
 ## Step 1: Subscribe Entity Linking Intelligence Service and get your own key
 Before using any Face API, you must sign up to subscribe Face API of the Microsoft Project Oxford services. See [subscription and key management](https://www.projectoxford.ai/Subscription). Both primary and secondary key can be used in this tutorial.
 
-## <a name="step2"></a> Step 2: Create a new project in Visual Studio
+## Step 2: Create a new project in Visual Studio
 
 Let’s start by creating a new project in Visual Studio.
 First, launch Visual Studio 2015 from the Start Menu. Then, create a new project by select ** Installed → Templates → Visual C# → Windows Universal → Blank App ** for your project template:
 
  ![Createa universal app](./Images/CreateUWP.png)
 
-## <a name="step3"></a> Step 3: Add the Entity Linking NuGet Package to your project
+## Step 3: Add the Entity Linking NuGet Package to your project
 
 Entity Linking of Project Oxford is released as a Nuget.org package and needs to be installed before you can use it.
 To add them to your project, go to the Solution Explorer tab, ** right click ** on your project, and select ** Manage Nuget Packages **:
@@ -55,7 +55,7 @@ EntityLinking is now installed as part of your application. You can confirm this
 
  ![Included nuget library in project](./Images/NugetLibraryInProject.png)
  
-## <a name="step4"></a> Step 4: Add an input and output text block to your app’s XAML
+## Step 4: Add an input and output text block to your app’s XAML
 Navigate to ** MainPage.xaml ** in your project by double clicking on it in Solution Explorer. This will open the file. For convenience, you can double click on the ** XAML ** button in the Designer tab; this will hide the visual designer and reserve all of the space for the code view:
 
  ![Included nuget library in project](./Images/UWPMainPage.png)
@@ -75,7 +75,7 @@ Navigate to ** MainPage.xaml ** in your project by double clicking on it in Solu
 </Grid>
  ```
  
-## <a name="step5"></a> Step 5: Proceed to add Entity Linking Intelligence Service
+## Step 5: Proceed to add Entity Linking Intelligence Service
  
  The user interface is good now. Before jumping to entity linking service, we need to add the button click handler. Open ** MainPage.xaml ** from the Solution Explorer. Add a click handler button_Click in the end of the button.
  
@@ -101,11 +101,11 @@ Navigate to ** MainPage.xaml ** in your project by double clicking on it in Solu
  
  ![UWP Sample result](./Images/DemoCodeResult.png)
  
-## <a name="summary"></a> Summary
+## Summary
  
 Congratulations on completing this tutorial. In this tutorial, you’ve learned how to create an application to leverage Project Oxford Entity Linking Intelligence Service with just a few lines of C# and XAML code. 
 
-## <a name="related"></a> Related Topics
+## Related Topics
 
  For more details about entity linking, please refer to the [API Reference](https://dev.projectoxford.ai/docs/services/5639d931ca73072154c1ce89).
 
