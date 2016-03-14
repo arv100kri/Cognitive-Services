@@ -1,5 +1,5 @@
 <!--
-NavPath: Knowledge Exploration Service
+NavPath: Knowledge Exploration Service/Web API Interface
 LinkLabel: evaluate Method
 Url: KES/documentation/Web-API-Interface/evaluate
 Weight: 25
