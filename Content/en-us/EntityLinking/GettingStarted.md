@@ -14,7 +14,7 @@ In this tutorial, you will explore entity linking by adding Entity Linking libra
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
-- [Step 1: Subscribe Entity Linking Intelligence Service and get your own key](#step1)
+- [Step 1: Subscribe Entity Linking Intelligence Service and get your own key](#step-1-subscribe-entity-linking-intelligence-service-and-get-your-own-key)
 - [Step 2: Create a new project in Visual Studio](#step2)
 - [Step 3: Add the Entity Linking NuGet Package to your project](#step3)
 - [Step 4: Add an input and output text block to your app’s XAML](#step4)
@@ -34,7 +34,7 @@ In this tutorial, you will explore entity linking by adding Entity Linking libra
 You may download the Entity Linking Intelligence Service API client library through https://www.projectoxford.ai/sdk or access them via GitHub. The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder.
 
 
-## <a name="step1"></a> Step 1: Subscirbe Entity Linking Intelligence Service and get your own key
+## Step 1: Subscribe Entity Linking Intelligence Service and get your own key
 Before using any Face API, you must sign up to subscribe Face API of the Microsoft Project Oxford services. See [subscription and key management](https://www.projectoxford.ai/Subscription). Both primary and secondary key can be used in this tutorial.
 
 ## <a name="step2"></a> Step 2: Create a new project in Visual Studio
