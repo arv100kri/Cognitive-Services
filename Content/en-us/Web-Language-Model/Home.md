@@ -1,5 +1,5 @@
 <!-- 
-NavPath: WebLM API
+NavPath: Web Language Model API
 LinkLabel: Overview
 Url: web-language-model-api/documentation
 Weight: 100
