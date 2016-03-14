@@ -17,12 +17,12 @@ The following figure below shows an example of entity linking. More specifically
 
  ![Entity Linking Sample for Mars](./Images/EntityLinkingSample1.png)
  
- ## Get Started
+## Get Started
  
  To quickly go through the Entity Linking basic functionalities and subscriptions processes, please refer to our get started tutorials.
 [Getting Started with Entity Linking API in C#](GettingStarted.md)
 
  
  
- ## Reference
+## Reference
  For more details about entity linking, please refer to the [API Reference](https://dev.projectoxford.ai/docs/services/5639d931ca73072154c1ce89).
