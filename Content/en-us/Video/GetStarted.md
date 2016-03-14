@@ -1,6 +1,6 @@
 <!-- 
 NavPath: Video API
-LinkLabel: GetStarted
+LinkLabel: Get Started
 Url: Video-api/documentation/Get-Started
 Weight: 95
 -->
