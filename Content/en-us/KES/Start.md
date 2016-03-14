@@ -1,5 +1,5 @@
 <!--
-NavPath: KES
+NavPath: Knowledge Exploration Service
 LinkLabel: Getting Started
 Url: KES/documentation/start
 Weight: 100
