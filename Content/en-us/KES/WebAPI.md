@@ -1,3 +1,10 @@
+<!--
+NavPath: Knowledge Exploration Service
+LinkLabel: Web API Interface
+Url: KES/documentation/Web-API-Interface/overview
+Weight: 65
+-->
+
 # Web API Interface
 The model files built by the Knowledge Exploration Service can be hosted and accessed via a set of web APIs.  The APIs may be hosted on the local machine using the [`host_service`](Runtime.md#host_service) command or be deployed to an Azure cloud service using the [`deploy_service`](Runtime.md#deploy_service) command.  Both techniques expose the following API endpoints:
 * [*interpret*](interpret-method.md) – Interprets a natural language query string. Returns annotated interpretations which can enable rich search-box auto-completion experiences that anticipate what the user is typing.
