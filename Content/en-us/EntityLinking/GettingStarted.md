@@ -1,7 +1,7 @@
 <!--
 NavPath: EntityLinking API
 LinkLabel: Getting Started with EntityLinking API in C#
-Url: Emotion-API/documentation/GettingStarted
+Url: entitylinking-api/documentation/GettingStarted
 Weight: 1
 -->
 
