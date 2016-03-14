@@ -74,7 +74,7 @@ Navigate to ** MainPage.xaml ** in your project by double clicking on it in Solu
 </Grid>
  ```
  
- ## <a name="step5"></a> Step 5: Proceed to add Entity Linking Intelligence Service
+## <a name="step5"></a> Step 5: Proceed to add Entity Linking Intelligence Service
  
  The user interface is good now. Before jumping to entity linking service, we need to add the button click handler. Open ** MainPage.xaml ** from the Solution Explorer. Add a click handler button_Click in the end of the button.
  
@@ -100,7 +100,7 @@ Navigate to ** MainPage.xaml ** in your project by double clicking on it in Solu
  
  ![UWP Sample result](./Images/DemoCodeResult.png)
  
- ## <a name="summary"></a> Summary
+## <a name="summary"></a> Summary
  
 Congratulations on completing this tutorial. In this tutorial, you’ve learned how to create an application to leverage Project Oxford Entity Linking Intelligence Service with just a few lines of C# and XAML code. 
 
