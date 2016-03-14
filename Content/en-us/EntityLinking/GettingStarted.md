@@ -23,7 +23,7 @@ In this tutorial, you will explore entity linking by adding Entity Linking libra
 - [Related Topics](#related)
 
 
-## <a name="prerequisites"> Prerequisites
+## Prerequisites
 
 - Visual Studio 2015
 - Project Oxford Entity Linking NuGet Package
