@@ -1,3 +1,10 @@
+<!--
+NavPath: Knowledge Exploration Service
+LinkLabel: Data
+Url: KES/documentation/data
+Weight: 100
+-->
+
 # Data
 The data file describes the list of objects to index.  Each line in the file specifies in [JSON format](http://json.org/) the attribute values of an object.  In addition to the attributes defined in the [schema](Schema.md), each object has a required "logprob" attribute that specifies the relative log probability among the objects.  Given a probability *p* between 0 and 1, the corresponding log probability can be computed as log(*p*), where log() is the the natural log function.  
 
