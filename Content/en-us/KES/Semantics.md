@@ -1,3 +1,10 @@
+<!--
+NavPath: Knowledge Exploration Service
+LinkLabel: Semantic Interpretation
+Url: KES/documentation/Semantic-Interpretation
+Weight: 65
+-->
+
 # Semantic Interpretation
 Semantic interpretation associates semantic output with each interpretation through the grammar.  In particular, the service evaluates the sequence of statements in the `tag` elements traversed by the interpretation to compute the final output.  
 
