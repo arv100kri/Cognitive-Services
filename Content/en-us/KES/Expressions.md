@@ -1,7 +1,8 @@
 <!--
-NavPath: KES
+NavPath: Knowledge Exploration Service
 LinkLabel: Structured Query Expression
 Url: KES/documentation/structured-query-expression
+Weight: 60
 -->
 
 # Structured Query Expression
