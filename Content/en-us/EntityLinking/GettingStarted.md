@@ -13,7 +13,7 @@ In this tutorial, you will explore entity linking by adding Entity Linking libra
 
 ## Table of Contents
 
-- [Prerequisites](GettingStarted.md#prerequisites)
+- [Prerequisites](#prerequisites)
 - [Step 1: Subscirbe Entity Linking Intelligence Service and get your own key](#step1)
 - [Step 2: Create a new project in Visual Studio](#step2)
 - [Step 3: Add the Entity Linking NuGet Package to your project](#step3)
@@ -22,7 +22,8 @@ In this tutorial, you will explore entity linking by adding Entity Linking libra
 - [Summary](#summary)
 - [Related Topics](#related)
 
-## <a name="prerequisites"></a> Prerequisites
+
+## (#prerequisites)Prerequisites
 
 - Visual Studio 2015
 - Project Oxford Entity Linking NuGet Package
