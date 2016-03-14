@@ -1,7 +1,7 @@
 <!--
 NavPath: Knowledge Exploration Service
 LinkLabel: Semantic Interpretation
-Url: KES/documentation/Semantic
+Url: KES/documentation/Semantics
 Weight: 65
 -->
 
