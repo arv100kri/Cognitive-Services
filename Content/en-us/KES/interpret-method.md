@@ -1,7 +1,7 @@
 <!--
 NavPath: Knowledge Exploration Service/Web API Interface
 LinkLabel: Interpret Method
-Url: KES/documentation/Web-API-Interface/interpret-method
+Url: KES/documentation/interpret-method
 Weight: 30
 -->
 
