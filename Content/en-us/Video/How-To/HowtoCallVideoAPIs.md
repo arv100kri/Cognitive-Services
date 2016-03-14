@@ -2,7 +2,7 @@
 NavPath: Video API/How To
 LinkLabel: HowtoCallVideoAPIs
 Url: video-api/documentation/How-To/HowtoCallVideoAPIs
-Weight: 81
+Weight: 86
 -->
 
 # How to Call Video APIs
