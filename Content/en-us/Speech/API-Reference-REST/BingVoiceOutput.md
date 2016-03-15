@@ -17,7 +17,7 @@ This document is provided “as-is”. Information and views expressed in this d
 
 Examples are provided for illustration only.
 
-This document does not provide you with any legal rights to intellectual property in any Microsoft product. You may copy and use this document for your internal reference purposes. This document is confidential and proprietary to Microsoft. It is disclosed and can be used only in agreement with a non-disclosure agreement.
+This document does not provide you with any legal rights to intellectual property in any Microsoft product. You may copy and use this document for your internal reference purposes. This document is confidential and proprietary to Microsoft. It can be used only in agreement with a non-disclosure agreement.
 
 --------------------------------------------------
 ## Contents
