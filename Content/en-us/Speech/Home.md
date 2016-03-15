@@ -8,9 +8,9 @@ Weight: 120
 # Speech API Overview
 
 
-Welcome to Project Oxford Speech API. The Speech API is a cloud-based API that provides advanced algorithms to process spoken language. With this API, developers can add speech driven actions to their applications including real-time interaction with the user.
+Welcome to Cognitive Services Speech API. The Speech API is a cloud-based API that provides advanced algorithms to process spoken language. With this API, developers can add speech driven actions to their applications including real-time interaction with the user.
 
-Project Oxford’s cross-platform REST API enables speech capabilities on all internet-connected devices. Every major platform including Android, iOS, Windows, and 3rd party IoT devices are supported. Our REST API offers industry-leading  [speech-to-text](http://www.projectoxford.ai/demo/speech), [text-to-speech](http://www.projectoxford.ai/demo/speech#text2speech), and language understanding capabilities delivered through the cloud.
+Cognitive Services cross-platform REST API enables speech capabilities on all internet-connected devices. Every major platform including Android, iOS, Windows, and 3rd party IoT devices are supported. Our REST API offers industry-leading  [speech-to-text](http://www.projectoxford.ai/demo/speech), [text-to-speech](http://www.projectoxford.ai/demo/speech#text2speech), and language understanding capabilities delivered through the cloud.
 
 Microsoft has used Cognitive Services Speech API for Windows applications like Cortana and Skype Translator as well as Android applications like [Bing Torque](https://play.google.com/store/apps/details?id=com.microsoft.bing.torque) for Android Wear and Android Phone.
 
