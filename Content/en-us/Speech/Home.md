@@ -12,7 +12,7 @@ Welcome to Project Oxford Speech API. The Speech API is a cloud-based API that p
 
 Project Oxford’s cross-platform REST API enables speech capabilities on all internet-connected devices. Every major platform including Android, iOS, Windows, and 3rd party IoT devices are supported. Our REST API offers industry-leading  [speech-to-text](http://www.projectoxford.ai/demo/speech), [text-to-speech](http://www.projectoxford.ai/demo/speech#text2speech), and language understanding capabilities delivered through the cloud.
 
-Microsoft has used Project Oxford Speech API for Windows applications like Cortana and Skype Translator as well as Android applications like [Bing Torque](https://play.google.com/store/apps/details?id=com.microsoft.bing.torque) for Android Wear and Android Phone.
+Microsoft has used Cognitive Services Speech API for Windows applications like Cortana and Skype Translator as well as Android applications like [Bing Torque](https://play.google.com/store/apps/details?id=com.microsoft.bing.torque) for Android Wear and Android Phone.
 
 ### REST API versus Client Library
 The Speech Recognition API provides the ability to convert spoken audio to text by sending audio to Microsoft’s servers in the cloud. Developers have a choice of using the REST  API or the client library. 
