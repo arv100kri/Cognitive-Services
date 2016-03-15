@@ -15,12 +15,13 @@ This document is provided “as-is”. Information and views expressed in this d
 
 Examples are provided for illustration only. 
 
-This document does not provide you with any legal rights to intellectual property in any Microsoft product. You may copy and use this document for your internal reference purposes. This document is confidential and proprietary to Microsoft. It is disclosed and can be used only in agreement with a non-disclosure agreement. 
+This document does not provide you with any legal rights to intellectual property in any Microsoft product. You may copy and use this document for your internal reference purposes. This document is confidential and proprietary to Microsoft. It can be used only in agreement with a non-disclosure agreement. 
 
 --------------------------------------------------
 ## Contents
 [1. Introduction](#Introduction)  
 [2. Voice Recognition Request](#VoiceRecReq)
+* [Authorize the API call](#Authorize)
 * [HTTP headers](#Http) 
 * [Input parameters](#InputParam) 
 * [Required parameters](#ReqParam) 
@@ -46,8 +47,21 @@ This documentation describes the Bing Voice API that exposes an HTTP interface w
 
 
 ## <a name="VoiceRecReq">2. Voice Recognition Request</a>
+###<a name="Authorize">Authorize the API call</a>
+Every call to the Speech API requires a subscription key. This key needs to be passed either through a query string parameter or specified in the request header. 
 
+```
+a)	Subscription key is passed through the query string, for example:
+https://api.projectoxford.ai/speech/detect[?returnSpeechId][&returnSpeechRecognitionResults]&subscription-key=<Your subscription key>
+b)	Subscription key is passed in the HTTP request header, for example: 
+ocp-apim-subscription-key: <Your subscription key>
+c)	  When using a client library, the subscription key is passed in through the constructor of the SpeechRecognitionServiceClient class, for example:
+C#: speechRecognitionServiceClient = new SpeechRecognitionServiceClient("Your subscription key");
+
+```
 Clients must use the following end-point to access the service and build voice enabled applications: [https://speech.platform.bing.com/recognize](https://speech.platform.bing.com/recognize) 
+
+Note! Until you have submitted your subscription key as described above this link will generate a 403 Response Error.
 
 The API uses HTTP POST to upload audio. The API supports [Chunked Transfer-Encoding](http://tools.ietf.org/html/rfc4463#sec3.6.1) for efficient audio streaming. For live transcription scenarios, it is recommended you use chunked transfer encoding to stream the audio to the service while the user is speaking. Other implementations result in higher user-perceived latency. 
 
