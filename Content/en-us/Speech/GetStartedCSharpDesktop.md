@@ -5,7 +5,7 @@ Url: Speech-api/documentation/Get-Started-CSharp-Desktop
 Weight: 100
 -->
 
-# Get started with Speech Recognition and/or intent in C Sharp for .Net for Windows
+# Get started with Speech Recognition and/or intent in C Sharp for .Net Windows
 
 Develop a basic Windows application that uses Cognitive Services Speech Recognition API to convert spoken audio to text by sending audio to Microsoft’s servers in the cloud. You have a choice of using a REST API or a client library. 
 ### REST API 
@@ -23,20 +23,25 @@ Using the Client Library allows for real-time streaming, which means that at the
 *	[Interpreting the returned results](#Interpret)
 *	[Related Topics](#Related)
 
+### <a name="Prerequisites">Prerequisites</a>
 * #### Platform requirements
 The below example has been developed for the .NET Framework using [Visual Studio 2015, Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs). 
+
 * #### Get the client library and example
 You may download the Speech API client library and example through https://www.projectoxford.ai/sdk or access them via [GitHub](https://github.com/Microsoft/ProjectOxford-ClientSDK/tree/master/Speech). The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder.
+
 * #### Subscribe to Speech API and get a free trial subscription key 
 Before creating the example, you must subscribe to Speech API which is part of Project Oxford services. For subscription and key management details, see [Subscriptions](https://www.projectoxford.ai/speech). Both the primary and secondary key can be used in this tutorial. 
 
-### Step 1: Install the example application
+###Step 1: Install the example application
 1.	Start Microsoft Visual Studio 2015 and click **File**, select **Open**, then **Project/Solution**.
 2.	Browse to the folder where you saved the downloaded Speech API files. Click on **Speech**, then **Windows**, and then the **Sample-WPF** folder.
 3.	Double-click to open the Visual Studio 2015 Solution (.sln) file named **SpeechToText-WPF-Samples.sln**. This will open the solution in Visual Studio.
-### Step 2: Build the example application
+
+###Step 2: Build the example application
 1.	Press Ctrl+Shift+B, or click **Build** on the ribbon menu, then select **Build Solution**.
-### Step 3: Run the example application
+
+###Step 3: Run the example application
 1.	After the build is complete, press **F5** or click **Start** on the ribbon menu to run the example.  
 2.	Locate the **Project Oxford Speech to Text** window with the **text edit box** reading **"Paste your subscription key here to start"**. Paste your subscription key into the text box as shown in below screenshot. You may choose to persist your subscription key on your PC or laptop by clicking the **Save Key** button. When you want to delete the subscription key from the system, click **Delete Key** to remove it from your PC or laptop.
 
