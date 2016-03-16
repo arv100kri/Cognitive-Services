@@ -58,7 +58,8 @@ There are example audio files to be used with this example application. You find
   
 ###Review and Learn
 
-**Events** 
+###**Events** 
+
 
 *	####Partial Results Event: 
 This event gets called every time the Speech Recognition Server has an idea of what the speaker might be saying – even before he or she has finished speaking (if you are using the Microphone Client) or have finished transferring data (if you are using the Data Client).
