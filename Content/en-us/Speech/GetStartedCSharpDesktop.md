@@ -5,61 +5,75 @@ Url: Speech-api/documentation/Get-Started-CSharp-Desktop
 Weight: 100
 -->
 
-# Get started with Speech Recognition and/or intent in C Sharp for .Net on Windows Desktop
+# Get started with Speech Recognition and/or intent in C Sharp for .Net for Windows
 
-In this tutorial, you will learn to create and develop a simple Windows application that invokes the Speech Recognition API to convert spoken audio to text by sending audio to Microsoft’s servers in the cloud. You have a choice of using a REST API or a client library. Using the REST API means getting only one reco result back with no partial results. Documentation for the REST API can be found [here](https://www.projectoxford.ai/doc/speech/REST/Recognition) and code samples [here](https://oxfordportal.blob.core.windows.net/speech/doc/recognition/Program.cs). Using the client library allows for real-time streaming, so as the audio is being sent or spoken to the server, partial recognition results are returned. The rest of this page describes use of the client library. 
+Develop a basic Windows application that uses Cognitive Services Speech Recognition API to convert spoken audio to text by sending audio to Microsoft’s servers in the cloud. You have a choice of using a REST API or a client library. 
+### REST API 
+Using the REST API means getting only one reco result back with no partial results. Documentation for the REST API can be found [here](https://github.com/Microsoft/ProjectOxford-Documentation/blob/master/Content/en-us/Speech/API-Reference-REST/BingVoiceRecognition.md) and code samples [here](https://oxfordportal.blob.core.windows.net/speech/doc/recognition/Program.cs).
 
-### Preparation 
-To use the tutorial, you will need the following prerequisites:
+### Client Library
+Using the Client Library allows for real-time streaming, which means that at the same time your client application sends audio to the service, it simultaneously and asynchronously receives partial recognition results back. This page describes use of the Client Library, which currently supports speech in seven languages[Link to Overview page], the example below defaults to American English, “en-US”.
 
-* Make sure Visual Studio 2013 or above is installed.
-* Download Speech Recognition API Client Library for Windows from [this link](https://www.projectoxford.ai/SDK/GetFile?path=speech/SpeechToText-SDK-Windows.zip). Unzip it. Inside there is both a fully buildable example and the SDK lib. The buildable example can be found in the samples\SpeechRecognitionServiceExample directory. The lib you need to use in your own apps can be found at SpeechSDK\{x64 | x86}\SpeechClient.dll.
-* In order to run the example or your own app, you will need authorization keys. See Step 1.
+### Table of Contents
+*	[Prerequisites](#Prerequisites)
+*	[Step 1: Install the example application](#Step1)
+*	[Step 2: Build the example application](#Step2)
+*	[Step 3: Run the example application](#Step3)
+*	[Review and Learn](#Review)   
+*	[Interpreting the returned results](#Interprete)
+*	[Related Topics](#Related)
 
-### Step 1: Subscribe for Speech Recognition API and get your subscription key
-Authorization to make recognition requests against the server come from Azure Marketplace. You will need to obtain a Primary and Secondary Key.
+* ####Platform requirements
+The below example has been developed for the .NET Framework using [Visual Studio 2015, Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs). 
+* ####Get the client library and example
+You may download the Speech API client library and example through https://www.projectoxford.ai/sdk or access them via [GitHub](https://github.com/Microsoft/ProjectOxford-ClientSDK/tree/master/Speech). The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder.
+* ####Subscribe to Speech API and get a free trial subscription key 
+Before creating the example, you must subscribe to Speech API which is part of Project Oxford services. For subscription and key management details, see [Subscriptions](https://www.projectoxford.ai/speech). Both the primary and secondary key can be used in this tutorial. 
 
-1. Access the Project Oxford Portal web site at [https://www.projectoxford.ai](https://www.projectoxford.ai), click on an offered service to go to its overview page (Speech API), and then click on the "Sign up" button. The Azure management portal will launch and you may be prompted to Sign in with your Microsoft account, or Sign up for a new Azure subscription if you don't already have one.
-2. In 'Choose an Application or Service' page, go down the list to select the offered service "Speech APIs" from the list, and then click through the various windows in order to make a purchase.
-3. When the purchase is complete, the service you selected should appear under 'Marketplace' as one of the purchased items. Click on the item to view the dashboard, and at the bottom of the page, click on the 'Manage' button to go to the 'Developer Manage Keys' page. Finally, copy or regenerate subscription keys in the page.
+### Step 1: Install the example application
+1.	Start Microsoft Visual Studio 2015 and click **File**, select **Open**, then **Project/Solution**.
+2.	Browse to the folder where you saved the downloaded Speech API files. Click on **Speech**, then **Windows**, and then the **Sample-WPF** folder.
+3.	Double-click to open the Visual Studio 2015 Solution (.sln) file named **SpeechToText-WPF-Samples.sln**. This will open the solution in Visual Studio.
+### Step 2: Build the example application
+1.	Press Ctrl+Shift+B, or click **Build** on the ribbon menu, then select **Build Solution**.
+### Step 3: Run the example application
+1.	After the build is complete, press **F5** or click **Start** on the ribbon menu to run the example.  
+2.	Locate the **Project Oxford Speech to Text** window with the **text edit box** reading **"Paste your subscription key here to start"**. Paste your subscription key into the text box as shown in below screenshot. You may choose to persist your subscription key on your PC or laptop by clicking the **Save Key** button. When you want to delete the subscription key from the system, click **Delete Key** to remove it from your PC or laptop.
 
-### Step 2: Create the application framework
+3.	Under **Speech Recognition Source** choose one of the six speech sources, which fall into two main input categories. 
+*  Using your computer’s microphone, or an attached microphone, to capture speech.
+*  Playing an audio file.	
+ 
+Each category has three recognition modes.
+*  **ShortPhrase mode:** an utterance up to 15 seconds long. As data is sent to the server, the client will receive multiple partial results and one final multiple N-best choice result.
+*  **LongDictation mode:** an utterance up to 2 minutes long. As data is sent to the server, the client will receive multiple partial results and multiple final results, based on where the server indicates sentence pauses.
+*  **Intent detection:** The server returns additional structured information about the speech input. To use Intent you will need to first train a model. See details [here](https://www.luis.ai/).
 
-In this step you will create a Windows application project to implement your use of the Speech Recognition API
+There are example audio files to be used with this example application. You find the files in the repository you downloaded with this example under **SpeechToText**, in the **Windows** folder, under **samples**, in the **SpeechRecognitionServiceExample** folder. These example audio files will run automatically if no other files are chosen when selecting the **Use wav file for Shortphrase mode** or **Use wav file for Longdictation mode** as your speech input. Currently only wav and MP4 audio formats are supported.
+  
+###Review and Learn
 
-1. Open Visual Studio.
-2. If you want build and run the given example, find the project embedded [MainWindow.xaml.cs](https://www.projectoxford.ai/SDK/GetFile?path=speech/SpeechToText-SDK-Windows.zip) or find MainWindow.xaml.cs in samples\SpeechRecognitionServiceExample from the zip file. For a console app, take a look at [SpeechRecognitionServiceExample.cs](https://oxfordportal.blob.core.windows.net/example-speech/SpeechRecognitionServiceExample.cs). You will need the userID and clientSecret you generated above. See either example for where you use them. In both cases, you will see that you use the SpeechRecognitionServiceFactory to create a client of your liking. You can create one of:
-    1. A DataRecognitionClient -- for speech recognition with PCM data (for example from a file or audio source). The data is broken up into buffers and each buffer is sent to the Speech Recognition Service. No modification is done to the buffers, so the user can apply their own Silence Detection if desired. If the data is provided from wave files, you can just send data from the file right to the server. Alternatively, if you have just raw data (for example audio coming over bluetooth), then you first send a format header to the server, followed by the data.
-    2. A MicrophoneRecognitionClient -- for speech recognition from the microphone. The microphone is turned on and data from the microphone is sent to the Speech Recognition Service. A built in Silence Detector is applied to the microphone data before it is sent to the recognition service.
+**Events** 
 
-You can also create “WithIntent” clients if you want the server to additionally return structured information about the speech for apps to easily parse the intent of the Speaker and drive further actions in the app. To use intent, you will need train a models and get an AppID and a Secret. See [here](http://www.projectoxford.ai/luis) for details.
+*	####Partial Results Event: 
+This event gets called every time the Speech Recognition Server has an idea of what the speaker might be saying – even before he or she has finished speaking (if you are using the Microphone Client) or have finished transferring data (if you are using the Data Client).
 
-When you use the factory to create the Client, you provide the language. One of:
+*   ####Intent Event:
+Called on WithIntent clients (only in ShortPhrase mode) after the final reco result has been parsed into structured JSON intent.
 
-* American English: "en-us"
-* British English: "en-gb"
-* German: "de-de"
-* Spanish: "es-es"
-* French: "fr-fr"
-* Italian: "it-it"
-* Mandarin: "zh-cn"
+*   ####Result Event:
+When you have finished speaking (in ShortPhrase mode), this event is called. You will be provided with n-best choices for the result. In LongDictation mode, the handler associated with this event will be called multiple times, based on where the server thinks sentence pauses are.
 
-You also provide the recognition mode. This is one of:
+Eventhandlers are already pointed out in the code in form of code comments.
 
-* ShortPhrase mode : an utterance may only up to 15 sec long, as data is sent to the server, the client will receive multiple partial results and one final multiple n-best choice result.
-* LongDictation mode : an utterance may be only up to 2 minutes long, as data is sent to the server, the client will receive multiple partial results and multiple final results, based on where the server thinks sentence pauses are.
 
-From the Created client, you can attach various event handlers.
+    
+ **Return format** |  Description |
+ ------|------
+ **LexicalForm** |  This form is optimal for use by applications that need raw, unprocessed speech recognition results.  
+ **DisplayText**  |  The recognized phrase with inverse text normalization, capitalization, punctuation and profanity masking applied. Profanity is masked with asterisks after the initial character, e.g. "d***". This form is optimal for use by applications that display the speech recognition results to a user.
+**Inverse Text Normalization (ITN) has been applied**  |  An example of ITN is converting result text from "go to fourth street" to "go to 4th st". This form is optimal for use by applications that display the speech recognition results to a user.
+**InverseTextNormalizationResult**  | Inverse text normalization (ITN) converts phrases like "one two three four" to a normalized form such as "1234". Another example is converting result text from "go to fourth street" to "go to 4th st". This form is optimal for use by applications that interpret the speech recognition results as commands or perform queries based on the recognized text.
+**MaskedInverseTextNormalizationResult**  |  The recognized phrase with inverse text normalization and profanity masking applied, but no capitalization or punctuation. Profanity is masked with asterisks after the initial character, e.g. "d***". This form is optimal for use by applications that display the speech recognition results to a user. Inverse Text Normalization (ITN) has also been applied. An example of ITN is converting result text from "go to fourth street" to "go to 4th st". This form is optimal for use by applications that use the unmasked ITN results but also need to display the command or query to the user.
 
-* Partial Results Events : This event gets called every time the Speech Recognition Server has an idea of what you might be saying – even before you finish speaking (if you are using the Microphone Client) or have finished sending up data (if you are using the Data Client).
-* Error Events : Called when the Server Detects Error
-* Intent Events : Called on WithIntent clients (only in ShortPhrase mode) after the final reco result has been parsed into a structured JSON intent.
-* Result Events : When you have finished speaking (in ShortPhrase mode), this event is called. You will be provided with n-best choices for the result. In LongDictation mode, the handler's associated with this event will be called multiple times, based on where the server thinks sentence pauses are.
-
-   For each if the n-best choices, you get a confidence value and few different forms of the recognized text:
-
-     *  LexicalForm: This form is optimal for use by applications that need the raw, unprocessed speech recognition result.    
-     *  DisplayText: The recognized phrase with inverse text normalization, capitalization, punctuation and profanity masking applied. Profanity is masked with asterisks after the initial character, e.g. "d***". This form is optimal for use by applications that display the speech recognition results to a user.
-     *  Inverse Text Normalization (ITN) has also been applied. An example of ITN is converting result text from "go to fourth street" to "go to 4th st". This form is optimal for use by applications that display the speech recognition results to a user.
-     *  InverseTextNormalizationResult: Inverse text normalization (ITN) converts phrases like "one two three four" to a normalized form such as "1234". Another example is converting result text from "go to fourth street" to "go to 4th st". This form is optimal for use by applications that interpret the speech recognition results as commands or which perform queries based on the recognized text.
-     *  MaskedInverseTextNormalizationResult: The recognized phrase with inverse text normalization and profanity masking applied, but not capitalization or punctuation. Profanity is masked with asterisks after the initial character, e.g. "d***". This form is optimal for use by applications that display the speech recognition results to a user. Inverse Text Normalization (ITN) has also been applied. An example of ITN is converting result text from "go to fourth street" to "go to 4th st". This form is optimal for use by applications that use the unmasked ITN results but also need to display the command or query to the user.
+### Related Topics
