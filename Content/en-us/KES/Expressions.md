@@ -1,12 +1,12 @@
 <!--
 NavPath: Knowledge Exploration Service
 LinkLabel: Structured Query Expression
-Url: KES/documentation/expressions
+Url: KES/documentation/Expressions
 Weight: 60
 -->
 
 # Structured Query Expression
-A structured query expression specifies a set of operations to evaluate against the data index.  It consists of attribute query expressions and higher-level functions.  Use the [*evaluate*](evaluate.md) method to compute the objects matching the expression.  The following is an example from the academic publications domain that returns publications authored by Jaime Teevan since the year 2013.
+A structured query expression specifies a set of operations to evaluate against the data index.  It consists of attribute query expressions and higher-level functions.  Use the [*evaluate*](evaluateMethod.md) method to compute the objects matching the expression.  The following is an example from the academic publications domain that returns publications authored by Jaime Teevan since the year 2013.
 
 `And(Composite(Author.Name=='jaime teevan'),Y>=2013)`
 

@@ -1,7 +1,7 @@
 <!--
 NavPath: Knowledge Exploration Service
-LinkLabel: Schema
-Url: KES/documentation/Schema
+LinkLabel: Schema Format
+Url: KES/documentation/SchemaFormat
 Weight: 54
 -->
 # Schema

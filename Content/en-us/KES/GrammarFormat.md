@@ -1,7 +1,7 @@
 <!--
 NavPath: Knowledge Exploration Service
-LinkLabel: Grammar
-Url: KES/documentation/Grammar
+LinkLabel: Grammar Format
+Url: KES/documentation/GrammarFormat
 Weight: 48
 -->
 

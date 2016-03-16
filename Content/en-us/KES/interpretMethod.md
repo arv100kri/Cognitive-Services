@@ -1,7 +1,7 @@
 <!--
 NavPath: Knowledge Exploration Service/Web API Interface
 LinkLabel: Interpret Method
-Url: KES/documentation/interpret-method
+Url: KES/documentation/interpretMethod
 Weight: 30
 -->
 
@@ -95,7 +95,7 @@ The response contains the top two ("count=2") most likely interpretations that c
 }
 ```  
 
-When the type of semantic output is "query", as in this example, the matching objects can be retrieved by passing *output.value* to the [*evaluate*](evaluate.md) API via the *expr* parameter.
+When the type of semantic output is "query", as in this example, the matching objects can be retrieved by passing *output.value* to the [*evaluate*](evaluateMethod.md) API via the *expr* parameter.
 
 `http://<host>/evaluate?expr=Composite(AA.AuN=='jaime teevan')`
   

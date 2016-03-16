@@ -1,7 +1,7 @@
 <!--
 NavPath: Knowledge Exploration Service/Web API Interface
 LinkLabel: calchistogram Method
-Url: KES/documentation/calchistogram
+Url: KES/documentation/calchistogramMethod
 Weight: 15
 -->
 

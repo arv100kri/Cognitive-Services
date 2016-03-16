@@ -1,7 +1,7 @@
 <!--
 NavPath: Knowledge Exploration Service
-LinkLabel: Data
-Url: KES/documentation/data
+LinkLabel: Data Format
+Url: KES/documentation/DataFormat
 Weight: 49
 -->
 

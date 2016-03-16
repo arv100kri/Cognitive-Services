@@ -1,7 +1,7 @@
 <!--
 NavPath: Knowledge Exploration Service
 LinkLabel: Overview
-Url: KES/documentation/overview
+Url: KES/documentation/Overview
 Weight: 65
 -->
 
@@ -19,8 +19,8 @@ See [Getting Started](GettingStarted.md) for a walkthrough of using KES to creat
 * [Grammar Format](GrammarFormat.md)
 * [Semantic Interpretation](SemanticInterpretation.md)
 * [Web API Interface](WebAPI.md)
-  * [interpret Request](interpret.md)
-  * [evaluate Request](evaluate.md)
-  * [calchistogram Request](calchistogram.md)
+  * [interpret Request](interpretMethod.md)
+  * [evaluate Request](evaluateMethod.md)
+  * [calchistogram Request](calchistogramMethod.md)
 * [Structured Query Expression](Expressions.md)
 
