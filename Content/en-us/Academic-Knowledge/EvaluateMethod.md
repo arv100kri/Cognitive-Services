@@ -30,7 +30,7 @@ Name     | Value | Required?  | Description
 Name | Description
 -------|-----   
 **expr** |	The *expr* parameter from the request.
-**entities** |	An array of 0 or more entities that matched the query expression. Each entity contains a *prob* value and the values of other requested attributes.
+**entities** |	An array of 0 or more entities that matched the query expression. Each entity contains a *logprob* value and the values of other requested attributes.
 **aborted** | True if the request timed out.
 
 <br>
