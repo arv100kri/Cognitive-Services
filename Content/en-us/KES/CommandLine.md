@@ -1,3 +1,10 @@
+<!--
+NavPath: Knowledge Exploration Service
+LinkLabel: Command Line Interface
+Url: KES/documentation/Runtime
+Weight: 55
+-->
+
 # Command Line Interface
 The KES command line interface provides the ability to build index and grammar files from structured data and deploy them as web services.  It uses the general syntax: `kes.exe <command> <required_args> [<optional_args>]`.  You can run `kes.exe` without arguments to display a list of commands or `kes.exe <command>` to display a list of arguments available for the specified command.  Below is a list of available commands:
 * build_index

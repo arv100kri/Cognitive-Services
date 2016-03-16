@@ -1,3 +1,10 @@
+<!--
+NavPath: Knowledge Exploration Service
+LinkLabel: Data
+Url: KES/documentation/data
+Weight: 49
+-->
+
 # Data
 The data file describes the list of objects to index.
 Each line in the file specifies the attribute values of an object in [JSON format](http://json.org/) with UTF-8 encoding.

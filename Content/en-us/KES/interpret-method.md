@@ -1,3 +1,10 @@
+<!--
+NavPath: Knowledge Exploration Service/Web API Interface
+LinkLabel: Interpret Method
+Url: KES/documentation/interpret-method
+Weight: 30
+-->
+
 # interpret Method
 The *interpret* method takes a natural language query string and returns formatted interpretations of user intent based on the grammar and index data.  To provide an interactive search experience, this method may be called as each character is entered by the user with the *complete* parameter set to 1 to enable auto-complete suggestions.
 

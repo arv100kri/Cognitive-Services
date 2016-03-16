@@ -1,3 +1,9 @@
+<!--
+NavPath: Knowledge Exploration Service
+LinkLabel: Schema
+Url: KES/documentation/Schema
+Weight: 54
+-->
 # Schema
 The schema is specified in a JSON file that describes the attribute structure of the objects in the data file used to create the index.  For each attribute, the schema specifies the name, data type, optional operations, and optional synonyms list.  An object may have 0 or more values of each attribute type.  Below is a simplified example from an academic publication domain:
 

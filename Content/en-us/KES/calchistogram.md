@@ -1,3 +1,10 @@
+<!--
+NavPath: Knowledge Exploration Service/Web API Interface
+LinkLabel: calchistogram Method
+Url: KES/documentation/calchistogram
+Weight: 15
+-->
+
 # calchistogram Method
 The *calchistogram* method computes the objects matching a structured query expression and calculates the distribution of their attribute values.
 

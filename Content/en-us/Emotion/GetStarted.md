@@ -1,12 +1,14 @@
 <!--
 NavPath: Emotion API
 LinkLabel: Get Started with Emotion API in C#
-Url: Emotion-API/documentation/GetStarted
+Url: Emotion-api/documentation/GetStarted
+Weight: 99
 -->
 
 # Get Started with Emotion API in C&#35;
  
  
+
 Explore a basic Windows application that uses Emotion API to recognize the emotions expressed by the faces in an image. The below example lets you submit an image URL or a locally stored file. You can use this open source example as a template for building your own app for Windows using the Emotion API and WPF (Windows Presentation Foundation), a part of .NET Framework.
 ## Table of Contents
 [Prerequisites](#Prerequisites)  
@@ -14,15 +16,17 @@ Explore a basic Windows application that uses Emotion API to recognize the emoti
 [Step 2: Build the example](#Step2)  
 [Step 3: Run the example](#Step3)  
 [Review and Learn](#Review)  
-[Related Topics](#Related)
-## <a name="Requisites">Prerequisites </a>
-#### * Platform requirements
 
-The below example has been developed for the .NET Framework using [Visual Studio 2015, Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs).  
-#### * Subscribe to Emotion API and get a subscription key 
-Before creating the example, you must subscribe to Emotion API which is part of the Microsoft Project Oxford services. For subscription and key management details, see [Subscription Management](https://www.projectoxford.ai/doc/general/subscription-key-mgmt). Both the primary and secondary key can be used in this tutorial. Make sure to follow best practices for keeping your API key secret and secure. 
-#### * Get the client library and example
-You may download the Emotion API client library and example through [https://www.projectoxford.ai/sdk](https://www.projectoxford.ai/sdk) or access them via [GitHub](https://github.com/Microsoft/ProjectOxford-ClientSDK/tree/master/Emotion/Windows). The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder.
+## <a name="Prerequisites">Prerequisites</a>
+#### Platform requirements  
+
+  The below example has been developed for the .NET Framework using [Visual Studio 2015, Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs).  
+#### Subscribe to Emotion API and get a subscription key  
+
+  Before creating the example, you must subscribe to Emotion API which is part of the Microsoft Project Oxford services. See [subscription and key management](https://www.projectoxford.ai/Subscription). Both the primary and secondary key can be used in this tutorial. Make sure to follow best practices for keeping your API key secret and secure.  
+#### Get the client library and example  
+
+  You may download the Emotion API client library and example through [https://www.projectoxford.ai/sdk](https://www.projectoxford.ai/sdk) or access them via [GitHub](https://github.com/Microsoft/ProjectOxford-ClientSDK/tree/master/Emotion/Windows). The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder.
 
 ## <a name="Step1">Step 1: Open the example</a>
 1.	Start Microsoft Visual Studio 2015 and click **File**, select **Open**, then **Project/Solution**.
@@ -45,6 +49,10 @@ You may download the Emotion API client library and example through [https://www
 ## <a name="Review">Review and Learn</a>
 Now that you have a running application, let us review how this example app integrates with Project Oxford technology. This will make it easier to either continue building onto this app or develop your own app using Project Oxford’s Emotion API. 
 
+
+## <a name="Review">Review and Learn</a>
+Now that you have a running application, let us review how this example app integrates with Project Oxford technology. This will make it easier to either continue building onto this app or develop your own app using Project Oxford’s Emotion API. 
+
 This example app makes use of the Emotion API Client Library, a thin C# client wrapper for the Project Oxford Emotion API. When you built the example app as described above, you got the Client Library from a NuGet package. You can review the Client Library source code in the folder titled “[Client Library](https://github.com/Microsoft/ProjectOxford-ClientSDK/tree/master/Emotion/Windows/ClientLibrary)” under **Emotion**, **Windows**, **Client Library**, which is part of the downloaded file repository mentioned above in [Prerequisites](#Prerequisites).
  
 You can also find out how to use the Client Library code in **Solution Explorer**: Under **EmotionAPI-WPF_Samples**, expand **DetectEmotionUsingStreamPage.xaml** to locate **DetectEmotionUsingStreamPage.xaml.cs**, which is used for browsing to a locally stored file, or expand **DetectEmotionUsingURLPage.xaml** to find **DetectEmotionUsingURLPage.xaml.cs**, which is used when uploading an image URL. Double-click the .xaml.cs files to have them open in new windows in Visual Studio. 
@@ -54,7 +62,7 @@ Reviewing how the Emotion Client Library gets used in our example app, let's loo
 The Emotion API is able to work with either an image URL or binary image data (in form of an octet stream) as input. The two options are reviewed below. In both cases, you first find a using directive, which lets you use the Emotion Client Library. 
 
 
-```csharp  
+```csharp
 
             // ----------------------------------------------------------------------- 
             // KEY SAMPLE CODE STARTS HERE 
@@ -141,9 +149,10 @@ Shown below is how to submit your subscription key and a locally stored image to
             // KEY SAMPLE CODE ENDS HERE
             // -----------------------------------------------------------------------
 ```
+<!--
 ## <a name="Related">Related Topics</a>
-<!--[Emotion API Overview](Emotion%20API%20Overview.xml)-->
-
+[Emotion API Overview](.)
+-->
 
 
 
