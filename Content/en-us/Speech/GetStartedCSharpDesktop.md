@@ -20,14 +20,14 @@ Using the Client Library allows for real-time streaming, which means that at the
 *	[Step 2: Build the example application](#Step2)
 *	[Step 3: Run the example application](#Step3)
 *	[Review and Learn](#Review)   
-*	[Interpreting the returned results](#Interprete)
+*	[Interpreting the returned results](#Interpret)
 *	[Related Topics](#Related)
 
-* ####Platform requirements
+* #### Platform requirements
 The below example has been developed for the .NET Framework using [Visual Studio 2015, Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs). 
-* ####Get the client library and example
+* #### Get the client library and example
 You may download the Speech API client library and example through https://www.projectoxford.ai/sdk or access them via [GitHub](https://github.com/Microsoft/ProjectOxford-ClientSDK/tree/master/Speech). The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder.
-* ####Subscribe to Speech API and get a free trial subscription key 
+* #### Subscribe to Speech API and get a free trial subscription key 
 Before creating the example, you must subscribe to Speech API which is part of Project Oxford services. For subscription and key management details, see [Subscriptions](https://www.projectoxford.ai/speech). Both the primary and secondary key can be used in this tutorial. 
 
 ### Step 1: Install the example application
@@ -58,10 +58,10 @@ There are example audio files to be used with this example application. You find
 *	####Partial Results Event: 
 This event gets called every time the Speech Recognition Server has an idea of what the speaker might be saying – even before he or she has finished speaking (if you are using the Microphone Client) or have finished transferring data (if you are using the Data Client).
 
-*   ####Intent Event:
+* ####Intent Event:
 Called on WithIntent clients (only in ShortPhrase mode) after the final reco result has been parsed into structured JSON intent.
 
-*   ####Result Event:
+* ####Result Event:
 When you have finished speaking (in ShortPhrase mode), this event is called. You will be provided with n-best choices for the result. In LongDictation mode, the handler associated with this event will be called multiple times, based on where the server thinks sentence pauses are.
 
 Eventhandlers are already pointed out in the code in form of code comments.
