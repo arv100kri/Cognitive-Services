@@ -49,7 +49,7 @@ Using the *count* and *offset* parameters, a large number of results may be obta
   "entities": 
   [
     {
-      "prob": 2.266e-007,
+      "logprob": -15.08,
       "Ti": "personalizing search via automated analysis of interests and activities",
       "Y": 2005,
       "CC": 372,
@@ -69,7 +69,7 @@ Using the *count* and *offset* parameters, a large number of results may be obta
       ]
     },
     {
-      "prob": 1.723e-007,
+      "logprob": -15.389,
       "Ti": "the perfect search engine is not enough a study of orienteering behavior in directed search",
       "Y": 2004,
       "CC": 237,
