@@ -11,6 +11,7 @@ In this walkthrough, we will use the Knowledge Exploration Service (KES) to crea
 The academic publications example contains a sample of 1000 academic papers published by researchers at Microsoft.  Each paper is associated with a title, publication year, authors, and keywords.  Each author is represented by an ID, name, and affiliation at the time of publication.  Each keyword may be associated with a set of synonyms (ex. *support vector machine* -> *svm*).
 
 We will walk through the following steps to create a KES cloud service for the academic domain:
+
 1. [Defining schema](#defining-schema)
 2. [Generating data](#generating-data)
 3. [Building index](#building-index)
