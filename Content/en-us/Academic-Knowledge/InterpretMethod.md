@@ -48,7 +48,7 @@ Name     | Description
 ```
 https://api.projectoxford.ai/academic/v1.0/interpret?query=papers by jaime&complete=1&count=2
  ```
-<br>The response below contains the top two (because of the parameter *count=2*) most likely interpretations that complete the partial user input *papers by jaime*: *papers by jaime teevan* and *papers by jaime goodman*.  The service generated query completions instead of considering only exact match for the author *jaime* because the request specified *complete=1*. Note that the canonical value *j l green* matched via the synonym *jamie green*, as indicated in the parse.
+<br>The response below contains the top two (because of the parameter *count=2*) most likely interpretations that complete the partial user input *papers by jaime*: *papers by jaime teevan* and *papers by jaime green*.  The service generated query completions instead of considering only exact match for the author *jaime* because the request specified *complete=1*. Note that the canonical value *j l green* matched via the synonym *jamie green*, as indicated in the parse.
 
 
 ```JSON
@@ -56,8 +56,8 @@ https://api.projectoxford.ai/academic/v1.0/interpret?query=papers by jaime&compl
   "query": "papers by jaime",
   "interpretations": [
     {
-      "prob": 2.429e-006,
-      "parse": "<rule id=\"#GetPapers\">papers by <attr name=\"academic#AA.AuN\">jaime teevan</attr></rule>",
+      "logprob": -12.728,
+      "parse": "<rule name=\"#GetPapers\">papers by <attr name=\"academic#AA.AuN\">jaime teevan</attr></rule>",
       "rules": [
         {
           "name": "#GetPapers",
@@ -69,8 +69,8 @@ https://api.projectoxford.ai/academic/v1.0/interpret?query=papers by jaime&compl
       ]
     },
     {
-      "prob": 1.416e-006,
-      "parse": "<rule id=\"#GetPapers\">papers by <attr name=\"academic#AA.AuN\" canonical=\"j l green\">jaime green</attr></rule>",
+      "logprob": -12.774,
+      "parse": "<rule name=\"#GetPapers\">papers by <attr name=\"academic#AA.AuN\" canonical=\"j l green\">jaime green</attr></rule>",
       "rules": [
         {
           "name": "#GetPapers",
