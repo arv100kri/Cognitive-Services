@@ -45,6 +45,7 @@ Before creating the example, you must subscribe to Speech API which is part of P
 1.	After the build is complete, press **F5** or click **Start** on the ribbon menu to run the example.  
 2.	Locate the **Project Oxford Speech to Text** window with the **text edit box** reading **"Paste your subscription key here to start"**. Paste your subscription key into the text box as shown in below screenshot. You may choose to persist your subscription key on your PC or laptop by clicking the **Save Key** button. When you want to delete the subscription key from the system, click **Delete Key** to remove it from your PC or laptop.
 
+![Speech Recognition paste in key](./Images/Speech Recog. past key.png)
 3.	Under **Speech Recognition Source** choose one of the six speech sources, which fall into two main input categories. 
 *  Using your computer’s microphone, or an attached microphone, to capture speech.
 *  Playing an audio file.	
@@ -55,13 +56,14 @@ Each category has three recognition modes.
 *  **Intent detection:** The server returns additional structured information about the speech input. To use Intent you will need to first train a model. See details [here](https://www.luis.ai/).
 
 There are example audio files to be used with this example application. You find the files in the repository you downloaded with this example under **SpeechToText**, in the **Windows** folder, under **samples**, in the **SpeechRecognitionServiceExample** folder. These example audio files will run automatically if no other files are chosen when selecting the **Use wav file for Shortphrase mode** or **Use wav file for Longdictation mode** as your speech input. Currently only wav and MP4 audio formats are supported.
+
+![Speech to Text Interface](./Images/Hello Jones.png)
   
 ###Review and Learn
 
 ###**Events** 
 
-
-*	####Partial Results Event: 
+* ####Partial Results Event: 
 This event gets called every time the Speech Recognition Server has an idea of what the speaker might be saying – even before he or she has finished speaking (if you are using the Microphone Client) or have finished transferring data (if you are using the Data Client).
 
 * ####Intent Event:
@@ -83,3 +85,7 @@ Eventhandlers are already pointed out in the code in form of code comments.
 **MaskedInverseTextNormalizationResult**  |  The recognized phrase with inverse text normalization and profanity masking applied, but no capitalization or punctuation. Profanity is masked with asterisks after the initial character, e.g. "d***". This form is optimal for use by applications that display the speech recognition results to a user. Inverse Text Normalization (ITN) has also been applied. An example of ITN is converting result text from "go to fourth street" to "go to 4th st". This form is optimal for use by applications that use the unmasked ITN results but also need to display the command or query to the user.
 
 ### Related Topics
+* Get Started with Speech Recognition in C Sharp for .Net on Windows Phone 8.1
+* Get started with Speech Recognition in C Sharp for .Net Universal Apps on Windows 10 (including Phone)
+* Get started with Speech Recognition and/or intent in Java on Android
+* Get started with Speech Recognition and/or intent in Objective C on iOS
