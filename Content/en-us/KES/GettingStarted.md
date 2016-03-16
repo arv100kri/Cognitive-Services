@@ -6,7 +6,7 @@ Weight: 48
 -->
 
 # Getting Started
-In this walkthrough, we will use the Knowledge Exploration Service (KES) to create the backend engine for an interactive search experience over academic publications.  The command line tool `kes.exe` and all example files are installed via the Knowledge Exploration Service SDK](https://www.microsoft.com/en-us/download/details.aspx?id=51488).
+In this walkthrough, we will use the Knowledge Exploration Service (KES) to create the backend engine for an interactive search experience over academic publications.  The command line tool `kes.exe` and all example files are installed via the [Knowledge Exploration Service SDK](https://www.microsoft.com/en-us/download/details.aspx?id=51488).
 
 The academic publications example contains a sample of 1000 academic papers published by researchers at Microsoft.  Each paper is associated with a title, publication year, authors, and keywords.  Each author is represented by an ID, name, and affiliation at the time of publication.  Each keyword may be associated with a set of synonyms (ex. *support vector machine* -> *svm*).
 
