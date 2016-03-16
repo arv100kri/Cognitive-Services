@@ -20,11 +20,11 @@ The **build_index** command builds a binary index file from a schema definition 
 | `--description <description>` | Description string |
 | `--remote <vmSize>`           | Size of VM for remote build |
 
-Schema/data/index files may be local file paths or URL paths to Azure blobs.  The schema file describes the structure of the objects being indexed as well as the operations to support (see [Schema Format](Schema.md)).  The data file enumerates the objects and attribute values to index (see [Data Format](Data.md)).  When the build succeeds, the output index file contains a compressed representation of the input data that support the desired operations.  
+Schema/data/index files may be local file paths or URL paths to Azure blobs.  The schema file describes the structure of the objects being indexed as well as the operations to support (see [Schema Format](SchemaFormat.md)).  The data file enumerates the objects and attribute values to index (see [Data Format](DataFormat.md)).  When the build succeeds, the output index file contains a compressed representation of the input data that support the desired operations.  
 
 A description string may be optionally specified to subsequently identify a binary index using the **describe_index** command.  
 
-By default, the index is built on the local machine.  Outside of the Azure environment, local builds are limited to data files up to 1 MB in size.  When the --remote flag is specified, the index will be built on a dynamically created Azure VM of the specified size.  This allows large indices to be built efficiently using Azure VMs with more memory.  To avoid paging which slows down the build process, we recommend using a VM with 3 times the amount of RAM as the input data file size.  For a list of available VM sizes, see [Sizes for virtual machines](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
+By default, the index is built on the local machine.  Outside of the Azure environment, local builds are limited to data files containing up to 10,000 objects.  When the --remote flag is specified, the index will be built on a dynamically created Azure VM of the specified size.  This allows large indices to be built efficiently using Azure VMs with more memory.  To avoid paging which slows down the build process, we recommend using a VM with 3 times the amount of RAM as the input data file size.  For a list of available VM sizes, see [Sizes for virtual machines](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
 
 TIP: For faster builds, presort the objects to index from the data file by decreasing probability.
 
@@ -43,7 +43,7 @@ The **build_grammar** command compiles a grammar specification in XML format to 
 | `<xmlFile>`     | Input XML grammar specification path |
 | `<grammarFile>` | Output compiled grammar path         |
 
-XML/grammar files may be local file paths or URL paths to Azure blobs.  The grammar specification describes the set of weighted natural language expressions and their semantic interpretation (see [Grammar Format](Grammar.md)).  When the build succeeds, the output grammar file contains a binary representation of the grammar specification to enable fast decoding.
+XML/grammar files may be local file paths or URL paths to Azure blobs.  The grammar specification describes the set of weighted natural language expressions and their semantic interpretation (see [Grammar Format](GrammarFormat.md)).  When the build succeeds, the output grammar file contains a binary representation of the grammar specification to enable fast decoding.
 
 <a name="host_service"/>
 ## host_service Command
@@ -55,11 +55,11 @@ The **host_service** command hosts an instance of the KES service on the local m
 |-----------------|----------------------------|
 | `<grammarFile>` | Input grammar path         |
 | `<indexFile>`   | Input index path           |
-| `--port <port>` | Local port.  Default: 8000 |
+| `--port <port>` | Local port number.  Default: 8000 |
 
 Index/grammar files may be local file paths or URL paths to Azure blobs.  A web service will be hosted at http://localhost:&lt;port&gt;/.  See [Web APIs](WebAPI.md) for a list of supported operations.
 
-Outside of the Azure environment, locally hosted services are limited to index files up to 1 MB in size, 1 request per second, and 1000 total calls.  To overcome this limitation, run **host_service** inside an Azure VM or deploy to an Azure cloud service using **deploy_service**.
+Outside of the Azure environment, locally hosted services are limited to index files up to 1 MB in size, 10 request per second, and 1000 total calls.  To overcome this limitation, run **host_service** inside an Azure VM or deploy to an Azure cloud service using **deploy_service**.
 
 <a name="deploy_service"/>
 ## deploy_service Command
@@ -101,21 +101,3 @@ The **describe_grammar** command outputs the original grammar specification used
 
 Grammar file may be local file path or a URL path to an Azure blob.
 
-
-
-
-
-# To Do
-* Change max string attribute value length to 4096.  Error if exceeded.  Error if empty value.
-* Copy files from local file system to VM without intermediate storage blob.
-  * https://www.veeam.com/fastscp-azure-vm.html
-  * https://gallery.technet.microsoft.com/scriptcenter/Copy-a-File-to-an-Azure-VM-d2ad9e1f
-  * https://gallery.technet.microsoft.com/scriptcenter/Copy-and-Item-from-an-c283405d
-* Create VM without storage account.
-  * https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-command-line-tools/#commands-to-manage-your-azure-virtual-machines
-  * `azure vm create my-vm-name MSFT__Windows-Server-2008-R2-SP1.11-29-2011 username --location "West US"`
-
-  * Document that user needs to pre-config an Azure Cloud Service before running host command
-* If we download files from blob, do we remove them afterwards?
-* Verify that if schema between grammar and index mismatches, we throw or work if compatible.
-* Reverse grammar/index positional parameters.  Need to update code to reflect.

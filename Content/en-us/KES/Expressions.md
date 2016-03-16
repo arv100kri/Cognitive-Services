@@ -6,16 +6,16 @@ A structured query expression specifies a set of operations to evaluate against 
 Structured query expressions may be obtained from [*interpret*](interpret.md) requests, where the semantic output of each interpretation is a structured query expression that returns the index objects matching the input natural language query.  Alternatively, they may be manually authored using the syntax described in this section.
 
 ## Attribute Query Expression
-An attribute query expression identifies a set of objects based on matching against a specific attribute.  Different matching operations are supported depending on the attribute type and indexed operation specified in the [schema](Schema.md):
+An attribute query expression identifies a set of objects based on matching against a specific attribute.  Different matching operations are supported depending on the attribute type and indexed operation specified in the [schema](SchemaFormat.md):
 
 | Type | Operation | Examples |
 |------|-------------|------------|
-| String | equals | "Title='latent semantic analysis'"  (canonical + synonyms) |
-| String | equals | "Author.Name=='susan t dumais'"  (canonical only)|
-| String | starts_with | "Title='latent s'..." |
-| Int32/Int64/Double | equals | "Year=2000" |
-| Int32/Int64/Double | starts_with | "Year='20'..." (any decimal value starting with "20") |
-| Int32/Int64/Double | is_between | "Year\<2000", "Year<=2000"," Year>2000", "Year>=2000", "Year=[2010,2012)" (includes only left boundary value: 2010, 2011), "Year=[2000,2012]" (includes both boundary values: 2010, 2011, 2012) |
+| String | equals | Title='latent semantic analysis'  (canonical + synonyms) |
+| String | equals | Author.Name=='susan t dumais'  (canonical only)|
+| String | starts_with | Title='latent s'... |
+| Int32/Int64/Double | equals | Year=2000 |
+| Int32/Int64/Double | starts_with | Year='20'... (any decimal value starting with "20") |
+| Int32/Int64/Double | is_between | Year\<2000 <br/> Year<=2000 <br/> Year>2000 <br/> Year>=2000 <br/> Year=[2010,2012) *(includes only left boundary value: 2010, 2011)* <br/> Year=[2000,2012] *(includes both boundary values: 2010, 2011, 2012)* |
 
 For example, the expression "Title='latent s'..." matches all academic publications whose title starts with the string "latent s".  In order to evaluate this expression, the attribute Title must specify the "starts_with" operation in the schema used to build the index.
 
@@ -61,7 +61,3 @@ On the other hand, the following expression returns academic publications where 
 And(Composite(Author.Name="harry shum"), 
     Composite(Author.Affiliation="microsoft"))
 ```
-
-# To Do
-* Document DateTime, Guid.
-* Clean up table formatting so each example is on its own line without "".

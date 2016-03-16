@@ -73,7 +73,7 @@ The `ruleref` element specifies valid expansions via references to another `rule
 ### attrref Element
 The `attrref` element references an index attribute, allowing matching against attribute values observed in the index.  The required `uri` attribute specifies the index schema name and attribute name using the syntax "*schemaName*#*attrName*".  There must be a preceding `import` element that imports the schema named *schemaName*.  The attribute name is the name of an attribute defined in the corresponding schema.
 
-In addition to matching user input, the `attrref` element also returns a structured query object as output that selects the subset of objects in the index matching the input value.  Use the optional `name` attribute to specify the name of the variable where the query object output should be stored.  The query object can be composed with other query objects to form more complex expressions.  See [Semantic Interpretation](Semantics.md) for details.  
+In addition to matching user input, the `attrref` element also returns a structured query object as output that selects the subset of objects in the index matching the input value.  Use the optional `name` attribute to specify the name of the variable where the query object output should be stored.  The query object can be composed with other query objects to form more complex expressions.  See [Semantic Interpretation](SemanticInterpretation.md) for details.  
 
 ```xml
 <attrref uri="academic#Keyword" name="keyword"/>
@@ -124,7 +124,7 @@ Each `rule` in the grammar has a predefined variable named "out", representing t
 
 Some statements may alter the probability of an interpretation path by introducing an additive log probability offset.  Some statements may reject the interpretation all together if specified conditions are not satisfied.
 
-For a list of supported semantic functions, see [Semantic Functions](Semantics.md#Functions).
+For a list of supported semantic functions, see [Semantic Functions](SemanticInterpretation.md#Functions).
 
 ## Interpretation Probability
 The probability of an interpretation path through the grammar is the cumulative log probability of all the `<item>` elements and semantic functions encountered along the way.  It describes the relative likelihood of matching a particular input sequence.
@@ -199,10 +199,3 @@ The following is an example XML from the academic publications domain that demon
   </rule>
 </grammar>
 ```
-
-
-
-# To Do
-* Can we allow abbreviated attrref op names?  starts_with/sw, equals/=.  
-* [Nik] [P2] Implement <ruleref [special](http://www.w3.org/TR/speech-grammar/#S2.2.3)=""/\> and map to corresponding concepts.
- 

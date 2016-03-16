@@ -92,5 +92,3 @@ When the type of semantic output is "query", as in this example, the matching ob
 
 `http://<host>/evaluate?expr=Composite(AA.AuN=='jaime teevan')`
   
-### TODO
-* Need to fix typos in Academic API documentation.  "green" in the example.  "rule id" became "rule name"
