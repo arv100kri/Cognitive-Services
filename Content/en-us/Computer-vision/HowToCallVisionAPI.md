@@ -41,13 +41,13 @@ In the examples below, the following features are demonstrated:
 Every call to the Vision API requires a subscription key. This key needs to be either passed through a query string parameter or specified in the request header. 
 
 **1.** Passing the subscription key through a query string, see below as a Vision API example:
-https://api.projectoxford.ai/vision/v1.0/analyze?visualFeatures=Description,Tags&subscription-key=<Your subscription key>
+```https://api.projectoxford.ai/vision/v1.0/analyze?visualFeatures=Description,Tags&subscription-key=<Your subscription key>```
 
 **2.** Passing the subscription key can also be specified in the HTTP request header:
-ocp-apim-subscription-key: <Your subscription key>
+```ocp-apim-subscription-key: <Your subscription key>```
 
 **3.** When using the client library, the subscription key is passed in through the constructor of VisionServiceClient:
-var visionClient = new VisionServiceClient(“Your subscriptionKey”);
+```var visionClient = new VisionServiceClient(“Your subscriptionKey”);```
 
 To obtain a subscription key, see subscriptions.[LINK]
 
