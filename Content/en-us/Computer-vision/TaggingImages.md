@@ -19,7 +19,7 @@ After uploading an image or specifying an image URL, Vision API’s algorithms o
 
 Image  | Tags: Json
 ------|------|
-IMAGE | {
+IMAGE | ```{
 “tags”: [
 {
   "name": "indoor",
@@ -43,5 +43,5 @@ IMAGE | {
 }
 
 ],
-
+```
 
