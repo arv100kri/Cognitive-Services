@@ -1,6 +1,6 @@
 <!-- 
 NavPath: Speaker Recognition API
-LinkLabel: APIReference
+LinkLabel: API Reference
 Weight: 50
 ExternalLink: https://dev.projectoxford.ai/docs/services/563309b6778daf02acc0a508
 -->
