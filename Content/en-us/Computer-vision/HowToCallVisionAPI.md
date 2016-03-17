@@ -39,6 +39,7 @@ In the examples below, the following features are demonstrated:
   
 ###<a name="Step1">Step 1: Authorize the API call</a> 
 Every call to the Vision API requires a subscription key. This key needs to be either passed through a query string parameter or specified in the request header. 
+
 **1.** Passing the subscription key through a query string, see below as a Vision API example:
 https://api.projectoxford.ai/vision/v1.0/analyze?visualFeatures=Description,Tags&subscription-key=<Your subscription key>
 
