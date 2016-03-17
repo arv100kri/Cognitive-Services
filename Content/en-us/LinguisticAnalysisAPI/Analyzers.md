@@ -32,21 +32,21 @@ Response: JSON
 ```json
 [
 	{
-		"id": "1F115AB3-A64D-41C6-9D2F-87519AAF2712"
+		"id": "1F115AB3-A64D-41C6-9D2F-87519AAF2712",
 		"languages": ["en"],
 		"kind": "Constituency_Tree",  
 		"specification": "PennTreebank3", 
 		"implementation": "SplitMerge"
 	}, 
 	{
-		"id" : "4D4F03C1-2B1B-43E7-8E16-E5F2FF66BF93"
+		"id" : "4D4F03C1-2B1B-43E7-8E16-E5F2FF66BF93",
 		"languages": ["en"],
 		"kind": "POS_Tags", 
 		"specification": "PennTreebank3", 
 		"implementation": "cmm"
 	},
 	{
-		"id" : "01B5A961-7C75-4E04-BAEC-7CE2239BF03C"
+		"id" : "01B5A961-7C75-4E04-BAEC-7CE2239BF03C",
 		"languages": ["en"],
 		"kind": "Tokens", 
 		"specification":"PennTreebank3", 

@@ -10,7 +10,7 @@ Weight: 80
 The **analyze** REST API is used to analyze a given natural language input.
 That might involve just finding the [sentences and tokens](SentsepTokenize.md) within that input, finding the [part-of-speech tags](PosTagging.md), or finding the [constitutency tree](Parsing.md).
 You can specify which results you want by picking the relevant analyzers.
-To list all available analyzers, look at the **[analyzers](AnalyzersMethod.md)**.
+To list all available analyzers, look at the **[analyzers](Analyzers.md)**.
 
 Note that you need to specify the language of the input string.
 
@@ -43,7 +43,78 @@ Note that the type of the result depends on the input analyzer type.
 
 ### Tokens Response (JSON)
 
-Name 
+Name | Type | Description
+-----|------|-------------
+result | list of sentence objects | sentence boundaries identified within the text |
+result[x].Offset | int | starting character offset of each sentence |
+result[x].Len | int | length in characters of each sentence |
+result[x].Tokens | list of token objects | token boundaries identified within the sentence |
+result[x].Tokens[y].Offset | int | starting character offset of the token |
+result[x].Tokens[y].Len | int | length in characters of the token |
+result[x].Tokens[y].RawToken | string | the characters inside that token, before normalization |
+result[x].Tokens[y].NormalizedToken | string | a normalized form of the character, safe for use in a [parse tree](Parsing.md); for instance, an open parenthesis character '(' becomes '-LRB-' |
+
+Example input: `This is a test. Hello.'
+Example JSON response:
+```json
+[
+  {
+    "Len": 15,
+    "Offset": 0,
+    "Tokens": [
+      {
+        "Len": 4,
+        "NormalizedToken": "This",
+        "Offset": 0,
+        "RawToken": "This"
+      },
+      {
+        "Len": 2,
+        "NormalizedToken": "is",
+        "Offset": 5,
+        "RawToken": "is"
+      },
+      {
+        "Len": 1,
+        "NormalizedToken": "a",
+        "Offset": 8,
+        "RawToken": "a"
+      },
+      {
+        "Len": 4,
+        "NormalizedToken": "test",
+        "Offset": 10,
+        "RawToken": "test"
+      },
+      {
+        "Len": 1,
+        "NormalizedToken": ".",
+        "Offset": 14,
+        "RawToken": "."
+      }
+    ]
+  },
+  {
+    "Len": 6,
+    "Offset": 16,
+    "Tokens": [
+      {
+        "Len": 5,
+        "NormalizedToken": "Hello",
+        "Offset": 16,
+        "RawToken": "Hello"
+      },
+      {
+        "Len": 1,
+        "NormalizedToken": ".",
+        "Offset": 21,
+        "RawToken": "."
+      }
+    ]
+  }
+]
+```
+
 
 ### POS Tags Response (JSON)
 
@@ -86,3 +157,4 @@ Response: JSON
   }
 ]
 ```
+
