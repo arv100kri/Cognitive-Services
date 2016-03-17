@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Face API
 LinkLabel: API Reference
-Url: face-api/documentation/api-reference
+ExternalLink: https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d
 Weight: 15
 -->
 
