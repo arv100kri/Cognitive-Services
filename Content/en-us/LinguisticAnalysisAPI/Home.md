@@ -2,7 +2,7 @@
 NavPath: Linguistic Analysis API
 LinkLabel: Overview
 Url: Linguistic-Analysis-API/documentation/overview
-Weight: 100
+Weight: 120
 -->
 
 # Linguistic Analysis APIs Overview
