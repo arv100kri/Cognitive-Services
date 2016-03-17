@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Speech API
 LinkLabel: API Reference - Client Library
-Url: Speech-api/documentation/API-Reference-Client-Library
+ExternalLink: https://www.projectoxford.ai/Files/Doc/Speech/Windows/index.html
 Weight: 20
 -->
 
