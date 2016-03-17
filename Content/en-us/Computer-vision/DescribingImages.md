@@ -2,7 +2,7 @@
 NavPath: Computer Vision API
 LinkLabel: Describing Images
 Url: Computer-Vision-API/documentation/DescribingImages
-Weight: 100
+Weight: 40
 -->
 #Generating Descriptions
 
