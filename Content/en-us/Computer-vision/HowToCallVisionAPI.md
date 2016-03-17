@@ -1,9 +1,10 @@
 <!-- 
 NavPath: Computer Vision API
-LinkLabel: Analyze Image
-Url: Computer-Vision-API/documentation/AnalyzeImage
+LinkLabel: How to call
+Url: Computer-Vision-API/documentation/how-to-call
 Weight: 100
 -->
+
 #How to Call Computer Vision API
 
 This guide demonstrates how to call Vision API using REST. The samples are written both in C# using the Vision API client library, and as HTTP POST/GET calls. We will focus on:
