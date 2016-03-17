@@ -1,6 +1,6 @@
 <!-- 
 NavPath: Computer Vision API
-LinkLabel: DescribingImages
+LinkLabel: Describing Images
 Url: Computer-Vision-API/documentation/DescribingImages
 Weight: 100
 -->
