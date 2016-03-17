@@ -36,8 +36,8 @@ Y>2005
 Y>=2005  
 Y<2010  
 Y<=2010  
-Y=[2010, 2012) (includes only left boundary value: 2010, 2011)  
-Y=[2010, 2012\] (includes both boundary values: 2010, 2011, 2012)
+Y=\[2010, 2012\) (includes only left boundary value: 2010, 2011)  
+Y=\[2010, 2012\] (includes both boundary values: 2010, 2011, 2012)
  
 **Numeric Attribute: Prefix value**  
 Y='19'... (any numeric value that starts with 19) 

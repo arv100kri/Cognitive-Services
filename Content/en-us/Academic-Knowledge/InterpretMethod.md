@@ -34,7 +34,7 @@ Name     | Description
 ---------|---------
 **query**	|The *query* parameter from the request.
 **interpretations**	|An array of 0 or more different ways of matching user input against the grammar.
-**interpretations[x].prob**	|The relative probability of the interpretation, on a scale from 0 to 1. A higher value means more likely.
+**interpretations[x].logprob**	|The relative log probability of the interpretation. Larger values are more likely.
 **interpretations[x].parse**	|An XML string that shows how each part of the query was interpreted.
 **interpretations[x].rules**	|An array of 1 or more rules defined in the grammar that were invoked during interpretation. For the Academic Knowledge API, there will always be 1 rule.
 **interpretations[x].rules[y].name**	|Name of the rule.

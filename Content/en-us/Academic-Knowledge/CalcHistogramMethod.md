@@ -37,7 +37,7 @@ Name | Description
 **histograms[x].total_count** | Total number of value instances among matching entities for this attribute.
 **histograms[x].histogram** |	Histogram data for this attribute.
 **histograms[x].histogram[y].value** |	A value for the attribute.
-**histograms[x].histogram[y].prob**	|Total probability of matching entities with this attribute value.
+**histograms[x].histogram[y].logprob**	|Total log probability of matching entities with this attribute value.
 **histograms[x].histogram[y].count**	|Number of matching entities with this attribute value.
 **aborted** | True if the request timed out.
 
@@ -52,13 +52,13 @@ https://api.projectoxford.ai/academic/v1.0/calchistogram?expr=And(Composite(AA.A
 https://api.projectoxford.ai/academic/v1.0/interpret?query=papers by jaime teevan after 2012
 ```
 <br>The expression in the first interpretation that is returned from the interpret API is *And(Composite(AA.AuN=='jaime teevan'),Y>2012)*.
-<br>This expression value is then passed in to the **calchistogram** API. The *attributes=Y,F.FN* parameter indicates that the distributions of paper counts should be by Year andField of Study, e.g.:
+<br>This expression value is then passed in to the **calchistogram** API. The *attributes=Y,F.FN* parameter indicates that the distributions of paper counts should be by Year and Field of Study, e.g.:
 ```
 https://api.projectoxford.ai/academic/v1.0/calchistogram?expr=And(Composite(AA.AuN=='jaime teevan'),Y>2012)&attributes=Y,F.FN&count=4
 ```
-<br>The response to this request first indicates that there are 23 papers that match the query expression.  For the *Year* attribute, there are 3 distinct values (one for each year after 2012 (i.e. 2013, 2014, and 2015) as specified in the query).  The total paper count over the 3 distinct values is 23.  For each *Year*, the histogram shows the value, total probability, and count of matching entities.     
+<br>The response to this request first indicates that there are 23 papers that match the query expression.  For the *Year* attribute, there are 3 distinct values (one for each year after 2012 (i.e. 2013, 2014, and 2015) as specified in the query).  The total paper count over the 3 distinct values is 37.  For each *Year*, the histogram shows the value, total log probability, and count of matching entities.     
 
-The histogram for *Field of Study* shows that there are 27 distinct fields of study. As a paper may be associated with multiple fields of study, the total count (37) can be larger than the number of matching entities.  Although there are 27 distinct values, the response only includes the top 4 because of the *count=4* parameter.
+The histogram for *Field of Study* shows that there are 34 distinct fields of study. As a paper may be associated with multiple fields of study, the total count (53) can be larger than the number of matching entities.  Although there are 34 distinct values, the response only includes the top 4 because of the *count=4* parameter.
 
 ```JSON
 {
@@ -72,17 +72,17 @@ The histogram for *Field of Study* shows that there are 27 distinct fields of st
       "histogram": [
         {
           "value": 2014,
-          "prob": 1.275e-07,
+          "logprob": -15.753,
           "count": 15
         },
         {
           "value": 2013,
-          "prob": 1.184e-07,
+          "logprob": -15.805,
           "count": 12
         },
         {
           "value": 2015,
-          "prob": 8.279e-08,
+          "logprob": -16.035,
           "count": 10
         }
       ]
@@ -94,22 +94,22 @@ The histogram for *Field of Study* shows that there are 27 distinct fields of st
       "histogram": [
         {
           "value": "crowdsourcing",
-          "prob": 7.218e-08,
+          "logprob": -15.258,
           "count": 9
         },
         {
           "value": "information retrieval",
-          "prob": 4.082e-08,
+          "logprob": -16.002,
           "count": 4
         },
         {
           "value": "personalization",
-          "prob": 2.384e-08,
+          "logprob": -16.226,
           "count": 3
         },
         {
           "value": "mobile search",
-          "prob": 2.119e-08,
+          "logprob": -17.228,
           "count": 2
         }
       ]

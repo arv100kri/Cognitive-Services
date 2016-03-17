@@ -2,7 +2,7 @@
 NavPath: Knowledge Exploration Service/Web API Interface
 LinkLabel: calchistogram Method
 Url: KES/documentation/calchistogramMethod
-Weight: 15
+Weight: 5
 -->
 
 # calchistogram Method
