@@ -1,11 +1,10 @@
 <!-- 
 NavPath: /
-LinkLabel: Welcome
+LinkLabel: Welcome to Microsoft Cognitive Services
 Url: documentation
 Weight: 500
 -->
 
-This is the documentation root page.  it will be ~/en-us/documentation/
-##possible content on this page
-1. subscriptions and key management
-2. links to other docs not on our DB such as Bing or Intercom
+
+1. Subscriptions and Key Management
+2. Additional links and resources
