@@ -1,4 +1,9 @@
-Tagging Images. Part of Computer-Vision API started 3-17-16.
+<!-- 
+NavPath: Computer Vision API
+LinkLabel: Tagging Images
+Url: Computer-Vision-API/documentation/TaggingImages
+Weight: 100
+-->
 
 #Tagging Images
 Vision API returns tags based on objects, living beings, scenery or actions found in an image. Tags are not returned according to a hierarchical classification system, but corresponds to image content. Some tags have associated hints to provide context or avoid ambiguity, for example the tag “cello” may be accompanied by the hint “object”. Note, that English the only supported language for tags at this point.
