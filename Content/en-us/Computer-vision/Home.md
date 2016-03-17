@@ -9,7 +9,7 @@ Weight: 101
 
 Welcome to Microsoft Computer Vision API. This cloud-based API provides developers with access to advanced algorithms for processing images and returning information. By uploading an image or specifying an image URL, Microsoft Computer Vision algorithms can analyze visual content in different ways based on inputs and user choices.
 
-### Analyze Image
+### Analyze an Image
 
 As something new with the release of version 1.0, Vision API offers image “tagging” based on more than 2000 recognizable objects, living beings and actions. In cases where tags may be ambiguous or not common knowledge, the API response provides “hints” to clarify the meaning of the tag in context of a known setting. Tags are not organized as a taxonomy and no inheritance hierarchies exist. A collection of content tags forms the foundation for an image “description” displayed as human readable language formatted in complete sentences. Note, that at this point English is the only supported language for image description.   
 
