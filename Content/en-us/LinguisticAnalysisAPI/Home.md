@@ -1,6 +1,13 @@
-## Linguistic Analysis APIs Overview
+<!-- 
+NavPath: Linguistic Analysis API
+LinkLabel: Overview
+Url: Linguistic-Analysis-API/documentation/overview
+Weight: 100
+-->
 
-Welcome to the Microsoft Project Oxford Linguistic Analysis APIs.
+# Linguistic Analysis APIs Overview
+
+Welcome to the Linguistic Analysis APIs.
 These APIs provide access to natural langauge processing (NLP) tools that identify the structure of text.
 The current release provides three types of analysis:
 
@@ -10,7 +17,6 @@ The current release provides three types of analysis:
 
 ## Getting Started
 
-1. Subscribe to the service.
-2. Download the [SDK](https://www.projectoxford.ai/sdk).
-3. Run the SDK sample code. 
-4. Consult the [API Reference](https://dev.projectoxford.ai/docs/services) for further details, including code snippets in a variety of languages.
+First you can familiar with the major types of analysis listed above.
+Next, look into the APIs for [getting the list of available analyzers](Analyzers.md) and how they are [named](AnalyzerNames.md).
+Finally, look into the API for [analyzing new input](Analyze.md).

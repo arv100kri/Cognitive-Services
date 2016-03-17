@@ -1,3 +1,10 @@
+<!-- 
+NavPath: Linguistic Analysis API
+LinkLabel: Sentences and Tokens
+Url: Linguistic-Analysis-API/documentation/Sentences-and-Tokens
+Weight: 100
+-->
+
 # Sentence Separation and Tokenization
 
 ## Background and motivation
