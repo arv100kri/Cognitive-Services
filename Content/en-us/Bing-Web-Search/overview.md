@@ -2,7 +2,9 @@
 NavPath: Bing Web Search API
 LinkLabel: Overview
 Weight: 80
-ExternalLink: https://bingapis.portal.azure-api.net/
+Url: Bing-web-search-API/overview
 -->
 
-# Dummy page for Bing API's MSDN link. No content is needed here.
+# Bing Web Search API Documentation
+
+Overview: https://bingapis.portal.azure-api.net/
