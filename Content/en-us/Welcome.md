@@ -13,8 +13,8 @@ You will find documentation of each product and their corresponding API referenc
 
 
 
-## Getting Started with free trials
-sign up for free trials on this site. You will receive a unique key paid for each product.  the second one is just a spare. Please do not share the key wiht anyone.  Note that trial keys have both rate limits (transactions per minute) and monthly usage caps.  You can upgrade to paid tiers to unlock the limits.  If the product you are interested in do not yet have a paid plan please contact sales.
+## Getting started with free trials
+Sign up for free trials on this site. You will receive a unique key paid for each product.  the second one is just a spare. Please do not share the key wiht anyone.  Note that trial keys have both rate limits (transactions per minute) and monthly usage caps.  You can upgrade to paid tiers to unlock the limits.  If the product you are interested in do not yet have a paid plan please contact sales.
 
-## Subscription Management
+## Subscription management
 
