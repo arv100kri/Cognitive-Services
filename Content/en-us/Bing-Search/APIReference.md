@@ -7,4 +7,5 @@ ExternalLink: https://bingapis.portal.azure-api.net/docs/services/56b43eeccf5ff8
 
 
 # API Reference 
+Bing Search API
 
