@@ -25,4 +25,4 @@ The following figure below shows an example of entity linking. More specifically
  
  
 ## Reference
- For more details about entity linking, please refer to the [API Reference](https://dev.platform.projectoxford.ai/docs/services/568b3b85876c38074c424dc7).
+ For more details about entity linking, please refer to the [API Reference](https://dev.projectoxford.ai/docs/services/56d3fb7cca73071a4030e528).
