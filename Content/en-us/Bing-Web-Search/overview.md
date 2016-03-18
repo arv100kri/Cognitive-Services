@@ -1,6 +1,6 @@
 <!-- 
 NavPath: Bing Web Search API
-LinkLabel: Documentation
+LinkLabel: Overview
 Weight: 80
 ExternalLink: https://bingapis.portal.azure-api.net/
 -->
