@@ -5,7 +5,7 @@ Url: Bing-Speller-API/documentation
 Weight: 100
 -->
 
-# Bing Speller API
+# Bing Speller API (formerly Spell Check API)
 
 Welcome to Bing Speller API which performs contextual spell checking for any text and provides inline suggestions for misspelled words. 
 
@@ -26,7 +26,7 @@ This spell-checker can handle any word processing scenario:
 
 *) Words that sound the same but differ in meaning and spelling, for example “see” and “sea”.
  
-Bing partnered with Project Oxford to make this service available to you. To help you get started with this supporting technology for all your word processing needs on PC or mobile apps, a new example application will soon be added. Check back soon.
+To help you get started with this supporting technology for all your word processing needs on PC or mobile apps, a new example application will soon be added. Check back soon.
 
 ## Language support
-Spell Check API currently supports U.S. English with other English locales as well as Chinese, Spanish, and other languages soon to follow. This page will be updated as new languages are added.
+Bing Speller API currently supports U.S. English with other English locales as well as Chinese, Spanish, and other languages soon to follow. This page will be updated as new languages are added.
