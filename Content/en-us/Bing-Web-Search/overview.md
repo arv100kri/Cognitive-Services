@@ -2,9 +2,7 @@
 NavPath: Bing Web Search API
 LinkLabel: Overview
 Weight: 80
-Url: Bing-web-search-API/overview
+Url: Bing-web-search-API/documentation
 -->
-
-# Bing Web Search API Documentation
 
 Overview: https://bingapis.portal.azure-api.net/
