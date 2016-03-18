@@ -1,8 +1,8 @@
 <!-- 
 NavPath: Bing Speller API
 LinkLabel: API Reference
+ExternalLink: https://dev.projectoxford.ai/docs/services/552ca72149c3f714647273f4/operations/555aaf47778daf1df8d80c0f
 Weight: 15
-ExternalLink: https://bingapis.portal.azure-api.net/docs/services/56b43eeccf5ff8098cef3807/operations/56b4447dcf5ff8098cef380d
 -->
 # API Reference
 Bing Speller API
