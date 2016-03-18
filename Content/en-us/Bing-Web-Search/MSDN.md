@@ -1,3 +1,3 @@
 
 
-# Welcome to Microsoft Cognitive Services Bing APIs!
+# Dummy page for MSDN link. No content is needed here.
