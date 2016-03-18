@@ -1,13 +1,13 @@
 <!-- 
-NavPath: Bing Speller API
+NavPath: Bing Spell Check API
 LinkLabel: Overview
-Url: Bing-Speller-API/documentation
+Url: Bing-Spell-check-API/documentation
 Weight: 100
 -->
 
-# Bing Speller API (formerly Spell Check API)
+# Bing Spell Check API (formerly Spell Check API)
 
-Welcome to Bing Speller API which performs contextual spell checking for any text and provides inline suggestions for misspelled words. 
+Welcome to Bing Spell Check API which performs contextual spell checking for any text and provides inline suggestions for misspelled words. 
 
 ## What is special about our 3rd generation spell-checker?
 
