@@ -19,7 +19,7 @@ After uploading an image or specifying an image URL, Vision API’s algorithms g
   
 Image  | Description
 ------|------|
-![Big_city](./Images/bw_buildings.jpg) |  Describe Result: *Image Format:* Jpeg, *Image Dimensions:* 400 x 400, *Description: Caption:* a black and white photo of a large city; *Confidence:* 0.607638706850331, *Caption:* a photo of a large city; *Confidence:* 0.577256764264197, *Caption:* a black and white photo of a city; *Confidence:* 0.538493271791207, "Tags:* outdoor, city, building, photo, large, 
+![Big_city](./Images/bw_buildings.jpg) |  Describe Result: *Image Format:* Jpeg, *Image Dimensions:* 400 x 400, *Description: Caption:* a black and white photo of a large city; *Confidence:* 0.607638706850331, *Caption:* a photo of a large city; *Confidence:* 0.577256764264197, *Caption:* a black and white photo of a city; *Confidence:* 0.538493271791207, *Tags:* outdoor, city, building, photo, large, 
 
 ```
  Json:	“description”: 
