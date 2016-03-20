@@ -19,11 +19,18 @@ After uploading an image or specifying an image URL, Vision API’s algorithms g
   
 Image  | Description: Json
 ------|------|
-IMAGE | Json returned
+![Big_city](./Images/Big_city.PNG) | [15:15:38.061109]: Describe Result:
+[15:15:38.069109]: Image Format : Jpeg
+[15:15:38.075109]: Image Dimensions : 400 x 400
+[15:15:38.082110]: Description : 
+[15:15:38.089614]:    Caption : a black and white photo of a large city; Confidence : 0.607638706850331
+[15:15:38.097110]:    Caption : a photo of a large city; Confidence : 0.577256764264197
+[15:15:38.109615]:    Caption : a black and white photo of a city; Confidence : 0.538493271791207
+[15:15:38.117610]:    Tags : outdoor, city, building, photo, large, 
 ```
  	“description”: 
 {
-"tags": 
+"Caption": 
 [
       "indoor",
         "person"
