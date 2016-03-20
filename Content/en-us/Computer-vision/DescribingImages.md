@@ -16,6 +16,7 @@ After uploading an image or specifying an image URL, Vision API’s algorithms g
  * Supported image formats: JPEG, PNG, GIF, BMP.
  * Image file size: Less than 4MB.
  * Image dimension: Greater than 50 x 50 pixels.
+ ![Big_city](./Images/Big_city.PNG)
   
 Image  | Description: Json
 ------|------|
