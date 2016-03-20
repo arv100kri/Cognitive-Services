@@ -20,7 +20,7 @@ After uploading an image or specifying an image URL, Vision API’s algorithms g
   
 Image  | Description: Json
 ------|------|
-![Big_city](./Images/Big_city.PNG) | [15:15:38.061109]: Describe Result:
+![Big_city](./Images/bw_buildings.jpg) | [15:15:38.061109]: Describe Result:
 [15:15:38.069109]: Image Format : Jpeg
 [15:15:38.075109]: Image Dimensions : 400 x 400
 [15:15:38.082110]: Description : 
