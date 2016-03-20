@@ -16,46 +16,39 @@ After uploading an image or specifying an image URL, Vision API’s algorithms g
  * Supported image formats: JPEG, PNG, GIF, BMP.
  * Image file size: Less than 4MB.
  * Image dimension: Greater than 50 x 50 pixels.
- ![Big_city](./Images/bw_buildings.jpg)
   
-Image  | Description: Json
+Image  | Description
 ------|------|
-![Big_city](./Images/bw_buildings.jpg) | [15:15:38.061109]: Describe Result:
-[15:15:38.069109]: Image Format : Jpeg
-[15:15:38.075109]: Image Dimensions : 400 x 400
-[15:15:38.082110]: Description : 
-[15:15:38.089614]:    Caption : a black and white photo of a large city; Confidence : 0.607638706850331
-[15:15:38.097110]:    Caption : a photo of a large city; Confidence : 0.577256764264197
-[15:15:38.109615]:    Caption : a black and white photo of a city; Confidence : 0.538493271791207
-[15:15:38.117610]:    Tags : outdoor, city, building, photo, large, 
+![Big_city](./Images/bw_buildings.jpg) |  Describe Result: Image Format: Jpeg, Image Dimensions: 400 x 400, Description: Caption: a black and white photo of a large city; Confidence : 0.607638706850331, Caption: a photo of a large city; Confidence: 0.577256764264197, Caption: a black and white photo of a city; Confidence : 0.538493271791207, Tags: outdoor, city, building, photo, large, 
+
 ```
- 	“description”: 
+ Json:	“description”: 
 {
-"Caption": 
-[
-      "indoor",
-        "person"
-], 
 "captions": [
 {
 "type": "phrase",
-“text”: “person at desk”,
-          “confidence”: 0.96
+“text”: “a black and white photo of a large city”,
+          “confidence”: 0.0.607638706850331
+]
+"captions": [
+{
+"type": "phrase",
+“text”: “a photo of a large city”,
+          “confidence”: 0.577256764264197
+]
+"captions": [
+{
+"type": "phrase",
+“text”: “a black and white photo of a city”,
+          “confidence”: 0.538493271791207
 ]
 },
 “description”: 
 {
 "tags": 
 [
-      "indoor",
-        "person", “laptop”, “computer_monitor”
-], 
-"captions": [
-{
-"type": "phrase",
-“text”: “person at computer monitor”,
-          “confidence”: 0.94
-]
+      "outdoor",
+        "city", "building", "photo", "large", 
 },
 	
 ```
