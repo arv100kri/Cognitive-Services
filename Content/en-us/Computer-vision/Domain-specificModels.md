@@ -23,7 +23,7 @@ This option is available for use in applications where users want to get generic
 
 Image  |  Output: Json
 ------|------|
-![Big_city](./Images/Satya_speaks_to_MSFT_employees.jpg) | Json returned, see below code snippet.
+![Satya Nadella](Satya_speaks_to_MSFT_employees.jpg)| Json returned, see below code snippet.
 ```
 Json
 {
