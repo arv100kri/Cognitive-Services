@@ -42,10 +42,10 @@ Before creating the example, you must subscribe to Speech API which is part of P
 2.	Note, you may have to specifically add the **SpeechRecognitionExample.WindowsPhone8.1.csproj** file to the solution, if it does not run automatically. The .csproj file can be found in the same folder as SpeechRecognitionExample.WindowsPhone8.1.sln.
 
 ###<a name="Step3">Step 3: Run the example application</a>
-1.	Before running the example application, you need to decide whether to use a device or a phone emulator for running your example application. If you choose the emulator, make sure your system allows virtualization* and has virtualization software such as Hyper-V installed to simulate the phone hardware. 
+1.	Before running the example application, you need to decide whether to use a device or a phone emulator for running your example application. If you choose the emulator, make sure your system allows virtualization* and has virtualization software such as Hyper-V installed to simulate the phone hardware. (*Virtualization is turned off by default in Windows 8, Windows 8.1, and Windows 10.)
 2.	Click **Start** on the ribbon menu to select **Device** or one of the **Emulators** to run the example.  
 3.	Locate the **Windows Phone** window or your chosen device, and scroll the apps. You should find the **Speech Recognition Example** under “S”.
-*Virtualization is turned off by default in Windows 8, Windows 8.1, and Windows 10.
+
 ![Windows Phone demo](./Images/WindowsPhone_demo.png)
 
 4.	Tap the app to open it.  A simple user interface opens. Tap the “Listen” button and speak a sentence or two. (Make sure the microphone is on.)  The spoken audio should be returned as text and appear in the square window immediately after your speech. A confidence level accompanies the returned text.
