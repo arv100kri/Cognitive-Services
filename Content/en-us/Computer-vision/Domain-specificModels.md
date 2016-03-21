@@ -23,8 +23,9 @@ This option is available for use in applications where users want to get generic
 
 Image  |  Output: Json
 ------|------|
-IMAGE (of Satya Nadella?) | Json returned
+![Big_city](./Images/Satya_speaks_to_MSFT_employees.jpg) | Json returned, see below code snippet.
 ```
+Json
 {
   "requestId": "d049e598-6f8a-4075-a95a-cce55ca138fd",
   "metadata": {
@@ -49,4 +50,4 @@ IMAGE (of Satya Nadella?) | Json returned
 }
 
 ```
-Domain-Specific Models, Scoped and Enhanced Analysis is covered in detail in the “How to” topic [LINK] and in the API Documentation [LINK].
+Domain-Specific Models, Scoped and Enhanced Analysis is covered in detail in the [“How to” topic](https://github.com/Microsoft/ProjectOxford-Documentation/blob/master/Content/en-us/Computer-vision/HowToCallVisionAPI.md).
