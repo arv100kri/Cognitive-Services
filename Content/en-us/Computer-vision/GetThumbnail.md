@@ -2,7 +2,7 @@
 NavPath: Computer Vision API
 LinkLabel: Get Thumbnail
 Url: Computer-Vision-API/documentation/GetThumbnail
-Weight: 90
+Weight: 95
 -->
 
 # Generate a Thumbnail
