@@ -92,7 +92,7 @@ To differentiate the likelihood of different papers, we specify the relative log
 See [Data Format](DataFormat.md) for additional information about the data format.
 
 ## Building index
-Once we have a schema file and data file, we can build a compressed binary index of the data objects using [`kes.exe build_index`](CommandLine.md#buildindex-command).  In this example, we build the index file *Academic.index* from the input schema file *Academic.schema* and data file *Academic.data* using the following command:
+Once we have a schema file and data file, we can build a compressed binary index of the data objects using [`kes.exe build_index`](CommandLine.md#build_index-command).  In this example, we build the index file *Academic.index* from the input schema file *Academic.schema* and data file *Academic.data* using the following command:
 
 `kes.exe build_index Academic.schema Academic.data Academic.index`
 
