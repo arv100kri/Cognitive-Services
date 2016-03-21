@@ -2,6 +2,6 @@
 NavPath: Recommendations  
 LinkLabel: Getting Started
 Weight: 70
-Url: Recommendations/documentation
+ExternalLink: https://azure.microsoft.com/en-us/documentation/articles/cognitive-services-recommendations-quick-start
 -->
-[Recommendations Getting Started Guide at Azure.com](https://azure.microsoft.com/en-us/documentation/articles/cognitive-services-recommendations-quick-start)
+
