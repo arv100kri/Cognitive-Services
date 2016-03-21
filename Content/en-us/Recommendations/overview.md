@@ -33,4 +33,5 @@ For instance, given all movies watched by a customer, it is possible to recommen
 
 
 **Resources**
+
 [Recommendations Getting Started Guide at Azure.com](https://azure.microsoft.com/en-us/documentation/articles/cognitive-services-recommendations-quick-start)
