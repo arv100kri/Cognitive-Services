@@ -132,56 +132,6 @@ As data is sent to the service, the client will receive multiple partial results
  * **LongDictation mode:** An utterance up to 2 minutes long. 
 As data is sent to the service, the client will receive multiple partial results and multiple final results, based on where the server identifies sentence pauses.
 
-
-
-
-### Preparation
-To use the tutorial, you will need the following prerequisites:
-
-* Make sure Android Studio is installed.
-* Download Speech Recognition API Client Library for Android from [this link](https://www.projectoxford.ai/SDK/GetFile?path=speech/SpeechToText-SDK-Android.zip). Unzip it. Inside there is both a fully buildable example and the SDK lib. The buildable example can be found in the samples\SpeechRecoExample directory. The2 libs you need to use in your own apps can be found at SpeechSDK\libs\{armeabi | x86}\libandroid_platform.so (don’t worry about the 22 Mbyte size, it gets slimmed down to 4MB at deploy time) and SpeechSDK\bin\SpeechSDK.jar.
-* In order to run the example or your own app, you will need authorization keys. See Step 1.  
-
-### Step 1: Subscribe for Speech Recognition API and get your subscription key
-Before using the Speech Recognition API, you must sign up to subscribe to the Speech Recognition API services. You will need to obtain a Primary and Secondary Key.
-
-1. Access the Project Oxford Portal web site at [https://www.projectoxford.ai](https://www.projectoxford.ai/), click on an offered service to go to its overview page (Speech API), and then click on the "Sign up" button. The Azure management portal will launch and you may be prompted to Sign in with your Microsoft account, or Sign up for a new Azure subscription if you don't already have one.
-2. In 'Choose an Application or Service' page, go down the list to select the offered service "Speech APIs" from the list, and then click through the various windows in order to make a purchase.
-3. When the purchase is complete, the service you selected should appear under 'Marketplace' as one of the purchased items. Click on the item to view the dashboard, and at the bottom of the page, click on the 'Manage' button to go to the 'Developer Manage Keys' page. Finally, copy or regenerate subscription keys in the page.  
-
-### Step 2: Create the application framework
-In this step you will create an Android application project to implement your use of the Speech Recognition API
-
-1. Open Android Studio.
-2. If you want build and run the given example, find the project embedded [here](https://www.projectoxford.ai/SDK/GetFile?path=speech/SpeechToText-SDK-Android.zip) at samples\SpeechRecoExample into Android Studio. You will need to paste in your authorization key in file samples\SpeechRecoExample\res\values\strings.xml (you don’t have to worry about the luis values if you don’t want to use intent right now). If you are trying to build your own app, continue on with these instructions.
-3. Create a new application project.
-4. With the items you downloaded from the SDK, do the following:
-   * Copy speechsdk.jar to < your app >\app\libs folder
-   * Right click "app" in the project tree, select "open module settings", select "Dependencies" tab, click "+" to add a "file dependency". Select the libs\speechsdk.jar in the "Select Path" dialog
-   * Copy libandroid_platform.so to < your app >\app\src\main\jniLibs\armeabi
-     
-### Step 3: Refer to the example code
-Take a look at [MainActivity.java](https://oxfordportal.blob.core.windows.net/example-speech/MainActivity.java). or find MainActivity.java in samples\SpeechRecoExample from the zip file. You will need the Primary Key you generated above. See the example for where you use them. Once you have your Primary Key, in the example, you will see that you use the SpeechRecognitionServiceFactory to create a client of your liking. You can create one of:
-
-1. A DataRecognitionClient -- for speech recognition with PCM data (for example from a file or audio source). The data is broken up into buffers and each buffer is sent to the Speech Recognition Service. No modification is done to the buffers, so the user can apply their own Silence Detection if desired. If the data is provided from wave files, you can just send data from the file right to the server. Alternatively, if you have just raw data (for example audio coming over bluetooth), then you first send a format header to the server, followed by the data.
-2. A MicrophoneRecognitionClient -- for speech recognition from the microphone. The microphone is turned on and data from the microphone is sent to the Speech Recognition Service. A built in Silence Detector is applied to the microphone data before it is sent to the recognition service.
-
-You can also create “WithIntent” clients if you want the server to additionally return structured information about the speech for apps to easily parse the intent of the Speaker and drive further actions in the app. To use intent, you will need train a models and get an AppID and a Secret. See [here](http://www.projectoxford.ai/luis) for details.
-
-When you use the factory to create the Client, you provide the language. One of:
-* American English: "en-us"
-* British English: "en-gb"
-* German: "de-de"
-* Spanish: "es-es"
-* French: "fr-fr"
-* Italian: "it-it"
-* Mandarin: "zh-cn"
-
-You also provide the recognition mode. This is one of:
-
-* **ShortPhrase mode:** an utterance may only up to 15 sec long, as data is sent to the server, the client will receive multiple partial results and one final multiple n-best choice result.
-* **LongDictation mode:** an utterance may be only up to 2 minutes long, as data is sent to the server, the client will receive multiple partial results and multiple final results, based on where the server thinks sentence pauses are.
-
 From the Created client, you can attach various event handlers.
 
 * **Partial Results Events:** This event gets called every time the Speech Recognition Server has an idea of what you might be saying – even before you finish speaking (if you are using the Microphone Client) or have finished sending up data (if you are using the Data Client).
@@ -202,5 +152,7 @@ For each if the n-best choices, you get a confidence value and few different for
 Run the application with the chosen clients, recognition modes and event handlers.
 
 ### <a name="Related">Related topics</a>
-
-Other Speech Recognition “Get started” pages
+* Get started with Speech Recognition in C Sharp for Windows in .NET
+* Get Started with Speech Recognition in C Sharp for .Net on Windows Phone 8.1
+* Get started with Speech Recognition in C Sharp for .Net Universal Apps on Windows 10 (including Phone)
+* Get started with Speech Recognition and/or intent in Objective C on iOS
