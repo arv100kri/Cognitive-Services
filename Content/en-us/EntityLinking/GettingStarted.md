@@ -1,5 +1,5 @@
 <!--
-NavPath: EntityLinking API
+NavPath: Entity Linking API
 LinkLabel: Getting Started with EntityLinking API in C#
 Url: entitylinking-api/documentation/GettingStarted
 Weight: 1
