@@ -1,5 +1,5 @@
 <!-- 
-NavPath: Bing AutoSuggest API
+NavPath: Bing Autosuggest API
 LinkLabel: Overview
 Weight: 80
 Url: Bing-autosuggest-API/documentation
