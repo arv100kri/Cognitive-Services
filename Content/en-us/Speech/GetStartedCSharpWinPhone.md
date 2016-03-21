@@ -47,7 +47,6 @@ Before creating the example, you must subscribe to Speech API which is part of P
 3.	Locate the **Windows Phone** window or your chosen device, and scroll the apps. You should find the **Speech Recognition Example** under “S”.
 *Virtualization is turned off by default in Windows 8, Windows 8.1, and Windows 10.
 ![Windows Phone demo](./Images/WindowsPhone_demo.png)
-![Speech Recognition paste in key](./Images/SpeechRecog_paste_key.PNG)
 
 4.	Tap the app to open it.  A simple user interface opens. Tap the “Listen” button and speak a sentence or two. (Make sure the microphone is on.)  The spoken audio should be returned as text and appear in the square window immediately after your speech. A confidence level accompanies the returned text.
 
