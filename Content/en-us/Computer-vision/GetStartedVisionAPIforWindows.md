@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Computer Vision API
-LinkLabel: Analyze Image
-Url: Computer-Vision-API/documentation/AnalyzeImage
+LinkLabel: Get Started
+Url: Computer-Vision-API/documentation/GetStarted
 Weight: 100
 -->
 
