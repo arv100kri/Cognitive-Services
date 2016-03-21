@@ -55,8 +55,8 @@ One SpeechRecognizer object can be used for multiple recognition sessions.
 ```
 protected async override void OnNavigatedTo(NavigationEventArgs e)
 ![WindowsPhone code](./Images/WindowsPhone-codeSample.PNG)
-
 ```
+![WindowsPhone code](./Images/WindowsPhone-codeSample.PNG)
 A speech recognition session can be started by calling the SpeechRecognizer.RecognizeAsync method. This returns an IAsyncOperation< SpeechRecognitionResult > object, which provides the Completed event that is triggered upon completion of the recognition session. The session is terminated and the recognition results returned when a pause is detected by the recognizer. The results are passed as an argument to any handlers attached to the Completed event.
 
 The results are available in a SpeechRecognitionResult object accessible through the arguments of the Completed event handler. This object provides n-best alternatives in decreasing order of quality (results with highest recognition confidence level is first followed by results with decreasing recognition confidence levels).
@@ -65,8 +65,8 @@ The results are available in a SpeechRecognitionResult object accessible through
 In conclusion, this "Get started" introduction and the provided example application only illustrates basic functionality of the Windows Media Speech Recognition API. The API offers a rich set of features that we encourage you to explore through the API documentation on MSDN and further experimentation.
 
 ###<a name="Related">Related topics</a>
-•Get Started with Speech Recognition in C Sharp for .Net on Windows Desktop
-•Get started with Speech Recognition in C Sharp for .Net Universal Apps on Windows 10 (including Phone)
-•Get started with Speech Recognition and/or intent in Java on Android
-•Get started with Speech Recognition and/or intent in Objective C on iOS
+ * Get Started with Speech Recognition in C Sharp for .Net on Windows Desktop
+ * Get started with Speech Recognition in C Sharp for .Net Universal Apps on Windows 10 (including Phone)
+ * Get started with Speech Recognition and/or intent in Java on Android
+ * Get started with Speech Recognition and/or intent in Objective C on iOS
 
