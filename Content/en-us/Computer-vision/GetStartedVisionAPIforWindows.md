@@ -2,7 +2,7 @@
 NavPath: Computer Vision API
 LinkLabel: Get Started
 Url: Computer-Vision-API/documentation/GetStarted
-Weight: 100
+Weight: 94
 -->
 
 #Get Started with Computer Vision API in C Sharp
