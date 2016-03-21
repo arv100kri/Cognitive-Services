@@ -22,9 +22,9 @@ An attribute query expression identifies a set of objects based on matching agai
 | String | starts_with | Title='latent s'... |
 | Int32/Int64/Double | equals | Year=2000 |
 | Int32/Int64/Double | starts_with | Year='20'... (any decimal value starting with "20") |
-| Int32/Int64/Double | is_between | Year\<2000 <br/> Year<=2000 <br/> Year>2000 <br/> Year>=2000 <br/> Year=[2010,2012) *(includes only left boundary value: 2010, 2011)* <br/> Year=[2000,2012] *(includes both boundary values: 2010, 2011, 2012)* |
+| Int32/Int64/Double | is_between | Year&lt;2000 <br/> Year&lt;=2000 <br/> Year&gt;2000 <br/> Year&gt;=2000 <br/> Year=[2010,2012) *(includes only left boundary value: 2010, 2011)* <br/> Year=[2000,2012] *(includes both boundary values: 2010, 2011, 2012)* |
 | Date | equals | BirthDate='1984-05-14' |
-| Date | is_between | BirthDate<='2008/03/14' <br/> PublishDate=['2000-01-01','2009-12-31'] |
+| Date | is_between | BirthDate&lt;='2008/03/14' <br/> PublishDate=['2000-01-01','2009-12-31'] |
 | Guid | equals | Id='602DD052-CC47-4B23-A16A-26B52D30C05B' |
 
 
