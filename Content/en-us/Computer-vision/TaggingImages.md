@@ -17,33 +17,46 @@ After uploading an image or specifying an image URL, Vision API’s algorithms o
 * Image file size: Less than 4MB.
 * Image dimension: Greater than 50 x 50 pixels.
 
-Image  | Tags: Json
+Image  | Tags
 ------|------|
-IMAGE | 
-```
+![House_and_Yard](./Images/house_yard.jpg) | Get Tags Result: *Image Format:* Jpeg, *Image Dimensions:* 400 x 400, *Tags:*  *Name:* grass; *Confidence:* 0.999999761581421; Hint: *Name:* outdoor; *Confidence:* 0.999970674514771; Hint: *Name:* sky; *Confidence:* 0.999289751052856; Hint:  *Name:* building; *Confidence:* 0.996463239192963; Hint: *Name:* house; *Confidence:* 0.992798030376434; Hint: *Name:* lawn; *Confidence:* 0.822680294513702; Hint: *Name:* green; *Confidence:* 0.641222536563873; Hint: *Name*: residential; *Confidence:* 0.314032256603241; Hint: 
+
+Json```
 {
 “tags”: [
-{
-  "name": "indoor",
-          "confidence": 0.976
-},
-{
-  "name": "person",
-           "confidence": 0.95
+          {
+            "name": "grass",
+              "confidence": 0.999999761581421
+          },
+          {
+            "name": "outdoor",
+              "confidence": 0.999970674514771
+          },
+          {
+              "name": "sky",
+                "confidence": 999289751052856
+          },
+          {
+              "name": "building",
+                "confidence": 0.996463239192963
+          },
+          {
+            "name": "house",
+              "confidence": 0.992798030376434
+          },
+          {
+            "name": "lawn",
+              "confidence": 0.822680294513702
+          },
+          {
+            "name": "green",
+              "confidence": 0.641222536563873
+          },
+          {
+            "name": "residential",
+              "confidence": 0.314032256603241
+          },
+        ],
 }
-{
-  "name": "dog",
-           "confidence": 0.85
-}
-{
-  "name": "table",
-           "confidence": 0.82
-}
-{
-  "name": "chair",
-           "confidence": 0.81
-}
-
-],
 ```
 
