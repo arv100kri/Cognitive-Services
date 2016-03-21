@@ -29,8 +29,8 @@ Json
 {
   "requestId": "d049e598-6f8a-4075-a95a-cce55ca138fd",
   "metadata": {
-    "width": 1024,
-    "height": 768,
+    "width": 298,
+    "height": 300,
     "format": "Jpeg"
   },
   "result": {
@@ -38,10 +38,10 @@ Json
       {
         "name": "Satya Nadella",
         "faceRectangle": {
-          "left": 528,
-          "top": 210,
-          "width": 225,
-          "height": 225
+          "left": 98,
+          "top": 30,
+          "width": 35,
+          "height": 35
         },
         "confidence": 0.9993637
       }
