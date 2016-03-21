@@ -2,7 +2,7 @@
 NavPath: Computer Vision API
 LinkLabel: OCR
 Url: Computer-Vision-API/documentation/OCR
-Weight: 80
+Weight: 96
 -->
 
 # Optical Character Recognition (OCR)
