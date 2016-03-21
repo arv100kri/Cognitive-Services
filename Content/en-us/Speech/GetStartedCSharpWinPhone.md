@@ -21,12 +21,12 @@ Using the Windows.Media.SpeechRecognition API Client Library allows for real-tim
 * [Related topics](#Related)
 
 ###<a name="Prerequisites">Prerequisites</a>
-* ####Platform requirements
+ * ####Platform requirements
 The below example has been developed for the .NET Framework using [Visual Studio 2015, Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs). 
-* ####Access the client library and download the example
+ * ####Access the client library and download the example
 You can access the Windows Media Speech Recognition Client Library through this [link](https://msdn.microsoft.com/en-us/library/windows.media.speechrecognition.aspx) and you may download the example application for a Windows Phone 8.1 Universal project [here](https://oxfordportal.blob.core.windows.net/example-speech/SpeechRecognitionExample.WindowsPhone8.1.zip). 
 The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder. You may also need to download the Windows Phone tools, which is an optional add-on to Visual Studio, if it is not already installed.
-* ####Subscribe to Speech API and get a free trial subscription key 
+ * ####Subscribe to Speech API and get a free trial subscription key 
 Before creating the example, you must subscribe to Speech API which is part of Project Oxford services. For subscription and key management details, see [Subscription](https://www.projectoxford.ai/speech). Both the primary and secondary key can be used in this example. 
 
 ###<a name="Step1">Step 1: Install the Windows Phone 8.1 example application</a>
@@ -43,7 +43,7 @@ Before creating the example, you must subscribe to Speech API which is part of P
 2.	Click **Start** on the ribbon menu to select **Device** or one of the **Emulators** to run the example.  
 3.	Locate the **Windows Phone** window or your chosen device, and scroll the apps. You should find the **Speech Recognition Example** under “S”.
 *Virtualization is turned off by default in Windows 8, Windows 8.1, and Windows 10.
-![WindowsPhone demo](./Images/WindowsPhone-demo.PNG)
+![WindowsPhone demo](./Images/WindowsPhone-demo.png)
 
 4.	Tap the app to open it.  A simple user interface opens. Tap the “Listen” button and speak a sentence or two. (Make sure the microphone is on.)  The spoken audio should be returned as text and appear in the square window immediately after your speech. A confidence level accompanies the returned text.
 
