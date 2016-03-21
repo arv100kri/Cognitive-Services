@@ -1,5 +1,5 @@
 <!-- 
-NavPath: TextAnalytics  
+NavPath: Text Analytics
 LinkLabel: Getting Started
 Weight: 70
 ExternalLink: http://go.microsoft.com/fwlink/?LinkID=759342
