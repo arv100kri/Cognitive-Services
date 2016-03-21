@@ -21,11 +21,14 @@ Using the Windows.Media.SpeechRecognition API Client Library allows for real-tim
 * [Related topics](#Related)
 
 ###<a name="Prerequisites">Prerequisites</a>
+
 * #### Platform requirements
 The below example has been developed for the .NET Framework using [Visual Studio 2015, Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs). 
+
 * #### Access the client library and download the example
 You can access the Windows Media Speech Recognition Client Library through this [link](https://msdn.microsoft.com/en-us/library/windows.media.speechrecognition.aspx) and you may download the example application for a Windows Phone 8.1 Universal project [here](https://oxfordportal.blob.core.windows.net/example-speech/SpeechRecognitionExample.WindowsPhone8.1.zip). 
 The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder. You may also need to download the Windows Phone tools, which is an optional add-on to Visual Studio, if it is not already installed.
+
 * #### Subscribe to Speech API and get a free trial subscription key 
 Before creating the example, you must subscribe to Speech API which is part of Project Oxford services. For subscription and key management details, see [Subscription](https://www.projectoxford.ai/speech). Both the primary and secondary key can be used in this example. 
 
