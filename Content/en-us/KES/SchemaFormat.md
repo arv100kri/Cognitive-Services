@@ -32,6 +32,7 @@ Below is a list of supported attribute data types:
 | Int32 | Signed 32-bit integer | equals, starts_with, is_between | 2016 |
 | Int64 | Signed 64-bit integer | equals, starts_with, is_between | 9876543210 |
 | Double | Double-precision floating point value | equals, starts_with, is_between | 1.602e-19 |
+| Date | Date (1400-01-01 to 9999-12-31) | equals, is_between | '2016-03-14' |
 | Guid | Globally unique identifier | equals | "602DD052-CC47-4B23-A16A-26B52D30C05B" |
 | Blob | Internally compressed non-indexed data | *None* | "Empower every person and every organization on the planet to achieve more" |
 | Composite | Composition of multiple sub-attributes| *N/A* | { "Name":"harry shum", "Affiliation":"microsoft" } |
@@ -40,12 +41,11 @@ String attributes are used to represent string values that may appear as part of
 
 Int32/Int64/Double attributes are used to represent numeric values.  The is_between operation enables inequality support (lt, le, gt, ge) during run time.  The starts_with operation support query completion scenarios, such as matching "20" with "2016", or "3." with "3.14".
 
+Date attributes are used to efficiently encode date values.  The is_between operation enables inequality support (lt, le, gt, ge) during run time.
+  
 Guid attributes are used to efficiently represent GUID values with default support for equals operations.
 
 Blob attributes are used to efficiently encode potentially large data blobs for run time lookup from the corresponding object, without support for any indexing operation based on the content of the blob values.
-
-TODO:
-* Can "1." complete to "1.602e-19"?
 
 ### Composite Attributes
 Composite attributes are used to represent a grouping of attribute values.  The name of each sub-attributes starts with the name of the composite attribute followed by ".".  Values for composite attributes are specified as a JSON object containing the nested attribute values.  Composite attributes may have multiple object values.  However, composite attribute may not have sub-attributes that are themselves composite attributes.
