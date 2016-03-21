@@ -1,6 +1,7 @@
 <!-- 
 NavPath: Text Analytics
 LinkLabel: Oveview
-ExternalLink: https://azure.microsoft.com/en-us/documentation/articles/machine-learning-recommendation-api-sample-application/#introduction-to-machine-learning-recommendation-service
+Url: text-analytics/documentation
 Weight: 100
 -->
+https://azure.microsoft.com/en-us/documentation/articles/machine-learning-apps-text-analytics/
