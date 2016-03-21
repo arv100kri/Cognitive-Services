@@ -2,7 +2,7 @@
 NavPath: Computer Vision API
 LinkLabel: Tagging Images
 Url: Computer-Vision-API/documentation/TaggingImages
-Weight: 100
+Weight: 99
 -->
 
 #Tagging Images
