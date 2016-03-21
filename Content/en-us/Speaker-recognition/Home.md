@@ -8,7 +8,7 @@ Weight: 90
 
 # Speaker Recognition API
 
-Welcome to the Microsoft Project Oxford Speaker Recognition APIs. Speaker Recognition APIs are cloud-based APIs that provide the most advanced algorithms for speaker verification and speaker identification. Speaker Recognition can be divided into two categories: speaker verification and speaker identification.
+Welcome to the Microsoft Speaker Recognition APIs. Speaker Recognition APIs are cloud-based APIs that provide the most advanced algorithms for speaker verification and speaker identification. Speaker Recognition can be divided into two categories: speaker verification and speaker identification.
 
 
 ## Speaker Verification
