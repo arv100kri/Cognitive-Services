@@ -1,7 +1,7 @@
 <!--
 NavPath: Knowledge Exploration Service
 LinkLabel: Overview
-Url: KES/documentation/Overview
+Url: KES/documentation/content
 Weight: 100
 -->
 
