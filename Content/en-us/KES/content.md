@@ -2,7 +2,7 @@
 NavPath: Knowledge Exploration Service
 LinkLabel: Overview
 Url: KES/documentation/Overview
-Weight: 65
+Weight: 100
 -->
 
 # Knowledge Exploration Service
