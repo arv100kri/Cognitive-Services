@@ -29,4 +29,4 @@ This spell-checker can handle any word processing scenario:
 To help you get started with this supporting technology for all your word processing needs on PC or mobile apps, a new example application will soon be added. Check back soon.
 
 ## Language support
-Bing Speller API currently supports U.S. English with other English locales as well as Chinese, Spanish, and other languages soon to follow. This page will be updated as new languages are added.
+Bing Spell Check API currently supports U.S. English with other English locales as well as Chinese, Spanish, and other languages soon to follow. This page will be updated as new languages are added.

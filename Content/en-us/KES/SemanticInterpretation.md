@@ -2,7 +2,7 @@
 NavPath: Knowledge Exploration Service
 LinkLabel: Semantic Interpretation
 Url: KES/documentation/SemanticInterpretation
-Weight: 65
+Weight: 94
 -->
 
 # Semantic Interpretation

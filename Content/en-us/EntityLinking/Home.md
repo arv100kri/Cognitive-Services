@@ -1,13 +1,13 @@
 <!--
-NavPath: EntityLinking API
+NavPath: Entity Linking API
 LinkLabel: Overview
-Url: EntityLinking-API/documentation
+Url: EntityLinking-API/documentation/overview
 Weight: 2
 -->
 
 # Entity Linking Intelligence Service API
 
-Welcome to the Microsoft Project Oxford Entity Linking Intelligence Service, a web service that was created to help developers with tasks relating to entity linking.
+Welcome to the Microsoft Entity Linking Intelligence Service, a web service that was created to help developers with tasks relating to entity linking.
 
 ## Entity Linking
 
@@ -19,10 +19,11 @@ The following figure below shows an example of entity linking. More specifically
  
 ## Get Started
  
- To quickly go through the Entity Linking basic functionalities and subscriptions processes, please refer to our get started tutorials.
+To quickly go through the Entity Linking basic functionalities and subscription process, please refer to our getting started tutorial.
 [Getting Started with Entity Linking API in C#](GettingStarted.md)
 
  
  
 ## Reference
- For more details about entity linking, please refer to the [API Reference](https://dev.projectoxford.ai/docs/services/56d3fb7cca73071a4030e528).
+
+For more details about entity linking, please refer to the [API Reference](https://dev.projectoxford.ai/docs/services/56d3fb7cca73071a4030e528).

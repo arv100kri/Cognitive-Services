@@ -19,7 +19,7 @@ These GUIDs should change relatively rarely, but are the only way to uniquely de
 Next, each analyzer is a **kind**.
 This defines in very broad terms the type of analysis returned, and should uniquely define the data structure used to represent that analysis.
 Currently, there are three distinct kinds:
- - [Tokens](SentsepTokenize.md)
+ - [Tokens](Sentences-and-Tokens.md)
  - [POS Tags](PosTagging.md)
  - [Constituency Tree](Parsing.md)
 

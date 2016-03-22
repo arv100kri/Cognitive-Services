@@ -2,7 +2,7 @@
 NavPath: Computer Vision API
 LinkLabel: Developing with Domain-specific Models
 Url: Computer-Vision-API/documentation/Domain-specificModels
-Weight: 44
+Weight: 97
 -->
 
 #Developing with Domain-Specific Models
@@ -23,13 +23,14 @@ This option is available for use in applications where users want to get generic
 
 Image  |  Output: Json
 ------|------|
-IMAGE (of Satya Nadella?) | Json returned
+![Satya Nadella](./Images/Satya_speaks_to_MSFT_employees.jpg)| Json returned, see below code snippet.
 ```
+Json
 {
   "requestId": "d049e598-6f8a-4075-a95a-cce55ca138fd",
   "metadata": {
-    "width": 1024,
-    "height": 768,
+    "width": 298,
+    "height": 300,
     "format": "Jpeg"
   },
   "result": {
@@ -37,10 +38,10 @@ IMAGE (of Satya Nadella?) | Json returned
       {
         "name": "Satya Nadella",
         "faceRectangle": {
-          "left": 528,
-          "top": 210,
-          "width": 225,
-          "height": 225
+          "left": 98,
+          "top": 30,
+          "width": 35,
+          "height": 35
         },
         "confidence": 0.9993637
       }
@@ -49,4 +50,4 @@ IMAGE (of Satya Nadella?) | Json returned
 }
 
 ```
-Domain-Specific Models, Scoped and Enhanced Analysis is covered in detail in the “How to” topic [LINK] and in the API Documentation [LINK].
+The topic of Domain-Specific Models, Scoped and Enhanced Analysis is covered in detail in the [“How to” topic](https://github.com/Microsoft/ProjectOxford-Documentation/blob/master/Content/en-us/Computer-vision/HowToCallVisionAPI.md).

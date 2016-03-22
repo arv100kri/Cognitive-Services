@@ -2,10 +2,10 @@
 NavPath: Knowledge Exploration Service
 LinkLabel: Grammar Format
 Url: KES/documentation/GrammarFormat
-Weight: 48
+Weight: 95
 -->
 
-# Grammar
+# Grammar Format
 The grammar is an XML file that specifies the weighted set of natural language queries that the service can interpret, as well as how these natural language queries are translated into semantic query expressions.  The grammar syntax is based on [SRGS](http://www.w3.org/TR/speech-grammar/), a W3C standard for speech recognition grammar, with extensions to support data index integration and semantic functions.
 
 The following describes each of the syntactic elements that can be used in a grammar.  See [example](#Example) for a complete grammar that demonstrate the use of these elements in context.
@@ -154,10 +154,17 @@ The following is an example XML from the academic publications domain that demon
     
     papers
     <tag>
+      yearOnce = false;
       query = All();
     </tag>
   
     <item repeat="1-" repeat-logprob="-10">
+      <!-- Do not complete additional attributes beyond end of query -->
+      <tag>
+        isBeyondEndOfQuery = GetVariable("IsBeyondEndOfQuery", "system");
+        AssertEquals(isBeyondEndOfQuery, false);
+      </tag>
+		
       <one-of>
 
         <!-- about <keyword> -->
@@ -184,8 +191,8 @@ The following is an example XML from the academic publications domain that demon
         <item logprob="-1.5">
           <!-- Allow this grammar path to be traversed only once -->
           <tag>
-            AssertNotEquals(yearOnce, 1);
-            yearOnce = 1;
+            AssertEquals(yearOnce, false);
+            yearOnce = true;
           </tag>
           <ruleref uri="#GetPaperYear" name="year"/>
           <tag>query = And(query, year);</tag>

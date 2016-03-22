@@ -2,10 +2,10 @@
 NavPath: Knowledge Exploration Service
 LinkLabel: Data Format
 Url: KES/documentation/DataFormat
-Weight: 49
+Weight: 96
 -->
 
-# Data
+# Data Format
 The data file describes the list of objects to index.
 Each line in the file specifies the attribute values of an object in [JSON format](http://json.org/) with UTF-8 encoding.
 In addition to the attributes defined in the [schema](SchemaFormat.md), each object has an optional "logprob" attribute that 

@@ -2,11 +2,11 @@
 NavPath: Computer Vision API
 LinkLabel: Tagging Images
 Url: Computer-Vision-API/documentation/TaggingImages
-Weight: 100
+Weight: 99
 -->
 
-#Tagging Images
-Vision API returns tags based on objects, living beings, scenery or actions found in an image. Tags are not returned according to a hierarchical classification system, but corresponds to image content. Some tags have associated hints to provide context or avoid ambiguity, for example the tag “cello” may be accompanied by the hint “object”. Note, that English the only supported language for tags at this point.
+#Tag Image
+Vision API returns tags based on objects, living beings, scenery or actions found in an image. Tags are not returned according to a hierarchical classification system, but corresponds to image content. Some tags have associated hints to provide context or avoid ambiguity, for example the tag “cello” may be accompanied by the hint “object”. Note, that at this point English is the only supported language for tags.
 
 ###Tag an image using Vision API’s new tagging feature
 
@@ -17,33 +17,45 @@ After uploading an image or specifying an image URL, Vision API’s algorithms o
 * Image file size: Less than 4MB.
 * Image dimension: Greater than 50 x 50 pixels.
 
-Image  | Tags: Json
-------|------|
-IMAGE | 
+![House_and_Yard](./Images/house_yard.jpg) 
+
 ```
+Returned Json
 {
 “tags”: [
-{
-  "name": "indoor",
-          "confidence": 0.976
-},
-{
-  "name": "person",
-           "confidence": 0.95
+          {
+            "name": "grass",
+              "confidence": 0.999999761581421
+          },
+          {
+            "name": "outdoor",
+              "confidence": 0.999970674514771
+          },
+          {
+              "name": "sky",
+                "confidence": 999289751052856
+          },
+          {
+              "name": "building",
+                "confidence": 0.996463239192963
+          },
+          {
+            "name": "house",
+              "confidence": 0.992798030376434
+          },
+          {
+            "name": "lawn",
+              "confidence": 0.822680294513702
+          },
+          {
+            "name": "green",
+              "confidence": 0.641222536563873
+          },
+          {
+            "name": "residential",
+              "confidence": 0.314032256603241
+          },
+        ],
 }
-{
-  "name": "dog",
-           "confidence": 0.85
-}
-{
-  "name": "table",
-           "confidence": 0.82
-}
-{
-  "name": "chair",
-           "confidence": 0.81
-}
-
-],
 ```
 
