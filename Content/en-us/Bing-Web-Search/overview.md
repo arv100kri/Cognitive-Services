@@ -15,6 +15,8 @@ If you need results from a subset of the Bing APIs, you should call the Web Sear
 
 Note that the Web Search API may not include all of the same functionality or data that the other APIs provide. For example, the Image API includes query parameters that let you filter the images, but you may not specify the filter parameters when you call the Search API. Also, even though the Web Search API results may not include images, the Image API could return images for the same query.
 
+To get started calling the API immediately using your subscription key, please check out our [API Testing Console](https://bingapis.portal.azure-api.net/docs/services/56b43eeccf5ff8098cef3807/operations/56b4447dcf5ff8098cef380d) where you can easily craft API requests in a sandbox environment.
+
 For information that shows you how to use the News API, see [Search Guide](https://msdn.microsoft.com/en-us/library/dn760781(v=bsynd.50).aspx).
 
 For information about the programming elements that you'd use to request and consume the search results, see [Search Reference](https://msdn.microsoft.com/en-us/library/dn760794(v=bsynd.50).aspx). Note that results will include objects defined in the Search Reference section and may include objects defined in each of the other API reference sections (for example, [Image Reference](https://msdn.microsoft.com/en-us/library/dn760791(v=bsynd.50).aspx)), if relevant data exists for each.
