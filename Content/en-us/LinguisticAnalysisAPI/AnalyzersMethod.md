@@ -8,7 +8,7 @@ Weight: 80
 # Analyzers Method
 
 The **analyzers** REST API provides a list of analyzers currently supported by the service.
-The response includes their [names](AnalyzerNames.md) and the languages supported by each (such as "en" for English).
+The response includes their [names](Analyzer-Names.md) and the languages supported by each (such as "en" for English).
 
 ## Request parameters
 None

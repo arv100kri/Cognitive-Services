@@ -2,7 +2,7 @@
 NavPath: Knowledge Exploration Service/Web API Interface
 LinkLabel: Web API Interface Overview
 Url: KES/documentation/WebAPI
-Weight: 25
+Weight: 31
 -->
 
 # Web API Interface

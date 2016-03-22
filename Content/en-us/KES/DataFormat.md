@@ -2,7 +2,7 @@
 NavPath: Knowledge Exploration Service
 LinkLabel: Data Format
 Url: KES/documentation/DataFormat
-Weight: 49
+Weight: 96
 -->
 
 # Data Format
