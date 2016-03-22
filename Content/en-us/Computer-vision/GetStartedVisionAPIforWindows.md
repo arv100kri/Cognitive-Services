@@ -43,10 +43,10 @@ You may download the Computer Vision API client library and example application 
 You can choose to persist your subscription key on your PC or laptop by clicking the "Save Key" button. When you want to delete the subscription key from the system, click "Delete Key" to remove it from your PC or laptop.
 
 ![Vision Subscription Key](./Images/Vision_UI_Subscription.PNG)
-2.	Under "Select Scenario" click to use one of the six scenarios, then follow the instructions on the screen. Microsoft receives the images you upload and may use them to improve Vision API and related services. By submitting an image, you confirm that you have followed our Developer Code of Conduct.
+3.	Under "Select Scenario" click to use one of the six scenarios, then follow the instructions on the screen. Microsoft receives the images you upload and may use them to improve Vision API and related services. By submitting an image, you confirm that you have followed our Developer Code of Conduct.
 
 ![Analyze Image Interface](./Images/Analyze_Image_Example.PNG)
-3.	There are example images to be used with this example application. You can find these images on Github under Face, Windows, then search the [Data](https://github.com/Microsoft/ProjectOxford-ClientSDK-Dev/tree/vision-build-2016/Face/Windows/Data) folder. Please note the use of these images is licensed under agreement [LICENSE-IMAGE](https://github.com/Microsoft/ProjectOxford-ClientSDK/blob/master/LICENSE-IMAGE.md).
+4.	There are example images to be used with this example application. You can find these images on Github under Face, Windows, then search the [Data](https://github.com/Microsoft/ProjectOxford-ClientSDK-Dev/tree/vision-build-2016/Face/Windows/Data) folder. Please note the use of these images is licensed under agreement [LICENSE-IMAGE](https://github.com/Microsoft/ProjectOxford-ClientSDK/blob/master/LICENSE-IMAGE.md).
 
 ###<a name="Review">Review and Learn</a>
 Now that you have a running application, let us review how this example app integrates with Cognitive Services technology. This will make it easier to either continue building onto this app or develop your own app using Cognitive Services Vision API.
