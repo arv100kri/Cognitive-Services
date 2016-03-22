@@ -1,7 +1,7 @@
 <!--
 NavPath: Knowledge Exploration Service
 LinkLabel: Command Line Interface
-Url: KES/documentation/Runtime
+Url: KES/documentation/CommandLine
 Weight: 98
 -->
 
