@@ -8,7 +8,7 @@ ExternalLink: https://msdn.microsoft.com/en-us/library/mt711418.aspx
 
 # Bing Image Search API
 
-The Bing Image Search API provides a similar (but not exact) experience to Bing.com/Images (overview on [MSDN]](https://msdn.microsoft.com/en-us/library/mt711418.aspx)). The Image Search API lets partners send a search query to Bing and get back a list of relevant images. 
+The Bing Image Search API provides a similar (but not exact) experience to Bing.com/Images (overview on [MSDN](https://msdn.microsoft.com/en-us/library/mt711418.aspx)). The Image Search API lets partners send a search query to Bing and get back a list of relevant images. 
 
 To get started calling the API immediately using your subscription key, please check out our [API Testing Console](https://bingapis.portal.azure-api.net/docs/services/56b43eeccf5ff8098cef3807/operations/56b4447dcf5ff8098cef380d) where you can easily craft API requests in a sandbox environment.
 
