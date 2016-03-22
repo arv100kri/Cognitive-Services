@@ -1,6 +1,6 @@
 <!-- 
 NavPath: Computer Vision API
-LinkLabel: Tagging Images
+LinkLabel: Tag Image
 Url: Computer-Vision-API/documentation/TaggingImages
 Weight: 99
 -->
