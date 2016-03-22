@@ -18,5 +18,5 @@ The current release provides three types of analysis:
 ## Getting Started
 
 First you can familiar with the major types of analysis listed above.
-Next, look into the APIs for [getting the list of available analyzers](AnalyzersMethod.md) and how they are [named](AnalyzerNames.md).
+Next, look into the APIs for [getting the list of available analyzers](AnalyzersMethod.md) and how they are [named](Analyzer-Names.md).
 Finally, look into the API for [analyzing new input](Analyze.md).
