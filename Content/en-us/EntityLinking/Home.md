@@ -7,7 +7,7 @@ Weight: 2
 
 # Entity Linking Intelligence Service API
 
-Welcome to the Microsoft Project Oxford Entity Linking Intelligence Service, a web service that was created to help developers with tasks relating to entity linking.
+Welcome to the Microsoft Entity Linking Intelligence Service, a web service that was created to help developers with tasks relating to entity linking.
 
 ## Entity Linking
 
