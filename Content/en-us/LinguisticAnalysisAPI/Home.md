@@ -13,7 +13,7 @@ The current release provides three types of analysis:
 
  - [Sentence separation and tokenization](Sentences-and-Tokens.md)
  - [Part-of-speech tagging](POS-tagging.md)
- - [Constituency parsing](Parsing.md)
+ - [Constituency parsing](Constituency-Parsing.md)
 
 ## Getting Started
 
