@@ -2,7 +2,7 @@
 NavPath: Knowledge Exploration Service
 LinkLabel: Getting Started
 Url: KES/documentation/GettingStarted
-Weight: 48
+Weight: 99
 -->
 
 # Getting Started
