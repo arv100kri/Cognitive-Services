@@ -2,7 +2,7 @@
 NavPath: Knowledge Exploration Service
 LinkLabel: Grammar Format
 Url: KES/documentation/GrammarFormat
-Weight: 48
+Weight: 95
 -->
 
 # Grammar Format
