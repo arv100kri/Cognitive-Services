@@ -11,7 +11,7 @@ Welcome to the Linguistic Analysis APIs.
 These APIs provide access to natural langauge processing (NLP) tools that identify the structure of text.
 The current release provides three types of analysis:
 
- - [Sentence separation and tokenization](SentsepTokenize.md)
+ - [Sentence separation and tokenization](Sentences-and-Tokens.md)
  - [Part-of-speech tagging](PosTagging.md)
  - [Constituency parsing](Parsing.md)
 
