@@ -10,7 +10,7 @@ Weight: 80
 The **analyze** REST API is used to analyze a given natural language input.
 That might involve just finding the [sentences and tokens](Sentences-and-Tokens.md) within that input, finding the [part-of-speech tags](POS-tagging.md), or finding the [constitutency tree](Constituency-Parsing.md).
 You can specify which results you want by picking the relevant analyzers.
-To list all available analyzers, look at the **[analyzers](Analyzers.md)**.
+To list all available analyzers, look at the **[analyzers](AnalyzersMethod.md)**.
 
 Note that you need to specify the language of the input string.
 
