@@ -20,35 +20,43 @@ After uploading an image or specifying an image URL, Vision API’s algorithms g
 ![Big_city](./Images/bw_buildings.jpg) 
 
 ```
- Returned Json:	
- 
+Returned Json 
+
  “description”: 
 {
-"captions": [
+	"captions": 
+
+[
 {
 "type": "phrase",
 “text”: “a black and white photo of a large city”,
           “confidence”: 0.0.607638706850331
+}
 ]
-"captions": [
+"captions": 
+[
 {
 "type": "phrase",
 “text”: “a photo of a large city”,
           “confidence”: 0.577256764264197
+	}
 ]
-"captions": [
+"captions": 
+[
 {
 "type": "phrase",
 “text”: “a black and white photo of a city”,
           “confidence”: 0.538493271791207
+}
 ]
-},
+
 “description”: 
-{
-"tags": 
 [
-      "outdoor",
-        "city", "building", "photo", "large", 
-},
-	
+"tags": 
+{
+      "outdoor", "city", "building", "photo", "large", 
+}
+]
+}
+
 ```
