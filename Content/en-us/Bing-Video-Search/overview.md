@@ -7,4 +7,11 @@ ExternalLink: https://msdn.microsoft.com/en-us/library/mt711417.aspx
 -->
 
 # Bing Video Search API
-Overview: https://msdn.microsoft.com/en-us/library/mt711417.aspx
+
+The Bing Video Search API provides a similar (but not exact) experience to Bing.com/Videos (overview on [MSDN](https://msdn.microsoft.com/en-us/library/mt711417.aspx)). The Bing Video Search API lets partners send a search query to Bing and get back a list of relevant videos.
+
+For information that shows you how to use the API, see [Video Guide](https://msdn.microsoft.com/en-us/library/dn760784(v=bsynd.50).aspx).
+
+For information about the programming elements that you'd use to request and consume the search results, see [Video Reference](https://msdn.microsoft.com/en-us/library/dn760795(v=bsynd.50).aspx).
+
+For additional guide and reference content that is common to all Bing APIs, such as Paging Results and Error Codes, see [Shared Guides](https://msdn.microsoft.com/en-us/library/mt711404(v=bsynd.50).aspx) and [Shared Reference](https://msdn.microsoft.com/en-us/library/mt711403(v=bsynd.50).aspx).
