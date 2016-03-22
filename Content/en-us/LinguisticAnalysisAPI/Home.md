@@ -12,7 +12,7 @@ These APIs provide access to natural langauge processing (NLP) tools that identi
 The current release provides three types of analysis:
 
  - [Sentence separation and tokenization](Sentences-and-Tokens.md)
- - [Part-of-speech tagging](PosTagging.md)
+ - [Part-of-speech tagging](POS-tagging.md)
  - [Constituency parsing](Parsing.md)
 
 ## Getting Started
