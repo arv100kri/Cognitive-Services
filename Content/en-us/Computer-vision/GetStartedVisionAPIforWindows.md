@@ -60,76 +60,76 @@ Reviewing how the Vision Client Library gets used in our example app, let's look
 The analyze endpoint is able to work with either an image URL or binary image data (in form of an octet stream) as input. First, you find a using directive, which lets you use the Vision Client Library.
 
 ```
-5.	            // ----------------------------------------------------------------------
-6.	            // KEY SAMPLE CODE STARTS HERE
-7.	            // Use the following namespace for VisionServiceClient 
-8.	            // ---------------------------------------------------------------------- 
-9.	            using Microsoft.ProjectOxford.Vision; 
-10.	            using Microsoft.ProjectOxford.Vision.Contract; 
-11.	            // ----------------------------------------------------------------------
-12.	            // KEY SAMPLE CODE ENDS HERE 
-13.	            // ----------------------------------------------------------------------
+	            // ----------------------------------------------------------------------
+	            // KEY SAMPLE CODE STARTS HERE
+	            // Use the following namespace for VisionServiceClient 
+	            // ---------------------------------------------------------------------- 
+	            using Microsoft.ProjectOxford.Vision; 
+	            using Microsoft.ProjectOxford.Vision.Contract; 
+	            // ----------------------------------------------------------------------
+	            // KEY SAMPLE CODE ENDS HERE 
+	            // ----------------------------------------------------------------------
 
 ```
 **UploadAndAnalyzeImage(…)**
 This code snippet shows how to use the Client Library to submit your subscription key and a locally stored image to the analyze endpoint of the Vision API service.
 
 ```
-14.	private async Task<AnalysisResult> UploadAndAnalyzeImage(string imageFilePath)
-15.	{
-16.	    // -----------------------------------------------------------------------
-17.	    // KEY SAMPLE CODE STARTS HERE
-18.	    // -----------------------------------------------------------------------
-19.	
-20.	    //
-21.	    // Create Project Oxford Vision API Service client
-22.	    //
-23.	    VisionServiceClient VisionServiceClient = new VisionServiceClient(SubscriptionKey);
-24.	    Log("VisionServiceClient is created");
-25.	
-26.	    using (Stream imageFileStream = File.OpenRead(imageFilePath))
-27.	    {
-28.	        //
-29.	        // Analyze the image for all visual features
-30.	        //
-31.	        Log("Calling VisionServiceClient.AnalyzeImageAsync()...");
-32.	        VisualFeature[] visualFeatures = new VisualFeature[] { VisualFeature.Adult, VisualFeature.Categories, VisualFeature.Color, VisualFeature.Description, VisualFeature.Faces, VisualFeature.ImageType, VisualFeature.Tags };
-33.	        AnalysisResult analysisResult = await VisionServiceClient.AnalyzeImageAsync(imageFileStream, visualFeatures);
-34.	        return analysisResult;
-35.	    }
-36.	
-37.	    // -----------------------------------------------------------------------
-38.	    // KEY SAMPLE CODE ENDS HERE
-39.	    // -----------------------------------------------------------------------
-40.	}
+	private async Task<AnalysisResult> UploadAndAnalyzeImage(string imageFilePath)
+	{
+	    // -----------------------------------------------------------------------
+	    // KEY SAMPLE CODE STARTS HERE
+	    // -----------------------------------------------------------------------
+	
+	    //
+	    // Create Project Oxford Vision API Service client
+	    //
+	    VisionServiceClient VisionServiceClient = new VisionServiceClient(SubscriptionKey);
+	    Log("VisionServiceClient is created");
+	
+	    using (Stream imageFileStream = File.OpenRead(imageFilePath))
+	    {
+	        //
+	        // Analyze the image for all visual features
+	        //
+	        Log("Calling VisionServiceClient.AnalyzeImageAsync()...");
+         VisualFeature[] visualFeatures = new VisualFeature[] { VisualFeature.Adult, VisualFeature.Categories, VisualFeature.Color, VisualFeature.Description, VisualFeature.Faces, VisualFeature.ImageType, VisualFeature.Tags };
+	        AnalysisResult analysisResult = await VisionServiceClient.AnalyzeImageAsync(imageFileStream, visualFeatures);
+	        return analysisResult;
+	    }
+	
+	    // -----------------------------------------------------------------------
+	    // KEY SAMPLE CODE ENDS HERE
+	    // -----------------------------------------------------------------------
+    	}
 ```
 **AnalyzeUrl(…)**
 This code snippet shows how to use the Client Library to submit your subscription key and a photo URL to the analyze endpoint of the Vision API service.
 
 ```
-41.	private async Task<AnalysisResult> AnalyzeUrl(string imageUrl)
-42.	{
-43.	    // -----------------------------------------------------------------------
-44.	    // KEY SAMPLE CODE STARTS HERE
-45.	    // -----------------------------------------------------------------------
-46.	
-47.	    //
-48.	    // Create Project Oxford Vision API Service client
-49.	    //
-50.	    VisionServiceClient VisionServiceClient = new VisionServiceClient(SubscriptionKey);
-51.	    Log("VisionServiceClient is created");
-52.	
-53.	    //
-54.	    // Analyze the url for all visual features
-55.	    //
-56.	    Log("Calling VisionServiceClient.AnalyzeImageAsync()...");
-57.	    VisualFeature[] visualFeatures = new VisualFeature[] { VisualFeature.Adult, VisualFeature.Categories, VisualFeature.Color, VisualFeature.Description, VisualFeature.Faces, VisualFeature.ImageType, VisualFeature.Tags };
-58.	    AnalysisResult analysisResult = await VisionServiceClient.AnalyzeImageAsync(imageUrl, visualFeatures);
-59.	    return analysisResult;
-60.	        }
-61.	    // -----------------------------------------------------------------------
-62.	    // KEY SAMPLE CODE ENDS HERE
-63.	    // -----------------------------------------------------------------------
+	private async Task<AnalysisResult> AnalyzeUrl(string imageUrl)
+	{
+	    // -----------------------------------------------------------------------
+	    // KEY SAMPLE CODE STARTS HERE
+	    // -----------------------------------------------------------------------
+	
+	    //
+	    // Create Project Oxford Vision API Service client
+	    //
+     VisionServiceClient VisionServiceClient = new VisionServiceClient(SubscriptionKey);
+	    Log("VisionServiceClient is created");
+	
+	    //
+	    // Analyze the url for all visual features
+	    //
+	    Log("Calling VisionServiceClient.AnalyzeImageAsync()...");
+	    VisualFeature[] visualFeatures = new VisualFeature[] { VisualFeature.Adult, VisualFeature.Categories, VisualFeature.Color, VisualFeature.Description, VisualFeature.Faces, VisualFeature.ImageType, VisualFeature.Tags };
+	    AnalysisResult analysisResult = await VisionServiceClient.AnalyzeImageAsync(imageUrl, visualFeatures);
+     return analysisResult;
+	}
+	    // -----------------------------------------------------------------------
+	    // KEY SAMPLE CODE ENDS HERE
+	    // -----------------------------------------------------------------------
 ```
 **Other pages and endpoints**
 How to interact with the other endpoints exposed by the Vision API service can be seen by looking at the other pages in the sample; for instance, the OCR endpoint is shown as part of the code contained in OCRPage.xaml.cs 
