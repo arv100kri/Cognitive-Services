@@ -1,6 +1,6 @@
 <!-- 
 NavPath: Computer Vision API
-LinkLabel: Developing with Domain-specific Models
+LinkLabel: Develop with Domain-specific Models
 Url: Computer-Vision-API/documentation/Domain-specificModels
 Weight: 97
 -->
