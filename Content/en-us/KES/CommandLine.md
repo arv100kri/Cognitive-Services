@@ -2,7 +2,7 @@
 NavPath: Knowledge Exploration Service
 LinkLabel: Command Line Interface
 Url: KES/documentation/Runtime
-Weight: 55
+Weight: 98
 -->
 
 # Command Line Interface
