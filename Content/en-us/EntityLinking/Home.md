@@ -1,7 +1,7 @@
 <!--
 NavPath: Entity Linking API
 LinkLabel: Overview
-Url: EntityLinking-API/documentation
+Url: EntityLinking-API/documentation/overview
 Weight: 2
 -->
 
