@@ -22,7 +22,7 @@ Name	|Value | Required?	|Description
 -----------|----------|--------|----------
 **expr**    |Text string | Yes	|A query expression that specifies the entities over which to calculate histograms.
 **model**	|Text string | No	|Select the name of the model that you wish to query.  Currently, the value defaults to “beta-2015”.
-**attributes** | Text string | No<br>default: | A comma delimited list that specifies the attribute values that are included in the response. Attribute names are case-sensitive.
+**attributes** | Text string | No<br>default: | A comma-delimited list that specifies the attribute values that are included in the response. Attribute names are case-sensitive.
 **count**	|Number	| No<br>Default: 10 |Number of results to return.
 **offset**	|Number	| No<br>Default: 0 |Index of the first result to return.
 <br>
@@ -37,7 +37,7 @@ Name | Description
 **histograms[x].total_count** | Total number of value instances among matching entities for this attribute.
 **histograms[x].histogram** |	Histogram data for this attribute.
 **histograms[x].histogram[y].value** |	A value for the attribute.
-**histograms[x].histogram[y].logprob**	|Total log probability of matching entities with this attribute value.
+**histograms[x].histogram[y].logprob**	|Total natural log probability of matching entities with this attribute value.
 **histograms[x].histogram[y].count**	|Number of matching entities with this attribute value.
 **aborted** | True if the request timed out.
 
@@ -56,7 +56,7 @@ https://api.projectoxford.ai/academic/v1.0/interpret?query=papers by jaime teeva
 ```
 https://api.projectoxford.ai/academic/v1.0/calchistogram?expr=And(Composite(AA.AuN=='jaime teevan'),Y>2012)&attributes=Y,F.FN&count=4
 ```
-<br>The response to this request first indicates that there are 23 papers that match the query expression.  For the *Year* attribute, there are 3 distinct values (one for each year after 2012 (i.e. 2013, 2014, and 2015) as specified in the query).  The total paper count over the 3 distinct values is 37.  For each *Year*, the histogram shows the value, total log probability, and count of matching entities.     
+<br>The response to this request first indicates that there are 23 papers that match the query expression.  For the *Year* attribute, there are 3 distinct values, one for each year after 2012 (i.e. 2013, 2014, and 2015) as specified in the query.  The total paper count over the 3 distinct values is 37.  For each *Year*, the histogram shows the value, total natural log probability, and count of matching entities.     
 
 The histogram for *Field of Study* shows that there are 34 distinct fields of study. As a paper may be associated with multiple fields of study, the total count (53) can be larger than the number of matching entities.  Although there are 34 distinct values, the response only includes the top 4 because of the *count=4* parameter.
 

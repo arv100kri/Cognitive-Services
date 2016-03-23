@@ -9,7 +9,7 @@ Weight: 95
 
 The **interpret** REST API takes an end user query string (i.e., a query entered by a user of your application) and returns formatted interpretations of user intent based on the Academic Graph data and the Academic Grammar.
 
-To provide an interactive experience, you can call this method repeatedly after each character entered by the user. In that case, you should set the **complete** parameter to 1 to enable auto-complete suggestions. If your application does not want auto-completion, you should set the **complete** parameter to 0.
+To provide an interactive experience, you can call this method repeatedly after each character entered by the user. In that case, you should set the **complete** parameter to 1 to enable auto-complete suggestions. If your application does not need auto-completion, you should set the **complete** parameter to 0.
 
 **REST endpoint:**
 
@@ -34,7 +34,7 @@ Name     | Description
 ---------|---------
 **query**	|The *query* parameter from the request.
 **interpretations**	|An array of 0 or more different ways of matching user input against the grammar.
-**interpretations[x].logprob**	|The relative log probability of the interpretation. Larger values are more likely.
+**interpretations[x].logprob**	|The relative natural log probability of the interpretation. Larger values are more likely.
 **interpretations[x].parse**	|An XML string that shows how each part of the query was interpreted.
 **interpretations[x].rules**	|An array of 1 or more rules defined in the grammar that were invoked during interpretation. For the Academic Knowledge API, there will always be 1 rule.
 **interpretations[x].rules[y].name**	|Name of the rule.
@@ -48,7 +48,7 @@ Name     | Description
 ```
 https://api.projectoxford.ai/academic/v1.0/interpret?query=papers by jaime&complete=1&count=2
  ```
-<br>The response below contains the top two (because of the parameter *count=2*) most likely interpretations that complete the partial user input *papers by jaime*: *papers by jaime teevan* and *papers by jaime green*.  The service generated query completions instead of considering only exact match for the author *jaime* because the request specified *complete=1*. Note that the canonical value *j l green* matched via the synonym *jamie green*, as indicated in the parse.
+<br>The response below contains the top two (because of the parameter *count=2*) most likely interpretations that complete the partial user input *papers by jaime*: *papers by jaime teevan* and *papers by jaime green*.  The service generated query completions instead of considering only exact matches for the author *jaime* because the request specified *complete=1*. Note that the canonical value *j l green* matched via the synonym *jamie green*, as indicated in the parse.
 
 
 ```JSON
