@@ -20,8 +20,8 @@ Next, each analyzer is a **kind**.
 This defines in very broad terms the type of analysis returned, and should uniquely define the data structure used to represent that analysis.
 Currently, there are three distinct kinds:
  - [Tokens](Sentences-and-Tokens.md)
- - [POS Tags](PosTagging.md)
- - [Constituency Tree](Parsing.md)
+ - [POS Tags](Pos-Tagging.md)
+ - [Constituency Tree](constituency-parsing.md)
 
 ## Specification
 Within a given kind, however, different experts might disagree on how a particular phenomenon should be analyzed.
