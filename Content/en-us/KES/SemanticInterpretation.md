@@ -23,6 +23,7 @@ Below is a list of currently supported data types:
 |Type|Description|Examples|
 |----|----|----|
 |String|Sequence of 0 or more characters|"Hello World!"<br/>""|
+|Bool|Boolean value|true<br/>false|
 |Int32|32-bit signed integer.  -2.1e9 to 2.1e9|123<br/>-321|
 |Int64|64-bit signed integer. -9.2e18 and 9.2e18|9876543210|
 |Double|Double precision floating point. 1.7e+/-308 (15 digits)|9876543210|
