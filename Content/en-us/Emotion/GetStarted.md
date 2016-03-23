@@ -102,7 +102,7 @@ This code snippet shows how to use the Client Library to submit your subscriptio
             }
             catch (Exception exception)
             {
-                window.Log("Dection failed. Please make sure that you have the right subscription key and proper URL to detect.");
+                window.Log("Detection failed. Please make sure that you have the right subscription key and proper URL to detect.");
                 window.Log(exception.ToString());
                 return null;
             }
