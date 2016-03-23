@@ -12,7 +12,7 @@ The Bing Video Search API provides a similar (but not exact) experience to Bing.
 
 To get started calling the API immediately using your subscription key, please check out our [API Testing Console](https://bingapis.portal.azure-api.net/docs/services/56b43f3ccf5ff8098cef3809/operations/56b440d2cf5ff8098cef380b) where you can easily craft API requests in a sandbox environment.
 
-For information that shows you how to use the API, see [Video Guide](https://msdn.microsoft.com/en-us/library/dn760784(v=bsynd.50).aspx).
+For information that shows you how to use the API, see [Video Guide](https://msdn.microsoft.com/en-us/library/dn760782(v=bsynd.50).aspx).
 
 For information about the programming elements that you'd use to request and consume the search results, see [Video Reference](https://msdn.microsoft.com/en-us/library/dn760795(v=bsynd.50).aspx).
 
