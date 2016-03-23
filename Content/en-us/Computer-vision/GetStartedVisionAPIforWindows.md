@@ -5,7 +5,7 @@ Url: Computer-Vision-API/documentation/GetStarted
 Weight: 94
 -->
 
-#Get Started with Computer Vision API in C Sharp
+#Get Started with Computer Vision API in C&#35;
 Explore a basic Windows application that uses Computer Vision API to perform optical character recognition (OCR), create smart-cropped thumbnails, plus detect, categorize, tag and describe visual features, including faces, in an image. The below example lets you submit an image URL or a locally stored file. You can use this open source example as a template for building your own app for Windows using the Vision API and WPF (Windows Presentation Foundation), a part of .NET Framework.
 
 ###Table of Contents
