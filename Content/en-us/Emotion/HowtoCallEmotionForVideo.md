@@ -40,7 +40,7 @@ ocp-apim-subscription-key: <Your subscription key>
 When using a client library, the subscription key is passed in through the constructor of the VideoServiceClient class. For example:
 
 ```
-var videoServiceClient = new VideoServiceClient("Your subscription key");
+var emotionServiceClient = new emotionServiceClient("Your subscription key");
 ```
 To obtain a subscription key, see [subscription and key management.]
 (https://www.projectoxford.ai/Subscription) 
