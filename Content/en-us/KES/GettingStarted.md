@@ -8,7 +8,7 @@ Weight: 99
 # Getting Started
 In this walkthrough, we will use the Knowledge Exploration Service (KES) to create the backend engine for an interactive search experience over academic publications.  The command line tool [`kes.exe`](CommandLine.md) and all example files are installed via the [Knowledge Exploration Service SDK](https://www.microsoft.com/en-us/download/details.aspx?id=51488).
 
-The academic publications example contains a sample of 1000 academic papers published by researchers at Microsoft.  Each paper is associated with a title, publication year, authors, and keywords.  Each author is represented by an ID, name, and affiliation at the time of publication.  Each keyword may be associated with a set of synonyms (ex. *support vector machine* -> *svm*).
+The academic publications example contains a sample of 1000 academic papers published by researchers at Microsoft.  Each paper is associated with a title, publication year, authors, and keywords.  Each author is represented by an ID, name, and affiliation at the time of publication.  Each keyword may be associated with a set of synonyms (ex. *support vector machine* &rarr; *svm*).
 
 We will walk through the following steps to create a KES cloud service for the academic domain:
 
@@ -203,7 +203,7 @@ There are two ways to build and host large indices.  The first is to to prepare 
 
 The second method is to perform a remote Azure build using the [`--remote`](CommandLine.md#build_index-command) parameter, which specifies the size of the Azure VM used to build the index.  This allows the command to be executed in any environment.  When performing a remote build, the input schema and data arguments may be local file paths or [Azure blob storage](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-blobs/) URLs.  The output index argument must be a blob storage URL.  To create an Azure storage account, see [Create Storage Account](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-blobs/).  Note that only classic storage accounts are supported at this time.  We can use the utility [AzCopy](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/) to efficiently copy files to and from the blob storage.
 
-In this example, we assume that the blob storage container *http://<account>.blob.core.windows.net/<container>/* has already been created, containing the schema *Academic.schema*, referenced synonym file *Keywords.syn*, and full-scale data file *Academic.full.data*.  
+In this example, we assume that the blob storage container http://&lt;*account*&gt;.blob.core.windows.net/&lt;*container*&gt;/ has already been created, containing the schema *Academic.schema*, referenced synonym file *Keywords.syn*, and full-scale data file *Academic.full.data*.  
 We can build the full index remotely using the following command:
 
 `kes.exe build_index http://<account>.blob.core.windows.net/<container>/Academic.schema http://<account>.blob.core.windows.net/<container>/Academic.full.data http://<account>.blob.core.windows.net/<container>/Academic.full.index --remote Large`
