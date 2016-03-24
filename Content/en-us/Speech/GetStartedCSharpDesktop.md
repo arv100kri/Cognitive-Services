@@ -5,7 +5,7 @@ Url: Speech-api/documentation/Get-Started-CSharp-Desktop
 Weight: 100
 -->
 
-# Get started with Speech Recognition and/or intent in C Sharp for .Net Windows
+# Get started with Speech Recognition and/or intent in C&#35; for .Net Windows
 
 Develop a basic Windows application that uses Cognitive Services Speech Recognition API to convert spoken audio to text by sending audio to Microsoft’s servers in the cloud. You have a choice of using a REST API or a client library. 
 ### REST API 
