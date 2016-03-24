@@ -25,7 +25,7 @@ The below example has been developed for the .NET Framework using [Visual Studio
 Before creating the example, you must subscribe to Vision API which is part of the Microsoft Project Oxford services. For subscription and key management details, see [Subscriptions](https://www.microsoft.com/cognitive-services/en-us/sign-up). Both the primary and secondary key can be used in this tutorial. 
 
   * ####Get the client library and example
-You may download the Computer Vision API client library and example application through https://www.projectoxford.ai/sdk or access them via [GitHub](https://github.com/Microsoft/ProjectOxford-ClientSDK-Dev/tree/vision-build-2016/Vision/Windows). The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder.
+You may download the Computer Vision API client library and example application through https://www.projectoxford.ai/sdk or access them via [GitHub](https://github.com/Microsoft/ProjectOxford-ClientSDK). The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder.
 
 ###<a name="Step1">Step 1: Install the example</a>
 
