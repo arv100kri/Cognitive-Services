@@ -58,7 +58,7 @@ In the academic publications example, the following request returns up to 2 auto
 
 `http://<host>/interpret?query=papers by jaime&complete=1&count=2`
 
-The response contains the top two ("count=2") most likely interpretations that complete the partial query "papers by jaime": "papers by jaime teevan" and "papers by jaime green".  The service generated query completions instead of considering only exact match for the author "jaime" because the request specified "complete=1". Note that the canonical value "j l green" matched via the synonym "jamie green", as indicated in the parse.
+The response contains the top two ("count=2") most likely interpretations that complete the partial query "papers by jaime": "papers by jaime teevan" and "papers by jaime green".  The service generated query completions instead of considering only exact matches for the author "jaime" because the request specified "complete=1". Note that the canonical value "j l green" matched via the synonym "jamie green", as indicated in the parse.
 
 
 ```json

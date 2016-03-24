@@ -14,7 +14,7 @@ The *calchistogram* method computes the objects matching a structured query expr
 Name|Value|Description
 ----|-----|-----------
 expr | Text string | Structured query expression that specifies the index entities over which to calculate histograms.
-attributes | Text string (default="") | Comma delimited list of attribute to included in the response.
+attributes | Text string (default="") | Comma-delimited list of attribute to included in the response.
 count	| Number (default=10) | Number of results to return.
 offset	| Number (default=0) | Index of the first result to return.
 

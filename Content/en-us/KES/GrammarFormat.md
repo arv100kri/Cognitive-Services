@@ -6,9 +6,9 @@ Weight: 95
 -->
 
 # Grammar Format
-The grammar is an XML file that specifies the weighted set of natural language queries that the service can interpret, as well as how these natural language queries are translated into semantic query expressions.  The grammar syntax is based on [SRGS](http://www.w3.org/TR/speech-grammar/), a W3C standard for speech recognition grammar, with extensions to support data index integration and semantic functions.
+The grammar is an XML file that specifies the weighted set of natural language queries that the service can interpret, as well as how these natural language queries are translated into semantic query expressions.  The grammar syntax is based on [SRGS](http://www.w3.org/TR/speech-grammar/), a W3C standard for speech recognition grammars, with extensions to support data index integration and semantic functions.
 
-The following describes each of the syntactic elements that can be used in a grammar.  See [example](#example) for a complete grammar that demonstrate the use of these elements in context.
+The following describes each of the syntactic elements that can be used in a grammar.  See [this example](#example) for a complete grammar that demonstrates the use of these elements in context.
 
 ### grammar Element 
 The `grammar` element is the top-level element in the grammar specification XML.  The required `root` attribute specifies the name of the root rule that defines the starting point of the grammar.
@@ -27,7 +27,7 @@ The `import` element imports a schema definition from an external file to enable
 ### rule Element
 The `rule` element defines a grammar rule, a structural unit that specifies a set of query expressions that the system can interpret.  The element must be a child of the top-level `grammar` element.  The required `id` attribute specifies the name of the rule, which is referenced from `grammar` or `ruleref` elements.
 
-A `rule` element defines a set of legal expansions.  Text tokens match against the input query directly.  `item` elements specify repeats and alter interpretation probabilities.  `one-of` elements indicate choice of alternatives.  `ruleref` elements enable construction of more complex expansions from simpler ones.  `attrref` elements allow matches against attribute values from the index.  `tag` elements specify the semantics of the interpretation and can alter the interpretation probability.
+A `rule` element defines a set of legal expansions.  Text tokens match against the input query directly.  `item` elements specify repeats and alter interpretation probabilities.  `one-of` elements indicate alternative choices.  `ruleref` elements enable construction of more complex expansions from simpler ones.  `attrref` elements allow matches against attribute values from the index.  `tag` elements specify the semantics of the interpretation and can alter the interpretation probability.
 
 ```xml
 <rule id="GetPapers">...</rule>
@@ -41,7 +41,7 @@ The optional `example` element specifies example phrases that may be accepted by
 ```
 
 ### item Element
-The `item` element groups a sequence of grammar constructs.  It can be used to indicate repetitions of the expansion sequence, or specify alternatives in conjunction with the `one-of` element.
+The `item` element groups a sequence of grammar constructs.  It can be used to indicate repetitions of the expansion sequence, or to specify alternatives in conjunction with the `one-of` element.
 
 When an `item` element is not a child of a `one-of` element, it can specify repetition of the enclosed sequence by assigning the `repeat` attribute to a count value.  A count value of "*n*" (where *n* is an integer) indicates that the sequence must occur exactly *n* times.  A count value of "*m*-*n*" allows the sequence to appear between *m* and *n* times, inclusively.  A count value of "*m*-" specifies that the sequence must appear at least *m* times.  The optional `repeat-logprob` attribute can be used to alter the interpretation probability for each additional repetition beyond the minimum.
 
@@ -49,7 +49,7 @@ When an `item` element is not a child of a `one-of` element, it can specify repe
 <item repeat="1-" repeat-logprob="-10">...</item>
 ```
 
-When `item` elements appears as children of a `one-of` element, they define the set of expansion alternatives.  In this usage, the optional `logprob` attribute specifies the relative log probability among the different choices.  Given a probability *p* between 0 and 1, the corresponding log probability can be computed as log(*p*), where log() is the the natural log function.  If not specified, `logprob` defaults to 0, which does not alter the interpretation probability.  Note that log probability is always a negative floating point value or 0.
+When `item` elements appear as children of a `one-of` element, they define the set of expansion alternatives.  In this usage, the optional `logprob` attribute specifies the relative log probability among the different choices.  Given a probability *p* between 0 and 1, the corresponding log probability can be computed as log(*p*), where log() is the the natural log function.  If not specified, `logprob` defaults to 0, which does not alter the interpretation probability.  Note that log probability is always a negative floating-point value or 0.
 
 ```xml
 <one-of>
@@ -87,11 +87,11 @@ In addition to matching user input, the `attrref` element also returns a structu
 ```
 
 #### Query Completion 
-To support query completions when interpreting partial user queries, each referenced attribute must include "starts_with" as an operation in the schema definition.  Given a user query prefix, `attrref` will match all values in the index that complete the prefix and yield each complete value as a separate interpretation of the grammar.  
+To support query completions when interpreting partial user queries, each referenced attribute must include "starts_with" as an operation in the schema definition.  Given a user query prefix, `attrref` will match all values in the index that complete the prefix, and yield each complete value as a separate interpretation of the grammar.  
 
 Examples:
-* Matching `<attrref uri="academic#Keyword" name="keyword"/>` against the query prefix "dat" spawns one interpretation for papers about "database", one interpretation for papers about "data mining", etc.
-* Matching `<attrref uri="academic#Year" name="year"/>` against the query prefix "200" spawns one interpretation for papers in "2000", one interpretation for papers in "2001", etc.
+* Matching `<attrref uri="academic#Keyword" name="keyword"/>` against the query prefix "dat" generates one interpretation for papers about "database", one interpretation for papers about "data mining", etc.
+* Matching `<attrref uri="academic#Year" name="year"/>` against the query prefix "200" generates one interpretation for papers in "2000", one interpretation for papers in "2001", etc.
 
 #### Matching Operations
 In addition to exact match, select attribute types also support prefix and inequality matches via the optional `op` attribute.  If no object in the index has a value that matches, the grammar path is blocked and the service will not generate any interpretations traversing over this grammar path.   The `op` attribute defaults to "eq".
@@ -119,7 +119,7 @@ Examples:
 * `<attrref uri="academic#Year" op="starts_with" name="year"/>` matches the input string "20" and returns in a single interpretation papers published in 200-299, 2000-2999, etc.  This is a rare use case.
 
 ### tag Element
-The `tag` element specifies how a path through the grammar is to be interpreted.  It contains a sequence of semi-colon terminated statements.  A statement may be an assignment of a literal or variable to another variable.  It may also assign the output of a function with 0 or more parameters to a variable.  Each function parameter may be specified using a literal or a variable.  If the function does not return any output, the assignment is omitted.  The scope of each variable is local to the containing rule.
+The `tag` element specifies how a path through the grammar is to be interpreted.  It contains a sequence of semicolon-terminated statements.  A statement may be an assignment of a literal or a variable to another variable.  It may also assign the output of a function with 0 or more parameters to a variable.  Each function parameter may be specified using a literal or a variable.  If the function does not return any output, the assignment is omitted.  Variable scope is local to the containing rule.
 
 ```xml
 <tag>x = 1; y = x;</tag>
@@ -127,16 +127,16 @@ The `tag` element specifies how a path through the grammar is to be interpreted.
 <tag>AssertEquals(x, 1);</tag>
 ```
 
-Each `rule` in the grammar has a predefined variable named "out", representing the semantic output of the rule.  Its value is computed by evaluating each of the semantic statements traversed by the path through the `rule` matching the user query input.  The value assigned to the "out" variable at the end of the evaluation is the semantic output of the rule.  The semantic output of the interpreting a user query against the grammar is the semantic output of the root rule.
+Each `rule` in the grammar has a predefined variable named "out", representing the semantic output of the rule.  Its value is computed by evaluating each of the semantic statements traversed by the path through the `rule` matching the user query input.  The value assigned to the "out" variable at the end of the evaluation is the semantic output of the rule.  The semantic output of interpreting a user query against the grammar is the semantic output of the root rule.
 
-Some statements may alter the probability of an interpretation path by introducing an additive log probability offset.  Some statements may reject the interpretation all together if specified conditions are not satisfied.
+Some statements may alter the probability of an interpretation path by introducing an additive log probability offset.  Some statements may reject the interpretation altogether if specified conditions are not satisfied.
 
 For a list of supported semantic functions, see [Semantic Functions](SemanticInterpretation.md#semantic-functions).
 
 ## Interpretation Probability
 The probability of an interpretation path through the grammar is the cumulative log probability of all the `<item>` elements and semantic functions encountered along the way.  It describes the relative likelihood of matching a particular input sequence.
 
-Given a probability *p* between 0 and 1, the corresponding log probability can be computed as log(*p*), where log() is the natural log function.  Using log probabilities allows the system to cumulate the joint probability of an interpretation path through simple addition.  It also avoids floating point underflow common to such joint probability calculations.  Note that by design, the log probability is always a negative floating point value or 0, where larger values indicate higher likelihood.
+Given a probability *p* between 0 and 1, the corresponding log probability can be computed as log(*p*), where log() is the natural log function.  Using log probabilities allows the system to accumulate the joint probability of an interpretation path through simple addition.  It also avoids floating-point underflow common to such joint probability calculations.  Note that by design, the log probability is always a negative floating-point value or 0, where larger values indicate higher likelihood.
 
 <a name="example"></a>
 ## Example

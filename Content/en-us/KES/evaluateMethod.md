@@ -16,7 +16,7 @@ Typically, an expression will be obtained from a response to the interpret metho
 Name|Value|Description
 ----|----|----
 expr       | Text string | Structured query expression that selects a subset of index entities.
-attributes | Text string | Comma delimited list of attributes to include in response.
+attributes | Text string | Comma-delimited list of attributes to include in response.
 count	   | Number (default=10) | Maximum number of results to return.
 offset     | Number (default=0) | Index of the first result to return.
 orderby |	Text string | Name of attribute used to sort the results, followed by optional sort order (default=asc): "*attrname*[:(asc&#124;desc)]".  If not specified, the results are returned by decreasing natural log probability.
@@ -38,7 +38,7 @@ In the academic publications example, the following request passes a structured 
 
 `http://<host>/evaluate?expr=Composite(Author.Name=='jaime teevan')&attributes=Title,Y,Author.Name,Author.Id&count=2`
 
-The response contains the top 2 ("count=2") most likely matching entities.  For each entity, the title, year, author name, and author ID attributes are returned.  Note how the structure of composite attribute values match the way they are specified in the data file. 
+The response contains the top 2 ("count=2") most likely matching entities.  For each entity, the title, year, author name, and author ID attributes are returned.  Note how the structure of composite attribute values matches the way they are specified in the data file. 
 
 ```json
 {

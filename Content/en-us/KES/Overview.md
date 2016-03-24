@@ -8,7 +8,7 @@ Weight: 100
 # Knowledge Exploration Service
 Welcome to the Microsoft Knowledge Exploration Service.  Knowledge Exploration Service (KES) offers a fast and effective way to add interactive search and refinement to applications.  With KES, you can build a compressed index from structured data, author a grammar that interprets natural language queries, and provide interactive query formulation with auto-completion suggestions.
 
-See [Getting Started](GettingStarted.md) for a walkthrough of using KES to create an interactive search interface for an academic publications domain.
+See [Getting Started](GettingStarted.md) for a sample walkthrough of how to use KES to create an interactive search interface for an academic publications domain.
 
 ![AcademicAutoComplete](AutoComplete.png)
 

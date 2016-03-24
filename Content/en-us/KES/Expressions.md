@@ -34,7 +34,7 @@ For attributes with associated synonyms, a query expression may specify objects 
 
 
 ## Functions
-There is a built-in set of functions that allow the construction of more sophisticated query expressions from basic attribute queries.
+There is a built-in set of functions allowing the construction of more sophisticated query expressions from basic attribute queries.
 
 ### And Function
 `And(expr1, expr2)`
@@ -57,9 +57,9 @@ The following example returns academic publications published in the year 2000 a
 ### Composite Function
 `Composite(expr)`
 
-Returns an expression that encapsulates an inner expression composed of queries against sub-attributes of a common composite attribute.  The encapsulation enforces that the composite attribute of any matching data object has at least one value that individually satisfies the inner expression.  Note that query expressions on sub-attributes of a composite attribute has to be encapsulated using the Composite() function before it can be combined with other query expressions.
+Returns an expression that encapsulates an inner expression composed of queries against sub-attributes of a common composite attribute.  The encapsulation requires the composite attribute of any matching data object to have at least one value that individually satisfies the inner expression.  Note that a query expression on sub-attributes of a composite attribute has to be encapsulated using the Composite() function before it can be combined with other query expressions.
 
-For example, the following expression returns academic publications by "harry shum" while he is at "microsoft":
+For example, the following expression returns academic publications by "harry shum" while he was at "microsoft":
 
 ```
 Composite(And(Author.Name="harry shum", 
