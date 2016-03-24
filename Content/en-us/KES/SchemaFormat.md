@@ -21,7 +21,7 @@ The schema is specified in a JSON file that describes the attribute structure of
 }
 ```
 
-Attribute names are case sensitive identifiers that start with a letter and consist only of letters (A-Z), numbers (0-9), and underscore (\_).  The reserved "prob" attribute is used to specify the relative probabilities among objects.
+Attribute names are case sensitive identifiers that start with a letter and consist only of letters (A-Z), numbers (0-9), and underscore (\_).  The reserved "logprob" attribute is used to specify the relative natural log probabilities among objects.
 
 ## Attribute Type
 Below is a list of supported attribute data types:

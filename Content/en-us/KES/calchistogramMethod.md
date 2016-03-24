@@ -29,7 +29,7 @@ $.histograms[\*].distinct_values | Number of distinct values among matching enti
 $.histograms[\*].total_count | Total number of value instances among matching entities for this attribute.
 $.histograms[\*].histogram | Histogram data for this attribute.
 $.histograms[\*].histogram[\*].value | Attribute value.
-$.histograms[\*].histogram[\*].logprob	| Total log probability of matching entities with this attribute value.
+$.histograms[\*].histogram[\*].logprob	| Total natural log probability of matching entities with this attribute value.
 $.histograms[\*].histogram[\*].count	| Number of matching entities with this attribute value.
 $.aborted | True if the request timed out.
 
@@ -38,7 +38,7 @@ In the academic publications example, the following calculates a histogram of pu
 
 `http://<host>/calchistogram?expr=And(Composite(Author.Name=='jaime teevan'),Year>=2013)&attributes=Year,Keyword&count=4`
 
-The response indicates that there are 37 papers matching the query expression.  For the *Year* attribute, there are 3 distinct values, one for each year since 2013.  The total paper count over the 3 distinct values is 37.  For each *Year*, the histogram shows the value, total log probability, and count of matching entities.     
+The response indicates that there are 37 papers matching the query expression.  For the *Year* attribute, there are 3 distinct values, one for each year since 2013.  The total paper count over the 3 distinct values is 37.  For each *Year*, the histogram shows the value, total natural log probability, and count of matching entities.     
 
 The histogram for *Keyword* shows that there are 34 distinct keywords. As a paper may be associated with multiple keywords, the total count (53) can be larger than the number of matching entities.  Although there are 34 distinct values, the response only includes the top 4 because of the "count=4" parameter.
 
@@ -99,7 +99,3 @@ The histogram for *Keyword* shows that there are 34 distinct keywords. As a pape
   ]
 }
 ```	
-
-# To Do
-* max_entities
-* Fix count/offset documentation/implementation.

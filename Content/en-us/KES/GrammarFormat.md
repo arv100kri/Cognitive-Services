@@ -27,7 +27,7 @@ The `import` element imports a schema definition from an external file to enable
 ### rule Element
 The `rule` element defines a grammar rule, a structural unit that specifies a set of query expressions that the system can interpret.  The element must be a child of the top-level `grammar` element.  The required `id` attribute specifies the name of the rule, which is referenced from `grammar` or `ruleref` elements.
 
-A `rule` element defines a set of legal expansions.  Text tokens matchs against the input query directly.  `item` elements specify repeats and alter interpretation probabilities.  `one-of` elements indicate choice of alternatives.  `ruleref` elements enable construction of more complex expansions from simpler ones.  `attrref` elements allow matches against  attribute values from the index.  `tag` elements specify the semantics of the interpretation and can alter the interpretation probability.
+A `rule` element defines a set of legal expansions.  Text tokens match against the input query directly.  `item` elements specify repeats and alter interpretation probabilities.  `one-of` elements indicate choice of alternatives.  `ruleref` elements enable construction of more complex expansions from simpler ones.  `attrref` elements allow matches against attribute values from the index.  `tag` elements specify the semantics of the interpretation and can alter the interpretation probability.
 
 ```xml
 <rule id="GetPapers">...</rule>
@@ -87,7 +87,7 @@ In addition to matching user input, the `attrref` element also returns a structu
 ```
 
 #### Query Completion 
-To support query completions when interpreting partial user queries, each referenced attribute must include "starts_with" as an operation in the schema definition.  Given an user query prefix, `attrref` will match all values in the index that complete the prefix and yield each complete value as a separate interpretation of the grammar.  
+To support query completions when interpreting partial user queries, each referenced attribute must include "starts_with" as an operation in the schema definition.  Given a user query prefix, `attrref` will match all values in the index that complete the prefix and yield each complete value as a separate interpretation of the grammar.  
 
 Examples:
 * Matching `<attrref uri="academic#Keyword" name="keyword"/>` against the query prefix "dat" spawns one interpretation for papers about "database", one interpretation for papers about "data mining", etc.
@@ -136,7 +136,7 @@ For a list of supported semantic functions, see [Semantic Functions](SemanticInt
 ## Interpretation Probability
 The probability of an interpretation path through the grammar is the cumulative log probability of all the `<item>` elements and semantic functions encountered along the way.  It describes the relative likelihood of matching a particular input sequence.
 
-Given a probability *p* between 0 and 1, the corresponding log probability  can be computed as log(*p*), where log() is the the natural log function.  Using log probabilities allows the system to cumulate the joint probability of an interpretation path through simple addition.  It also avoids floating point underflow common to such joint probability calculations.  Note that by design, the log probability is always a negative floating point value or 0, where larger values indicate higher likelihood.
+Given a probability *p* between 0 and 1, the corresponding log probability can be computed as log(*p*), where log() is the natural log function.  Using log probabilities allows the system to cumulate the joint probability of an interpretation path through simple addition.  It also avoids floating point underflow common to such joint probability calculations.  Note that by design, the log probability is always a negative floating point value or 0, where larger values indicate higher likelihood.
 
 <a name="Example"/>
 ## Example

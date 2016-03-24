@@ -11,7 +11,7 @@ Each line in the file specifies the attribute values of an object in [JSON forma
 In addition to the attributes defined in the [schema](SchemaFormat.md), each object has an optional "logprob" attribute that 
 specifies the relative log probability among the objects.
 Given a probability *p* between 0 and 1, the corresponding log probability can be computed as log(*p*), 
-where log() is the the natural log function.
+where log() is the natural log function.
 When no value is specified for logprob, the default value 0 is used.
 
 ```json
