@@ -9,23 +9,20 @@ Weight: 90
 
 This guide demonstrates how to call Emotion API for Video. The samples are written in C# using the Emotion API for Video client library.
 
-## Table of Contents
+### Table of Contents
 
-*	Preparation
-*	Step 1: Authorize the API call
-*	Step 2: Upload a video to the service and check the status
-*	Step 3: Retrieving video output files for stabilization
-*	Step 4: Retrieving and understanding the face detection and tracking JSON output
-*	Step 5: Retrieving and understanding the motion detection JSON output
-*	Summary
+*	[Preparation](#Prep)
+*	[Step 1: Authorize the API call](#Step1)
+*	[Step 2: Upload a video to the service and check the status](#Step2)
+*	[Step 3: Retrieving and understanding the face detection and tracking JSON output](#Step3)
+*	[Summary](#Summary)
 
 
-## Preparation 
+### <a name="Prep">Preparation</a> 
 In order to use the Emotion API for Video, you will need a video that includes people, preferably video where the people are facing the camera.
 
-## Step 1: Authorize the API call 
+### <a name="Step1">Step 1: Authorize the API call</a> 
 Every call to the Emotion API for Video requires a subscription key. This key needs to be either passed through a query string parameter or specified in the request header. To pass the subscription key through a query string, refer to the request URL below for the Emotion API for Video as an example:
-
 
 ```
 https://api.projectoxford.ai/emotion/v1.0/recognizeInVideo&subscription-key=<Your subscription key>
@@ -45,7 +42,7 @@ var emotionServiceClient = new emotionServiceClient("Your subscription key");
 To obtain a subscription key, see [subscription and key management.]
 (https://www.projectoxford.ai/Subscription) 
 
-## Step 2: Upload a video to the service and check the status
+### <a name="Step2">Step 2: Upload a video to the service and check the status</a>
 The most basic way to perform any of the Emotion API for Video calls is by uploading a video directly. This is done by sending a "POST" request with application/octet-stream content type together with the data read from a video file. The maximum size of the video is 100MB.
 
 Using the client library, stabilization by means of uploading is done by passing in a stream object. See the example below:
@@ -81,11 +78,7 @@ Using the client library, you can retrieve the operation status and result using
 var operationResult = await videoServiceClient.GetOperationResultAsync(videoOperation);
 
 ```
-
 Typically, the client side should periodically retrieve the operation status until the status is shown as “Succeeded” or “Failed”.
-
-
-
 
 ```
 OperationResult operationResult;
@@ -102,14 +95,13 @@ while (true)
 
 ```
 
-When the status of OperationResult is shown as “Succeeded” the result can be retrieved in the ProcessingResult field of OperationResult.
+When the status of VideoOperationResult is shown as “Succeeded” the result can be retrieved by casting the VideoOperationResult to a VideoOperationInfoResult<VideoAggregateRecognitionResult> and accessing the ProcessingResult field.
 
 ```
-var emotionRecognitionJsonString = operationResult.ProcessingResult;
-
+var emotionRecognitionJsonString = ((VideoOperationInfoResult<VideoAggregateRecognitionResult>)operationResult).ProcessingResult;
 ```
 
-## Step 3: Retrieving and understanding the emotion recognition and tracking JSON output
+### <a name="Step3">Step 3: Retrieving and understanding the emotion recognition and tracking JSON output</a>
 
 The output result contains the metadata from the faces within the given file in JSON format.
 
@@ -143,7 +135,7 @@ var emotionRecognitionTrackingResultJsonString = operationResult.ProcessingResul
 var emotionRecognitionTracking = JsonConvert.DeserializeObject<EmotionRecognitionResult>(emotionRecognitionTrackingResultJsonString, settings);
 ```
 
-## Summary
+### <a name="Summary">Summary</a>
 In this guide you have learned about the functionalities of the Emotion API for Video: how you can upload a video, check its status, retrieve emotion recognition metadata.
 
 For more information about API details, see the API reference guide “Emotion API for Video Reference”.
