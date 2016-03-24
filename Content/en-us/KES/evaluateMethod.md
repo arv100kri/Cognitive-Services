@@ -1,7 +1,7 @@
 <!--
 NavPath: Knowledge Exploration Service/Web API Interface
 LinkLabel: evaluate Method
-Url: KES/documentation/evaluateMethod
+Url: KES/documentation/evaluatemethod
 Weight: 20
 -->
 

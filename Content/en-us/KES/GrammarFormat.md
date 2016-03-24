@@ -1,14 +1,14 @@
 <!--
 NavPath: Knowledge Exploration Service
 LinkLabel: Grammar Format
-Url: KES/documentation/GrammarFormat
+Url: kes/documentation/grammarformat
 Weight: 95
 -->
 
 # Grammar Format
 The grammar is an XML file that specifies the weighted set of natural language queries that the service can interpret, as well as how these natural language queries are translated into semantic query expressions.  The grammar syntax is based on [SRGS](http://www.w3.org/TR/speech-grammar/), a W3C standard for speech recognition grammar, with extensions to support data index integration and semantic functions.
 
-The following describes each of the syntactic elements that can be used in a grammar.  See [example](#Example) for a complete grammar that demonstrate the use of these elements in context.
+The following describes each of the syntactic elements that can be used in a grammar.  See [example](#example) for a complete grammar that demonstrate the use of these elements in context.
 
 ### grammar Element 
 The `grammar` element is the top-level element in the grammar specification XML.  The required `root` attribute specifies the name of the root rule that defines the starting point of the grammar.
@@ -60,7 +60,7 @@ When `item` elements appears as children of a `one-of` element, they define the 
 ```
 
 ### one-of Element
-The `one-of` element specifies alternative expansions among one of the child `item` elements.  Only `item` elements may appear inside a `one-of` element.  Relative probabilities among the different choices may be specified via the `logprob` attribute in child `item`s.
+The `one-of` element specifies alternative expansions among one of the child `item` elements.  Only `item` elements may appear inside a `one-of` element.  Relative probabilities among the different choices may be specified via the `logprob` attribute in each child `item`.
 
 ```xml
 <one-of>
@@ -119,7 +119,7 @@ Examples:
 * `<attrref uri="academic#Year" op="starts_with" name="year"/>` matches the input string "20" and returns in a single interpretation papers published in 200-299, 2000-2999, etc.  This is a rare use case.
 
 ### tag Element
-The `tag` element specifies how a path through the grammar is to be interpreted.  It contains a sequence of semi-colon terminated statements.  A statement may be an assignment of a literal or variable to another variable.  It may also assign the output of a function with 0 or more parameters to a variable.  Each function parameter may be specified using a literal or a variable.  If the function does not return any output, the assignment is omitted.  The scope of all variables are local to the containing rule.
+The `tag` element specifies how a path through the grammar is to be interpreted.  It contains a sequence of semi-colon terminated statements.  A statement may be an assignment of a literal or variable to another variable.  It may also assign the output of a function with 0 or more parameters to a variable.  Each function parameter may be specified using a literal or a variable.  If the function does not return any output, the assignment is omitted.  The scope of each variable is local to the containing rule.
 
 ```xml
 <tag>x = 1; y = x;</tag>
@@ -131,14 +131,14 @@ Each `rule` in the grammar has a predefined variable named "out", representing t
 
 Some statements may alter the probability of an interpretation path by introducing an additive log probability offset.  Some statements may reject the interpretation all together if specified conditions are not satisfied.
 
-For a list of supported semantic functions, see [Semantic Functions](SemanticInterpretation.md#Functions).
+For a list of supported semantic functions, see [Semantic Functions](SemanticInterpretation.md#semantic-functions).
 
 ## Interpretation Probability
 The probability of an interpretation path through the grammar is the cumulative log probability of all the `<item>` elements and semantic functions encountered along the way.  It describes the relative likelihood of matching a particular input sequence.
 
 Given a probability *p* between 0 and 1, the corresponding log probability can be computed as log(*p*), where log() is the natural log function.  Using log probabilities allows the system to cumulate the joint probability of an interpretation path through simple addition.  It also avoids floating point underflow common to such joint probability calculations.  Note that by design, the log probability is always a negative floating point value or 0, where larger values indicate higher likelihood.
 
-<a name="Example"/>
+<a name="example"></a>
 ## Example
 The following is an example XML from the academic publications domain that demonstrates the various elements of a grammar:
 

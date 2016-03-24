@@ -1,7 +1,7 @@
 <!--
 NavPath: Knowledge Exploration Service
 LinkLabel: Command Line Interface
-Url: KES/documentation/CommandLine
+Url: KES/documentation/commandline
 Weight: 98
 -->
 
@@ -32,14 +32,9 @@ Schema/data/index files may be local file paths or URL paths to Azure blobs.  Th
 
 A description string may be optionally specified to subsequently identify a binary index using the **describe_index** command.  
 
-By default, the index is built on the local machine.  Outside of the Azure environment, local builds are limited to data files containing up to 10,000 objects.  When the --remote flag is specified, the index will be built on a dynamically created Azure VM of the specified size.  This allows large indices to be built efficiently using Azure VMs with more memory.  To avoid paging which slows down the build process, we recommend using a VM with 3 times the amount of RAM as the input data file size.  For a list of available VM sizes, see [Sizes for virtual machines](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
+By default, the index is built on the local machine.  Outside of the Azure environment, local builds are limited to data files containing up to 10,000 objects.  When the --remote flag is specified, the index will be built on a temporarily created Azure VM of the specified size.  This allows large indices to be built efficiently using Azure VMs with more memory.  To avoid paging which slows down the build process, we recommend using a VM with 3 times the amount of RAM as the input data file size.  For a list of available VM sizes, see [Sizes for virtual machines](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
 
 TIP: For faster builds, presort the objects to index from the data file by decreasing probability.
-
-To Do:
-* Need to describe how to download subscription information.  If the command allows this to be specified interactively, we don't have to document.
-* Do we want to document that indexFile has to be blob if remote.
-* For now, remote build requires indexFile to be a blob.
 
 <a name="build_grammar-command"></a>
 ## build_grammar Command
@@ -62,8 +57,8 @@ The **host_service** command hosts an instance of the KES service on the local m
 
 | Parameter       | Description                |
 |-----------------|----------------------------|
-| `<grammarFile>` | Input grammar path         |
-| `<indexFile>`   | Input index path           |
+| `<grammarFile>` | Input binary grammar path         |
+| `<indexFile>`   | Input binary index path           |
 | `--port <port>` | Local port number.  Default: 8000 |
 
 Index/grammar files may be local file paths or URL paths to Azure blobs.  A web service will be hosted at http://localhost:&lt;port&gt;/.  See [Web APIs](WebAPI.md) for a list of supported operations.
@@ -78,19 +73,19 @@ The **deploy_service** command deploys an instance of the KES service to an Azur
 
 | Parameter       | Description                  |
 |-----------------|------------------------------|
-| `<grammarFile>` | Input grammar path           |
-| `<indexFile>`   | Input index path             |
+| `<grammarFile>` | Input binary grammar path           |
+| `<indexFile>`   | Input binary index path             |
 | `<serviceName>` | Name of target cloud service |
 | `<vmSize>`      | Size of cloud service VM     |
 | `--slot <slot>` | Cloud service slot: "staging" (default), "production" |
 
-Index/grammar files must be URL paths to Azure blobs.  Service name specifies a preconfigured Azure cloud service (see [How to Create and Deploy a Cloud Service](https://azure.microsoft.com/en-us/documentation/articles/cloud-services-how-to-create-deploy/)).  The command will automatically deploy the KES service to the specified Azure cloud service, using VMs of the specified size.  To avoid paging which significantly decreases performance, we recommend using a VM with 1 GB more RAM than the input index file size.  For a list of available VM sizes, see [Sizes for Cloud Services](https://azure.microsoft.com/en-us/documentation/articles/cloud-services-sizes-specs/).
+Index/grammar files may be paths to local files or Azure blobs.  Service name specifies a preconfigured Azure cloud service (see [How to Create and Deploy a Cloud Service](https://azure.microsoft.com/en-us/documentation/articles/cloud-services-how-to-create-deploy/)).  The command will automatically deploy the KES service to the specified Azure cloud service, using VMs of the specified size.  To avoid paging which significantly decreases performance, we recommend using a VM with 1 GB more RAM than the input index file size.  For a list of available VM sizes, see [Sizes for Cloud Services](https://azure.microsoft.com/en-us/documentation/articles/cloud-services-sizes-specs/).
 
 By default, the service is deployed to the staging environment, optionally overridden via the --slot parameter.  See [Web APIs](WebAPI.md) for a list of supported operations.
 
 <a name="describe_index-command"/>
 ## describe_index command
-The **describe_index** command outputs information about an index file, including the build timestamp, schema, and description.
+The **describe_index** command outputs information about an index file, including the schema and description.
 
 `kes.exe describe_index <indexFile>`
 

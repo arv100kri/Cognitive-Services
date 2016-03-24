@@ -1,7 +1,7 @@
 <!--
 NavPath: Knowledge Exploration Service
 LinkLabel: Getting Started
-Url: KES/documentation/GettingStarted
+Url: KES/documentation/gettingstarted
 Weight: 99
 -->
 
@@ -188,11 +188,11 @@ Once we have an XML grammar specification, we can compile it into a binary gramm
 
 <a name="hosting-index"></a>
 ## Hosting service
-For rapid prototyping, we can host the grammar and index on the local machine using [`kes.exe host_service`](CommandLine.md#host_service-command).  Once hosted, we can access the service via [web APIs](WebAPI.md) to validate the data correctness and grammar design.  In this example, we host the grammar file *Academic.grammar* and index file *Academic.index* at http://localhost:8000/ using the following command:
+For rapid prototyping, we can host the grammar and index in a web service on the local machine using [`kes.exe host_service`](CommandLine.md#host_service-command).  Once hosted, we can access the service via [web APIs](WebAPI.md) to validate the data correctness and grammar design.  In this example, we host the grammar file *Academic.grammar* and index file *Academic.index* at http://localhost:8000/ using the following command:
 
 `kes.exe host_service Academic.grammar Academic.index --port 8000`
 
-This initiates a local instance of the web service.  From a browser, we can use the various web APIs to test natural language interpretation, query completion, structured query evaluation, and histogram computation.  To stop the service, enter 'quit' into the `kes.exe host_service` command prompt or press 'Ctrl+C'.
+This initiates a local instance of the web service.  We can interactively test the service by visiting `http::localhost:<port>` from a browser.  For more information, see [Testing service](#testing-service).  We can also directly call various [web APIs](WebAPI.md) to test natural language interpretation, query completion, structured query evaluation, and histogram computation.  To stop the service, enter 'quit' into the `kes.exe host_service` command prompt or press 'Ctrl+C'.
 
 * [http://localhost:8000/interpret?query=papers by susan t dumais](http://localhost:8000/interpret?query=papers%20by%20susan%20t%20dumais)
 * [http://localhost:8000/interpret?query=papers by susan t d&complete=1](http://localhost:8000/interpret?query=papers%20by%20susan%20t%20d&complete=1)
@@ -205,18 +205,22 @@ Outside of Azure, [`kes.exe host_service`](CommandLine.md#host_service-command) 
 ## Scaling up
 When running `kes.exe` outside of Azure, the index is limited to 10,000 objects.  Once we are ready to scale up, we can build and host larger indices using Azure.  We can sign up for a [free trial](https://azure.microsoft.com/en-us/pricing/free-trial/).  Alternatively, for Visual Studio/MSDN subscriber, we can [activate subscriber benefits](https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/) which offer some Azure credits each month.
 
-To allow `kes.exe` access to an Azure account, visit https://manage.windowsazure.com/publishsettings/ to download the Azure publish settings file.  If prompted, sign into the desired Azure account.  Once signed in, the browser will automatically download the publish settings file.  Save it as *AzurePublishSettings.xml* in working directory from where `kes.exe` runs.
+To allow `kes.exe` access to an Azure account, visit https://manage.windowsazure.com/publishsettings/ to download the Azure publish settings file.  If prompted, sign into the desired Azure account.  Once signed in, the browser will automatically download the publish settings file.  Save it as *AzurePublishSettings.xml* in the working directory from where `kes.exe` runs.
 
 There are two ways to build and host large indices.  The first is to prepare the schema and data files in a Windows VM in Azure and run [`kes.exe build_index`](#building-index) to build the index locally from the VM without any size restrictions.  The resulting index can be hosted locally in the VM using [`kes.exe host_service`](#hosting-service) for rapid prototyping, again without any restrictions.  See the [Azure VM tutorial](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-tutorial/) for detailed steps on creating an Azure VM.
 
-The second method is to perform a remote Azure build using the [`--remote`](CommandLine.md#build_index-command) parameter, which specifies the size of the Azure VM used to build the index.  This allows the command to be executed in any environment.  When performing a remote build, the input schema and data arguments may be local file paths or [Azure blob storage](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-blobs/) URLs.  The output index argument must be a blob storage URL.  To create an Azure storage account, see [Create Storage Account](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-blobs/).  Note that only classic storage accounts are supported at this time.  We can use the utility [AzCopy](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/) to efficiently copy files to and from the blob storage.
+The second method is to perform a remote Azure build using [`kes.exe build_index`](CommandLine.md#build_index-command) with the `--remote` parameter, which specifies an Azure VM size.  When the `--remote` parameter is specified, the command creates a temporary Azure VM of that size, builds the index in the VM, uploads the index to the target blob storage, and deletes the VM upon completion.  Your Azure subscription is charged for the cost of the VM while the index is being built.  This remote Azure build capability allows [`kes.exe build_index`](CommandLine.md#build_index-command) to be executed in any environment.  When performing a remote build, the input schema and data arguments may be local file paths or [Azure blob storage](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-blobs/) URLs.  The output index argument must be a blob storage URL.  To create an Azure storage account, see [Create Storage Account](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-blobs/).  Note that only classic storage accounts are supported at this time.  We can use the utility [AzCopy](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/) to efficiently copy files to and from the blob storage.
 
 In this example, we assume that the blob storage container http://&lt;*account*&gt;.blob.core.windows.net/&lt;*container*&gt;/ has already been created, containing the schema *Academic.schema*, referenced synonym file *Keywords.syn*, and full-scale data file *Academic.full.data*.  
 We can build the full index remotely using the following command:
 
 `kes.exe build_index http://<account>.blob.core.windows.net/<container>/Academic.schema http://<account>.blob.core.windows.net/<container>/Academic.full.data http://<account>.blob.core.windows.net/<container>/Academic.full.index --remote Large`
 
-Note that it may take 5-10 minutes to provision the remote VM to build the index.  Thus, for rapid prototyping, we recommend developing with a smaller data set locally or working with larger data sets from within an Azure VM.  To avoid paging which slows down the build process, we recommend using a VM with 3 times the amount of RAM as the input data file size for index building, and a VM with 1 GB more RAM than the index size for hosting.  For a list of available VM sizes, see [Sizes for virtual machines](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
+Note that it may take 5-10 minutes to provision a temporay VM to build the index.  Thus, for rapid prototyping, we recommend one of two options:
+  1. Develop with a smaller data set locally on any machine.
+  2. Manually [create an Azure VM](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-tutorial/), [connect to it](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-hero-tutorial/#log-on-to-the-windows-virtual-machine) via Remote Desktop, install the [Knowledge Exploration Service SDK](https://www.microsoft.com/en-us/download/details.aspx?id=51488), and run [`kes.exe`](CommandLine.md) from within the VM.
+
+To avoid paging which slows down the build process, we recommend using a VM with 3 times the amount of RAM as the input data file size for index building, and a VM with 1 GB more RAM than the index size for hosting.  For a list of available VM sizes, see [Sizes for virtual machines](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/).
 
 <a name="deploying-service"></a>
 ## Deploying service

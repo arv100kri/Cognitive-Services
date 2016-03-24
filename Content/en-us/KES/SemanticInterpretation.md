@@ -1,7 +1,7 @@
 <!--
 NavPath: Knowledge Exploration Service
 LinkLabel: Semantic Interpretation
-Url: KES/documentation/SemanticInterpretation
+Url: kes/documentation/semanticinterpretation
 Weight: 94
 -->
 
@@ -26,28 +26,28 @@ Below is a list of currently supported data types:
 |Bool|Boolean value|true<br/>false|
 |Int32|32-bit signed integer.  -2.1e9 to 2.1e9|123<br/>-321|
 |Int64|64-bit signed integer. -9.2e18 and 9.2e18|9876543210|
-|Double|Double precision floating point. 1.7e+/-308 (15 digits)|9876543210|
+|Double|Double precision floating point. 1.7e+/-308 (15 digits)|123.456789<br/>1.23456789e2|
 |Guid|Globally unique identifier|"602DD052-CC47-4B23-A16A-26B52D30C05B"|
 |Query|Query expression that specifies a subset of data objects in the index|All()<br/>And(*q1*, *q2*)|
 
-<a name="Functions"/>
+<a name="semantic-functions"></a>
 ## Semantic Functions
 There is a built-in set of semantic functions.  They allow the construction of sophisticated queries and provide context sensitive control over grammar interpretations.
 
 ### And Function
 `query = And(query1, query2);`
 
-Returns a query *query* composed from the intersection of two input queries *query1* and *query2*.
+Returns a query composed from the intersection of two input queries *query1* and *query2*.
 
 ### Or Function
 `query = Or(query1, query2);`
 
-Returns a query *query* composed from the union of two input queries *query1* and *query2*.
+Returns a query composed from the union of two input queries *query1* and *query2*.
 
 ### All Function
 `query = All();`
 
-Returns a query *query* that includes all data objects.
+Returns a query that includes all data objects.
 
 In the following example, we use the All() function to iteratively build up a query based on the intersection of 1 or more keywords.
 
@@ -62,7 +62,7 @@ In the following example, we use the All() function to iteratively build up a qu
 ### None Function
 `query = None();`
 
-Returns a query *query* that includes no data objects.
+Returns a query that includes no data objects.
 
 In the following example, we use the None() function to iteratively build up a query based on the union of 1 or more keywords.
 
@@ -80,7 +80,7 @@ query = Attr(attrName, value)
 query = Attr(attrName, value, op)
 ```
 
-Returns a query *query* that includes only data objects whose attribute *attrName* matches value *value* according to the specified operation *op*, which defaults to "eq".  Typically, use `attrref` element to create a query based on the matched input query string.  When a value is not directly from the input query string, the Attr() function can be used to create a query matching this value.
+Returns a query that includes only data objects whose attribute *attrName* matches value *value* according to the specified operation *op*, which defaults to "eq".  Typically, use the `attrref` element to create a query based on the matched input query string.  If a value is given or obtained through other means, the Attr() function can be used to create a query matching this value.
 
 In the following example, we use the Attr() function to implement support for specifying academic publications from a particular decade.
 
@@ -97,7 +97,7 @@ written in the 90s
 ### Composite Function
 `query = Composite(innerQuery);`
 
-Returns a query *query* that encapsulates an inner query *innerQuery* composed of matches against sub-attributes of a common composite attribute *attr*.  The encapsulation enforces that the composite attribute *attr* of any matching data object has at least one value that individually satisfies the inner query *innerQuery*.  Note that queries on sub-attributes of a composite attribute has to be encapsulated using the Composite() function before it can be combined with other queries.
+Returns a query that encapsulates an inner query *innerQuery* composed of matches against sub-attributes of a common composite attribute *attr*.  The encapsulation enforces that the composite attribute *attr* of any matching data object has at least one value that individually satisfies the inner query *innerQuery*.  Note that queries on sub-attributes of a composite attribute have to be encapsulated using the Composite() function before it can be combined with other queries.
 
 For example, the following query returns academic publications by "harry shum" while he is at "microsoft":
 ```
@@ -114,7 +114,7 @@ And(Composite(Attr("academic#Author.Name", "harry shum"),
 ### GetVariable Function
 `value = GetVariable(name, scope);`
 
-Returns the value of variable *name* defined under the specified *scope*.  *name* is an identifier that start with a letter and consist only of letters (A-Z), numbers (0-9), and underscore (_).  *scope* can be set to "request" or "system".
+Returns the value of variable *name* defined under the specified *scope*.  *name* is an identifier that start with a letter and consist only of letters (A-Z), numbers (0-9), and underscore (_).  *scope* can be set to "request" or "system".  Note that variables defined under different scopes are distinct from each other, including ones defined via the output of semantic functions.
 
 Request scope variables are shared across all interpretations within the current interpret request.  They can be used to control the search for interpretations over the grammar.
 

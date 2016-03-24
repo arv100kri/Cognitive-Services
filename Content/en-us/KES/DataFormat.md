@@ -1,7 +1,7 @@
 <!--
 NavPath: Knowledge Exploration Service
 LinkLabel: Data Format
-Url: KES/documentation/DataFormat
+Url: KES/documentation/dataformat
 Weight: 96
 -->
 
@@ -10,6 +10,7 @@ The data file describes the list of objects to index.
 Each line in the file specifies the attribute values of an object in [JSON format](http://json.org/) with UTF-8 encoding.
 In addition to the attributes defined in the [schema](SchemaFormat.md), each object has an optional "logprob" attribute that 
 specifies the relative log probability among the objects.
+When the service returns objects in order of decreasing probability, we can use "logprob" to indicate the return order of matching objects.
 Given a probability *p* between 0 and 1, the corresponding log probability can be computed as log(*p*), 
 where log() is the natural log function.
 When no value is specified for logprob, the default value 0 is used.
@@ -20,7 +21,7 @@ When no value is specified for logprob, the default value 0 is used.
 ...
 ```
 
-For String, GUID, and Blob attributes, the value is represented as a quoted JSON string.  For numeric attributes (Int32, Int64, Double), the value is represented as a JSON number.  For composite attributes, the value is a JSON object that specifies the sub-attribute values.  The special "logprob" attribute is a floating-point value less or equal to 0 that represents the relative log probability of the objects.  For faster index builds, presort the objects by decreasing log probability.
+For String, GUID, and Blob attributes, the value is represented as a quoted JSON string.  For numeric attributes (Int32, Int64, Double), the value is represented as a JSON number.  For composite attributes, the value is a JSON object that specifies the sub-attribute values.  For faster index builds, presort the objects by decreasing log probability.
 
 In general, an attribute may have 0 or more values.  If an attribute has no value, we simply drop it from the JSON.  If an attribute has 2 or more values, we can repeat the attribute value pair in the JSON object.  Alternatively, we can assign a JSON array containing the multiple values to the attribute.
 
