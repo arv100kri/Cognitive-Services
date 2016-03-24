@@ -62,7 +62,7 @@ var videoServiceClient = new VideoServiceClient("Your subscription key");
 
 ```
  
-To obtain a subscription key, see [subscription and key management](https://www.projectoxford.ai/Subscription).
+To obtain a subscription key, see [Subscriptions](https://www.microsoft.com/cognitive-services/en-us/sign-up).
 
 ## <a name="step2">Step 2: Upload a video to the service and check the status</a>
 
