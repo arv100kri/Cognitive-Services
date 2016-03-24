@@ -7,7 +7,7 @@ Weight: 1
 
 # Get Started with Entity Linking API in C&#35;
 
-Cognitive Services Entity Linking is a natural language processing tool to help analyzing text for your application. It is common to align a named-entity found in a text to a relevant entry in a knowledge base. 
+Microsoft's Entity Linking is a natural language processing tool to analyze text and link named-entities to relevant entries in a knowledge base. 
 
 This tutorial explores entity linking by using the Entity Linking Client Library as a NuGet package. 
 
@@ -22,7 +22,6 @@ This tutorial explores entity linking by using the Entity Linking Client Library
 - [Summary](#summary)
 - [Related Topics](#related-topics)
 
-
 ### <a name="Prerequisites">Prerequisites</a>
 
 - Visual Studio 2015
@@ -33,30 +32,29 @@ This tutorial explores entity linking by using the Entity Linking Client Library
 You may download the Entity Linking Intelligence Service API Client Library through https://www.projectoxford.ai/sdk or access it via [GitHub](https://github.com/Microsoft/ProjectOxford-ClientSDK). The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder.
 
 ### <a name="step-1-subscribe-entity-linking-intelligence-service-and-get-your-own-key">Step 1: Subscribe to Entity Linking Intelligence Service and get your key</a>
-Before using Entity Linking Intelligence Service, you must sign up for an API key. See [Subscriptions](https://www.microsoft.com/cognitive-services/en-us/sign-up). Both primary and secondary key can be used in this tutorial.
+Before using Entity Linking Intelligence Service, you must sign up for an API key. See [Subscriptions](https://www.microsoft.com/cognitive-services/en-us/sign-up). Both the primary and secondary key can be used in this tutorial.
 
 ### <a name="step-2-create-a-new-project-in-visual-studio"> Step 2: Create a new project in Visual Studio</a>
 
-Let’s start by creating a new project in Visual Studio.
-First, launch Visual Studio 2015 from the Start Menu. Then, create a new project by select **Installed → Templates → Visual C# → Windows Universal → Blank App** for your project template:
+Let’s start by creating a new project in Visual Studio. First, launch Visual Studio 2015 from the Start Menu. Then, create a new project by selecting **Installed → Templates → Visual C# → Windows Universal → Blank App** for your project template:
 
  ![Createa universal app](./Images/CreateUWP.png)
 
 ### <a name+"step-3-add-the-entity-linking-nuget-package-to-your-project">Step 3: Add the Entity Linking NuGet Package to your project</a>
 
 Entity Linking of Cognitive Services is released as a NuGet.org package and needs to be installed before you can use it.
-To add it to your project, go to the **Solution Explorer** tab, right click on your project, and select **Manage Nuget Packages**:
+To add it to your project, go to the **Solution Explorer** tab, right click your project, and select **Manage Nuget Packages**.
 
-First, in the **NuGet Package Manager** window, select NuGet.org as your Package Source in the upper right corner. Select **Browse** in the upper left corner and in the search box type “ProjectOxford.EntityLinking”. Select the **Microsoft.ProjectOxford.EntityLinking** NuGet package and click **Install**.
+First, in the **NuGet Package Manager** window, select NuGet.org as your **Package Source** in the upper right corner. Select **Browse** in the upper left corner and in the search box type “ProjectOxford.EntityLinking”. Select the **Microsoft.ProjectOxford.EntityLinking** NuGet package and click **Install**.
 
 Next, search for Newtonsoft.Json and install. If you are prompted to review changes, click **OK**. If you are presented with the EntityLinking license terms, click **I Accept**.
 
-EntityLinking is now installed as part of your application. You can confirm this by checking that the** Microsoft.ProjectOxford.EntityLinking** reference is present as part of your project in Solution Explorer:
+Entity Linking is now installed as part of your application. You can confirm this by checking that the** Microsoft.ProjectOxford.EntityLinking** reference is present as part of your project in Solution Explorer.
 
  ![Included nuget library in project](./Images/NugetLibraryInProject.png)
  
 ### <a name="step-4-add-an-input-and-output-text-block-to-your-apps-xaml">Step 4: Add an input and output text block to your app’s XAML</a>
-Navigate to ** MainPage.xaml ** in your project by double clicking on it in Solution Explorer. This will open the file. For convenience, you can double click on the **XAML** button in the **Designer** tab, this will hide the visual designer and reserve all of the space for the code view:
+Navigate to ** MainPage.xaml ** in **Solution Explorer**, then double click the file which will open it in a new window. For convenience, you can double click on the **XAML** button in the **Designer** tab, this will hide the **Visual Designer** and reserve all of the space for the code view.
 
  ![Included nuget library in project](./Images/UWPMainPage.png)
  
