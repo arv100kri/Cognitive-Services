@@ -9,12 +9,12 @@ Weight: 1
 
 Cognitive Services Entity Linking is a natural language processing tool to help analyzing text for your application. It is common to align a named-entity found in a text to a relevant entry in a knowledge base. 
 
-This tutorial explores entity linking by using the Entity Linking library as a NuGet package. 
+This tutorial explores entity linking by using the Entity Linking Client Library as a NuGet package. 
 
 ### Table of Contents
 
 - [Prerequisites](#prerequisites)
-- [Step 1: Subscribe Entity Linking Intelligence Service and get your key](#step-1-subscribe-entity-linking-intelligence-service-and-get-your-own-key)
+- [Step 1: Subscribe to Entity Linking Intelligence Service and get your key](#step-1-subscribe-entity-linking-intelligence-service-and-get-your-own-key)
 - [Step 2: Create a new project in Visual Studio](#step-2-create-a-new-project-in-visual-studio)
 - [Step 3: Add the Entity Linking NuGet Package to your project](#step-3-add-the-entity-linking-nuget-package-to-your-project)
 - [Step 4: Add an input and output text block to your app’s XAML](#step-4-add-an-input-and-output-text-block-to-your-apps-xaml)
@@ -26,15 +26,13 @@ This tutorial explores entity linking by using the Entity Linking library as a N
 ### <a name="Prerequisites">Prerequisites</a>
 
 - Visual Studio 2015
-- Project Oxford Entity Linking NuGet Package
 - A Project Oxford API Key
+- Get the client library and example
+- Project Oxford Entity Linking NuGet Package
 
-* Get the client library and example
+You may download the Entity Linking Intelligence Service API Client Library through https://www.projectoxford.ai/sdk or access it via [GitHub](https://github.com/Microsoft/ProjectOxford-ClientSDK). The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder.
 
-You may download the Entity Linking Intelligence Service API client library through https://www.projectoxford.ai/sdk or access them via [GitHub](https://github.com/Microsoft/ProjectOxford-ClientSDK). The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder.
-
-
-### <a name="step-1-subscribe-entity-linking-intelligence-service-and-get-your-own-key">Step 1: Subscribe Entity Linking Intelligence Service and get your key</a>
+### <a name="step-1-subscribe-entity-linking-intelligence-service-and-get-your-own-key">Step 1: Subscribe to Entity Linking Intelligence Service and get your key</a>
 Before using Entity Linking Intelligence Service, you must sign up for an API key. See [Subscriptions](https://www.microsoft.com/cognitive-services/en-us/sign-up). Both primary and secondary key can be used in this tutorial.
 
 ### <a name="step-2-create-a-new-project-in-visual-studio"> Step 2: Create a new project in Visual Studio</a>
@@ -62,7 +60,7 @@ Navigate to ** MainPage.xaml ** in your project by double clicking on it in Solu
 
  ![Included nuget library in project](./Images/UWPMainPage.png)
  
-As a text service, the best way to visualize the functionality is creating an input and an output text block. To do this, in the **Grid**, let’s add the following XAML. This code adds three components, an input text box, an output text block and a button to start over.
+As a text service, the best way to visualize the functionality is creating an input and an output text block. To do this, add the following XAML in the **Grid**. This code adds three components, an input text box, an output text block, and a start button.
  
  ```XAML
  <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -106,7 +104,7 @@ Now you are ready to run your first natural language processing Entity Linking A
  
 ### <a name="Summary">Summary</a>
  
-In this tutorial you’ve learned how to create an application to leverage Entity Linking Intelligence Service with just a few lines of C# and XAML code. 
+In this tutorial you’ve learned how to create an application to leverage Entity Linking Intelligence Service Client Library with just a few lines of C# and XAML code. 
 
 ### <a name="related-topics">Related Topics</a>
 
