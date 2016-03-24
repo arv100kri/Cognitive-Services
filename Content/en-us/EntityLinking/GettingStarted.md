@@ -35,7 +35,7 @@ You may download the Entity Linking Intelligence Service API client library thro
 
 
 ## Step 1: Subscribe Entity Linking Intelligence Service and get your own key
-Before using any Face API, you must sign up to subscribe Face API of the Microsoft Project Oxford services. See [subscription and key management](https://www.projectoxford.ai/Subscription). Both primary and secondary key can be used in this tutorial.
+Before using Entity Linking Intelligence Service, you must sign up for an API key. See [subscription and key management](https://www.projectoxford.ai/Subscription). Both primary and secondary key can be used in this tutorial.
 
 ## Step 2: Create a new project in Visual Studio
 
@@ -89,8 +89,8 @@ Navigate to ** MainPage.xaml ** in your project by double clicking on it in Solu
  private async void button_Click(object sender, RoutedEventArgs e)
 {
     var text = this.inputBox.Text;
-    var link = new EntityLinkingServiceClient("Your subscription key");
-    var linkResponse = await link.RecognizeAsync(text);
+    var client = new EntityLinkingServiceClient("Your subscription key");
+    var linkResponse = await client.RecognizeAsync(text);
     var result = string.Join(", ", linkResponse.Select(i => i.WikipediaId).ToList());
     this.outputBlock.Text = result;
 }
