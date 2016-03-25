@@ -43,7 +43,7 @@ This documentation describes the Bing Voice Output API which exposes an HTTP int
 
 Clients must use the following end-point to access the service and build voice enabled applications: [https://speech.platform.bing.com/synthesize](https://speech.platform.bing.com/synthesize) 
 
-Note! Until you have submitted your subscription key as described in [Bing Voice Recognition, 2 Voice Recognition Request: Authenticate the API call](/API-Reference-REST/BingVoiceRecognition.md), this link will generate a 403 Response Error.
+Note! Until you have submitted your subscription key as described in [Bing Voice Recognition, 2. Voice Recognition Request: Authenticate the API call](/BingVoiceRecognition.md), this link will generate a 403 Response Error.
 
 The API uses HTTP POST to send audio back to the client. The maximum amount of audio returned for a given request must not exceed 15 seconds. 
  
