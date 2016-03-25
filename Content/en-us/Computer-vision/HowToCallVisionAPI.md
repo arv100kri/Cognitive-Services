@@ -226,5 +226,5 @@ The remainder of error values are listed [here](https://dev.projectoxford.ai/doc
 
 These are the basic functionalities of the Vision API: how you can upload images and retrieve valuable metadata in return.
 
-To use the REST API, go to [Vision API Reference](../APIReference.md).
+To use the REST API, go to [Vision API Reference](./APIReference.md).
  
