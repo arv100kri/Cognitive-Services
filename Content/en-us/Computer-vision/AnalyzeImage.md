@@ -10,7 +10,7 @@ Weight: 100
 Through Vision API a user can analyze and filter visual content in numerous ways, use optical character recognition to identify text found in images, distinguish color schemes, and crop photos to be used as thumbnails. 
 
 ###Tagging images
-Tagging is a new way of analyzing an image. Vision API can return tags based on objects, living beings, scenery or actions found in images. Tags are not returned according to a hierarchical classification system, but correspond to image content. Tags may contain hints to avoid ambiguity or provide context, for example the tag “cello” may be accompanied by the hint “musical instrument”. All tags are in English.
+Tagging is a new way of analyzing an image. Vision API can return tags based on objects, living beings, scenery or actions found in images. Tags are not returned according to a hierarchical classification system, but correspond to image content. Tags may contain hints to avoid ambiguity or provide context, for example the tag “zinnia” may be accompanied by the hint “flower”. All tags are in English.
 
 ###Generating descriptions
 A collection of content tags forms the foundation for an image “description” displayed as human readable language in complete sentences. More than one description will be generated for each image ordered by their confidence score. All descriptions are in English.
@@ -35,7 +35,8 @@ Vision API detects human faces within a picture and generates face coordinates, 
 
 For a hands on experience with any of the visual features, thumbnail generation, and OCR, please go to the  [interactive demo](https://www.projectoxford.ai/demo/vision). 
 
-#### 86-category concept
+###Demonstration images 
+#### The 86-category concept
 
 Based on a list of 86 concepts seen in the below diagram, visual features found in an image can be categorized ranging from broad to specific. For the full taxonomy in text format, follow this [link](https://www.projectoxford.ai/images/bright/vision/examples/86categories.txt).  
 ![Analyze Categories](./Images/analyze_categories.jpg)  
