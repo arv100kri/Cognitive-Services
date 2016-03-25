@@ -1,6 +1,7 @@
-<!-- NavPath: Computer Vision API
+<!-- 
+NavPath: Computer Vision API/Get Started with Vision API
 LinkLabel: Get Started in Python
-Url: Computer-Vision-api/documentation/GetStartedWithPython
+Url: Computer-Vision-api/documentation/GetStarted/GetStartedWithPython
 Weight: 99
 -->
 
