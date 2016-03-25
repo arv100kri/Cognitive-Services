@@ -58,7 +58,7 @@ If you want to **build your own application**, continue on with these instructio
 
 ### <a name="Step2">Step 2: Build the application / example code</a>
 
-3.)	Open [ViewController.mm](https://oxfordportal.blob.core.windows.net/example-speech/ViewController.mm) in a new window or find **ViewController.mm** in the downloaded file under **samples\SpeechRecognitionServiceExample**. You will need the **Speech API primary subscription key**. The below code snippet shows where to use the key. (You may ignore the LUIS values if you don’t want to use “Intent” right now.)
+3.	Open [ViewController.mm](https://oxfordportal.blob.core.windows.net/example-speech/ViewController.mm) in a new window or find **ViewController.mm** in the downloaded file under **samples\SpeechRecognitionServiceExample**. You will need the **Speech API primary subscription key**. The below code snippet shows where to use the key. (You may ignore the LUIS values if you don’t want to use “Intent” right now.)
 
 ```
 {
@@ -120,7 +120,7 @@ Make sure the microphone is turned on and data from the microphone is sent to th
 
 **3.	“WithIntent” clients:**
 
-Use “WithIntent” if you want the server to return additional structured information about the speech to be used by apps to parse the intent of the speaker and drive further actions by the app. To use Intent, you will need to train a model and get an AppID and a Secret. See project [LUIS](www.luis.ai) for details.
+Use “WithIntent” if you want the server to return additional structured information about the speech to be used by apps to parse the intent of the speaker and drive further actions by the app. To use Intent, you will need to train a model and get an AppID and a Secret. See project [LUIS](https://www.luis.ai) for details.
 
 When you use the SpeechRecognitionServiceFactory to create the Client, you must select a language. The choices are:
 
@@ -147,17 +147,24 @@ As data is sent to the service, the client will receive multiple partial results
 You can attach various event handlers to the client you created.
 
 **1.	Partial Results Events:** This event gets called every time the Speech Recognition Service predicts what you might be saying – even before you finish speaking (if you are using the Microphone Client) or have finished sending data (if you are using the Data Client).
+
 **2.	Error Events:** Called when the service detects an Error.
+
 **3.	Intent Events:** Called on “WithIntent” clients (only in ShortPhrase mode) after the final reco result has been parsed into a structured JSON intent.
+
 **4.	Result Events:**
   * **In ShortPhrase mode**, this event is called and returns n-best results after you finish speaking. 
   * **In LongDictation mode**, the event handler is called multiple times, based on where the service identifies sentence pauses.
   * **For each of the n-best choices**, a confidence value and a few different forms of the recognized text are returned:
   
       a)	**LexicalForm:** This form is optimal for use by applications that need the raw, unprocessed speech recognition result.
+
       b)	**DisplayText:** The recognized phrase with inverse text normalization, capitalization, punctuation and profanity masking applied. Profanity is masked with asterisks after the initial character, for example "d***". This form is optimal for use by applications that display the speech recognition results to users.
+      
       c)	**Inverse Text Normalization (ITN):** An example of ITN is converting result text from "go to fourth street" to "go to 4th St". This form is optimal for use by applications that display the speech recognition results to users.
+      
       d)	**InverseTextNormalizationResult:** Inverse text normalization (ITN) converts phrases like "one two three four" to a normalized form such as "1234". Another example is converting result text from "go to fourth street" to "go to 4th St". This form is optimal for use by applications that interpret the speech recognition results as commands or perform queries based on the recognized text.
+      
       e)	**MaskedInverseTextNormalizationResult:** The recognized phrase with inverse text normalization and profanity masking applied, but no capitalization or punctuation. Profanity is masked with asterisks after the initial character, e.g. "d***". This form is optimal for use by applications that display the speech recognition results to users. Inverse Text Normalization (ITN) has also been applied. An example of ITN is converting result text from "go to fourth street" to "go to 4th st". This form is optimal for use by applications that use the unmasked ITN results, but also need to display the command or query to users.
 
 ### <a name="Step3">Step 3: Run the example application</a>
