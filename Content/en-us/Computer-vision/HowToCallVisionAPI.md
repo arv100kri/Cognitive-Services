@@ -9,8 +9,8 @@ Weight: 93
 
 This guide demonstrates how to call Vision API using REST. The samples are written both in C# using the Vision API client library, and as HTTP POST/GET calls. We will focus on:
 
--	How to get tags, description and categories.
--	How to get domain-specific information (celebrities).
+-	How to get "Tags", "Description" and "Categories".
+-	How to get "Domain-specific" information (celebrities).
 
 ###Table of Contents
 * [Concepts](#Concepts)
@@ -33,10 +33,14 @@ Image URL or path to locally stored image.
   * Image dimension: Greater than 50 x 50 pixels
   
 In the examples below, the following features are demonstrated:
-1.	Analyzing an image and getting an array of tags and a description
-2.	Analyzing an image with a domain-specific model (specifically, 'celebrities' model) and getting the corresponding result in JSON.
-  * Option 1: Scoped Analysis - Analyze only a given model
-  * Option 2: Enhanced Analysis - Analyze to provide additional details with categories
+
+1. Analyzing an image and getting an array of tags and a description returned.
+2. Analyzing an image with a domain-specific model (specifically, "celebrities"  model) and getting the corresponding result in JSON retune.
+
+Features are broken down on
+
+  * **Option One:** Scoped Analysis - Analyze only a given model
+  * **Option Two:** Enhanced Analysis - Analyze to provide additional details with categories
   
 ###<a name="Step1">Step 1: Authorize the API call</a> 
 Every call to the Vision API requires a subscription key. This key needs to be either passed through a query string parameter or specified in the request header. 
@@ -53,14 +57,14 @@ Every call to the Vision API requires a subscription key. This key needs to be e
 
 ```var visionClient = new VisionServiceClient(“Your subscriptionKey”);```
 
-To obtain a subscription key, see subscriptions.[LINK]
+To obtain a subscription key, see [Subscriptions](https://www.microsoft.com/cognitive-services/en-us/sign-up).
 
 ###<a name="Step2">Step 2: Upload an image to the Vision API service and get back tags, descriptions and celebrities</a>
-The basic way to perform the Vision API call is by uploading an image directly. This is done by sending a "POST" request with application/octet-stream content type together with the data read from an image. For tags and description, this upload method will be the same for all the Vision API calls. The only difference will be the query parameters you specify. 
+The basic way to perform the Vision API call is by uploading an image directly. This is done by sending a "POST" request with application/octet-stream content type together with the data read from the image. For "Tags" and "Description", this upload method will be the same for all the Vision API calls. The only difference will be the query parameters the user specifies. 
 
-Here’s how to get Tags and Description for a given image:
+Here’s how to get "Tags" and "Description" for a given image:
 
-**Option1:** Get list of tags and one description
+**Option One:** Get list of "Tags" and one "Description"
 ```
 POST https://api.projectoxford.ai/vision/v1.0/analyze?visualFeatures=Description,Tags&subscription-key=<Your subscription key>
 ```
@@ -77,7 +81,14 @@ using (var fs = new FileStream(@"C:\Vision\Sample.jpg", FileMode.Open))
   analysisResult = await visionClient.AnalyzeImageAsync(fs, features);
 }
 ```
-**Option2:** Get list of tags only, or list of Descriptions only:
+**Option Two** Get list of "Tags" only, or list of "Description" only:
+
+######Tags-only:
+```
+POST https://api.projectoxford.ai/vision/v1.0/tag&subscription-key=<Your subscription key>
+var analysisResult = await visionClient.GetTagsAsync("http://contoso.com/example.jpg");
+```
+
 ######Description-only:
 ```
 POST https://api.projectoxford.ai/vision/v1.0/describe&subscription-key=<Your subscription key>
@@ -86,14 +97,9 @@ using (var fs = new FileStream(@"C:\Vision\Sample.jpg", FileMode.Open))
   analysisResult = await visionClient.DescribeAsync(fs);
 }
 ```
-######Tags-only:
-```
-POST https://api.projectoxford.ai/vision/v1.0/tag&subscription-key=<Your subscription key>
-var analysisResult = await visionClient.GetTagsAsync("http://contoso.com/example.jpg");
-```
 ###Here is how to get domain-specific analysis (in our case, for celebrities).
 
-**Option 1:** Scoped Analysis - Analyze only a given model
+**Option One:** Scoped Analysis - Analyze only a given model
 ```
 POST https://api.projectoxford.ai/vision/v1.0/models/celebrities/analyze
 var celebritiesResult = await visionClient.AnalyzeImageInDomainAsync(url, "celebrities");
@@ -103,13 +109,13 @@ For this option, all other query parameters {visualFeatures, details} are not va
 GET https://api.projectoxford.ai/vision/v1.0/models 
 var models = await visionClient.ListModelsAsync();
 ```
-**Option 2:** Enhanced Analysis - Analyze to provide additional details with categories
+**Option Two:** Enhanced Analysis - Analyze to provide additional details with categories
 
 For applications where you want to get generic image analysis in addition to details from one or more domain-specific models, we extend the v1 API with the models query parameter.
 ```
 POST https://api.projectoxford.ai/vision/v1.0/analyze?details=celebrities
 ```
-When this method is invoked, we will call the 86-cat classifier first. If any of the categories match that of known/matching models, a second pass of classifier invocations will occur. For example, if details=all, or details include ‘celebrities’, we will call the celebrities model after the 86-category classifier is called and the result includes the category person. This will increase latency for users interested in celebrities, compared to Option1.
+When this method is invoked, we will call the 86-category classifier first. If any of the categories match that of a known/matching model, a second pass of classifier invocations will occur. For example, if "details=all", or "details" include ‘celebrities’, we will call the celebrities model after the 86-category classifier is called and the result includes the category person. This will increase latency for users interested in celebrities, compared to Option One.
 
 All v1 query parameters will behave the same in this case.  If visualFeatures=categories is not specified, it will be implicitly enabled.
 
@@ -155,7 +161,7 @@ description.captions[].confidence	| number	| Confidence for the phrase.
 
 ###<a name="Step4">Step 4: Retrieving and understanding the JSON output of domain-specific models</a>
 
-**Option1:** Scoped Analysis - Analyze only a given model
+**Option One:** Scoped Analysis - Analyze only a given model
 The output will be an array of tags, an example will be like this example:
 ```
   { 
@@ -172,9 +178,9 @@ The output will be an array of tags, an example will be like this example:
   }
 ```
 
-**Option 2:** Enhanced Analysis - Analyze to provide additional details with categories
+**Option Two:** Enhanced Analysis - Analyze to provide additional details with categories
 
-For domain-specific models using option 2 (Enhanced Analysis), the categories return type is extended. An example follows:
+For domain-specific models using Option Two (Enhanced Analysis), the categories return type is extended. An example follows:
 ```
   {
     "requestId": "87e44580-925a-49c8-b661-d1c54d1b83b5",
@@ -200,7 +206,7 @@ For domain-specific models using option 2 (Enhanced Analysis), the categories re
   }
 ```
 
-The categories field is a list of one or more of the 86-categories [LINK] in the original taxonomy. Note also that categories ending in an underscore will match that category and its children (e.g. people_ as well as people_group, for celebrities model).
+The categories field is a list of one or more of the [86-categories](https://www.projectoxford.ai/images/bright/vision/examples/86categories.txt) in the original taxonomy. Note also that categories ending in an underscore will match that category and its children (e.g. people_ as well as people_group, for celebrities model).
 
 Field	| Type	| Content
 ------|------|------|
@@ -209,10 +215,10 @@ categories[].name	 | string	| Name from 86-category taxonomy
 categories[].score	| number	| Confidence score, between 0 and 1
 categories[].detail	 | object?      | Optional detail object
 
-Note that if multiple categories match (for example, 86-cat classifier returns a score for both people_ and people_young when model=celebrities), the details are attached to the most general level match (people_ in that example.)
+Note that if multiple categories match (for example, 86-category classifier returns a score for both people_ and people_young when model=celebrities), the details are attached to the most general level match (people_ in that example.)
 
 ###<a name="Errors">Errors Responses</a>
-These are identical to vision.analyze, with the additional error of NotSupportedModel error (HTTP 400), which may be returned in both option 1 and 2 scenarios.  For Option 2 (Enhanced Analysis), if any of the models specified in details are not recognized, the API will return a NotSupportedModel, even if 1 or more of them are valid.  Users can call listModels to find out what models are supporte.
+These are identical to vision.analyze, with the additional error of NotSupportedModel error (HTTP 400), which may be returned in both Option One and Option Two scenarios. For Option Two (Enhanced Analysis), if any of the models specified in details are not recognized, the API will return a NotSupportedModel, even if one or more of them are valid.  Users can call listModels to find out what models are supported.
 
 The remainder of error values are listed [here](https://dev.projectoxford.ai/docs/services/54ef139a49c3f70a50e79b7d/operations/550a323849c3f70b34ba2f8d).
 
