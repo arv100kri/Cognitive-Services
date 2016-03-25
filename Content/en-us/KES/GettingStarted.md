@@ -111,37 +111,34 @@ The grammar specifies the set of natural language queries that the service can i
 
   <!-- Import academic data schema-->
   <import schema="academic.schema" name="academic"/>
-  
+
   <!-- Define root rule-->
   <rule id="GetPapers">
     <example>papers about machine learning by michael jordan</example>
-    
+
     papers
     <tag>
       yearOnce = false;
+      isBeyondEndOfQuery = false;
       query = All();
     </tag>
-  
+
     <item repeat="1-" repeat-logprob="-10">
       <!-- Do not complete additional attributes beyond end of query -->
-      <tag>
-        isBeyondEndOfQuery = GetVariable("IsBeyondEndOfQuery", "system");
-        AssertEquals(isBeyondEndOfQuery, false);
-      </tag>
-		
-      <one-of>
+      <tag>AssertEquals(isBeyondEndOfQuery, false);</tag>
 
+      <one-of>
         <!-- about <keyword> -->
         <item logprob="-0.5">
           about <attrref uri="academic#Keyword" name="keyword"/>
           <tag>query = And(query, keyword);</tag>
         </item>
-        
+
         <!-- by <authorName> [while at <authorAffiliation>] -->
         <item logprob="-1">
           by <attrref uri="academic#Author.Name" name="authorName"/>
           <tag>authorQuery = authorName;</tag>
-          <item repeat="0-1">
+          <item repeat="0-1" repeat-logprob="-1.5">
             while at <attrref uri="academic#Author.Affiliation" name="authorAffiliation"/>
             <tag>authorQuery = And(authorQuery, authorAffiliation);</tag>
           </item>
@@ -150,7 +147,7 @@ The grammar specifies the set of natural language queries that the service can i
             query = And(query, authorQuery);
           </tag>
         </item>
-        
+
         <!-- written (in|before|after) <year> -->
         <item logprob="-1.5">
           <!-- Allow this grammar path to be traversed only once -->
@@ -162,16 +159,38 @@ The grammar specifies the set of natural language queries that the service can i
           <tag>query = And(query, year);</tag>
         </item>
       </one-of>
+
+      <!-- Determine if current parse position is beyond end of query -->
+      <tag>isBeyondEndOfQuery = GetVariable("IsBeyondEndOfQuery", "system");</tag>
     </item>
     <tag>out = query;</tag>
   </rule>
-  
+
   <rule id="GetPaperYear">
+    <tag>year = All();</tag>
     written
     <one-of>
-      <item>in <attrref uri="academic#Year" name="year"/></item>
-      <item>before <attrref uri="academic#Year" op="lt" name="year"/></item>
-      <item>after <attrref uri="academic#Year" op="gt" name="year"/></item>
+      <item>
+        in <attrref uri="academic#Year" name="year"/>
+      </item>
+      <item>
+        before
+        <one-of>
+          <item>[year]</item>
+          <item>
+            <attrref uri="academic#Year" op="lt" name="year"/>
+          </item>
+        </one-of>
+      </item>
+      <item>
+        after
+        <one-of>
+          <item>[year]</item>
+          <item>
+            <attrref uri="academic#Year" op="gt" name="year"/>
+          </item>
+        </one-of>
+      </item>
     </one-of>
     <tag>out = year;</tag>
   </rule>
