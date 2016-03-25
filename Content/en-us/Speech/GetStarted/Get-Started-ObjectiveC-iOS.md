@@ -15,7 +15,7 @@ This tutorial describes the use of the Windows.Media.SpeechRecognition API Clien
  * [Step 3: Run the example application](#Step3)
  * [Related Topics](#Related)
  
- ### <a name="Prereqs">Prerequisites</a>
+### <a name="Prereqs">Prerequisites</a>
  
  * Platform requirements
   
@@ -42,23 +42,23 @@ If you want to **build your own application**, continue on with these instructio
 1.	Create a new application project.
 2.	With the items you downloaded from the SDK, do the following: 
 
- a)	Click on the project in the file navigator on the left. Then click on the project or target in the editor that appears. Click on "**Build Settings**", then change from "**Basic**" to "**All**".
+ **a)**	Click on the project in the file navigator on the left. Then click on the project or target in the editor that appears. Click on "**Build Settings**", then change from "**Basic**" to "**All**".
  
- b)	Inside the directory to which you unpacked the SDK, you will see the directory, **SpeechSDK/SpeechSDK.framework/Headers**. Add an “**Include Search Path**” to include the **Headers** directory.
+ **b)**	Inside the directory to which you unpacked the SDK, you will see the directory, **SpeechSDK/SpeechSDK.framework/Headers**. Add an “**Include Search Path**” to include the **Headers** directory.
  
- c)	Inside the directory to which you unpacked the SDK, you will see the directory, **SpeechSDK**. Add a “**Framework Search Path**” to include the **SpeechSDK** directory.
+ **c)**	Inside the directory to which you unpacked the SDK, you will see the directory, **SpeechSDK**. Add a “**Framework Search Path**” to include the **SpeechSDK** directory.
  
- d)	Click on the project in the file navigator on the left. Then click on the project or target in the editor that appears. Click on “**General**”.
+ **d)**	Click on the project in the file navigator on the left. Then click on the project or target in the editor that appears. Click on “**General**”.
  
- e)	Inside the directory to which you unpacked the SDK, you will see the directory, **SpeechSDK/SpeechSDK.framework**. Add **SpeechSDK/SpeechSDK.framework** as a “**Linked Frameworks and Libraries**” via the “**Add Other…**” button found after you click on “**+**”.
+ **e)**	Inside the directory to which you unpacked the SDK, you will see the directory, **SpeechSDK/SpeechSDK.framework**. Add **SpeechSDK/SpeechSDK.framework** as a “**Linked Frameworks and Libraries**” via the “**Add Other…**” button found after you click on “**+**”.
  
- f)	Also add **SpeechSDK.framework** as an “**Embedded Binary**” framework.
+ **f)**	Also add **SpeechSDK.framework** as an “**Embedded Binary**” framework.
  
- g)	Note that inside the directory to which you unpacked the SDK in directory **SpeechSDK\Samples\SpeechRecognitionServerExample** there is a XCode buildable example so you can see these settings in action.
+ **g)**	Note that inside the directory to which you unpacked the SDK in directory **SpeechSDK\Samples\SpeechRecognitionServerExample** there is a XCode buildable example so you can see these settings in action.
 
 ### <a name="Step2">Step 2: Build the application / example code</a>
 
-3.	Open [ViewController.mm](https://oxfordportal.blob.core.windows.net/example-speech/ViewController.mm) in a new window or find **ViewController.mm** in the downloaded file under **samples\SpeechRecognitionServiceExample**. You will need the **Speech API primary subscription key**. The below code snippet shows where to use the key. (You may ignore the LUIS values if you don’t want to use “Intent” right now.)
+3. Open [ViewController.mm](https://oxfordportal.blob.core.windows.net/example-speech/ViewController.mm) in a new window or find **ViewController.mm** in the downloaded file under **samples\SpeechRecognitionServiceExample**. You will need the **Speech API primary subscription key**. The below code snippet shows where to use the key. (You may ignore the LUIS values if you don’t want to use “Intent” right now.)
 
 ```
 {
