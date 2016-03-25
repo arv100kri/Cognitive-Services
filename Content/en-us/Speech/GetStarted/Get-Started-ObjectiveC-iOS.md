@@ -17,7 +17,7 @@ This tutorial describes the use of the Windows.Media.SpeechRecognition API Clien
  
  ### <a name="Prereqs">Prerequisites</a>
  
-  * Platform requirements
+ * Platform requirements
   
 Make sure Mac XCode IDE is installed.
 
@@ -41,13 +41,14 @@ If you want to **build your own application**, continue on with these instructio
 
 1.	Create a new application project.
 2.	With the items you downloaded from the SDK, do the following: 
-  a)	Click on the project in the file navigator on the left. Then click on the project or target in the editor that appears. Click on "**Build Settings**", then change from "**Basic**" to "**All**".
-  b)	Inside the directory to which you unpacked the SDK, you will see the directory, **SpeechSDK/SpeechSDK.framework/Headers**. Add an “**Include Search Path**” to include the **Headers** directory.
-  c)	Inside the directory to which you unpacked the SDK, you will see the directory, **SpeechSDK**. Add a “**Framework Search Path**” to include the **SpeechSDK** directory.
-  d)	Click on the project in the file navigator on the left. Then click on the project or target in the editor that appears. Click on “**General**”.
-  e)	Inside the directory to which you unpacked the SDK, you will see the directory, **SpeechSDK/SpeechSDK.framework**. Add **SpeechSDK/SpeechSDK.framework** as a “**Linked Frameworks and Libraries**” via the “**Add Other…**” button found after you click on “**+**”.
-  f)	Also add **SpeechSDK.framework** as an “**Embedded Binary**” framework.
-  g)	Note that inside the directory to which you unpacked the SDK in directory **SpeechSDK\Samples\SpeechRecognitionServerExample** there is a XCode buildable example so you can see these settings in action.
+
+ a)	Click on the project in the file navigator on the left. Then click on the project or target in the editor that appears. Click on "**Build Settings**", then change from "**Basic**" to "**All**".
+ b)	Inside the directory to which you unpacked the SDK, you will see the directory, **SpeechSDK/SpeechSDK.framework/Headers**. Add an “**Include Search Path**” to include the **Headers** directory.
+ c)	Inside the directory to which you unpacked the SDK, you will see the directory, **SpeechSDK**. Add a “**Framework Search Path**” to include the **SpeechSDK** directory.
+ d)	Click on the project in the file navigator on the left. Then click on the project or target in the editor that appears. Click on “**General**”.
+ e)	Inside the directory to which you unpacked the SDK, you will see the directory, **SpeechSDK/SpeechSDK.framework**. Add **SpeechSDK/SpeechSDK.framework** as a “**Linked Frameworks and Libraries**” via the “**Add Other…**” button found after you click on “**+**”.
+ f)	Also add **SpeechSDK.framework** as an “**Embedded Binary**” framework.
+ g)	Note that inside the directory to which you unpacked the SDK in directory **SpeechSDK\Samples\SpeechRecognitionServerExample** there is a XCode buildable example so you can see these settings in action.
 
 ### <a name="Step2">Step 2: Build the application / example code</a>
 
