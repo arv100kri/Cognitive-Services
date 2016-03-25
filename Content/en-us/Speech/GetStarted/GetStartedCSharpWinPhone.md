@@ -1,7 +1,7 @@
 <!-- 
-NavPath: Speech API
+NavPath: Speech API/Get Started with Speech API
 LinkLabel: Get started with Speech Recognition in C Sharp for .Net on Windows Phone 8.1
-Url: Speech-api/documentation/Get-Started-CSharp-WinPhone
+Url: Speech-api/documentation/GetStarted/Get-Started-CSharp-WinPhone
 Weight: 90
 -->
 
