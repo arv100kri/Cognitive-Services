@@ -74,21 +74,21 @@ In the following example, we use the None() function to iteratively build up a q
 </item>
 ```
 
-### Attr Function
+### Query Function
 ```
-query = Attr(attrName, value)
-query = Attr(attrName, value, op)
+query = Query(attrName, value)
+query = Query(attrName, value, op)
 ```
 
-Returns a query that includes only data objects whose attribute *attrName* matches value *value* according to the specified operation *op*, which defaults to "eq".  Typically, use an `attrref` element to create a query based on the matched input query string.  If a value is given or obtained through other means, the Attr() function can be used to create a query matching this value.
+Returns a query that includes only data objects whose attribute *attrName* matches value *value* according to the specified operation *op*, which defaults to "eq".  Typically, use an `attrref` element to create a query based on the matched input query string.  If a value is given or obtained through other means, the Query() function can be used to create a query matching this value.
 
-In the following example, we use the Attr() function to implement support for specifying academic publications from a particular decade.
+In the following example, we use the Query() function to implement support for specifying academic publications from a particular decade.
 
 ```xml
 written in the 90s
 <tag>
-  beginYear = Attr("academic#Year", 1990, "ge");
-  endYear = Attr("academic#Year", 2000, "lt");
+  beginYear = Query("academic#Year", 1990, "ge");
+  endYear = Query("academic#Year", 2000, "lt");
   year = And(beginYear, endYear);
 </tag>
 ```
@@ -101,14 +101,14 @@ Returns a query that encapsulates an *innerQuery* composed of matches against su
 
 For example, the following query returns academic publications by "harry shum" while he was at "microsoft":
 ```
-Composite(And(Attr("academic#Author.Name", "harry shum"), 
-              Attr("academic#Author.Affiliation", "microsoft")));
+Composite(And(Query("academic#Author.Name", "harry shum"), 
+              Query("academic#Author.Affiliation", "microsoft")));
 ```
 
 On the other hand, the following query returns academic publications where one of the authors is "harry shum" and one of the affiliations is "microsoft":
 ```
-And(Composite(Attr("academic#Author.Name", "harry shum"), 
-    Composite(Attr("academic#Author.Affiliation", "microsoft")));
+And(Composite(Query("academic#Author.Name", "harry shum"), 
+    Composite(Query("academic#Author.Affiliation", "microsoft")));
 ```
 
 ### GetVariable Function
