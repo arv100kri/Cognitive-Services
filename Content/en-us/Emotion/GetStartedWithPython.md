@@ -7,7 +7,7 @@ Weight: 99
 
 #Start Developing with Emotion API using Python
 
-To make it easy to get started with Project Oxford Emotion API, the Jupyter notebook linked below shows you how to use the API in Python and how to visualize your results using some popular libraries. 
+To make it easy to get started with Emotion API, the Jupyter notebook linked below shows you how to use the API in Python and how to visualize your results using some popular libraries. 
 
 [Link to notebook in GitHub](https://github.com/Microsoft/ProjectOxford-ClientSDK-Dev/blob/master/Emotion/Python/Jupyter%20Notebook/Emotion%20Analysis%20Example.ipynb)
 
