@@ -136,4 +136,5 @@ How to interact with the other endpoints exposed by the Vision API service can b
 
 ###<a name="Related">Related Topics</a>
  * [Get started with Face API in C&#35](../../Face-api/documentation)
+ 
 
