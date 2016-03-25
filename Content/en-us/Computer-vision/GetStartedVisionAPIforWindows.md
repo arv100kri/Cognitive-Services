@@ -135,5 +135,5 @@ This code snippet shows how to use the Client Library to submit your subscriptio
 How to interact with the other endpoints exposed by the Vision API service can be seen by looking at the other pages in the sample; for instance, the OCR endpoint is shown as part of the code contained in OCRPage.xaml.cs 
 
 ###<a name="Related">Related Topics</a>
- * [Get started with Face API in C&#35]((../../Face-api/documentation)
+ * [Get started with Face API in C&#35](../../Face-api/documentation)
 
