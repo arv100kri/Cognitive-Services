@@ -56,7 +56,7 @@ Each category has three recognition modes.
 
 There are example audio files to be used with this example application. You find the files in the repository you downloaded with this example under **SpeechToText**, in the **Windows** folder, under **samples**, in the **SpeechRecognitionServiceExample** folder. These example audio files will run automatically if no other files are chosen when selecting the **Use wav file for Shortphrase mode** or **Use wav file for Longdictation mode** as your speech input. Currently only wav and MP4 audio formats are supported.
 
-![Speech to Text Interface](./Images/HelloJones.PNG)
+![Speech to Text Interface](../Images/HelloJones.PNG)
   
 ### <a name="Review">Review and Learn</a>
 
