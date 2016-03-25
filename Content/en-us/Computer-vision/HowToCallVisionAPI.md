@@ -37,10 +37,10 @@ In the examples below, the following features are demonstrated:
 1. Analyzing an image and getting an array of tags and a description returned.
 2. Analyzing an image with a domain-specific model (specifically, "celebrities"  model) and getting the corresponding result in JSON retune.
 
-Features are broken down on
+Features are broken down on:
 
   * **Option One:** Scoped Analysis - Analyze only a given model
-  * **Option Two:** Enhanced Analysis - Analyze to provide additional details with categories
+  * **Option Two:** Enhanced Analysis - Analyze to provide additional details with 86-categories taxonomy
   
 ###<a name="Step1">Step 1: Authorize the API call</a> 
 Every call to the Vision API requires a subscription key. This key needs to be either passed through a query string parameter or specified in the request header. 
@@ -109,7 +109,7 @@ For this option, all other query parameters {visualFeatures, details} are not va
 GET https://api.projectoxford.ai/vision/v1.0/models 
 var models = await visionClient.ListModelsAsync();
 ```
-**Option Two:** Enhanced Analysis - Analyze to provide additional details with categories
+**Option Two:** Enhanced Analysis - Analyze to provide additional details with 86-categories taxonomy
 
 For applications where you want to get generic image analysis in addition to details from one or more domain-specific models, we extend the v1 API with the models query parameter.
 ```
@@ -178,7 +178,7 @@ The output will be an array of tags, an example will be like this example:
   }
 ```
 
-**Option Two:** Enhanced Analysis - Analyze to provide additional details with categories
+**Option Two:** Enhanced Analysis - Analyze to provide additional details with 86-categories taxonomy
 
 For domain-specific models using Option Two (Enhanced Analysis), the categories return type is extended. An example follows:
 ```
@@ -224,3 +224,7 @@ The remainder of error values are listed [here](https://dev.projectoxford.ai/doc
 
 ###<a name="Summary">Summary</a>
 
+These are the basic functionalities of the Vision API: how you can upload images and retrieve valuable metadata in return.
+
+To use the REST API, go to [Vision API Reference](../APIReference.md).
+ 
