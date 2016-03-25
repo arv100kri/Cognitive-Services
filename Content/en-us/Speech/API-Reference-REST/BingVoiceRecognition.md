@@ -18,7 +18,7 @@ Examples are provided for illustration only.
 This document does not provide you with any legal rights to intellectual property in any Microsoft product. You may copy and use this document for your internal reference purposes. This document is confidential and proprietary to Microsoft. It can be used only in agreement with a non-disclosure agreement. 
 
 --------------------------------------------------
-## Contents
+### Contents
 [1. Introduction](#Introduction)  
 [2. Voice Recognition Request](#VoiceRecReq)
 * [Authorize the API call](#Authorize)
@@ -41,7 +41,7 @@ This document does not provide you with any legal rights to intellectual propert
  
 
 
-## <a name="Introduction">1. Introduction</a>
+### <a name="Introduction">1. Introduction</a>
 
 This documentation describes the Bing Voice API that exposes an HTTP interface which enables developers to transcribe and synthesize voice queries. The Bing Voice API may be used in many different contexts that need cloud-based voice recognition and synthesis capabilities. 
 
@@ -353,7 +353,7 @@ Content-Type: text/plain; charset=UTF-8
 
 Invalid lat parameter specified       
 ```
-## <a name="SupLocales">4. Supported Locales</a>
+### <a name="SupLocales">4. Supported Locales</a>
 
 The supported locales are:
 
@@ -368,7 +368,7 @@ it-IT    |   fr-CA  | pl-PL  |    es-MX
 zh-CN    |   en-AU  | en-CA  |    sv-SE  
 *ar-EG supports Modern Standard Arabic (MSA)
 
-## <a name="TrouNSupport">5. Troubleshooting and Support</a>
+### <a name="TrouNSupport">5. Troubleshooting and Support</a>
 
 Post all questions and issues to the [Bing Speech Service](https://social.msdn.microsoft.com/Forums/en-US/home?forum=SpeechService) MSDN Forum, with complete detail, such as: 
 * An example of the full request string (minus the raw audio data).
