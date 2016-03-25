@@ -44,7 +44,7 @@ Before creating the example, you must subscribe to Speech API which is part of P
 1.	After the build is complete, press **F5** or click **Start** on the ribbon menu to run the example.  
 2.	Locate the **Project Oxford Speech to Text** window with the **text edit box** reading **"Paste your subscription key here to start"**. Paste your subscription key into the text box as shown in below screenshot. You may choose to persist your subscription key on your PC or laptop by clicking the **Save Key** button. When you want to delete the subscription key from the system, click **Delete Key** to remove it from your PC or laptop.
 
-![Speech Recognition paste in key](./Images/SpeechRecog_paste_key.PNG)
+![Speech Recognition paste in key](../Images/SpeechRecog_paste_key.PNG)
 3.	Under **Speech Recognition Source** choose one of the six speech sources, which fall into two main input categories. 
 *  Using your computer’s microphone, or an attached microphone, to capture speech.
 *  Playing an audio file.	
