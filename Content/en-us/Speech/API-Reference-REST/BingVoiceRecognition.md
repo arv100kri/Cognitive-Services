@@ -46,7 +46,7 @@ This document does not provide you with any legal rights to intellectual propert
 This documentation describes the Bing Voice API that exposes an HTTP interface which enables developers to transcribe and synthesize voice queries. The Bing Voice API may be used in many different contexts that need cloud-based voice recognition and synthesis capabilities. 
 
 
-## <a name="VoiceRecReq">2. Voice Recognition Request</a>
+### <a name="VoiceRecReq">2. Voice Recognition Request</a>
 ###<a name="Authorize">Authorize the API call</a>
 Every call to the Speech API requires a subscription key. This key needs to be passed either through a query string parameter or specified in the request header. 
 
@@ -63,7 +63,7 @@ Clients must use the following end-point to access the service and build voice e
 
 Note! Until you have submitted your subscription key as described above this link will generate a 403 Response Error.
 
-The API uses HTTP POST to upload audio. The API supports [Chunked Transfer-Encoding](http://tools.ietf.org/html/rfc4463#sec3.6.1) for efficient audio streaming. For live transcription scenarios, it is recommended you use chunked transfer encoding to stream the audio to the service while the user is speaking. Other implementations result in higher user-perceived latency. 
+The API uses HTTP POST to upload audio. The API supports [Chunked Transfer-Encoding](http://tools.ietf.org/html/rfc1945#section-7.2) for efficient audio streaming. For live transcription scenarios, it is recommended you use chunked transfer encoding to stream the audio to the service while the user is speaking. Other implementations result in higher user-perceived latency. 
 
 Your application must endpoint the audio to determine start and end of speech, which in turn is used by the service to determine the start and end of the request. You may not upload more than 10 seconds of audio in any one request and the total request duration cannot exceed 14 seconds. 
 
