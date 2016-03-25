@@ -57,5 +57,5 @@ Code snippets with suggestions on how to extend and and customize your video app
 ## <a name="Related">Related topics</a>
 * [Emotion API](../../Emotion-api/documentation)
 * [Face API](../../Face-API/documentation)
-* [Computer Vision API](../../Computer-Vision-api/documentation)
+* [Computer Vision API](./../Computer-Vision-api/documentation)
 
