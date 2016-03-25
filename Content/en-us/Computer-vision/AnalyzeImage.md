@@ -101,7 +101,7 @@ Image|Response
 ![Vision Analyze Flower](./Images/flower.jpg)|False
 
 ## Faces
-Detects human faces within a picture and generates the face coordinates, the rectangle for the face, gender, and age. These visual features are a subset of metadata generated for face. For more extensive metadata generated for faces (facial identification, pose detection, and more), please use the Face API here.  
+Detects human faces within a picture and generates the face coordinates, the rectangle for the face, gender, and age. These visual features are a subset of metadata generated for face. For more extensive metadata generated for faces (facial identification, pose detection, and more), use the Face API.  
 
 Image|Response
 ----|----
