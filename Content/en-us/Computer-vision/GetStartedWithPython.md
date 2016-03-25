@@ -1,4 +1,4 @@
-NavPath: Computer-Vision API
+<!-- NavPath: Computer-Vision API
 LinkLabel: Get Started in Python
 Url: Computer-Vision-api/documentation/GetStartedWithPython
 Weight: 99
@@ -14,7 +14,7 @@ To make it easy to get started with Computer Vision API, the Jupyter notebook li
 
 To use the notebook interactively, you will need to clone it and run it in Jupyter. To learn how to get started with interactive Jupyter notebooks, follow the instructions at http://jupyter.readthedocs.org/en/latest/install.html. 
 
-To use this notebook, you will need a subscription key for the Emotion API. Visit the [Subscription page](https://www.microsoft.com/cognitive-services/en-us/sign-up) to sign up. On the “Sign in” page, use your Microsoft account to sign in and you will be able to subscribe and get free keys. After completing the sign-up process, paste your key into the variables section below. Either the primary or the secondary key works.
+To use this notebook, you will need a subscription key for the Computer-Vision API. Visit the [Subscription page](https://www.microsoft.com/cognitive-services/en-us/sign-up) to sign up. On the “Sign in” page, use your Microsoft account to sign in and you will be able to subscribe and get free keys. After completing the sign-up process, paste your key into the variables section below. Either the primary or the secondary key works.
 
 ```
 Python Example 
