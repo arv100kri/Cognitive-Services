@@ -9,7 +9,7 @@ Weight: 100
 
 Develop a basic Windows application that uses Cognitive Services Speech Recognition API to convert spoken audio to text by sending audio to Microsoft’s servers in the cloud. You have a choice of using a REST API or a client library. 
 ### REST API 
-Using the REST API means getting only one reco result back with no partial results. Documentation for the REST API can be found [here](https://github.com/Microsoft/ProjectOxford-Documentation/blob/master/Content/en-us/Speech/API-Reference-REST/BingVoiceRecognition.md) and code samples [here](https://oxfordportal.blob.core.windows.net/speech/doc/recognition/Program.cs).
+Using the REST API means getting only one reco result back with no partial results. Documentation for the REST API can be found [here](../API-Reference-REST/) and code samples [here](https://oxfordportal.blob.core.windows.net/speech/doc/recognition/Program.cs).
 
 ### Client Library
 Using the Client Library allows for real-time streaming, which means that at the same time your client application sends audio to the service, it simultaneously and asynchronously receives partial recognition results back. This page describes use of the Client Library, which currently supports speech in seven languages[Link to Overview page], the example below defaults to American English, “en-US”.
@@ -27,10 +27,10 @@ Using the Client Library allows for real-time streaming, which means that at the
 The below example has been developed for the .NET Framework using [Visual Studio 2015, Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs). 
 
 * #### Get the client library and example
-You may download the Speech API client library and example through https://www.projectoxford.ai/sdk or access them via [GitHub](https://github.com/Microsoft/ProjectOxford-ClientSDK/tree/master/Speech). The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder.
+You may download the Speech API client library and example through  [GitHub](https://github.com/Microsoft/ProjectOxford-ClientSDK/tree/master/Speech). The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder.
 
 * #### Subscribe to Speech API and get a free trial subscription key 
-Before creating the example, you must subscribe to Speech API which is part of Project Oxford services. For subscription and key management details, see [Subscriptions](https://www.projectoxford.ai/speech). Both the primary and secondary key can be used in this tutorial. 
+Before creating the example, you must subscribe to Speech API which is part of Project Oxford services. For subscription and key management details, see [Subscriptions](https://www.microsoft.com/cognitive-services/en-us/sign-up). Both the primary and secondary key can be used in this tutorial. 
 
 ### <a name="Step1">Step 1: Install the example application</a>
 1.	Start Microsoft Visual Studio 2015 and click **File**, select **Open**, then **Project/Solution**.
