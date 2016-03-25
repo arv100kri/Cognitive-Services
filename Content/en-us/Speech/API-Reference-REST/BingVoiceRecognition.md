@@ -21,7 +21,7 @@ This document does not provide you with any legal rights to intellectual propert
 ### Contents
 [1. Introduction](#Introduction)  
 [2. Voice Recognition Request](#VoiceRecReq)
-* [Authorize the API call](#Authorize)
+* [Authenticate the API call](#Authorize)
 * [HTTP headers](#Http) 
 * [Input parameters](#InputParam) 
 * [Required parameters](#ReqParam) 
@@ -47,7 +47,7 @@ This documentation describes the Bing Voice API that exposes an HTTP interface w
 
 
 ### <a name="VoiceRecReq">2. Voice Recognition Request</a>
-###<a name="Authorize">Authorize the API call</a>
+###<a name="Authorize">Authenticate the API call</a>
 Every call to the Speech API requires a subscription key. This key needs to be passed either through a query string parameter or specified in the request header. 
 
 ```
