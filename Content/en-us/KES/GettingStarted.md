@@ -62,7 +62,7 @@ For the *Keyword* attribute, we allow synonyms to match the canonical keyword va
 
 See [Schema Format](SchemaFormat.md) for additional information about the schema definition.
 
-<a id="generating-data"></a>
+<a name="generating-data"></a>
 ## Generating data
 The data file describes the list of the publications to index, with each line specifying the attribute values of a paper in [JSON format](http://json.org/).  Below is a single line from the data file *Academic.data*, formatted for readability:
 
