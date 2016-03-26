@@ -8,13 +8,13 @@ Weight: 80
 # Get started with Speech Recognition in C&#35; for .Net Universal Apps on Windows 10 (including Phone)
 
 <br/>
-In this tutorial, you will learn to create and develop a simple Windows 10 Universal Application that uses the [Windows.Media.SpeechRecognition API](https://msdn.microsoft.com/en-us/library/windows.media.speechrecognition.aspx) to convert spoken audio input into text by sending audio to Microsoft’s servers in the cloud. Alternatively you have a choice of using a REST API, which requires batching up all of your audio at once into a single buffer, uploading the one full audio buffer, and getting a recognition result text back. Documentation for the REST API can be found [here](https://www.projectoxford.ai/doc/speech/REST/Recognition) and code samples [here](https://oxfordportal.blob.core.windows.net/speech/doc/recognition/Program.cs). Using the [Windows.Media.SpeechRecognition API](https://msdn.microsoft.com/en-us/library/windows.media.speechrecognition.aspx) allows for real-time streaming, so that as the audio is being spoken and streamed to the server, partial recognition results are returned back to the application. The rest of this tutorial describes the use of the [Windows.Media.SpeechRecognition API](https://msdn.microsoft.com/en-us/library/windows.media.speechrecognition.aspx). A sample Windows 10 Universal Application project (to be used with VS2015) illustrating basic [Windows.Media.SpeechRecognition API](https://msdn.microsoft.com/en-us/library/windows.media.speechrecognition.aspx) usage can be found [Universal APP SDK](https://oxfordportal.blob.core.windows.net/example-speech/SpeechRecognitionExample.UniversalApp.zip) for your reference.
+In this tutorial, you will learn to create and develop a simple Windows 10 Universal Application that uses the [Windows.Media.SpeechRecognition API](https://msdn.microsoft.com/en-us/library/windows.media.speechrecognition.aspx) to convert spoken audio input into text by sending audio to Microsoft’s servers in the cloud. Alternatively you have a choice of using a REST API, which requires batching up all of your audio at once into a single buffer, uploading the one full audio buffer, and getting a recognition result text back. Documentation for the REST API can be found [here](https://www.projectoxford.ai/doc/speech/REST/Recognition) and code samples [here](../API-Reference-REST/Home.md). Using the [Windows.Media.SpeechRecognition API](https://msdn.microsoft.com/en-us/library/windows.media.speechrecognition.aspx) allows for real-time streaming, so that as the audio is being spoken and streamed to the server, partial recognition results are returned back to the application. The rest of this tutorial describes the use of the [Windows.Media.SpeechRecognition API](https://msdn.microsoft.com/en-us/library/windows.media.speechrecognition.aspx). A sample Windows 10 Universal Application project (to be used with VS2015) illustrating basic [Windows.Media.SpeechRecognition API](https://msdn.microsoft.com/en-us/library/windows.media.speechrecognition.aspx) usage can be found [Universal APP SDK](https://oxfordportal.blob.core.windows.net/example-speech/SpeechRecognitionExample.UniversalApp.zip) for your reference.
 
 ### Preparation
 Use of this tutorial has the following prerequisites:
 
-1. Install the Windows 10 from [here](http://dev.windows.com/en-us/).
-2. Install the Visual Studio 2015 from [here](http://dev.windows.com/en-us/). During the installation of VS2015, make sure that you select the ‘Custom installation” option and check the “Windows Universal App Development Tools” option.
+1. Install Windows 10 from [here](http://dev.windows.com/en-us/).
+2. Install Visual Studio 2015 from [here](http://dev.windows.com/en-us/). During the installation of VS2015, make sure that you select the ‘Custom installation” option and check the “Windows Universal App Development Tools” option.
 
 ### Step 1: Create an Windows 10 Universal application project
 
@@ -29,7 +29,7 @@ Now, you will add use of the Speech Recognition API in your application to conve
 2. Create at least one SpeechRecognitionConstraint type object and add to the SpeechRecognizer object created above. For our simple dictation scenario, we use the pre-defined SpeechRecognitionTopicConstraint constraint type.
 3. Compile the constraints.
 
-![windows-doc001](./Images/windows-doc001.png)
+![windows-doc001](../Images/windows-doc001.png)
 
 SpeechRecognizer supports 2 types of recognition sessions:
 
@@ -43,8 +43,8 @@ A continuous recognition session can be started by calling the SpeechRecognizer.
 * ResultGenerated event: Triggered every time results of a phrase spoken during the session are available. The results are passed as an argument to any handlers attached to the event.
 * Completed event: Triggered at the end of a continuous recognition session.
   
-![windows-doc002](./Images/windows-doc002.png)
-![windows-doc003](./Images/windows-doc003.png)
+![windows-doc002](../Images/windows-doc002.png)
+![windows-doc003](../Images/windows-doc003.png)
 
 A speech recognition session for short phrase recognition can be started by calling the SpeechRecognizer.RecognizeAsync method. This returns an IAsyncOperation< SpeechRecognitionResult > object, which provides the Completed event that is triggered upon completion of the recognition session. The results are passed as an argument to any handlers attached to the Completed event.
 
