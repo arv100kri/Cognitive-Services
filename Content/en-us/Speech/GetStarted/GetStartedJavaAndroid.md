@@ -115,7 +115,7 @@ Make sure the microphone is turned on and data from the microphone is sent to th
  **3. “WithIntent” clients:**
 Use “WithIntent” if you want the server to return additional structured information about the speech to be used by apps to parse the intent of the speaker and drive further actions by the app. To use Intent, you will need to train a model and get an AppID and a Secret. See project [LUIS](https://www.luis.ai/) for details.
 
-When you use the SpeechRecognitionServiceFactory to create the Client, you must select a language. The choices are:
+When you use the SpeechRecognitionServiceFactory to create the Client, you must select a language.
 
  The supported locales are:
 
