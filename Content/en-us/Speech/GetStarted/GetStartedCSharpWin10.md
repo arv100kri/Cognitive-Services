@@ -25,8 +25,11 @@ In the New Project dialog box, click Visual C# > Windows > Windows Universal > B
 
 ### Step 2: Add Speech Recognition API use in your application
 Now, you will add use of the Speech Recognition API in your application to convert spoken audio input into text. You can look at the code in MainPage.xaml.cs [Universal APP SDK](https://oxfordportal.blob.core.windows.net/example-speech/SpeechRecognitionExample.UniversalApp.zip) for reference.
+
 1. Create a SpeechRecognizer object.
+
 2. Create at least one SpeechRecognitionConstraint type object and add to the SpeechRecognizer object created above. For our simple dictation scenario, we use the pre-defined SpeechRecognitionTopicConstraint constraint type.
+
 3. Compile the constraints.
 
 ![windows-doc001](../Images/windows-doc001.png)
@@ -34,6 +37,7 @@ Now, you will add use of the Speech Recognition API in your application to conve
 SpeechRecognizer supports 2 types of recognition sessions:
 
 * Continuous recognition sessions for prolonged audio input from the user. Here, recognition results for phrases spoken during the session are continually produced and returned to the user while the user continues speaking. A continuous session needs to be either explicitly ended or automatically times out after a configurable period of silence (default is 20 seconds).
+
 * Speech recognition session for recognizing a short phrase. The session is terminated and the recognition results returned when a pause is detected by the recognizer.
  
 The objects corresponding to each of these types of sessions have various events for which handlers can be attached to obtain notification of various interesting events during the recognition session.
@@ -41,6 +45,7 @@ The objects corresponding to each of these types of sessions have various events
 A continuous recognition session can be started by calling the SpeechRecognizer.ContinuousRecognitionSession.StartAsync method. The SpeechRecognizer.ContinuousRecognitionSession object provides the following events:
 
 * ResultGenerated event: Triggered every time results of a phrase spoken during the session are available. The results are passed as an argument to any handlers attached to the event.
+
 * Completed event: Triggered at the end of a continuous recognition session.
   
 ![windows-doc002](../Images/windows-doc002.png)
