@@ -137,7 +137,7 @@ As data is sent to the service, the client will receive multiple partial results
  * **LongDictation mode:** An utterance up to 2 minutes long. 
 As data is sent to the service, the client will receive multiple partial results and multiple final results, based on where the server identifies sentence pauses.
 
-From the Created client, you can attach various event handlers.
+From the created client, you can attach various event handlers.
 
 * **Partial Results Events:** This event gets called every time the Speech Recognition Server has an idea of what you might be saying – even before you finish speaking (if you are using the Microphone Client) or have finished sending up data (if you are using the Data Client).
 * **Error Events:** Called when the Server Detects Error
