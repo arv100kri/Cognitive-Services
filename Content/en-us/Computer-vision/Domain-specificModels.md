@@ -21,7 +21,7 @@ For this option, if you know which model you want to use, you just specify the m
 
 This option is available for use in applications where users want to get generic image analysis in addition to details from one or more domain-specific models. When this method is invoked, the 86-category taxonomy classifier is called first. If any of the categories match that of known/matching models, a second pass of classifier invocations will follow. For example, if “details=all” or "details" include “celebrities”, the method will call the celebrity classifier after the 86-category classifier is called and the result includes “object_people_celebrities”. 
 
-![Satya Nadella](./Images/Satya_speaks_to_MSFT_employees.jpg)
+![Satya Nadella](./Images/Satya_in_HawksShirt.jpg)
 ```
 Json
 {
