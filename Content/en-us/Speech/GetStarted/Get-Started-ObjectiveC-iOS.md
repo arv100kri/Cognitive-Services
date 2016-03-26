@@ -3,9 +3,9 @@ LinkLabel: Get started with Speech Recognition and/or intent in Objective C on i
 Url: Speech-api/documentation/GetStarted/Get-Started-ObjectiveC-iOS
 Weight: 100 -->
 
-#Get started with Speech Recognition and/or intent in Objective C on iOS
+#Get started with Bing Speech Recognition and/or intent in Objective C on iOS
 
-Develop a basic iOS application that invokes the Speech Recognition API to convert spoken audio to text by sending audio to Microsoft’s servers in the cloud. You have a choice of using a REST API or a client library. Using the REST API means getting only one reco result back with no partial results. Documentation for the REST API can be found [here](../API-Reference-REST/Home.md). Using the client library allows for real-time streaming, which means that at the same time your client application sends audio to the service, it simultaneously and asynchronously receives partial recognition results back. 
+Develop a basic iOS application that invokes the Bing Speech Recognition API to convert spoken audio to text by sending audio to Microsoft’s servers in the cloud. You have a choice of using a REST API or a client library. Using the REST API means getting only one reco result back with no partial results. Documentation for the REST API can be found [here](../API-Reference-REST/Home.md). Using the client library allows for real-time streaming, which means that at the same time your client application sends audio to the service, it simultaneously and asynchronously receives partial recognition results back. 
 
 This tutorial describes the use of the Windows.Media.SpeechRecognition API Client Library. 
 
@@ -122,7 +122,7 @@ Make sure the microphone is turned on and data from the microphone is sent to th
 
 Use “WithIntent” if you want the server to return additional structured information about the speech to be used by apps to parse the intent of the speaker and drive further actions by the app. To use Intent, you will need to train a model and get an AppID and a Secret. See project [LUIS](https://www.luis.ai) for details.
 
-When you use the SpeechRecognitionServiceFactory to create the Client, you must select a language. The choices are:
+When you use the SpeechRecognitionServiceFactory to create the Client, you must select a language.
 
 The supported locales are:
 
