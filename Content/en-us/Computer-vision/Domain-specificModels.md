@@ -26,22 +26,22 @@ This option is available for use in applications where users want to get generic
 Json
 {
   "requestId": "d049e598-6f8a-4075-a95a-cce55ca138fd",
-  "metadata": {
-    "width": 298,
-    "height": 300,
-    "format": "Jpeg"
+  "metadata": 
+[12:00:15.826098]: Analysis In Domain Result:
+[12:00:15.827099]: Image Format : Jpeg
+[12:00:15.830100]: Image Dimensions : 250 x 300
   },
   "result": {
     "celebrities": [
       {
         "name": "Satya Nadella",
         "faceRectangle": {
-          "left": 98,
-          "top": 30,
-          "width": 35,
-          "height": 35
+          "left": 95,
+          "top": 60,
+          "width": 84,
+          "height": 84
         },
-        "confidence": 0.9993637
+        "confidence": 0.999928236
       }
     ]
   }
