@@ -10,10 +10,10 @@ Weight: 70
 Develop a basic Android application that uses Cognitive Services Speech Recognition API to convert spoken audio to text by sending audio to Microsoft’s servers in the cloud. You have a choice of using a REST API or a client library. The main differences are outlined below.
 
 ###REST API
-Using the REST API means getting only one reco result back with no partial results. Documentation for the REST API can be found [here](https://www.projectoxford.ai/doc/speech/REST/Recognition) and code samples [here](https://oxfordportal.blob.core.windows.net/speech/doc/recognition/Program.cs). 
+Using the REST API means getting only one reco result back with no partial results. Documentation for the REST API can be found [here](../API-Reference-REST/Home.md) and code samples [here](https://oxfordportal.blob.core.windows.net/speech/doc/recognition/Program.cs). 
 
 ###Client Library
-Using the client library allows for real-time streaming, which means that at the same time your client application sends audio to the service, it simultaneously and asynchronously receives partial recognition results back. The rest of this page describes use of the client library, which currently supports speech in [seven languages](https://github.com/Microsoft/ProjectOxford-Documentation/blob/master/Content/en-us/Speech/Home.md), the example below defaults to American English, “en-US”.
+Using the client library allows for real-time streaming, which means that at the same time your client application sends audio to the service, it simultaneously and asynchronously receives partial recognition results back. The rest of this page describes use of the client library, which currently supports the 28 languages (see table in Step 2). The example below defaults to American English, “en-US”.
 
 ###Table of Contents
  * [Prerequisites](#Prerequisites)
@@ -30,7 +30,7 @@ Using the client library allows for real-time streaming, which means that at the
 The below example has been developed for [Android Studio](http://developer.android.com/sdk/index.html) for Windows in Java.
 
  * #### Get the client library and example
-Download Speech Recognition API Client Library for Android from [this link](https://www.projectoxford.ai/SDK/GetFile?path=speech/SpeechToText-SDK-Android.zip). The downloaded zip file needs to be extracted to a folder of your choice. Inside there is both a fully buildable example and the SDK library. The buildable example can be found under **samples** in the **SpeechRecoExample** directory. The two libraries you need to use in your own apps can be found in the **SpeechSDK** folder under **libs** in the **armeabi** and the **x86** folder. The size of **libandroid_platform.so** file is 22 MB but gets reduced to 4MB at deploy time. 
+Download Speech Recognition API Client Library for Android from [this link](https://github.com/Microsoft/ProjectOxford-ClientSDK/tree/master/Speech/SpeechToText/Android). The downloaded files need to be saved to a folder of your choice. Inside there is both a fully buildable example and the SDK library. The buildable example can be found under **samples** in the **SpeechRecoExample** directory. The two libraries you need to use in your own apps can be found in the **SpeechSDK** folder under **libs** in the **armeabi** and the **x86** folder. The size of **libandroid_platform.so** file is 22 MB but gets reduced to 4MB at deploy time. 
 
  * #### Subscribe to Speech API and get a free trial subscription key 
 Before creating the example, you must subscribe to Speech API which is part of Cognitive Services. Access the [Cognitive Services](https://www.projectoxford.ai/) portal web site, click on an offered service to go to its overview page, in this case [Speech API](https://www.projectoxford.ai/speech), and then click on the **"Try for free"** button. For subscription and key management details, see [Subscriptions](https://www.projectoxford.ai/Subscription/). Both the primary and secondary key can be used in this tutorial. 
@@ -113,17 +113,22 @@ The data is broken up into buffers and each buffer is sent to the Speech Recogni
 Make sure the microphone is turned on and data from the microphone is sent to the Speech Recognition Service. A built-in Silence Detector is applied to the microphone data before it is sent to the recognition service.
 
  **3. “WithIntent” clients:**
-Use “WithIntent” if you want the server to return additional structured information about the speech to be used by apps to parse the intent of the speaker and drive further actions by the app. To use Intent, you will need to train a model and get an AppID and a Secret. See project [LUIS](http://www.projectoxford.ai/luis) for details.
+Use “WithIntent” if you want the server to return additional structured information about the speech to be used by apps to parse the intent of the speaker and drive further actions by the app. To use Intent, you will need to train a model and get an AppID and a Secret. See project [LUIS](https://www.luis.ai/) for details.
 
 When you use the SpeechRecognitionServiceFactory to create the Client, you must select a language. The choices are:
 
- * American English: "en-US"
- * British English: "en-GB"
- * German: "de-DE"
- * Spanish: "es-ES"
- * French: "fr-FR"
- * Italian: "it-IT"
- * Mandarin: "zh-CN"
+ The supported locales are:
+
+language-Country |language-Country | language-Country |language-Country 
+---------|----------|--------|------------------
+de-DE    |   zh-TW  | zh-HK  |    ru-RU 
+es-ES    |   ja-JP  | ar-EG* |    da-DK 
+en-GB    |   en-IN  | fi-FI  |    nl-NL 
+en-US    |   pt-BR  | pt-PT  |    ca-ES
+fr-FR    |   ko-KR  | en-NZ  |    nb-NO
+it-IT    |   fr-CA  | pl-PL  |    es-MX
+zh-CN    |   en-AU  | en-CA  |    sv-SE  
+*ar-EG supports Modern Standard Arabic (MSA)
 
 You also need to provide the recognition mode. 
 
