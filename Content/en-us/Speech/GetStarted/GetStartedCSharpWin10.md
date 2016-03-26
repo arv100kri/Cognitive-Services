@@ -14,7 +14,7 @@ In this tutorial, you will learn to create and develop a simple Windows 10 Unive
 Use of this tutorial has the following prerequisites:
 
 1. Install Windows 10 from [here](http://dev.windows.com/en-us/).
-2. Install Visual Studio 2015 from [here](http://dev.windows.com/en-us/). During the installation of VS2015, make sure that you select the ‘Custom installation” option and check the “Windows Universal App Development Tools” option.
+2. Install Visual Studio 2015 from [here](http://dev.windows.com/en-us/). During the installation of VS2015, make sure that you select the "Custom installation” option and check the “Windows Universal App Development Tools” option.
 
 ### Step 1: Create an Windows 10 Universal application project
 
@@ -24,7 +24,7 @@ Use of this tutorial has the following prerequisites:
 In the New Project dialog box, click Visual C# > Windows > Windows Universal > Blank App (Windows Universal).
 
 ### Step 2: Add Speech Recognition API use in your application
-Now, you will add use of the Speech Recognition API in your application to convert spoken audio input into text. You can look at the code in MainPage.xaml.cs [Universal APP SDK](https://oxfordportal.blob.core.windows.net/example-speech/SpeechRecognitionExample.UniversalApp.zip) for reference.
+Now, you will add use of the Bing Speech Recognition API in your application to convert spoken audio input into text. You can look at the code in MainPage.xaml.cs [Universal APP SDK](https://oxfordportal.blob.core.windows.net/example-speech/SpeechRecognitionExample.UniversalApp.zip) for reference.
 
 1. Create a SpeechRecognizer object.
 
