@@ -5,17 +5,17 @@ Url: Speech-api/documentation
 Weight: 1000
 -->
 
-# Bing Speech API Overview
+#Speech API Overview
 
 
-Welcome to Bing Speech API. This API is a cloud-based API that provides advanced algorithms to process spoken language. With this API, developers can add speech driven actions to their applications including real-time interaction with the user.
+Welcome to Speech API. This API is a cloud-based API that provides advanced algorithms to process spoken language. With this API, developers can add speech driven actions to their applications including real-time interaction with the user.
 
-Bing's cross-platform REST API enables speech capabilities on all internet-connected devices. Every major platform including Android, iOS, Windows, and 3rd party IoT devices are supported. Our REST API offers industry-leading speech-to-text, text-to-speech, and language understanding capabilities delivered through the cloud.
+Microsoft's cross-platform REST API enables speech capabilities on all internet-connected devices. Every major platform including Android, iOS, Windows, and 3rd party IoT devices are supported. Our REST API offers industry-leading speech-to-text, text-to-speech, and language understanding capabilities delivered through the cloud.
 
-Microsoft has used Bing Speech API for Windows applications like Cortana and Skype Translator as well as Android applications like [Bing Torque](https://play.google.com/store/apps/details?id=com.microsoft.bing.torque) for Android Wear and Android Phone.
+Microsoft has used Speech API for Windows applications like Cortana and Skype Translator as well as Android applications like [Bing Torque](https://play.google.com/store/apps/details?id=com.microsoft.bing.torque) for Android Wear and Android Phone.
 
 ### REST API versus Client Library
-The Bing Speech Recognition API provides the ability to convert spoken audio to text by sending audio to Microsoft’s servers in the cloud. Developers have a choice of using the REST API or the Client Library. 
+The Speech Recognition API provides the ability to convert spoken audio to text by sending audio to Microsoft’s servers in the cloud. Developers have a choice of using the REST API or the Client Library. 
 
 * Using the REST API means getting only one reco result back with no partial results. Documentation for the REST API can be found [here](./API-Reference-REST/Home.md) and code samples [here](https://oxfordportal.blob.core.windows.net/speech/doc/recognition/Program.cs). 
 *	Using the client library allows for real-time streaming, meaning that as audio is being sent or spoken to the server, partial recognition results are returned at the same time. Real-time streaming is supported on Android, iOS, and Windows.
