@@ -2,7 +2,7 @@
 NavPath: Speech API
 LinkLabel: Overview
 Url: Speech-api/documentation
-Weight: 120
+Weight: 1000
 -->
 
 # Bing Speech API Overview
