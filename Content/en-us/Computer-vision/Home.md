@@ -2,7 +2,7 @@
 NavPath: Computer Vision API
 LinkLabel: Overview
 Url: Computer-Vision-API/documentation
-Weight: 101
+Weight: 150
 -->
 
 # Computer Vision API Version 1.0
