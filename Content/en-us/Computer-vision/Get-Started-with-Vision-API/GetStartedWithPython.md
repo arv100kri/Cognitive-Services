@@ -2,7 +2,7 @@
 NavPath: Computer Vision API/Get Started with Vision API
 LinkLabel: Get Started in Python
 Url: Computer-Vision-api/documentation/GetStarted/GetStartedWithPython
-Weight: 99
+Weight: 55
 -->
 
 #Start Developing with Computer-Vision API using Python
