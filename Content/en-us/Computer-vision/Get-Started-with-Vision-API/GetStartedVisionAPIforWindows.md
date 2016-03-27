@@ -2,7 +2,7 @@
 NavPath: Computer Vision API/Get Started with Vision API
 LinkLabel: Get Started in C#
 Url: Computer-Vision-API/documentation/GetStarted/GetStartedVisionAPIforWindows
-Weight: 94
+Weight: 55
 -->
 
 #Get Started with Computer Vision API in C&#35;
