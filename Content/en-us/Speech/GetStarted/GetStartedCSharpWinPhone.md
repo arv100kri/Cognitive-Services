@@ -30,7 +30,7 @@ You can access the Windows Media Speech Recognition Client Library through this 
 The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder. You may also need to download the Windows Phone tools, which is an optional add-on to Visual Studio, if it is not already installed.
 
 * #### Subscribe to Speech API and get a free trial subscription key 
-Before creating the example, you must subscribe to Speech API which is part of Project Oxford services. For subscription and key management details, see [Subscription](https://www.microsoft.com/cognitive-services/en-us/sign-up). Both the primary and secondary key can be used in this example. 
+Before creating the example, you must subscribe to Speech API which is part of Microsoft Cognitive Services (previously Project Oxford). For subscription and key management details, see [Subscription](https://www.microsoft.com/cognitive-services/en-us/sign-up). Both the primary and secondary key can be used in this example. 
 
 ###<a name="Step1">Step 1: Install the Windows Phone 8.1 example application</a>
 1.	Start Microsoft Visual Studio 2015 and click **File**, select **Open**, then **Project/Solution**.
