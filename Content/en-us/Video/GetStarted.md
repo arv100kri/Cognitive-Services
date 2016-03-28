@@ -8,7 +8,7 @@ Weight: 95
 # Get Started with Video API in C&#35;
 
 
-Explore a basic Windows application that uses Microsoft Cognitive Services (previoulsy Project Oxford) Video API to stabilize videos, recognize motion tracking and detecting faces in a video. The below example lets you submit a locally stored file in mp4, mov, or wmv formats. You can use this open source example as a template for building your own app for Windows using the Video API and WPF (Windows Presentation Foundation), a part of .NET Framework.
+Explore a basic Windows application that uses Microsoft Cognitive Services (formerly Project Oxford) Video API to stabilize videos, recognize motion tracking and detecting faces in a video. The below example lets you submit a locally stored file in mp4, mov, or wmv formats. You can use this open source example as a template for building your own app for Windows using the Video API and WPF (Windows Presentation Foundation), a part of .NET Framework.
 
 ## Table of Contents
 * 	[Prerequisites](#Prerequisites)
