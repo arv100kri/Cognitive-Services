@@ -33,8 +33,6 @@ There are several ways to categorize images. Computer Vision API can set a boole
 ###Detecting faces
 Computer Vision API detects human faces within a picture and generates face coordinates, draws the bounding box around the face, indicates gender and age. These visual features are a subset of metadata generated for Face API. For more extensive metadata generated for faces, such as facial identification, pose detection, and more, use the Face API.
 
-For a hands on experience with any of the visual features, thumbnail generation, and OCR, please go to the  [interactive demo](https://www.projectoxford.ai/demo/vision). 
-
 ###Demonstration images 
 #### The 86-category concept
 
