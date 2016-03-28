@@ -1,13 +1,13 @@
 <!-- 
 NavPath: Computer Vision API
-LinkLabel: How to call Vision API
+LinkLabel: How to call Computer Vision API
 Url: Computer-Vision-API/documentation/how-to-call
 Weight: 93
 -->
 
 #How to Call Computer Vision API
 
-This guide demonstrates how to call Vision API using REST. The samples are written both in C# using the Vision API client library, and as HTTP POST/GET calls. We will focus on:
+This guide demonstrates how to call Computer Vision API using REST. The samples are written both in C# using the Computer Vision API client library, and as HTTP POST/GET calls. We will focus on:
 
 -	How to get "Tags", "Description" and "Categories".
 -	How to get "Domain-specific" information (celebrities).
@@ -43,9 +43,9 @@ Features are broken down on:
   * **Option Two:** Enhanced Analysis - Analyze to provide additional details with 86-categories taxonomy
   
 ###<a name="Step1">Step 1: Authorize the API call</a> 
-Every call to the Vision API requires a subscription key. This key needs to be either passed through a query string parameter or specified in the request header. 
+Every call to the Computer Vision API requires a subscription key. This key needs to be either passed through a query string parameter or specified in the request header. 
 
-**1.** Passing the subscription key through a query string, see below as a Vision API example:
+**1.** Passing the subscription key through a query string, see below as a Computer Vision API example:
 
 ```https://api.projectoxford.ai/vision/v1.0/analyze?visualFeatures=Description,Tags&subscription-key=<Your subscription key>```
 
@@ -59,8 +59,8 @@ Every call to the Vision API requires a subscription key. This key needs to be e
 
 To obtain a subscription key, see [Subscriptions](https://www.microsoft.com/cognitive-services/en-us/sign-up).
 
-###<a name="Step2">Step 2: Upload an image to the Vision API service and get back tags, descriptions and celebrities</a>
-The basic way to perform the Vision API call is by uploading an image directly. This is done by sending a "POST" request with application/octet-stream content type together with the data read from the image. For "Tags" and "Description", this upload method will be the same for all the Vision API calls. The only difference will be the query parameters the user specifies. 
+###<a name="Step2">Step 2: Upload an image to the Computer Vision API service and get back tags, descriptions and celebrities</a>
+The basic way to perform the Computer Vision API call is by uploading an image directly. This is done by sending a "POST" request with application/octet-stream content type together with the data read from the image. For "Tags" and "Description", this upload method will be the same for all the Computer Vision API calls. The only difference will be the query parameters the user specifies. 
 
 Here’s how to get "Tags" and "Description" for a given image:
 
@@ -224,7 +224,7 @@ The remainder of error values are listed [here](https://dev.projectoxford.ai/doc
 
 ###<a name="Summary">Summary</a>
 
-These are the basic functionalities of the Vision API: how you can upload images and retrieve valuable metadata in return.
+These are the basic functionalities of the Computer Vision API: how you can upload images and retrieve valuable metadata in return.
 
-To use the REST API, go to [Vision API Reference](./APIReference.md).
+To use the REST API, go to [Computer Vision API Reference](./APIReference.md).
  
