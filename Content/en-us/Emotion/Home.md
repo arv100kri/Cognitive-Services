@@ -22,7 +22,8 @@ For more details about emotion detection, please refer to the API Reference:
 
 ### Emotion in Video
 
-The Emotion API for Video takes a video as an input, and returns the confidence across a set of emotions for the group of faces in the image over a period of time. The emotions detected are happiness, sadness, surprise, anger, fear, contempt, disgust or neutral. These emotions are communicated cross-culturally and universally via the same basic facial expressions, where are identified by Emotion API. 
+The Emotion API for Video takes a video as an input, and returns the confidence across a set of emotions for the group of faces in the image over a period of time. The emotions detected are happiness, sadness, surprise, anger, fear, contempt, disgust or neutral. These emotions are communicated cross-culturally and universally via the same basic facial expressions, where are identified by Emotion API.
+
 **Interpreting Results:**
 
 Emotion API for Video provides two types of aggregate results for the emotions of faces in a frame. The API first calculates emotion scores for each face in a video, smoothing the results over time for higher accuracy. It returns two types of aggregates: *windowMeanScores* gives a mean score for all of the faces detected in a frame for each emotion. The emotion detected should be interpreted as the emotion with the highest score, as scores are normalized to sum to one. Users may choose to set a higher confidence threshold within their application, depending on their needs. *windowFaceDistribution* gives the distribution of faces with each emotion as the dominant emotion for that face. Dominant emotions for each face have been determined based on the emotion with the highest score for that face. 
