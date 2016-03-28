@@ -7,7 +7,7 @@ Weight: 100
 
 # Web Language Model API Overview
 
-Welcome to the Microsoft Project Oxford Web Language Model API, a REST-based cloud service providing state-of-the-art tools for natural language processing. Using this API, your application can leverage the power of big data through language models trained on web-scale corpora collected by Bing in the EN-US market. 
+Welcome to the Microsoft Web Language Model API, a REST-based cloud service providing state-of-the-art tools for natural language processing. Using this API, your application can leverage the power of big data through language models trained on web-scale corpora collected by Bing in the EN-US market. 
 
 These smoothed backoff N-gram language models, supporting Markov order up to 5, are trained on the following corpora: 
 
