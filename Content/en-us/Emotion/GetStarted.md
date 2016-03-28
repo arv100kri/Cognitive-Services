@@ -5,7 +5,7 @@ Url: Emotion-api/documentation/GetStarted
 Weight: 99
 -->
 
-# Get Started in C&#35;
+# Get Started with Emotion API in C&#35;
  
  
 
