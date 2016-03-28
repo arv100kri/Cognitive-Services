@@ -8,7 +8,7 @@ Weight: 95
 # Get Started with Video API in C&#35;
 
 
-Explore a basic Windows application that uses Project Oxford Video API to stabilize videos, recognize motion tracking and detecting faces in a video. The below example lets you submit a locally stored file in mp4, mov, or wmv formats. You can use this open source example as a template for building your own app for Windows using the Video API and WPF (Windows Presentation Foundation), a part of .NET Framework.
+Explore a basic Windows application that uses Microsoft Cognitive Services (previoulsy Project Oxford) Video API to stabilize videos, recognize motion tracking and detecting faces in a video. The below example lets you submit a locally stored file in mp4, mov, or wmv formats. You can use this open source example as a template for building your own app for Windows using the Video API and WPF (Windows Presentation Foundation), a part of .NET Framework.
 
 ## Table of Contents
 * 	[Prerequisites](#Prerequisites)
@@ -22,9 +22,9 @@ Explore a basic Windows application that uses Project Oxford Video API to stabil
 #### Platform requirements
   The below example has been developed for the .NET Framework using [Visual Studio 2015, Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs).  
 #### Subscribe to Video API and get a subscription key 
-  Before creating the example, you must subscribe to Video API which is part of Project Oxford services. For subscription and key management details, see [Subscriptions](https://www.microsoft.com/cognitive-services/en-us/sign-up). Both the primary and secondary key can be used in this tutorial. Make sure to follow best practices for keeping your API key secret and secure. 
+  Before creating the example, you must subscribe to Video API which is part of Microsoft Cognitive services. For subscription and key management details, see [Subscriptions](https://www.microsoft.com/cognitive-services/en-us/sign-up). Both the primary and secondary key can be used in this tutorial. Make sure to follow best practices for keeping your API key secret and secure. 
 #### Get the client library and example
-  You may download the Video API client library and example through https://www.projectoxford.ai/sdk or access them via [GitHub](https://github.com/Microsoft/ProjectOxford-ClientSDK/tree/master/Video/Windows). The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder.
+  You may download the Video API client library and example via [GitHub](https://github.com/Microsoft/ProjectOxford-ClientSDK/tree/master/Video/Windows). The downloaded zip file needs to be extracted to a folder of your choice, many users choose the Visual Studio 2015 folder.
 
 ## <a name="Step1">Step 1: Install the example</a>
 1.	Start Microsoft Visual Studio 2015 and click **File**, select **Open**, then **Project/Solution**.
