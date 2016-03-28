@@ -1,7 +1,7 @@
 
 # Face API How-to Topics
 
-This section of the documentation shows how to complete a particular programming task with Project Oxford Face API.
+This section of the documentation shows how to complete a particular programming task with Microsoft Face API.
 
 ## In This Section
 [How to Detect Faces in Image](HowtoDetectFacesinImage.md)  
