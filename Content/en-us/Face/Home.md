@@ -6,7 +6,7 @@ Weight: 100
 -->
 # Face API
 
-Welcome to the Microsoft Project Oxford Face API. Face API is a cloud-based API that provides the most advanced algorithms for face detection and recognition. The main functionality of Face API can be divided into two categories: face detection with attributes extraction and face recognition.
+Welcome to the Microsoft Face API. Face API is a cloud-based API that provides the most advanced algorithms for face detection and recognition. The main functionality of Face API can be divided into two categories: face detection with attributes extraction and face recognition.
 
 ## Face Detection
 
@@ -54,19 +54,19 @@ For more details about person identification, please refer to the API guides lis
 
 ## Changes
 
-This document is targeting **Project Oxford Face V1.0** service. For user who has experiences on using Project Oxford Face V0, there are some major changes we would like you to know before switching from Project Oxford Face V0 to Project Oxford Face V1.0 service.
+This document is targeting **Microsoft Cognitive Services (previously Project Oxford) Face V1.0** service. For user who has experiences on using Face V0, there are some major changes we would like you to know before switching from Face V0 to Face V1.0 service.
 
 * **API Signature**
-In Project Oxford Face V1.0, Service root endpoint changes from "https://api.projectoxford.ai/face/v0/" to "https://api.projectoxford.ai/face/v1.0/" 
+In Face V1.0, Service root endpoint changes from "https://api.projectoxford.ai/face/v0/" to "https://api.projectoxford.ai/face/v1.0/" 
 There are several signature changes for API, such as [Face - Detect](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), [Face - Identify](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239), [Face - Find Similar](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237), [Face - Group](https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395238).
 
 * **Face sizes**
-The previous version of Project Oxford Face API was not clear about the smallest face sizes the API could detect. With V1.0 the API correctly sets the minimal detectable size to 36x36 pixels. Faces smaller 36x36 pixels will not be detected.
+The previous version of Face API was not clear about the smallest face sizes the API could detect. With V1.0 the API correctly sets the minimal detectable size to 36x36 pixels. Faces smaller 36x36 pixels will not be detected.
 
 * **Persisted data**
-Existing Person Group and Person data which has been setup with Project Oxford Face V0 cannot be accessed with Project Oxford Face V1.0 service. This incompatible issue will occur for only this one time, following API updates will not affect persisted data any more.
+Existing Person Group and Person data which has been setup with Face V0 cannot be accessed with the Face V1.0 service. This incompatible issue will occur for only this one time, following API updates will not affect persisted data any more.
 
-**Note**: The V0 of Face APIs will be retired on **06/30/2016**. We highly suggest you switch to Project Oxford Face V1.0.
+**Note**: The V0 of Face APIs will be retired on **06/30/2016**. We highly suggest you switch to Face V1.0.
 
 ## Getting Started
 
