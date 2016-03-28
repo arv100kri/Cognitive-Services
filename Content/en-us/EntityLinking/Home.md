@@ -22,6 +22,4 @@ The illustration below shows an example of entity linking. Specifically, when us
 To quickly go through the Entity Linking basic functionalities and subscription process, refer to our getting started tutorial.
 [Getting Started with Entity Linking API in C#](GettingStarted.md)
 
-## Reference
 
-For more details about entity linking, see the [API Reference](https://dev.projectoxford.ai/docs/services/56d3fb7cca73071a4030e528).
