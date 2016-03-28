@@ -118,7 +118,7 @@ In this step you will create an Android application project to implement the bas
 		}  
 
 Now your app can browse for a photo from gallery and display it in the window similar to the image below:			
-![GettingStartAndroidUI](../Images/android_getstarted1.1.png)
+![GettingStartAndroidUI](../Images/android_getstarted1.1.PNG)
 
 ## <a name="step3"></a>Step 3: Configure the Face API client library
 
@@ -286,7 +286,7 @@ Thirdly, add a call to the detectAndFrame method from onActivityResult method:
     }
 
 Run this application and browse for an image containing a face. Please wait for a few seconds to allow the cloud API to respond. After that, you will get a result similar to the image below: 
-![GettingStartAndroid](../Images/android_getstarted2.1.PNG)
+![GettingStartAndroid](../Images/android_getstarted2.1.png)
 
 ## <a name="summary"></a> Summary
 
