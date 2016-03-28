@@ -30,7 +30,7 @@ To use the tutorial, you will need the following prerequisites:
 
 ## <a name="step1"></a>Step 1: Subscribe for Face API and get your subscription key
 
-Before using any Face API, you must sign up to subscribe to Face API in the Microsoft Cognitive Services (formerly Project Oxford) portal. See [subscription and key management](https://www.microsoft.com/cognitive-services/en-us/sign-up). Both primary and secondary key can be used in this tutorial.
+Before using any Face API, you must sign up to subscribe to Face API in the Microsoft Cognitive Services (formerly Project Oxford) portal. See [subscriptions](https://www.microsoft.com/cognitive-services/en-us/sign-up). Both primary and secondary key can be used in this tutorial.
 
 ## <a name="step2"></a>Step 2: Create the application framework
 
