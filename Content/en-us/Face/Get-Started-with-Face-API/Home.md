@@ -10,6 +10,6 @@ This section of the documentation helps you get started with Microsoft Face API.
 
 
 ## Related Sections
-[How to Detect Faces in Image](HowtoDetectFacesinImage.md)
+[How to Detect Faces in Image](./HowtoDetectFacesinImage.md)
 
-[How to Identify Faces in Image](HowtoIdentifyFacesinImage.md)
+[How to Identify Faces in Image](./HowtoIdentifyFacesinImage.md)
