@@ -6,11 +6,11 @@ Weight: 98
 -->
 #Describe Image
 
-Vision API’s algorithms analyze the content found in an image, which in turn forms the foundation for a “description” displayed as human readable language in complete sentences. The description summarizes what is found in the image. More than one description will be generated for each image ordered by their confidence score as seen in below illustration.
+Computer Vision API’s algorithms analyze the content found in an image, which in turn forms the foundation for a “description” displayed as human readable language in complete sentences. The description summarizes what is found in the image. More than one description will be generated for each image ordered by their confidence score as seen in below illustration.
 
-###Analyze an image using Vision API’s new description generator
+###Analyze an image using Computer Vision API’s new description generator
 
-After uploading an image or specifying an image URL, Vision API’s algorithms generate a number of descriptions based on the objects identified in the image. The descriptions are each evaluated and a confidence score generated. A list is then returned ordered from highest confidence score to lowest.
+After uploading an image or specifying an image URL, Computer Vision API’s algorithms generate a number of descriptions based on the objects identified in the image. The descriptions are each evaluated and a confidence score generated. A list is then returned ordered from highest confidence score to lowest.
 
  * Supported input methods: Raw image binary in the form of an application/octet stream or image URL.
  * Supported image formats: JPEG, PNG, GIF, BMP.
