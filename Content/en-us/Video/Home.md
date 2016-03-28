@@ -40,23 +40,7 @@ For more details about how to use stabilization, refer to the [Video API referen
 ## Video Thumbnail 
 A video thumbnail lets people see a preview or snapshot of your video. When a viewer wants to get a quick glance of the video content, this API can be used to generate a motion thumbnail which consists of scenes from the original video. 
 
-Microsoft Video API applies computer vision intelligence to identify the characteristics of your video’s content. It will select the most representative scenes from your video to create a thumbnail. Selection criteria is also based on video quality, diversity, and stability of the footage. Video API creates an index of the best video scenes and marks the duration in seconds. Based on this index, a user may opt to select a set of scenes to create the thumbnail. The other option is to let Video API generate the thumbnail based on its algorithms. Both methods will generate a thumbnail with the following specifications:
-
-#### Motion thumbnail 
-1)	Selection of scenes from a video create a preview in form of a short video or trailer.  
-2)	The number of scenes displayed in the thumbnail is either chosen by the user or defaults to the optimal duration supported by the Video API’s algorithm. \*  
-3)	A scene is a collection of indexed frames. Scenes are mapped according to sequence in video.  
-4)	Fade in/fade out effects are included in the thumbnail by default, but can be turned off by the user.  
-5)	Audio is included by default, but can be turned off by the user. Pauses in audio are detected to divide video into coherent scenes and avoid breaking sentences of speech.  
-6)	Maximum file size is 100 MB.  
-
-\* Optimal Duration of Video Thumbnail Supported by Video API shown in table below.
-
-
-Motion Thumbnail   |  | | | | 
----------|---------|---------|---------|---------
-**Video duration (d)**    |   d < 3min      |   3min < d < 15min      |   15min < d < 30min      | 30min < d        
-**Thumbnail duration**    |    15sec (2-3 scenes)     |    30sec (3-5 scenes)    |    60sec (5-10 scenes)     |      90sec (10-15 scenes)   
+Microsoft Video API applies computer vision intelligence to identify the characteristics of your video’s content. It will select the most representative scenes from your video to create a thumbnail. Selection criteria is also based on video quality, diversity, and stability of the footage. Video API creates an index of the best video scenes and marks the duration in seconds. Based on this index, a user may opt to select a set of scenes to create the thumbnail. The other option is to let Video API generate the thumbnail based on its algorithms.
 
 For more details about how to use video thumbnail, refer to the [Video API reference guide](https://dev.projectoxford.ai/docs/services/565d6516778daf15800928d5/operations/565d6517778daf0978c45e35).
 
