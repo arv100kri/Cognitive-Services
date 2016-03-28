@@ -1,7 +1,7 @@
 
 # Get Started with Face API
 
-This section of the documentation helps you get started with Project Oxford Face API.
+This section of the documentation helps you get started with Microsoft Face API.
 
 ## In This Section
 [Getting Started with Face API in CSharp](GettingStartedwithFaceAPIinCSharp.md)
