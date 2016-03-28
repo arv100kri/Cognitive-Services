@@ -1,2 +1,2 @@
 # ProjectOxford-Documentation
-Documentation for Project Oxford
+Documentation for Microsoft Cognitive Services
