@@ -56,7 +56,7 @@ When using a client library, the subscription key is passed in through the const
 faceServiceClient = new FaceServiceClient("Your subscription key");
 ```
  
-The subscription key can be obtained from the Marketplace page of your Azure management portal. See [subscription and key management](https://www.projectoxford.ai/Subscription).
+The subscription key can be obtained from the Marketplace page of your Azure management portal. See [Subscriptions](https://www.microsoft.com/cognitive-services/en-us/sign-up).
 
 ## <a name="step2"></a> Step 2: Create the person group
 
