@@ -47,4 +47,4 @@ Json
 }
 
 ```
-The topic of Domain-Specific Models, Scoped and Enhanced Analysis is covered in detail in the [“How to” topic](https://github.com/Microsoft/ProjectOxford-Documentation/blob/master/Content/en-us/Computer-vision/HowToCallVisionAPI.md).
+The topic of Domain-Specific Models, Scoped and Enhanced Analysis is covered in detail in the [“How to” topic](../HowToCallVisionAPI.md).
