@@ -13,7 +13,6 @@ This guide demonstrates how to call Computer Vision API using REST. The samples 
 -	How to get "Domain-specific" information (celebrities).
 
 ###Table of Contents
-* [Concepts](#Concepts)
 * [Prerequisites](#Prerequisites)
 * [Step 1: Authorize the API call](#Step1)
 * [Step 2: Upload an image and get back tags, description and celebrities](#Step2)
@@ -21,9 +20,6 @@ This guide demonstrates how to call Computer Vision API using REST. The samples 
 * [Step 4: Retrieving and understanding the JSON output from domain-specific models](#Step4)
 * [Error Responses](#Errors)
 * [Summary](#Summary)
-
-###<a name="Concepts">Concepts</a> 
-Refer to the definitions in our glossary [LINK] at any time.
 
 ###<a name="Prerequisites">Prerequisites</a> 
 Image URL or path to locally stored image.
