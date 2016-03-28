@@ -8,7 +8,7 @@ Weight: 30
 
 In this tutorial, you will learn to create and develop a simple Android application that invokes the Face API to detect human faces in an image; essentially by framing the face.     
 
-![GettingStartAndroid](../Images/android_getstarted2.1.PNG)
+![GettingStartedAndroid](../Images/android_getstarted2.1.png)
 
 ## Table of Contents
 
@@ -118,7 +118,7 @@ In this step you will create an Android application project to implement the bas
 		}  
 
 Now your app can browse for a photo from gallery and display it in the window similar to the image below:			
-![GettingStartAndroidUI](../Images/android_getstarted1.1.PNG)
+![GettingStartAndroidUI](../Images/android_getstarted1.1.png)
 
 ## <a name="step3"></a>Step 3: Configure the Face API client library
 
