@@ -20,7 +20,6 @@ This tutorial explores entity linking by using the Entity Linking Client Library
 - [Step 4: Add an input and output text block to your app’s XAML](#step-4-add-an-input-and-output-text-block-to-your-apps-xaml)
 - [Step 5: Proceed to add Entity Linking Intelligence Service](#step-5-proceed-to-add-entity-linking-intelligence-service)
 - [Summary](#summary)
-- [Related Topics](#related-topics)
 
 ### <a name="Prerequisites">Prerequisites</a>
 
@@ -103,8 +102,4 @@ Now you are ready to run your first natural language processing Entity Linking A
 ### <a name="Summary">Summary</a>
  
 In this tutorial you’ve learned how to create an application to leverage Entity Linking Intelligence Service Client Library with just a few lines of C# and XAML code. 
-
-### <a name="related-topics">Related Topics</a>
-
-For more details about entity linking, please refer to the [API Reference](https://dev.projectoxford.ai/docs/services/56d3fb7cca73071a4030e528).
 
