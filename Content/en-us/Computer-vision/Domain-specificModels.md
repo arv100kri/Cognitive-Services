@@ -7,7 +7,7 @@ Weight: 97
 
 #Develop with Domain-Specific Models
 
-In addition to tagging and top-level categorization, Vision API also supports specialized (or domain-specific) information. Specialized information can be implemented as a standalone method or in combination with the high level categorization. It functions as a means to further refine the 86-category taxonomy through the addition of domain-specific models. 
+In addition to tagging and top-level categorization, Computer Vision API also supports specialized (or domain-specific) information. Specialized information can be implemented as a standalone method or in combination with the high level categorization. It functions as a means to further refine the 86-category taxonomy through the addition of domain-specific models. 
 
 Currently, the only specialized information supported is celebrity recognition, and it is essentially a domain-specific refinement for the people_ and people_group categories. 
 
