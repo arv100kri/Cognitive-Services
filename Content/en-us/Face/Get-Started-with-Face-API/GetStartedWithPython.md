@@ -1,4 +1,4 @@
-<!-- NavPath: Computer Vision API
+<!-- NavPath: Face API/Getting Started
 LinkLabel: Get Started in Python
 Url: Face-api/documentation/Get-Started-with-Face-API/GetStartedWithPython
 Weight: 99
