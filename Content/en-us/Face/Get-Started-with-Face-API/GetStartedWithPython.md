@@ -4,7 +4,7 @@ Url: Face-api/documentation/Get-Started-with-Face-API/GetStartedWithPython
 Weight: 99
 -->
 
-#Start Developing with Face-Vision API using Python
+#Start Developing with Face API using Python
 
 To make it easy to get started with Face API, the Jupyter notebook linked below shows you how to use the API in Python and how to visualize your results using some popular libraries. 
 
