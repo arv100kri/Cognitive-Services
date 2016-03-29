@@ -48,7 +48,7 @@ You can choose to persist your subscription key on your PC or laptop by clicking
 
 ![Analyze Image Interface](../Images/Analyze_Image_Example.PNG)
 
-4.	There are example images to be used with this example application. You can find these images on Github under Face, Windows, then search the [Data](https://github.com/Microsoft/ProjectOxford-ClientSDK-Dev/tree/vision-build-2016/Face/Windows/Data) folder. Please note the use of these images is licensed under agreement [LICENSE-IMAGE](https://github.com/Microsoft/ProjectOxford-ClientSDK/blob/master/LICENSE-IMAGE.md).
+4.	There are example images to be used with this example application. You can find these images on Github under Face, Windows, then search the [Data](https://github.com/Microsoft/ProjectOxford-ClientSDK/tree/vision-build-2016/Face/Windows/Data) folder. Please note the use of these images is licensed under agreement [LICENSE-IMAGE](https://github.com/Microsoft/ProjectOxford-ClientSDK/blob/master/LICENSE-IMAGE.md).
 
 ###<a name="Review">Review and Learn</a>
 Now that you have a running application, let us review how this example app integrates with Cognitive Services technology. This will make it easier to either continue building onto this app or develop your own app using Microsoft Computer Vision API.
