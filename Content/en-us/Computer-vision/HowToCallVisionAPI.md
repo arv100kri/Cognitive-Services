@@ -158,6 +158,7 @@ description.captions[].confidence	| number	| Confidence for the phrase.
 ###<a name="Step4">Step 4: Retrieving and understanding the JSON output of domain-specific models</a>
 
 **Option One:** Scoped Analysis - Analyze only a given model
+
 The output will be an array of tags, an example will be like this example:
 ```
   { 
