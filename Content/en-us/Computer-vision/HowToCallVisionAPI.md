@@ -203,7 +203,7 @@ For domain-specific models using Option Two (Enhanced Analysis), the categories 
   }
 ```
 
-The categories field is a list of one or more of the [86-categories](https://www.projectoxford.ai/images/bright/vision/examples/86categories.txt) in the original taxonomy. Note also that categories ending in an underscore will match that category and its children (e.g. people_ as well as people_group, for celebrities model).
+The categories field is a list of one or more of the [86-categories](https://www.projectoxford.ai/images/bright/vision/examples/86categories.txt) in the original taxonomy. Note also that categories ending in an underscore will match that category and its children (for example, people_ as well as people_group, for celebrities model).
 
 Field	| Type	| Content
 ------|------|------|
