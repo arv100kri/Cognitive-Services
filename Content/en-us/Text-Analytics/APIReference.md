@@ -1,7 +1,7 @@
 <!-- 
 NavPath: Text Analytics
 LinkLabel: API Reference
-ExternalLink: https://oxfordibiza.portal.azure-api.net/docs/services/56e85629d97e8a169c94cae9/
+ExternalLink: https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/operations/56f30ceeeda5650db055a3c7
 Weight: 15
 -->
 
